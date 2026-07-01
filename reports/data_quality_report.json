@@ -1,0 +1,61 @@
+{
+  "total_rows": 1380,
+  "valid_rows": 1380,
+  "invalid_rows": 0,
+  "duplicate_count": 0,
+  "issues_by_type": {},
+  "warnings_by_type": {
+    "range_warning": 4
+  },
+  "sources": [
+    {
+      "source": "TKPI",
+      "total_rows": 1146,
+      "valid_rows": 1146,
+      "invalid_rows": 0,
+      "duplicate_count": 0,
+      "issues_by_type": {},
+      "warnings_by_type": {
+        "range_warning": 4
+      },
+      "issues": [],
+      "warnings": [
+        {
+          "row": 1074,
+          "type": "range_warning",
+          "field": "energy_kcal",
+          "value": 902.0
+        },
+        {
+          "row": 1078,
+          "type": "range_warning",
+          "field": "energy_kcal",
+          "value": 902.0
+        },
+        {
+          "row": 1079,
+          "type": "range_warning",
+          "field": "energy_kcal",
+          "value": 902.0
+        },
+        {
+          "row": 1080,
+          "type": "range_warning",
+          "field": "energy_kcal",
+          "value": 902.0
+        }
+      ]
+    },
+    {
+      "source": "MyFCD",
+      "total_rows": 234,
+      "valid_rows": 234,
+      "invalid_rows": 0,
+      "duplicate_count": 0,
+      "issues_by_type": {},
+      "warnings_by_type": {},
+      "issues": [],
+      "warnings": []
+    }
+  ]
+}
