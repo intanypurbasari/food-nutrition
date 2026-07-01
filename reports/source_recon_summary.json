@@ -1,0 +1,23 @@
+[
+  {
+    "source": "TKPI",
+    "url": "https://www.panganku.org/id-ID/cari_nutrisi",
+    "status": "accessible",
+    "notes": "A normal public form/AJAX flow for limited extraction was detected. tables=1, forms=1, links=15 Normal category POST flow is available for limited listing/detail extraction.",
+    "selector_candidates": [
+      "table",
+      "form"
+    ],
+    "checked_at": "2026-07-01T00:03:06.609335+00:00"
+  },
+  {
+    "source": "MyFCD",
+    "url": "https://myfcd.moh.gov.my/myfcdcurrent/",
+    "status": "accessible",
+    "notes": "A normal public form/AJAX flow for limited extraction was detected. tables=5, forms=0, links=19 Public DataTables AJAX endpoint is referenced by the page.",
+    "selector_candidates": [
+      "table"
+    ],
+    "checked_at": "2026-07-01T00:03:06.644691+00:00"
+  }
+]
