@@ -1,0 +1,23 @@
+,TKPI_terisi,TKPI_total,MyFCD_terisi,MyFCD_total,TKPI_pct,MyFCD_pct,kelompok,strategi_imputasi
+vitamin_a_mcg,0,1146,0,234,0.0,0.0,Vitamin,Pinjam USDA (kosong di kedua basis)
+retinol_mcg,541,1146,38,234,47.2,16.2,Vitamin,Imputasi internal per basis
+carotene_total_mcg,607,1146,0,234,53.0,0.0,Vitamin,Cross-DB transfer / USDA
+beta_carotene_mcg,679,1146,37,234,59.2,15.8,Vitamin,Imputasi internal per basis
+copper_mg,795,1146,49,234,69.4,20.9,Mineral,Imputasi internal per basis
+vitamin_b2_mg,796,1146,10,234,69.5,4.3,Vitamin,Imputasi internal per basis
+zinc_mg,799,1146,49,234,69.7,20.9,Mineral,Imputasi internal per basis
+niacin_mg,807,1146,10,234,70.4,4.3,Vitamin,Imputasi internal per basis
+potassium_mg,823,1146,73,234,71.8,31.2,Mineral,Imputasi internal per basis
+vitamin_c_mg,857,1146,27,234,74.8,11.5,Vitamin,Imputasi internal per basis
+sodium_mg,864,1146,64,234,75.4,27.4,Mineral,Imputasi internal per basis
+fiber_g,925,1146,139,234,80.7,59.4,Makronutrien/Proksimat,Imputasi internal per basis
+vitamin_b1_mg,1058,1146,10,234,92.3,4.3,Vitamin,Imputasi internal per basis
+iron_mg,1103,1146,48,234,96.2,20.5,Mineral,Imputasi internal per basis
+phosphorus_mg,1106,1146,107,234,96.5,45.7,Mineral,Imputasi internal per basis
+calcium_mg,1106,1146,67,234,96.5,28.6,Mineral,Imputasi internal per basis
+water_g,1144,1146,150,234,99.8,64.1,Makronutrien/Proksimat,Imputasi internal per basis
+fat_g,1145,1146,151,234,99.9,64.5,Makronutrien/Proksimat,Imputasi internal per basis
+protein_g,1145,1146,150,234,99.9,64.1,Makronutrien/Proksimat,Imputasi internal per basis
+ash_g,1146,1146,139,234,100.0,59.4,Makronutrien/Proksimat,Imputasi internal per basis
+carbohydrate_g,1146,1146,109,234,100.0,46.6,Makronutrien/Proksimat,Imputasi internal per basis
+energy_kcal,1146,1146,105,234,100.0,44.9,Makronutrien/Proksimat,Imputasi internal per basis

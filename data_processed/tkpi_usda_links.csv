@@ -1,0 +1,335 @@
+source_food_id,source_food_name,source_category,usda_fdc_id,usda_food_name,usda_category,similarity_score,confidence
+tkpi_0136,"arrowroot, segar (arrowroot, fresh)",umbi berpati,168490,"Arrowroot, raw",Vegetables and Vegetable Products,1.0,HIGH
+tkpi_0632,"durian, segar (durian, fresh)",buah,168192,"Durian, raw or frozen",Fruits and Fruit Juices,1.0,HIGH
+tkpi_0661,"lemon, segar (lemon, fresh)",buah,167747,"Lemon juice, raw",Fruits and Fruit Juices,0.8792,HIGH
+tkpi_0706,"rambutan, segar (rambutan)",buah,168167,"Rambutan, canned, syrup pack",Fruits and Fruit Juices,0.8024,HIGH
+tkpi_0232,tepung arrowroot,umbi berpati,168490,"Arrowroot, raw",Vegetables and Vegetable Products,0.7464,HIGH
+tkpi_0127,spaghetti,serealia,168911,"Spaghetti, spinach, dry",Cereal Grains and Pasta,0.716,HIGH
+tkpi_0705,"rambutan binjai, segar (rambutan)",buah,168167,"Rambutan, canned, syrup pack",Fruits and Fruit Juices,0.7002,HIGH
+tkpi_0386,"andewi, segar (endive, fresh)",sayuran,168412,"Endive, raw",Vegetables and Vegetable Products,0.6865,HIGH
+tkpi_0636,"erbis, segar (passion-fruit (granadilla), fresh)",buah,169108,"Passion-fruit, (granadilla), purple, raw",Fruits and Fruit Juices,0.6857,HIGH
+tkpi_0715,"sirsak, segar (soursop, fresh)",buah,167761,"Soursop, raw",Fruits and Fruit Juices,0.6839,HIGH
+tkpi_1128,"ketumbar, kering (coriander, seed)",bumbu,170922,"Spices, coriander seed",Spices and Herbs,0.6762,HIGH
+tkpi_0536,"terong, segar (eggplant, fresh)",sayuran,169228,"Eggplant, raw",Vegetables and Vegetable Products,0.6749,HIGH
+tkpi_0952,"ikan cakalang asin, mentah (skipjack tuna,fish, salted, raw)",ikan/kerang/udang dll,175156,"Fish, tuna, fresh, skipjack, raw",Finfish and Shellfish Products,0.6734,HIGH
+tkpi_0517,"peterseli, segar (parsley, fresh)",sayuran,170416,"Parsley, fresh",Vegetables and Vegetable Products,0.6708,HIGH
+tkpi_0951,"ikan cakalang asap, mentah (skipjack tuna, fish,smoked, raw)",ikan/kerang/udang dll,175156,"Fish, tuna, fresh, skipjack, raw",Finfish and Shellfish Products,0.6673,HIGH
+tkpi_0727,lempog durian,buah,168192,"Durian, raw or frozen",Fruits and Fruit Juices,0.6661,HIGH
+tkpi_0866,"ikan bandeng, segar (milkfish, raw)",ikan/kerang/udang dll,173675,"Fish, milkfish, raw",Finfish and Shellfish Products,0.6608,HIGH
+tkpi_0676,"melon, segar",buah,169912,"Melon balls, frozen",Fruits and Fruit Juices,0.6515,HIGH
+tkpi_0529,"seledri, segar (celery, fresh)",sayuran,169988,"Celery, raw",Vegetables and Vegetable Products,0.647,MEDIUM
+tkpi_0629,"carica papaya, segar (papaya)",buah,169107,"Papaya nectar, canned",Fruits and Fruit Juices,0.6459,MEDIUM
+tkpi_0148,"kentang, segar (yam, fresh)",umbi berpati,170071,"Yam, raw",Vegetables and Vegetable Products,0.6379,MEDIUM
+tkpi_0390,"bayam, segar (spinach, fresh)",sayuran,168462,"Spinach, raw",Vegetables and Vegetable Products,0.6364,MEDIUM
+tkpi_0383,"akar tonjong, segar (lotus root, fresh)",sayuran,169250,"Lotus root, raw",Vegetables and Vegetable Products,0.6346,MEDIUM
+tkpi_0623,"buah negri, segar (passion-fruit (granadilla), fresh)",buah,169108,"Passion-fruit, (granadilla), purple, raw",Fruits and Fruit Juices,0.6302,MEDIUM
+tkpi_1100,madu (honey),konfeksioneri,169640,Honey,Sweets,0.6298,MEDIUM
+tkpi_0644,"jeruk bali, segar (pummelo, fresh)",buah,167754,"Pummelo, raw",Fruits and Fruit Juices,0.6271,MEDIUM
+tkpi_0259,"kacang hitam, kering (black turtle bean, raw)",kacang-kacangan,175186,"Beans, black turtle, mature seeds, raw",Legumes and Legume Products,0.6206,MEDIUM
+tkpi_0620,"buah mentega (bisbul), segar (persimmons, japanese, fresh)",buah,169942,"Persimmons, japanese, dried",Fruits and Fruit Juices,0.6103,MEDIUM
+tkpi_0499,"kucai, segar (chinese chives, fresh)",sayuran,169994,"Chives, raw",Vegetables and Vegetable Products,0.6073,MEDIUM
+tkpi_0768,"sapi, liver, segar (liver, beef, fresh)",daging,169451,"Beef, variety meats and by-products, liver, raw",Beef Products,0.6058,MEDIUM
+tkpi_0423,"daun kesum, segar (garlic, leaf, fresh)",sayuran,169230,"Garlic, raw",Vegetables and Vegetable Products,0.6018,MEDIUM
+tkpi_0528,"selada air, segar (watercress, fresh)",sayuran,170068,"Watercress, raw",Vegetables and Vegetable Products,0.5939,MEDIUM
+tkpi_0931,"keong, segar (snail, fresh)",ikan/kerang/udang dll,167744,"Mollusks, snail, raw",Finfish and Shellfish Products,0.5862,MEDIUM
+tkpi_0776,ham,daging,168223,"Pork, fresh, leg (ham), whole, separable lean and fat, cooked, roasted",Pork Products,0.5832,MEDIUM
+tkpi_0011,"beras parboiled (rice, parboiled)",serealia,169707,"Rice, white, long-grain, parboiled, enriched, dry",Cereal Grains and Pasta,0.5812,MEDIUM
+tkpi_0407,"daun gelang, segar (purslane, leaf, fresh)",sayuran,169274,"Purslane, raw",Vegetables and Vegetable Products,0.572,MEDIUM
+tkpi_0541,"terung panjang (eggplant, fresh)",sayuran,169228,"Eggplant, raw",Vegetables and Vegetable Products,0.5706,MEDIUM
+tkpi_0756,"kambing, daging, segar (goat, meat, fresh)",daging,175303,"Game meat, goat, raw","Lamb, Veal, and Game Products",0.5656,MEDIUM
+tkpi_1083,minyak kelapa (coconut oil),minyak/lemak,171412,"Oil, coconut",Fats and Oils,0.5625,MEDIUM
+tkpi_1050,"telur bebek, asin, mentah (duck, egg, salted, raw)",telur,172189,"Egg, duck, whole, fresh, raw",Dairy and Egg Products,0.5607,MEDIUM
+tkpi_0418,"daun kecipir, segar (winged bean, leaf, fresh)",sayuran,170478,"Winged bean leaves, raw",Vegetables and Vegetable Products,0.5603,MEDIUM
+tkpi_0673,"manggis, segar (mangosteen, fresh)",buah,169090,"Mangosteen, canned, syrup pack",Fruits and Fruit Juices,0.5581,MEDIUM
+tkpi_0759,"kuda, daging, segar (horse, meat, fresh)",daging,175087,"Game meat, horse, cooked, roasted","Lamb, Veal, and Game Products",0.5573,MEDIUM
+tkpi_1125,"daun salam, bubuk (bay-leaf)",bumbu,170917,"Spices, bay leaf",Spices and Herbs,0.5561,MEDIUM
+tkpi_0719,"sukun tua, segar (breadfruit, fresh)",buah,171714,"Breadfruit, raw",Fruits and Fruit Juices,0.5544,MEDIUM
+tkpi_0486,"kecipir muda, segar (winged bean, fresh)",sayuran,170478,"Winged bean leaves, raw",Vegetables and Vegetable Products,0.554,MEDIUM
+tkpi_0014,"cantel, mentah (sorghum, raw)",serealia,169716,Sorghum grain,Cereal Grains and Pasta,0.5498,MEDIUM
+tkpi_0943,"udang, segar (shrimp, fresh)",ikan/kerang/udang dll,175179,"Crustaceans, shrimp, raw",Finfish and Shellfish Products,0.5446,MEDIUM
+tkpi_0548,"wortel, segar (carrot, fresh)",sayuran,170491,"Carrot juice, canned",Vegetables and Vegetable Products,0.5399,MEDIUM
+tkpi_0712,"sawo kecik, segar (sapodilla, fresh)",buah,167759,"Sapodilla, raw",Fruits and Fruit Juices,0.5394,MEDIUM
+tkpi_0711,"sawo duren, segar (sapodilla, fresh)",buah,167759,"Sapodilla, raw",Fruits and Fruit Juices,0.5394,MEDIUM
+tkpi_0887,"ikan hiu, segar (fish, shark, fresh)",ikan/kerang/udang dll,173697,"Fish, shark, mixed species, raw",Finfish and Shellfish Products,0.5374,MEDIUM
+tkpi_0957,"ikan hiu, kering (shark, fish, dried)",ikan/kerang/udang dll,173697,"Fish, shark, mixed species, raw",Finfish and Shellfish Products,0.5374,MEDIUM
+tkpi_0907,"ikan mujahir, segar (mozambique tilapia, fresh)",ikan/kerang/udang dll,175176,"Fish, tilapia, raw",Finfish and Shellfish Products,0.5311,MEDIUM
+tkpi_0458,"daun talas, segar (taro, leaf, fresh)",sayuran,169308,"Taro, raw",Vegetables and Vegetable Products,0.5304,MEDIUM
+tkpi_0392,"bit, segar (beet, fresh)",sayuran,170375,"Beet greens, raw",Vegetables and Vegetable Products,0.5289,MEDIUM
+tkpi_0905,"ikan mas, segar (common carp, fresh)",ikan/kerang/udang dll,171952,"Fish, carp, raw",Finfish and Shellfish Products,0.5285,MEDIUM
+tkpi_0157,"sagu singkong, kering (cassava, starch, dried)",umbi berpati,169985,"Cassava, raw",Vegetables and Vegetable Products,0.5236,MEDIUM
+tkpi_0296,"wijen, kering (sesame seed)",kacang-kacangan,170150,"Seeds, sesame seeds, whole, dried",Nut and Seed Products,0.5233,MEDIUM
+tkpi_0020,"jawawut, mentah (italian millet, raw)",serealia,169702,"Millet, raw",Cereal Grains and Pasta,0.5229,MEDIUM
+tkpi_0258,"kacang hijau, kering (mung bean, raw)",kacang-kacangan,174256,"Mung beans, mature seeds, raw",Legumes and Legume Products,0.5199,MEDIUM
+tkpi_0433,"daun lobak, segar (radish, leaf, fresh)",sayuran,170095,"Radish seeds, sprouted, raw",Vegetables and Vegetable Products,0.5105,MEDIUM
+tkpi_0504,"labu kuning, segar (pumpkin, fresh)",sayuran,168448,"Pumpkin, raw",Vegetables and Vegetable Products,0.5077,MEDIUM
+tkpi_0506,"labu waluh, segar (pumpkin, fresh)",sayuran,168448,"Pumpkin, raw",Vegetables and Vegetable Products,0.5077,MEDIUM
+tkpi_0985,"ikan teri, kering, mentah (anchovy)",ikan/kerang/udang dll,174182,"Fish, anchovy, european, raw",Finfish and Shellfish Products,0.5052,MEDIUM
+tkpi_1048,"telur burung puyuh, segar (quail, egg, fress)",telur,172191,"Egg, quail, whole, fresh, raw",Dairy and Egg Products,0.5042,MEDIUM
+tkpi_0426,"daun kubis, segar (cabbage, fresh)",sayuran,169975,"Cabbage, raw",Vegetables and Vegetable Products,0.5036,MEDIUM
+tkpi_0649,"jeruk nipis, segar (lime, fresh)",buah,168156,"Lime juice, raw",Fruits and Fruit Juices,0.4986,MEDIUM
+tkpi_1124,"cengkeh, kering (cloves, dried)",bumbu,171321,"Spices, cloves, ground",Spices and Herbs,0.4965,MEDIUM
+tkpi_1130,"kunyit, segar (turmeric)",bumbu,172231,"Spices, turmeric, ground",Spices and Herbs,0.4965,MEDIUM
+tkpi_0663,"mangga, segar (mango, fresh)",buah,169091,"Mango, dried, sweetened",Fruits and Fruit Juices,0.4941,MEDIUM
+tkpi_0718,"sukun muda, segar (breadfruit, young, fresh)",buah,171714,"Breadfruit, raw",Fruits and Fruit Juices,0.4938,MEDIUM
+tkpi_1045,"telur bebek tambak, segar (domestic duck, egg, fresh)",telur,172189,"Egg, duck, whole, fresh, raw",Dairy and Egg Products,0.491,MEDIUM
+tkpi_0524,"sawi putih / pecai, segar (pak choi, fresh)",sayuran,170390,"Cabbage, chinese (pak-choi), raw",Vegetables and Vegetable Products,0.4909,MEDIUM
+tkpi_0140,"bengkuang, segar (yam bean, fresh)",umbi berpati,170071,"Yam, raw",Vegetables and Vegetable Products,0.4905,MEDIUM
+tkpi_0264,"kacang komak, segar (hyacinth bean, fresh)",kacang-kacangan,175210,"Hyacinth beans, mature seeds, raw",Legumes and Legume Products,0.487,MEDIUM
+tkpi_0151,"ketela pohon/ singkong, segar (cassava, fresh)",umbi berpati,169985,"Cassava, raw",Vegetables and Vegetable Products,0.4858,MEDIUM
+tkpi_0155,"sagu kasbi segar (cassava starch, fresh)",umbi berpati,169985,"Cassava, raw",Vegetables and Vegetable Products,0.4842,MEDIUM
+tkpi_0682,"pepaya, segar (papaya, fresh)",buah,169107,"Papaya nectar, canned",Fruits and Fruit Juices,0.4817,MEDIUM
+tkpi_0387,"bakung, segar (welsh onion, fresh)",sayuran,170007,"Onions, welsh, raw",Vegetables and Vegetable Products,0.478,MEDIUM
+tkpi_0758,"kerbau, daging, segar (buffalo, meat, fresh)",daging,175299,"Game meat, buffalo, water, raw","Lamb, Veal, and Game Products",0.477,MEDIUM
+tkpi_0527,"selada, segar (lettuce)",sayuran,169249,"Lettuce, green leaf, raw",Vegetables and Vegetable Products,0.4767,MEDIUM
+tkpi_0008,"beras ketan putih tumbuk, mentah (glutinous rice, white, husk,raw)",serealia,169711,"Rice, white, glutinous, unenriched, cooked",Cereal Grains and Pasta,0.4711,MEDIUM
+tkpi_0005,"beras jagung kuning, kering, mentah (corn, yellow",serealia,170288,"Corn grain, yellow",Cereal Grains and Pasta,0.4681,MEDIUM
+tkpi_0615,"belimbing, segar (starfruit, fresh)",buah,171715,"Carambola, (starfruit), raw",Fruits and Fruit Juices,0.4678,MEDIUM
+tkpi_0934,"kodok, segar (frog, fresh)",ikan/kerang/udang dll,168148,"Frog legs, raw",Finfish and Shellfish Products,0.4673,MEDIUM
+tkpi_1044,"telur bebek, bagian putih, segar (duck, egg, white, fresh)",telur,172189,"Egg, duck, whole, fresh, raw",Dairy and Egg Products,0.4669,MEDIUM
+tkpi_0508,"lobak, segar (turnip, fresh)",sayuran,170061,"Turnip greens, raw",Vegetables and Vegetable Products,0.4659,MEDIUM
+tkpi_1043,"telur bebek, bagian kuning, segar (duck, egg, yolk, fresh)",telur,172189,"Egg, duck, whole, fresh, raw",Dairy and Egg Products,0.4625,MEDIUM
+tkpi_0391,"bayam merah, segar (spinach, red, fresh)",sayuran,168462,"Spinach, raw",Vegetables and Vegetable Products,0.4611,MEDIUM
+tkpi_0164,"ubi jalar manis, segar (cassava starch, fresh)",umbi berpati,169985,"Cassava, raw",Vegetables and Vegetable Products,0.4604,MEDIUM
+tkpi_1104,sirup (syrup),konfeksioneri,167953,Fruit syrup,Sweets,0.4579,MEDIUM
+tkpi_1085,minyak wijen (sesame oil),minyak/lemak,171016,"Oil, sesame, salad or cooking",Fats and Oils,0.4575,MEDIUM
+tkpi_0542,"tomat, air (sari), segar (tomato, juice, fresh)",sayuran,170458,"Tomato juice, canned, with salt added",Vegetables and Vegetable Products,0.4573,MEDIUM
+tkpi_0883,"ikan ekor kuning, segar (yellowtail, fish, fresh)",ikan/kerang/udang dll,175163,"Fish, yellowtail, mixed species, raw",Finfish and Shellfish Products,0.4551,MEDIUM
+tkpi_0767,"sapi, keleponan, segar (tripe, beef, fresh)",daging,170599,"Beef, variety meats and by-products, tripe, raw",Beef Products,0.453,MEDIUM
+tkpi_0657,"kesemek, segar (persimmons, fresh)",buah,169942,"Persimmons, japanese, dried",Fruits and Fruit Juices,0.4516,MEDIUM
+tkpi_1076,"lemak babi (bacon) (pork, fat, bacon)",minyak/lemak,167704,"Salad dressing, bacon and tomato",Fats and Oils,0.4496,MEDIUM
+tkpi_0755,"domba, ginjal, segar (kidney, lamb, fresh)",daging,174442,"Lamb, New Zealand, imported, kidney, raw","Lamb, Veal, and Game Products",0.4491,MEDIUM
+tkpi_0016,"jagung kuning pipil, kering, mentah (corn, yellow, raw)",serealia,170288,"Corn grain, yellow",Cereal Grains and Pasta,0.4438,MEDIUM
+tkpi_0145,"gembili, ubi, segar (lesser yam, fresh)",umbi berpati,170071,"Yam, raw",Vegetables and Vegetable Products,0.4426,MEDIUM
+tkpi_0741,"angsa, daging, segar (goose, meat, fresh)",daging,172413,"Goose, domesticated, meat only, raw",Poultry Products,0.4392,MEDIUM
+tkpi_1086,minyak zaitun (olive oil),minyak/lemak,171413,"Oil, olive, salad or cooking",Fats and Oils,0.438,MEDIUM
+tkpi_0147,"kaburan, ubi, segar (lesser yam, fresh)",umbi berpati,170071,"Yam, raw",Vegetables and Vegetable Products,0.4339,MEDIUM
+tkpi_1097,gula putih (sugar cane),konfeksioneri,167743,"Syrup, Cane",Sweets,0.4316,MEDIUM
+tkpi_0021,"jampang huma, mentah (ragi millet, raw)",serealia,168871,"Millet, cooked",Cereal Grains and Pasta,0.4309,MEDIUM
+tkpi_1135,bekasang (fermented fish),bumbu,171606,Fish broth,"Soups, Sauces, and Gravies",0.4292,MEDIUM
+tkpi_0900,"ikan lehoma, segar (indian mackerel, fresh)",ikan/kerang/udang dll,168149,"Fish, mackerel, salted",Finfish and Shellfish Products,0.4288,MEDIUM
+tkpi_0894,"ikan kawalinya, segar (indian mackerel, fresh)",ikan/kerang/udang dll,168149,"Fish, mackerel, salted",Finfish and Shellfish Products,0.4288,MEDIUM
+tkpi_0434,"daun lompong talas, segar (taro, leaf, fresh)",sayuran,169308,"Taro, raw",Vegetables and Vegetable Products,0.4275,MEDIUM
+tkpi_0760,"sapi, babat, segar (tripe, fresh)",daging,170599,"Beef, variety meats and by-products, tripe, raw",Beef Products,0.427,MEDIUM
+tkpi_0137,"batatas gembili, segar (lesser yam, fresh)",umbi berpati,170071,"Yam, raw",Vegetables and Vegetable Products,0.4238,MEDIUM
+tkpi_0769,"sapi, otak, segar (brain, beef, fresh)",daging,168622,"Beef, variety meats and by-products, brain, raw",Beef Products,0.4212,MEDIUM
+tkpi_0159,"suweg, talas, segar (elephant yam)",umbi berpati,170071,"Yam, raw",Vegetables and Vegetable Products,0.4204,MEDIUM
+tkpi_0269,"kacang merah tua, kering (dark red kidney bean, dried)",kacang-kacangan,173744,"Beans, kidney, red, mature seeds, raw",Legumes and Legume Products,0.4186,MEDIUM
+tkpi_0247,"kacang belimbing (kecipir), kering (winged bean, seed, raw)",kacang-kacangan,174283,"Winged beans, mature seeds, raw",Legumes and Legume Products,0.4184,MEDIUM
+tkpi_0273,"kacang panjang, biji, kering (yardlong bean, seeded, dried)",kacang-kacangan,174281,"Yardlong beans, mature seeds, raw",Legumes and Legume Products,0.4178,MEDIUM
+tkpi_1084,minyak kelapa sawit (palm oil),minyak/lemak,171015,"Oil, palm",Fats and Oils,0.4144,MEDIUM
+tkpi_0494,"komak, segar (hyacinth bean, fresh)",sayuran,169234,"Hyacinth-beans, immature seeds, raw",Vegetables and Vegetable Products,0.4138,MEDIUM
+tkpi_1079,"minyak hiu, hati (shark, fish, liver, oil)",minyak/lemak,173577,"Fish oil, cod liver",Fats and Oils,0.4136,MEDIUM
+tkpi_0283,"komak polong, segar (hyacinth bean)",kacang-kacangan,175210,"Hyacinth beans, mature seeds, raw",Legumes and Legume Products,0.4133,MEDIUM
+tkpi_1071,"susu skim, segar",susu,170887,"Yogurt, plain, skim milk",Dairy and Egg Products,0.4129,MEDIUM
+tkpi_0766,"sapi, ginjal, segar (kidney, beef, fresh)",daging,174442,"Lamb, New Zealand, imported, kidney, raw","Lamb, Veal, and Game Products",0.4121,MEDIUM
+tkpi_0523,"sawi, segar (chinese mustard, fresh)",sayuran,169256,"Mustard greens, raw",Vegetables and Vegetable Products,0.411,MEDIUM
+tkpi_0158,"sente, talas, segar (giant taro, fresh)",umbi berpati,169308,"Taro, raw",Vegetables and Vegetable Products,0.4083,MEDIUM
+tkpi_1116,"bawang putih, segar (garlic)",bumbu,171325,"Spices, garlic powder",Spices and Herbs,0.4073,MEDIUM
+tkpi_1099,"kopi bubuk instant (coffee, instant)",konfeksioneri,168779,"Puddings, chocolate, dry mix, instant",Sweets,0.4069,MEDIUM
+tkpi_0865,"ikan bambangan, segar (humphead snapper, fresh)",ikan/kerang/udang dll,173698,"Fish, snapper, mixed species, raw",Finfish and Shellfish Products,0.4067,MEDIUM
+tkpi_1075,"lemak babi (lard) (pork, fat, lord)",minyak/lemak,171401,Lard,Fats and Oils,0.4057,MEDIUM
+tkpi_0163,"ubi jalar, kuning, segar (sweet potato, yellowish, fresh)",umbi berpati,170542,"Sweet potato, frozen, cooked, baked, with salt",Vegetables and Vegetable Products,0.4047,MEDIUM
+tkpi_0757,"kelinci, daging, segar (rabbit, meat, fresh)",daging,174347,"Game meat, rabbit, wild, raw","Lamb, Veal, and Game Products",0.4044,MEDIUM
+tkpi_1136,cuka (vinegar),bumbu,173469,"Vinegar, cider",Spices and Herbs,0.4033,MEDIUM
+tkpi_0472,"jamur tiram, segar (oyster mushroom)",sayuran,168580,"Mushrooms, oyster, raw",Vegetables and Vegetable Products,0.4027,MEDIUM
+tkpi_0143,"gadung, ubi, segar (asiatic bitter yam, fresh)",umbi berpati,170071,"Yam, raw",Vegetables and Vegetable Products,0.4015,MEDIUM
+tkpi_1132,"pala, biji, kering (nutmeg)",bumbu,171326,"Spices, nutmeg, ground",Spices and Herbs,0.4009,MEDIUM
+tkpi_1126,"jahe, segar (ginger, root)",bumbu,170926,"Spices, ginger, ground",Spices and Herbs,0.4009,MEDIUM
+tkpi_0462,"daun ubi putih, segar (sweet potato, whitish, leaf, fresh)",sayuran,170542,"Sweet potato, frozen, cooked, baked, with salt",Vegetables and Vegetable Products,0.3993,LOW
+tkpi_0491,"ketimun, segar (cucumber, fresh)",sayuran,168409,"Cucumber, with peel, raw",Vegetables and Vegetable Products,0.399,LOW
+tkpi_0520,"rebung, segar (bamboo shoot, fresh)",sayuran,169210,"Bamboo shoots, raw",Vegetables and Vegetable Products,0.3984,LOW
+tkpi_0505,"labu siam, segar (chayote, fresh)",sayuran,170402,"Chayote, fruit, raw",Vegetables and Vegetable Products,0.396,LOW
+tkpi_0441,"daun pakis, segar (fern, leaf, fresh)",sayuran,168553,"Tree fern, cooked, with salt",Vegetables and Vegetable Products,0.3959,LOW
+tkpi_0165,"ubi jalar merah, segar (sweet potato, redish, fresh)",umbi berpati,170542,"Sweet potato, frozen, cooked, baked, with salt",Vegetables and Vegetable Products,0.3949,LOW
+tkpi_0166,"ubi jalar putih, segar (sweet potato, whitish, fresh)",umbi berpati,170542,"Sweet potato, frozen, cooked, baked, with salt",Vegetables and Vegetable Products,0.3949,LOW
+tkpi_0460,"daun ubi kuning, segar (sweet potato, yeallowish, leaf, fresh)",sayuran,170542,"Sweet potato, frozen, cooked, baked, with salt",Vegetables and Vegetable Products,0.394,LOW
+tkpi_0289,"koro wedus, biji, kering (hyacinth bean)",kacang-kacangan,175210,"Hyacinth beans, mature seeds, raw",Legumes and Legume Products,0.3922,LOW
+tkpi_1131,"merica, kering (pepper)",bumbu,170933,"Spices, pepper, white",Spices and Herbs,0.3911,LOW
+tkpi_0762,"sapi, daging, kurus, segar (beef, low fat, fresh)",daging,168101,"Bologna, beef, low fat",Sausages and Luncheon Meats,0.3873,LOW
+tkpi_0633,"duwet, segar (jambolan, fresh)",buah,168150,"Java-plum, (jambolan), raw",Fruits and Fruit Juices,0.3861,LOW
+tkpi_0487,"kecombrang, segar (red ginger lily, fresh)",sayuran,169231,"Ginger root, raw",Vegetables and Vegetable Products,0.3857,LOW
+tkpi_0045,roti putih,serealia,174075,"Bread, chapati or roti, whole wheat, commercially prepared, frozen",Baked Products,0.3856,LOW
+tkpi_1042,"telur bebek alabio, segar (duck, alabio, egg, fresh)",telur,172189,"Egg, duck, whole, fresh, raw",Dairy and Egg Products,0.3851,LOW
+tkpi_0808,"beef teriyaki, masakan",daging,167910,"HORMEL ALWAYS TENDER, Pork Tenderloin, Teriyaki-Flavored",Pork Products,0.3851,LOW
+tkpi_0912,"ikan patin, segar (striped catfish, fresh)",ikan/kerang/udang dll,171948,"Fish, bass, striped, raw",Finfish and Shellfish Products,0.3848,LOW
+tkpi_0463,"daun ubi tinta, segar (sweet potato, purpleish, leaf, fresh)",sayuran,170542,"Sweet potato, frozen, cooked, baked, with salt",Vegetables and Vegetable Products,0.3847,LOW
+tkpi_1081,minyak kacang tanah (peanut oil),minyak/lemak,171410,"Oil, peanut, salad or cooking",Fats and Oils,0.3845,LOW
+tkpi_0744,"ayam, hati, segar (chicken liver, raw)",daging,171060,"Chicken, liver, all classes, raw",Poultry Products,0.3837,LOW
+tkpi_0714,"semangka, segar (water melon, fresh)",buah,169912,"Melon balls, frozen",Fruits and Fruit Juices,0.3829,LOW
+tkpi_0747,"babi, ginjal, segar (kidney, pork, fresh)",daging,174442,"Lamb, New Zealand, imported, kidney, raw","Lamb, Veal, and Game Products",0.3821,LOW
+tkpi_1040,"telur ayam ras, bagian kuning, segar (domestic chicken, egg, yolk, raw)",telur,173428,"Egg, yolk, dried",Dairy and Egg Products,0.3817,LOW
+tkpi_0256,"kacang hijau var. bakti, kering (mung bean, raw)",kacang-kacangan,174256,"Mung beans, mature seeds, raw",Legumes and Legume Products,0.3784,LOW
+tkpi_0257,"kacang hijau var. siwalik, kering (mung bean, raw)",kacang-kacangan,174256,"Mung beans, mature seeds, raw",Legumes and Legume Products,0.3784,LOW
+tkpi_0861,"belut,laut, segar (eel, fresh)",ikan/kerang/udang dll,174193,"Fish, eel, mixed species, raw",Finfish and Shellfish Products,0.3775,LOW
+tkpi_0420,"daun kelor, segar (drumstick tree, leaf, fresh)",sayuran,168416,"Drumstick leaves, raw",Vegetables and Vegetable Products,0.3764,LOW
+tkpi_0428,"daun labu siam, segar (chayote, fresh)",sayuran,170402,"Chayote, fruit, raw",Vegetables and Vegetable Products,0.376,LOW
+tkpi_0015,"jagung muda, kuning, mentah (corn,baby, yellow, raw)",serealia,170288,"Corn grain, yellow",Cereal Grains and Pasta,0.3737,LOW
+tkpi_0471,"jamur merang, segar (straw mushroom)",sayuran,168582,"Mushrooms, straw, canned, drained solids",Vegetables and Vegetable Products,0.3729,LOW
+tkpi_0013,"beras tumbuk merah, mentah (rice, brown with husk, raw)",serealia,168898,"Rice flour, brown",Cereal Grains and Pasta,0.3725,LOW
+tkpi_0142,"gadeng/gadung, kering (asiatic bitter yam, fresh)",umbi berpati,170071,"Yam, raw",Vegetables and Vegetable Products,0.371,LOW
+tkpi_0495,"kool kembang (cauliflower, fresh/white headed cabbage, fresh)",sayuran,169986,"Cauliflower, raw",Vegetables and Vegetable Products,0.3689,LOW
+tkpi_0394,buah merah (red fruit),sayuran,170402,"Chayote, fruit, raw",Vegetables and Vegetable Products,0.3684,LOW
+tkpi_0812,"chicken teriyaki, masakan",daging,167910,"HORMEL ALWAYS TENDER, Pork Tenderloin, Teriyaki-Flavored",Pork Products,0.3677,LOW
+tkpi_0332,keju kacang tanah (peanut butter),kacang-kacangan,169869,"Peanut butter, reduced sodium",Legumes and Legume Products,0.367,LOW
+tkpi_0713,"sawo manila, segar (sapodilla, manila, fresh)",buah,167759,"Sapodilla, raw",Fruits and Fruit Juices,0.365,LOW
+tkpi_0748,"babi, hati, segar (liver, pork, fresh)",daging,167862,"Pork, fresh, variety meats and by-products, liver, raw",Pork Products,0.3613,LOW
+tkpi_0640,"jambu biji (guava, fresh)",buah,174686,"Guava sauce, cooked",Fruits and Fruit Juices,0.3611,LOW
+tkpi_0286,"koro kerupuk, biji, segar (hyacinth bean, seeded, fresh)",kacang-kacangan,175210,"Hyacinth beans, mature seeds, raw",Legumes and Legume Products,0.3601,LOW
+tkpi_1041,"telur aayam ras, bagian putih, segar (domestic chicken, egg, white, raw)",telur,172204,"Egg, white, dried",Dairy and Egg Products,0.3573,LOW
+tkpi_0291,"lamtoro biji, tua, segar (white leadtree, mature, fresh)",kacang-kacangan,175202,"Beans, white, mature seeds, raw",Legumes and Legume Products,0.3567,LOW
+tkpi_0461,"daun ubi merah, segar (sweet potato, redish, leaf, freah)",sayuran,170542,"Sweet potato, frozen, cooked, baked, with salt",Vegetables and Vegetable Products,0.356,LOW
+tkpi_0749,"bebek (itik), daging, segar (duck, meat, fresh)",daging,172411,"Duck, domesticated, meat only, cooked, roasted",Poultry Products,0.3559,LOW
+tkpi_0007,"beras ketan hitam tumbuk, mentah (glutinous rice, black, husk,raw)",serealia,169711,"Rice, white, glutinous, unenriched, cooked",Cereal Grains and Pasta,0.3559,LOW
+tkpi_0466,"genjer, segar (sawah lettuce, fresh)",sayuran,169249,"Lettuce, green leaf, raw",Vegetables and Vegetable Products,0.355,LOW
+tkpi_0923,"ikan telan, segar (spiny eel, fresh)",ikan/kerang/udang dll,174193,"Fish, eel, mixed species, raw",Finfish and Shellfish Products,0.3527,LOW
+tkpi_0924,"ikan tembang, segar (bonga shad, fresh)",ikan/kerang/udang dll,173696,"Fish, shad, american, raw",Finfish and Shellfish Products,0.3514,LOW
+tkpi_0530,"taoge, segar (mung bean, sprout, fresh)",sayuran,169957,"Mung beans, mature seeds, sprouted, raw",Vegetables and Vegetable Products,0.3511,LOW
+tkpi_0659,"kranji, segar (sweet inga, fresh)",buah,171719,"Cherries, sweet, raw",Fruits and Fruit Juices,0.3505,LOW
+tkpi_0124,roti boong,serealia,174075,"Bread, chapati or roti, whole wheat, commercially prepared, frozen",Baked Products,0.3484,LOW
+tkpi_0919,"ikan sidat, segar (shortfin eel, fresh)",ikan/kerang/udang dll,174193,"Fish, eel, mixed species, raw",Finfish and Shellfish Products,0.3471,LOW
+tkpi_0285,"koro benguk, biji, kering (hyacinth bean, seaded,dried)",kacang-kacangan,175210,"Hyacinth beans, mature seeds, raw",Legumes and Legume Products,0.3462,LOW
+tkpi_0474,"jantung pisang, segar (banana, flower, fresh)",sayuran,169394,"Pepper, banana, raw",Vegetables and Vegetable Products,0.3442,LOW
+tkpi_1087,margarin (butter),minyak/lemak,172339,"Margarine-like, margarine-butter blend, soybean oil and butter",Fats and Oils,0.3429,LOW
+tkpi_1080,"minyak ikan (fish, oil)",minyak/lemak,172341,"Fish oil, menhaden",Fats and Oils,0.3421,LOW
+tkpi_0751,"belibis, daging, segar (whistling duck, meat, fresh)",daging,172411,"Duck, domesticated, meat only, cooked, roasted",Poultry Products,0.3407,LOW
+tkpi_0911,"ikan papuyu/ betok, segar (climbing perch, fresh)",ikan/kerang/udang dll,173678,"Fish, perch, mixed species, raw",Finfish and Shellfish Products,0.3378,LOW
+tkpi_0932,"kepiting, segar (crab, fresh)",ikan/kerang/udang dll,171967,"Crustaceans, crab, blue, crab cakes, home recipe",Finfish and Shellfish Products,0.3371,LOW
+tkpi_0267,"kacang mentega, kering (peanut butter fruit, fresh)",kacang-kacangan,169869,"Peanut butter, reduced sodium",Legumes and Legume Products,0.3369,LOW
+tkpi_0743,"ayam, dideh/darah, segar (black puding (chicken blood), fresh)",daging,171618,Blood sausage,Sausages and Luncheon Meats,0.3365,LOW
+tkpi_1092,"coklat pahit,batang (chocolate,dark, bar)",konfeksioneri,169592,"Candies, SPECIAL DARK Chocolate Bar",Sweets,0.3355,LOW
+tkpi_0945,"belut, goreng (asian swamp eel, fresh)",ikan/kerang/udang dll,174193,"Fish, eel, mixed species, raw",Finfish and Shellfish Products,0.3337,LOW
+tkpi_0860,"belut, segar (asian swamp eel, fresh)",ikan/kerang/udang dll,174193,"Fish, eel, mixed species, raw",Finfish and Shellfish Products,0.3337,LOW
+tkpi_0501,"kulit melinjo (spanish joint fir, peel, fresh )",sayuran,168409,"Cucumber, with peel, raw",Vegetables and Vegetable Products,0.3334,LOW
+tkpi_0544,"tomat muda, segar (tomato, green, fresh)",sayuran,170463,"Tomato products, canned, sauce, with tomato tidbits",Vegetables and Vegetable Products,0.3327,LOW
+tkpi_0896,"ikan kima, segar (clam, shell, fresh)",ikan/kerang/udang dll,174214,"Mollusks, clam, mixed species, raw",Finfish and Shellfish Products,0.3281,LOW
+tkpi_0139,"belitung, talas, segar (taro, belitung, steamed)",umbi berpati,169308,"Taro, raw",Vegetables and Vegetable Products,0.3258,LOW
+tkpi_0160,"talas bogor, segar (taro, bogor, fresh)",umbi berpati,169308,"Taro, raw",Vegetables and Vegetable Products,0.3258,LOW
+tkpi_0154,"sagu aren, segar (sugar palm, fresh)",umbi berpati,167714,"Hearts of palm, raw",Vegetables and Vegetable Products,0.3257,LOW
+tkpi_0153,"sagu aren, kering (sugar palm, dried)",umbi berpati,167714,"Hearts of palm, raw",Vegetables and Vegetable Products,0.3257,LOW
+tkpi_0704,"purut, segar (lime, wild (purut))",buah,168156,"Lime juice, raw",Fruits and Fruit Juices,0.3253,LOW
+tkpi_0543,"tomat merah, segar (tomato, red, fresh)",sayuran,170463,"Tomato products, canned, sauce, with tomato tidbits",Vegetables and Vegetable Products,0.325,LOW
+tkpi_0648,"jeruk manis, segar (orange, fresh)",buah,169099,"Orange juice, canned, unsweetened",Fruits and Fruit Juices,0.3239,LOW
+tkpi_0395,"buncis, segar (green bean, fresh)",sayuran,169222,"Yardlong bean, raw",Vegetables and Vegetable Products,0.3233,LOW
+tkpi_0467,"jagung muda / semi, segar (baby corn, fresh)",sayuran,168568,"Carrots, baby, raw",Vegetables and Vegetable Products,0.3229,LOW
+tkpi_1146,"kelapa muda, air, segar (coconut, young, water, fresh)",minuman non alkohol,174831,"Beverages, Coconut water, ready-to-drink, unsweetened",Beverages,0.3227,LOW
+tkpi_0397,"bunga turi, segar (hummingbird tree)",sayuran,168553,"Tree fern, cooked, with salt",Vegetables and Vegetable Products,0.322,LOW
+tkpi_1090,"santan murni (coconut milk, pured)",minyak/lemak,171412,"Oil, coconut",Fats and Oils,0.3203,LOW
+tkpi_1094,"coklat bubuk (cacao, powder)",konfeksioneri,170274,"Candies, chocolate, dark, NFS (45-59% cacao solids 90%; 60-69% cacao solids 5%; 70-85% cacao solids 5%)",Sweets,0.3181,LOW
+tkpi_0271,"kacang merah, segar (kidney bean, fresh)",kacang-kacangan,173744,"Beans, kidney, red, mature seeds, raw",Legumes and Legume Products,0.3173,LOW
+tkpi_0270,"kacang merah, kering (kidney bean, kering)",kacang-kacangan,173744,"Beans, kidney, red, mature seeds, raw",Legumes and Legume Products,0.3173,LOW
+tkpi_0754,"domba, daging, kurus, segar (lamb, meat, low fat, fresh)",daging,168101,"Bologna, beef, low fat",Sausages and Luncheon Meats,0.317,LOW
+tkpi_0156,sagu lempeng (sago palm),umbi berpati,168569,"Hearts of palm, canned",Vegetables and Vegetable Products,0.3148,LOW
+tkpi_0765,"sapi, dideh/darah (black puding (cows blood), fresh)",daging,171618,Blood sausage,Sausages and Luncheon Meats,0.3137,LOW
+tkpi_0161,"talas pontianak, segar (taro, pontianak, fresh)",umbi berpati,169308,"Taro, raw",Vegetables and Vegetable Products,0.3115,LOW
+tkpi_0396,"bunga pepaya, segar (papaya, flower, fresh)",sayuran,168459,"Sesbania flower, raw",Vegetables and Vegetable Products,0.3114,LOW
+tkpi_0717,"srikaya, segar (sugar apple,fresh)",buah,168169,"Rhubarb, frozen, cooked, with sugar",Fruits and Fruit Juices,0.3101,LOW
+tkpi_1133,balichong (tiny shrimp fermented),bumbu,171159,"Soup, cream of shrimp, canned, condensed","Soups, Sauces, and Gravies",0.3096,LOW
+tkpi_1134,bekasam (tiny shrimp fermented),bumbu,171159,"Soup, cream of shrimp, canned, condensed","Soups, Sauces, and Gravies",0.3096,LOW
+tkpi_0981,"ikan sunu, asin, mentah (coral trout)",ikan/kerang/udang dll,175153,"Fish, trout, mixed species, raw",Finfish and Shellfish Products,0.3087,LOW
+tkpi_0290,"lamtoro biji, muda, segar (white leadtree, inmature, fresh)",kacang-kacangan,175204,"Beans, white, mature seeds, canned",Legumes and Legume Products,0.308,LOW
+tkpi_1047,"telur penyu, segar (turtle, egg)",telur,172188,"Egg, whole, dried",Dairy and Egg Products,0.3063,LOW
+tkpi_1070,"susu skim, bubuk",susu,170887,"Yogurt, plain, skim milk",Dairy and Egg Products,0.3058,LOW
+tkpi_0869,"ikan batung, segar (indonesian-shortfin eel)",ikan/kerang/udang dll,174193,"Fish, eel, mixed species, raw",Finfish and Shellfish Products,0.3037,LOW
+tkpi_0288,"koro roay, kering (lima bean, dried)",kacang-kacangan,174254,"Lima beans, large, mature seeds, canned",Legumes and Legume Products,0.3024,LOW
+tkpi_0459,"daun tespong, segar (water dropwort, fresh)",sayuran,169301,"Water convolvulus,raw",Vegetables and Vegetable Products,0.3003,LOW
+tkpi_1141,"saos tomat (tomato, sauce)",bumbu,172882,"Soup, tomato, canned, condensed","Soups, Sauces, and Gravies",0.3001,LOW
+tkpi_1122,"cabai merah, segar (chili papper)",bumbu,171150,"Soup, chili beef, canned, condensed","Soups, Sauces, and Gravies",0.2987,LOW
+tkpi_1121,"cabai merah, kering (chili papper)",bumbu,171150,"Soup, chili beef, canned, condensed","Soups, Sauces, and Gravies",0.2987,LOW
+tkpi_0672,"mangga muda, segar (mango, unripe, fresh)",buah,169091,"Mango, dried, sweetened",Fruits and Fruit Juices,0.2986,LOW
+tkpi_0424,"daun kol sawi, segar (indian mustard, fresh)",sayuran,169256,"Mustard greens, raw",Vegetables and Vegetable Products,0.2974,LOW
+tkpi_1074,"kelapa tua, daging, segar (coconut, flesh, old, fresh)",minyak/lemak,171412,"Oil, coconut",Fats and Oils,0.2974,LOW
+tkpi_0742,"ayam, daging, segar (chicken, meat, fresh)",daging,171067,"Chicken, broilers or fryers, dark meat, meat only, raw",Poultry Products,0.2963,LOW
+tkpi_0141,"bentul (komba), talas, segar (taro, bentul, fresh)",umbi berpati,169308,"Taro, raw",Vegetables and Vegetable Products,0.2953,LOW
+tkpi_0679,"nanas, segar (pineapple, fresh)",buah,169126,"Pineapple, canned, juice pack, solids and liquids",Fruits and Fruit Juices,0.2947,LOW
+tkpi_0522,rumput laut (seaweed),sayuran,170090,"Seaweed, agar, dried",Vegetables and Vegetable Products,0.2931,LOW
+tkpi_0006,"beras jagung putih, kering, mentah (corn, white, died, crushed, raw)",serealia,168920,"Corn grain, white",Cereal Grains and Pasta,0.2931,LOW
+tkpi_0292,lamtoro var. gung tanpa kulit (white leadtree),kacang-kacangan,175204,"Beans, white, mature seeds, canned",Legumes and Legume Products,0.2926,LOW
+tkpi_0862,"cumi-cumi, segar (squid, fresh)",ikan/kerang/udang dll,171982,"Mollusks, squid, mixed species, cooked, fried",Finfish and Shellfish Products,0.2925,LOW
+tkpi_0946,"cumi-cumi, goreng (squid, fried)",ikan/kerang/udang dll,171982,"Mollusks, squid, mixed species, cooked, fried",Finfish and Shellfish Products,0.2925,LOW
+tkpi_1082,minyak kedelai (soybean oil),minyak/lemak,171411,"Oil, soybean, salad or cooking",Fats and Oils,0.2899,LOW
+tkpi_0674,"markisa, segar (giant granadilla, fresh)",buah,169108,"Passion-fruit, (granadilla), purple, raw",Fruits and Fruit Juices,0.2896,LOW
+tkpi_0293,lamtoro var. lokal dengan kulit (white leadtree),kacang-kacangan,175202,"Beans, white, mature seeds, raw",Legumes and Legume Products,0.2846,LOW
+tkpi_0929,"ikan tongkol, segar (tuna, fresh)",ikan/kerang/udang dll,175156,"Fish, tuna, fresh, skipjack, raw",Finfish and Shellfish Products,0.2844,LOW
+tkpi_0496,"kool merah,kool putih (cabbage, fresh)",sayuran,169975,"Cabbage, raw",Vegetables and Vegetable Products,0.2814,LOW
+tkpi_1143,"terasi (fish, fermented, paste (terasi))",bumbu,171606,Fish broth,"Soups, Sauces, and Gravies",0.2811,LOW
+tkpi_0497,"koro kerupuk, polong (lablab, hyacinth bean)",sayuran,169234,"Hyacinth-beans, immature seeds, raw",Vegetables and Vegetable Products,0.2806,LOW
+tkpi_0442,"daun pakis longgiho, segar (fern,longiho, leaf, fresh)",sayuran,168553,"Tree fern, cooked, with salt",Vegetables and Vegetable Products,0.2805,LOW
+tkpi_1123,"cabai rawit, segar (chili papper)",bumbu,171150,"Soup, chili beef, canned, condensed","Soups, Sauces, and Gravies",0.2789,LOW
+tkpi_1120,"cabai hijau, segar (chili papper)",bumbu,171150,"Soup, chili beef, canned, condensed","Soups, Sauces, and Gravies",0.2789,LOW
+tkpi_0125,roti warna sawo matang,serealia,174075,"Bread, chapati or roti, whole wheat, commercially prepared, frozen",Baked Products,0.277,LOW
+tkpi_1077,"lemak ikan (fish, fat)",minyak/lemak,172341,"Fish oil, menhaden",Fats and Oils,0.2769,LOW
+tkpi_0393,"buah kelor (west indian bean, fruit)",sayuran,170402,"Chayote, fruit, raw",Vegetables and Vegetable Products,0.2761,LOW
+tkpi_0149,"kentang hitam, segar (madagascar potato, fresh)",umbi berpati,168446,Potato flour,Vegetables and Vegetable Products,0.2705,LOW
+tkpi_1073,"kelapa setengah tua, daging, segar (coconut flesh, half mature, fresh)",minyak/lemak,171412,"Oil, coconut",Fats and Oils,0.2705,LOW
+tkpi_0512,"nangka muda, segar (jackfruit, young, fresh)",sayuran,168405,"Cowpeas, young pods with seeds, raw",Vegetables and Vegetable Products,0.2699,LOW
+tkpi_0510,"melinjo, segar (spanish joint fir, fresh)",sayuran,170085,"Tomato products, canned, sauce, spanish style",Vegetables and Vegetable Products,0.2697,LOW
+tkpi_0646,jeruk garut-keprok (mandarin),buah,169105,"Tangerines, (mandarin oranges), raw",Fruits and Fruit Juices,0.2687,LOW
+tkpi_0511,"mostarda metan -sawi (indian mustard, fresh)",sayuran,169256,"Mustard greens, raw",Vegetables and Vegetable Products,0.2683,LOW
+tkpi_0516,"petai, segar (stinky bean, fresh)",sayuran,169222,"Yardlong bean, raw",Vegetables and Vegetable Products,0.2658,LOW
+tkpi_1039,"telur ayam ras, segar (domestic chicken, egg, fresh)",telur,172188,"Egg, whole, dried",Dairy and Egg Products,0.2633,LOW
+tkpi_1089,santan (dengan air) (coconut milk mixed with water),minyak/lemak,171412,"Oil, coconut",Fats and Oils,0.263,LOW
+tkpi_1093,"coklat susu, batang (chocolate, dairy milk, bar)",konfeksioneri,167587,"Candies, milk chocolate",Sweets,0.2611,LOW
+tkpi_0254,"kacang gude, biji, kering (pigeon pea, fresh)",kacang-kacangan,172436,"Pigeon peas (red gram), mature seeds, raw",Legumes and Legume Products,0.2592,LOW
+tkpi_0255,"kacang gude, biji, segar (pigeon pea, raw)",kacang-kacangan,172436,"Pigeon peas (red gram), mature seeds, raw",Legumes and Legume Products,0.2592,LOW
+tkpi_0702,"pisang ua, segar (banana, ua. fresh)",buah,173945,"Bananas, dehydrated, or banana powder",Fruits and Fruit Juices,0.2586,LOW
+tkpi_1138,"petis ikan (fish,fermented, paste (petis))",bumbu,171606,Fish broth,"Soups, Sauces, and Gravies",0.2572,LOW
+tkpi_0878,"ikan cakalang, segar (scipjack tuna, fresh)",ikan/kerang/udang dll,175156,"Fish, tuna, fresh, skipjack, raw",Finfish and Shellfish Products,0.2565,LOW
+tkpi_0444,"daun paku, segar (fern, paku, leaf fresh)",sayuran,168553,"Tree fern, cooked, with salt",Vegetables and Vegetable Products,0.2561,LOW
+tkpi_0268,"kacang merah /banda, kering (kidney bean, dried)",kacang-kacangan,173744,"Beans, kidney, red, mature seeds, raw",Legumes and Legume Products,0.2559,LOW
+tkpi_0914,"ikan puntin, segar (bagrdi catfish, fresh)",ikan/kerang/udang dll,174186,"Fish, catfish, channel, wild, raw",Finfish and Shellfish Products,0.255,LOW
+tkpi_0750,"bebek alabio, daging, segar (duck, alabio, meat, fresh)",daging,172411,"Duck, domesticated, meat only, cooked, roasted",Poultry Products,0.255,LOW
+tkpi_1095,"gula aren (sugar, palm)",konfeksioneri,173141,"Popcorn, microwave, regular (butter) flavor, made with palm oil",Snacks,0.254,LOW
+tkpi_1088,mentega (margarine),minyak/lemak,171431,"Margarine, margarine-like vegetable oil spread, 67-70% fat, tub",Fats and Oils,0.2527,LOW
+tkpi_1119,"cabai gembor merah, segar (chili papper)",bumbu,171150,"Soup, chili beef, canned, condensed","Soups, Sauces, and Gravies",0.2521,LOW
+tkpi_0295,"saga merah terkupas, kering (red sandalwood, peeled)",kacang-kacangan,170575,"Nuts, chestnuts, european, raw, peeled",Nut and Seed Products,0.2498,LOW
+tkpi_0416,"daun kasbi/singkong karet, segar (ceara rubber tree,fresh)",sayuran,168553,"Tree fern, cooked, with salt",Vegetables and Vegetable Products,0.2487,LOW
+tkpi_0437,"daun melinjo, segar (spanish joint fir, leaf, fresh)",sayuran,170085,"Tomato products, canned, sauce, spanish style",Vegetables and Vegetable Products,0.2473,LOW
+tkpi_1038,"telur ayam kampung, segar (feral chicken, egg, fresh)",telur,173423,"Egg, whole, cooked, fried",Dairy and Egg Products,0.2468,LOW
+tkpi_0870,"ikan baung, segar (asian river catfish, fresh)",ikan/kerang/udang dll,174186,"Fish, catfish, channel, wild, raw",Finfish and Shellfish Products,0.2425,LOW
+tkpi_0004,"beras hitam, mentah (rice, raw)",serealia,169742,"Rice noodles, dry",Cereal Grains and Pasta,0.2415,LOW
+tkpi_0547,"umbut rotan (rattan, young shoot)",sayuran,168405,"Cowpeas, young pods with seeds, raw",Vegetables and Vegetable Products,0.2386,LOW
+tkpi_0062,cake tape,serealia,169723,"Wheat flour, white, cake, enriched",Cereal Grains and Pasta,0.2384,LOW
+tkpi_0389,"bawang bombay, segar (onion, fresh)",sayuran,170414,"Onion rings, breaded, par fried, frozen, unprepared",Vegetables and Vegetable Products,0.2383,LOW
+tkpi_0001,"beras giling, mentah (rice, raw)",serealia,169742,"Rice noodles, dry",Cereal Grains and Pasta,0.2372,LOW
+tkpi_1139,"petis udang kering (shrimp, fermented, dried (petis))",bumbu,171159,"Soup, cream of shrimp, canned, condensed","Soups, Sauces, and Gravies",0.237,LOW
+tkpi_0886,"ikan hitam, segar (black sharkminnow, fresh)",ikan/kerang/udang dll,174188,"Fish, caviar, black and red, granular",Finfish and Shellfish Products,0.2361,LOW
+tkpi_0266,"kacang lebui /iris, kering (pigeon pea, raw)",kacang-kacangan,172436,"Pigeon peas (red gram), mature seeds, raw",Legumes and Legume Products,0.2356,LOW
+tkpi_1052,"ikan, telur, asin, mentah (roe, (fish egg), fresh)",telur,173423,"Egg, whole, cooked, fried",Dairy and Egg Products,0.2348,LOW
+tkpi_0272,"kacang mete/biji jambu monyet, segar (cashew nut, mentah)",kacang-kacangan,170162,"Nuts, cashew nuts, raw",Nut and Seed Products,0.2335,LOW
+tkpi_1105,"sirup pirous (syrup, pirous)",konfeksioneri,167953,Fruit syrup,Sweets,0.2329,LOW
+tkpi_0545,"uceng/ bunga melinjo, segar (spanish joint fir, flower, fresh)",sayuran,168459,"Sesbania flower, raw",Vegetables and Vegetable Products,0.2315,LOW
+tkpi_0641,"jambu bj putih tdk brbj (guava, white, seedles, fresh)",buah,174686,"Guava sauce, cooked",Fruits and Fruit Juices,0.2309,LOW
+tkpi_0443,"daun pakis wambateu, segar (fern, wambateu, leaf fresh)",sayuran,168553,"Tree fern, cooked, with salt",Vegetables and Vegetable Products,0.2292,LOW
+tkpi_0009,"beras ladang, mentah (rice, raw)",serealia,169742,"Rice noodles, dry",Cereal Grains and Pasta,0.2245,LOW
+tkpi_0666,"mangga golek, segar (mango, golek, fresh)",buah,169091,"Mango, dried, sweetened",Fruits and Fruit Juices,0.2239,LOW
+tkpi_0665,"mangga gedung, segar (mango, gedung, fresh)",buah,169091,"Mango, dried, sweetened",Fruits and Fruit Juices,0.2239,LOW
+tkpi_0664,"mangga benggala, segar (mango, benggala, fresh)",buah,169091,"Mango, dried, sweetened",Fruits and Fruit Juices,0.2239,LOW
+tkpi_0667,"mangga harumanis, segar (mango, harumanis, fresh)",buah,169091,"Mango, dried, sweetened",Fruits and Fruit Juices,0.2239,LOW
+tkpi_0668,"mangga indramayu, segar (mango, indramayu, fresh)",buah,169091,"Mango, dried, sweetened",Fruits and Fruit Juices,0.2239,LOW
+tkpi_0671,"mangga manalagi, segar (mango, manalagi, fresh)",buah,169091,"Mango, dried, sweetened",Fruits and Fruit Juices,0.2239,LOW
+tkpi_0670,"mangga kwini, segar (mango, kwini, fresh)",buah,169091,"Mango, dried, sweetened",Fruits and Fruit Juices,0.2239,LOW
+tkpi_0669,"mangga kopek, segar (mango, kopek, fresh)",buah,169091,"Mango, dried, sweetened",Fruits and Fruit Juices,0.2239,LOW
+tkpi_0479,"kacang panjang, segar (yard-long bean, fresh)",sayuran,169222,"Yardlong bean, raw",Vegetables and Vegetable Products,0.2236,LOW
+tkpi_0410,"daun jambu mete muda, segar (cashew leaf, young, fresh)",sayuran,168405,"Cowpeas, young pods with seeds, raw",Vegetables and Vegetable Products,0.222,LOW
+tkpi_0280,"kacang urei, kering (rice bean )",kacang-kacangan,174258,"Noodles, chinese, cellophane or long rice (mung beans), dehydrated",Legumes and Legume Products,0.2213,LOW
+tkpi_0612,"apel malang, segar (apel, green, fresh)",buah,168215,"Plantains, green, raw",Fruits and Fruit Juices,0.2211,LOW
+tkpi_0949,"ikan baung bakar (asian river catfish, fresh)",ikan/kerang/udang dll,174186,"Fish, catfish, channel, wild, raw",Finfish and Shellfish Products,0.2186,LOW
+tkpi_1137,kecap (soyabean sauce),bumbu,171584,"Sauce, cheese sauce mix, dry","Soups, Sauces, and Gravies",0.2175,LOW
+tkpi_0388,"baligo, segar (wax gourd)",sayuran,168414,"Gourd, dishcloth (towelgourd), raw",Vegetables and Vegetable Products,0.2164,LOW
+tkpi_0502,"kundur, segar (wax gourd, fresh)",sayuran,168414,"Gourd, dishcloth (towelgourd), raw",Vegetables and Vegetable Products,0.2164,LOW
+tkpi_0738,"anak sapi, daging, gemuk, segar (veal, meat, high fat, fresh)",daging,173825,"Veal, loin, separable lean and fat, cooked, roasted","Lamb, Veal, and Game Products",0.214,LOW
+tkpi_0739,"anak sapi, daging, kurus, segar (veal, meat, high fat, fresh)",daging,173825,"Veal, loin, separable lean and fat, cooked, roasted","Lamb, Veal, and Game Products",0.214,LOW
+tkpi_0478,"kacang mekah, polong, segar (sword bean, fresh)",sayuran,169222,"Yardlong bean, raw",Vegetables and Vegetable Products,0.2139,LOW
+tkpi_0710,"salak, segar (snake fruit, fresh)",buah,167781,Candied fruit,Fruits and Fruit Juices,0.2092,LOW
+tkpi_1140,"petis udang pasta (shrimp, fermented, paste (petis))",bumbu,171159,"Soup, cream of shrimp, canned, condensed","Soups, Sauces, and Gravies",0.2076,LOW
+tkpi_0415,"daun kacang panjang, segar (yard-long bean, leaf, fresh)",sayuran,169222,"Yardlong bean, raw",Vegetables and Vegetable Products,0.2074,LOW
+tkpi_0881,"ikan cakalang, perut, segar (scipjack tuna, fresh)",ikan/kerang/udang dll,175156,"Fish, tuna, fresh, skipjack, raw",Finfish and Shellfish Products,0.207,LOW
+tkpi_0880,"ikan cakalang, jantung, segar (scipjack tuna, fresh)",ikan/kerang/udang dll,175156,"Fish, tuna, fresh, skipjack, raw",Finfish and Shellfish Products,0.207,LOW
+tkpi_0879,"ikan cakalang, hati, segar (scipjack tuna, fresh)",ikan/kerang/udang dll,175156,"Fish, tuna, fresh, skipjack, raw",Finfish and Shellfish Products,0.207,LOW
+tkpi_0645,"jeruk banjar, segar (orange (banjar), fresh)",buah,169099,"Orange juice, canned, unsweetened",Fruits and Fruit Juices,0.2069,LOW
+tkpi_0745,"babi, daging, gemuk,segar (pork, medium fat, fresh)",daging,168221,"Pork, fresh, separable fat, cooked",Pork Products,0.2066,LOW
+tkpi_0740,"anak sapi, daging, sedang, segar (veal, meat, fresh)",daging,173825,"Veal, loin, separable lean and fat, cooked, roasted","Lamb, Veal, and Game Products",0.2058,LOW
+tkpi_0446,"daun pare, segar (bitter guard, leaf, fresh)",sayuran,168393,"Balsam-pear (bitter gourd), pods, raw",Vegetables and Vegetable Products,0.2041,LOW
+tkpi_0513,"paria putih, segar (bitter guard, fresh)",sayuran,168393,"Balsam-pear (bitter gourd), pods, raw",Vegetables and Vegetable Products,0.2027,LOW
+tkpi_0492,"ketimun krai, segar (cucumber (krai), fresh)",sayuran,168409,"Cucumber, with peel, raw",Vegetables and Vegetable Products,0.2024,LOW
+tkpi_0493,"ketimun madura, segar (cucumber (madura), fresh)",sayuran,168409,"Cucumber, with peel, raw",Vegetables and Vegetable Products,0.2024,LOW

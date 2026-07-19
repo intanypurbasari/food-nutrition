@@ -1,0 +1,139 @@
+source_food_id,source_food_name,source_category,usda_fdc_id,usda_food_name,usda_category,similarity_score,confidence
+myfcd_0060,honey,sugars and syrups,169640,Honey,Sweets,1.0,HIGH
+myfcd_0094,"milk, sweetened, condensed",milk and milk products,171275,"Milk, canned, condensed, sweetened",Dairy and Egg Products,1.0,HIGH
+myfcd_0003,"biscuit, marie",cereals and grain products,171867,"Cookies, Marie biscuit",Baked Products,0.9437,HIGH
+myfcd_0080,"cheese, brie (keju, brie)",milk and milk products,172177,"Cheese, brie",Dairy and Egg Products,0.9241,HIGH
+myfcd_0081,"cheese, camembert (keju, camembert)",milk and milk products,172178,"Cheese, camembert",Dairy and Egg Products,0.9241,HIGH
+myfcd_0084,"cheese, colby (keju, colby)",milk and milk products,173416,"Cheese, colby",Dairy and Egg Products,0.9108,HIGH
+myfcd_0109,"oil, canola (minyak canola)",oils and fats,172336,"Oil, canola",Fats and Oils,0.8678,HIGH
+myfcd_0087,"cheese, ricotta (keju, ricotta)",milk and milk products,170851,"Cheese, ricotta, whole milk",Dairy and Egg Products,0.8466,HIGH
+myfcd_0174,"pastry, danish",wheat flour based,172754,"Danish pastry, cheese",Baked Products,0.8386,HIGH
+myfcd_0067,"jam, orange marmalade",sugars and syrups,168819,"Marmalade, orange",Sweets,0.8351,HIGH
+myfcd_0131,"fruit juice drink, orange",beverages,169044,"Beverages, Orange juice drink",Beverages,0.8161,HIGH
+myfcd_0100,"ice-cream, vanilla",milk and milk products,172229,"Ice cream sandwich, made with light ice cream, vanilla",Dairy and Egg Products,0.7464,HIGH
+myfcd_0143,plum sauce (sos plum),miscellaneous,172879,"Sauce, plum, ready-to-serve","Soups, Sauces, and Gravies",0.7339,HIGH
+myfcd_0120,fruit juice orange,beverages,169044,"Beverages, Orange juice drink",Beverages,0.7225,HIGH
+myfcd_0133,"fruit juice, fresh, orange",beverages,169044,"Beverages, Orange juice drink",Beverages,0.7225,HIGH
+myfcd_0104,"fish oil, cod liver oil (minyak ikan kod)",oils and fats,173577,"Fish oil, cod liver",Fats and Oils,0.6958,HIGH
+myfcd_0117,energy drink,beverages,174108,"Beverages,  Energy drink, Citrus",Beverages,0.6788,HIGH
+myfcd_0132,"fruit drink, orange",beverages,169044,"Beverages, Orange juice drink",Beverages,0.646,MEDIUM
+myfcd_0079,"cheese, blue (keju, biru)",milk and milk products,172175,"Cheese, blue",Dairy and Egg Products,0.6301,MEDIUM
+myfcd_0086,"cheese, parmesan (keju parmesan)",milk and milk products,170848,"Cheese, parmesan, hard",Dairy and Egg Products,0.6172,MEDIUM
+myfcd_0176,"pastry, puff, chocolate filling",wheat flour based,172790,"Puff pastry, frozen, ready-to-bake",Baked Products,0.6123,MEDIUM
+myfcd_0012,"cookies, peanut",cereals and grain products,174964,"Cookies, peanut butter, prepared from recipe",Baked Products,0.6019,MEDIUM
+myfcd_0175,"pastry, puff, apple filling",wheat flour based,172790,"Puff pastry, frozen, ready-to-bake",Baked Products,0.5749,MEDIUM
+myfcd_0031,carob flour (tepung kacang kuda),legumes and legume products,173755,Carob flour,Legumes and Legume Products,0.5732,MEDIUM
+myfcd_0126,"milk, malted (chocolate flavour)",beverages,174867,"Beverages, Malted drink mix, chocolate, powder, prepared with whole milk",Beverages,0.5713,MEDIUM
+myfcd_0113,"sauce, thousand island",oils and fats,171402,"Salad dressing, thousand island, commercial, regular",Fats and Oils,0.5674,MEDIUM
+myfcd_0225,"cabbage, fried (kobis goreng)",vegetable dishes,169975,"Cabbage, raw",Vegetables and Vegetable Products,0.5503,MEDIUM
+myfcd_0110,"oil, coconut (minyak kelapa)",oils and fats,171412,"Oil, coconut",Fats and Oils,0.5489,MEDIUM
+myfcd_0128,"tea mix, instant",beverages,173230,"Beverages, tea, instant, unsweetened, powder",Beverages,0.5376,MEDIUM
+myfcd_0044,pomegranate (delima),fruits and fruit products,167787,"Pomegranate juice, bottled",Fruits and Fruit Juices,0.5323,MEDIUM
+myfcd_0158,"cake, sponge (kek span)",wheat flour based,172706,"Cake, sponge, commercially prepared",Baked Products,0.5137,MEDIUM
+myfcd_0122,"tea, green, with added sugar",beverages,174824,"Beverages, chocolate powder, no sugar added",Beverages,0.5134,MEDIUM
+myfcd_0099,"yogurt, low fat, natural",milk and milk products,170888,"Yogurt, vanilla, low fat.",Dairy and Egg Products,0.5127,MEDIUM
+myfcd_0125,canned coffee,beverages,174133,"Beverages, coffee, instant, decaffeinated, powder",Beverages,0.4891,MEDIUM
+myfcd_0082,"cheese, cheddar, reduced fat (keju cheddar, kurang lemak)",milk and milk products,171295,"Cheese, cheddar, nonfat or fat free",Dairy and Egg Products,0.4837,MEDIUM
+myfcd_0006,"bread, raisin (roti kismis)",cereals and grain products,172680,"Bread, raisin, enriched",Baked Products,0.4713,MEDIUM
+myfcd_0144,vanilla wafer (wafer vanilla),miscellaneous,173471,Vanilla extract,Spices and Herbs,0.463,MEDIUM
+myfcd_0019,"cereal, breakfast, oat/multigrain",cereals and grain products,171838,"Crackers, multigrain",Baked Products,0.4527,MEDIUM
+myfcd_0089,cream cheese (krim keju),milk and milk products,173418,"Cheese, cream",Dairy and Egg Products,0.4488,MEDIUM
+myfcd_0013,"muffin, chocolate",cereals and grain products,175078,"Artificial Blueberry Muffin Mix, dry",Baked Products,0.4473,MEDIUM
+myfcd_0228,"spinach, (bayam masak air)",vegetable dishes,168462,"Spinach, raw",Vegetables and Vegetable Products,0.439,MEDIUM
+myfcd_0097,"milk, uht, low fat",milk and milk products,169079,"Cheese, cream, low fat",Dairy and Egg Products,0.4377,MEDIUM
+myfcd_0016,"cereal, breakfast, chocolate flavoured",cereals and grain products,174096,"Cookies, chocolate, made with rice cereal",Baked Products,0.4369,MEDIUM
+myfcd_0010,"bun, potato (ban kentang)",cereals and grain products,167943,"Bread, potato",Baked Products,0.4318,MEDIUM
+myfcd_0001,"biscuit, coconut",cereals and grain products,171867,"Cookies, Marie biscuit",Baked Products,0.4305,MEDIUM
+myfcd_0116,"hot chocolate, instant premix (with sugar, cocoa powder, creamer)",beverages,171887,"Cocoa mix, NESTLE, Rich Chocolate Hot Cocoa Mix",Beverages,0.4275,MEDIUM
+myfcd_0077,butter (mentega kurang masin),milk and milk products,173410,"Butter, salted",Dairy and Egg Products,0.4242,MEDIUM
+myfcd_0170,"cake, cheese (kek keju)",wheat flour based,172699,"Cake, coffeecake, cheese",Baked Products,0.4055,MEDIUM
+myfcd_0102,"yogurt, flavoured (strawberry, etc)",milk and milk products,170901,"Yogurt, Greek, strawberry, nonfat",Dairy and Egg Products,0.401,MEDIUM
+myfcd_0014,"muffin, vanilla",cereals and grain products,175078,"Artificial Blueberry Muffin Mix, dry",Baked Products,0.3998,LOW
+myfcd_0042,honeydew (tembikai susu),fruits and fruit products,169911,"Melons, honeydew, raw",Fruits and Fruit Juices,0.3996,LOW
+myfcd_0078,cheese spread (keju sapuan),milk and milk products,169081,"Cheese spread, cream cheese base",Dairy and Egg Products,0.3989,LOW
+myfcd_0022,"flour, sago (tepung sagu)","starchy roots, tubers and products",168446,Potato flour,Vegetables and Vegetable Products,0.3963,LOW
+myfcd_0157,"dessert, fruit cake (kek buah)",wheat flour based,174937,"Cake, coffeecake, fruit",Baked Products,0.393,LOW
+myfcd_0039,"sauce, chili thai",vegetables and vegetable products,168577,"Peppers, chili, green, canned",Vegetables and Vegetable Products,0.3929,LOW
+myfcd_0093,"milk drink, cultured",milk and milk products,170874,"Milk, buttermilk, fluid, cultured, lowfat",Dairy and Egg Products,0.3921,LOW
+myfcd_0119,"dessert, sweet lotus seed soup (lin-chi-kang)",beverages,173176,"Alcoholic beverage, wine, dessert, sweet",Beverages,0.389,LOW
+myfcd_0208,"rice, briyani (rice only) (basmathi rice)",cereal based,169742,"Rice noodles, dry",Cereal Grains and Pasta,0.3865,LOW
+myfcd_0226,kale with salted fish (kailan ikan masin),vegetable dishes,168421,"Kale, raw",Vegetables and Vegetable Products,0.3852,LOW
+myfcd_0024,"sweet potato, red, chips (kerepek ubi keledek)","starchy roots, tubers and products",170542,"Sweet potato, frozen, cooked, baked, with salt",Vegetables and Vegetable Products,0.3825,LOW
+myfcd_0088,"cream, whipped (krim putar)",milk and milk products,170860,"Cream, whipped, cream topping, pressurized",Dairy and Egg Products,0.3818,LOW
+myfcd_0020,"cookies/crackers, sandwich with flavoured cream oreo",cereals and grain products,167531,"Crackers, cream, La Moderna Rikis Cream Crackers",Baked Products,0.3799,LOW
+myfcd_0169,roti jala,wheat flour based,174075,"Bread, chapati or roti, whole wheat, commercially prepared, frozen",Baked Products,0.3787,LOW
+myfcd_0121,"tea, chrysanthemum, packet, with added sugar",beverages,174824,"Beverages, chocolate powder, no sugar added",Beverages,0.3775,LOW
+myfcd_0123,"tea, kundur, packet, with added sugar",beverages,174824,"Beverages, chocolate powder, no sugar added",Beverages,0.3775,LOW
+myfcd_0056,"cordial, pineapple(kordial nenas)",sugars and syrups,169665,"Toppings, pineapple",Sweets,0.3634,LOW
+myfcd_0129,"tea, ice lemon, packet, with added sugar",beverages,174824,"Beverages, chocolate powder, no sugar added",Beverages,0.3602,LOW
+myfcd_0106,"margarine spread, without salt (sapuan merjerin tanpa garam)",oils and fats,172355,"Margarine-like, vegetable oil spread, 20% fat, without salt",Fats and Oils,0.3592,LOW
+myfcd_0095,"milk, uht, chocolate flavour",milk and milk products,172208,"Yogurt, chocolate, nonfat milk",Dairy and Egg Products,0.357,LOW
+myfcd_0091,"milk, pasteurised, chocolate flavour",milk and milk products,172208,"Yogurt, chocolate, nonfat milk",Dairy and Egg Products,0.357,LOW
+myfcd_0002,"biscuit, lemon puff",cereals and grain products,172790,"Puff pastry, frozen, ready-to-bake",Baked Products,0.3557,LOW
+myfcd_0035,baby corn (jagung sayur),vegetables and vegetable products,168568,"Carrots, baby, raw",Vegetables and Vegetable Products,0.3551,LOW
+myfcd_0223,"cuttlefish, dried, fried in chilli (sambal sotong kering)",fish and sea-food dishes,174215,"Mollusks, cuttlefish, mixed species, raw",Finfish and Shellfish Products,0.3544,LOW
+myfcd_0065,"jam, pineapple (jem nenas)",sugars and syrups,169665,"Toppings, pineapple",Sweets,0.3484,LOW
+myfcd_0004,"biscuit, milk (biskut susu)",cereals and grain products,174980,"Crackers, milk",Baked Products,0.3399,LOW
+myfcd_0153,"traditional malaysian kuih, sweet glutinous rice cake (wajik)",rice and rice flour based,169711,"Rice, white, glutinous, unenriched, cooked",Cereal Grains and Pasta,0.3392,LOW
+myfcd_0007,"bun, cheese (ban keju)",cereals and grain products,167944,"Bread, cheese",Baked Products,0.3387,LOW
+myfcd_0017,"cereal, breakfast, granola",cereals and grain products,174996,"Muffins, English, mixed-grain (includes granola)",Baked Products,0.3386,LOW
+myfcd_0130,"flavoured drink, cola type",beverages,175093,"Beverages, carbonated, cola, fast-food cola",Beverages,0.3343,LOW
+myfcd_0192,"dessert, black glutinous rice porridge (bubur pulut hitam)",porridge and ipengat/i,169711,"Rice, white, glutinous, unenriched, cooked",Cereal Grains and Pasta,0.3333,LOW
+myfcd_0066,"jam, strawberry (jem strawberi)",sugars and syrups,168810,"Ice creams, strawberry",Sweets,0.3322,LOW
+myfcd_0061,"jam, apricot (jem aprikot)",sugars and syrups,170645,"Jams and preserves, apricot",Sweets,0.3312,LOW
+myfcd_0107,mayonnaise (mayonis),oils and fats,168112,"Salad dressing, mayonnaise and mayonnaise-type, low calorie",Fats and Oils,0.3253,LOW
+myfcd_0196,"cream roll, vanilla flavour",miscellaneous,173471,Vanilla extract,Spices and Herbs,0.3246,LOW
+myfcd_0055,"cordial, orange (kordial oren)",sugars and syrups,168819,"Marmalade, orange",Sweets,0.3244,LOW
+myfcd_0053,"cordial, lime (kordial limau nipis)",sugars and syrups,169638,"Frozen novelties, ice type, lime",Sweets,0.3138,LOW
+myfcd_0103,condensed/evaporated milk with rose cordial (sirap bandung),milk and milk products,171275,"Milk, canned, condensed, sweetened",Dairy and Egg Products,0.3127,LOW
+myfcd_0177,"traditional malaysian kuih, mini egg sponge cake (bahulu cermai)",wheat flour based,172706,"Cake, sponge, commercially prepared",Baked Products,0.3122,LOW
+myfcd_0033,"sauce, soya, light",legumes and legume products,173772,"SILK Light Vanilla, soymilk",Legumes and Legume Products,0.3112,LOW
+myfcd_0127,"soya bean drink, packet, with regular added sugar",beverages,174824,"Beverages, chocolate powder, no sugar added",Beverages,0.3101,LOW
+myfcd_0105,"margarine spread, with salt (sapuan merjerin bergaram)",oils and fats,172354,"Margarine-like, vegetable oil spread, 20% fat, with salt",Fats and Oils,0.3092,LOW
+myfcd_0159,"cake, swiss roll (kek swiss roll)",wheat flour based,174078,"Bread, roll, Mexican, bollilo",Baked Products,0.3088,LOW
+myfcd_0219,"anchovy, dried, fried in chilli (ikan bilis sambal)",fish and sea-food dishes,174182,"Fish, anchovy, european, raw",Finfish and Shellfish Products,0.306,LOW
+myfcd_0062,"jam, blueberry (jem blueberi)",sugars and syrups,167738,"Pie fillings, blueberry, canned",Sweets,0.3027,LOW
+myfcd_0076,"sauce, oyster flavoured","fish, shellfish and products",174219,"Mollusks, oyster, Pacific, raw",Finfish and Shellfish Products,0.2978,LOW
+myfcd_0101,"yogurt, drinking, pasteurised, mix fruit flavours",milk and milk products,170905,"Yogurt, Greek, fruit, whole milk",Dairy and Egg Products,0.2974,LOW
+myfcd_0185,"traditional malaysian kuih, sweet fermented glutinous rice (tapai pulut)",glutinous rice based,169711,"Rice, white, glutinous, unenriched, cooked",Cereal Grains and Pasta,0.2917,LOW
+myfcd_0045,aspartame (aspartam),sugars and syrups,169597,"Gelatin desserts, dry mix, reduced calorie, with aspartame",Sweets,0.2906,LOW
+myfcd_0015,"cereal, breakfast, bran flakes",cereals and grain products,174096,"Cookies, chocolate, made with rice cereal",Baked Products,0.2895,LOW
+myfcd_0141,"chocolate, white (coklat putih)",miscellaneous,170933,"Spices, pepper, white",Spices and Herbs,0.2883,LOW
+myfcd_0171,"cake, chocolate (kek coklat)",wheat flour based,174934,"Cake, chocolate, commercially prepared with chocolate frosting, in-store bakery",Baked Products,0.2854,LOW
+myfcd_0030,black eye bean (kacang mata hitam),legumes and legume products,173734,"Beans, black, mature seeds, raw",Legumes and Legume Products,0.2814,LOW
+myfcd_0181,"traditional malaysian kuih, glutinous rice balls in coconut milk (badak berendam)",glutinous rice based,169711,"Rice, white, glutinous, unenriched, cooked",Cereal Grains and Pasta,0.2747,LOW
+myfcd_0108,"oil, blend (minyak campuran)",oils and fats,172339,"Margarine-like, margarine-butter blend, soybean oil and butter",Fats and Oils,0.2741,LOW
+myfcd_0111,"oil, sunflower (minyak bunga matahari)",oils and fats,172328,"Oil, sunflower, linoleic, (partially hydrogenated)",Fats and Oils,0.2739,LOW
+myfcd_0227,"mix vegetables, stir fried (sayur campur goreng)",vegetable dishes,169253,"Mushrooms, white, stir-fried",Vegetables and Vegetable Products,0.2715,LOW
+myfcd_0202,"dessert, cheese tart",miscellaneous,171541,"Soup, cheese, canned, condensed","Soups, Sauces, and Gravies",0.2707,LOW
+myfcd_0232,"coffee, with milk and sugar, from mamak stalls",miscellaneous,171575,"Sauce, peanut, made from coconut, water, sugar, peanuts","Soups, Sauces, and Gravies",0.2671,LOW
+myfcd_0096,"milk, uht, full cream",milk and milk products,173418,"Cheese, cream",Dairy and Egg Products,0.2663,LOW
+myfcd_0090,"creamer, powder (krimer serbuk)",milk and milk products,173429,"Egg substitute, powder",Dairy and Egg Products,0.2643,LOW
+myfcd_0008,"bun, coconut (ban kelapa)",cereals and grain products,171847,"Cookies, coconut macaroon",Baked Products,0.2634,LOW
+myfcd_0229,"swamp cabbage, fried with belacan (kangkung goreng belacan)",vegetable dishes,169975,"Cabbage, raw",Vegetables and Vegetable Products,0.2598,LOW
+myfcd_0160,"cake, swiss roll, chocolate flavour (kek swiss roll perasa coklat)",wheat flour based,174078,"Bread, roll, Mexican, bollilo",Baked Products,0.2574,LOW
+myfcd_0047,strawberry flavoured candy (gula-gula perisa strawberi),sugars and syrups,167583,"Candies, TWIZZLERS Strawberry Twists Candy",Sweets,0.2504,LOW
+myfcd_0168,"dessert, moon cakes red bean",wheat flour based,168891,"Wheat, soft red winter",Cereal Grains and Pasta,0.2455,LOW
+myfcd_0162,"cake, cup, with frosting/glaze (kek cawan)",wheat flour based,174945,"Cake, yellow, commercially prepared, with vanilla frosting",Baked Products,0.2438,LOW
+myfcd_0148,"traditional malaysian kuih, steamed glutinous rice balls coated with sesame/peanut sugar crumbs (mochichee-pah)",rice and rice flour based,169711,"Rice, white, glutinous, unenriched, cooked",Cereal Grains and Pasta,0.2429,LOW
+myfcd_0112,"oil, vegetable (minyak sayuran)",oils and fats,171422,"Vegetable oil, palm kernel",Fats and Oils,0.2402,LOW
+myfcd_0070,pineapple flavoured candy (gula-gula perisa nanas),sugars and syrups,169665,"Toppings, pineapple",Sweets,0.232,LOW
+myfcd_0214,"rice, dagang (nasi dagang)(rice only)",cereal based,169742,"Rice noodles, dry",Cereal Grains and Pasta,0.2298,LOW
+myfcd_0154,"dessert, red tortoise cake (kuih ang koo)",rice and rice flour based,169723,"Wheat flour, white, cake, enriched",Cereal Grains and Pasta,0.2287,LOW
+myfcd_0220,"catfish, fried in chilli (ikan keli goreng berlada)",fish and sea-food dishes,174186,"Fish, catfish, channel, wild, raw",Finfish and Shellfish Products,0.2285,LOW
+myfcd_0018,"cereal, breakfast, multicoloured, sugar-filled ring shaped",cereals and grain products,174098,"Crackers, flavored, fish-shaped",Baked Products,0.2272,LOW
+myfcd_0026,"tapioca chips, black pepper (kerepek ubi kayu perisa lada hitam)","starchy roots, tubers and products",169394,"Pepper, banana, raw",Vegetables and Vegetable Products,0.227,LOW
+myfcd_0032,"sauce, soya, dark",legumes and legume products,173733,"Beans, baked, canned, with pork and tomato sauce",Legumes and Legume Products,0.2248,LOW
+myfcd_0182,"traditional malaysian kuih, glutinous rice flour and coconut milk based, boiled palm sugar toffee-like sweet (dodol)",glutinous rice based,169711,"Rice, white, glutinous, unenriched, cooked",Cereal Grains and Pasta,0.2198,LOW
+myfcd_0114,soft margarine (marjerin lembut),oils and fats,171432,"Margarine, 80% fat, tub, CANOLA HARVEST Soft Spread (canola, palm and palm kernel oils)",Fats and Oils,0.2194,LOW
+myfcd_0037,"capsicum, red (lada bengala, merah)",vegetables and vegetable products,169977,"Cabbage, red, raw",Vegetables and Vegetable Products,0.2194,LOW
+myfcd_0138,"chocolate, milk (coklat susu)",miscellaneous,172894,"Soup, cheese, canned, prepared with equal volume milk","Soups, Sauces, and Gravies",0.2184,LOW
+myfcd_0073,"hen egg, lower cholestrol, with vitamin e (telur ayam rendah kolestrol, dengan vitamin e)",eggs,170881,"Milk, chocolate, lowfat, with added vitamin A and vitamin D",Dairy and Egg Products,0.217,LOW
+myfcd_0027,"tapioca chips, plain, salted (kerepek ubi kayu, bergaram)","starchy roots, tubers and products",170043,"Potatoes, hash brown, frozen, plain, unprepared",Vegetables and Vegetable Products,0.2155,LOW
+myfcd_0011,"bun, red beans (ban kacang merah)",cereals and grain products,168891,"Wheat, soft red winter",Cereal Grains and Pasta,0.2148,LOW
+myfcd_0074,"hen egg, omega 3 (telur ayam omega 3)",eggs,171287,"Egg, whole, raw, fresh",Dairy and Egg Products,0.2085,LOW
+myfcd_0050,"cordial, grape (kordial anggur)",sugars and syrups,170259,"Frozen novelties, ice type, sugar free, orange, cherry, and grape POPSICLE pops",Sweets,0.2074,LOW
+myfcd_0046,orange flavoured candy (gula-gula perisa oren),sugars and syrups,168819,"Marmalade, orange",Sweets,0.2074,LOW
+myfcd_0041,"dragon fruit, white (buah naga, isi putih)",fruits and fruit products,173039,"Grapefruit juice, white, raw",Fruits and Fruit Juices,0.2072,LOW
+myfcd_0210,"rice, briyani (ayam)",cereal based,168914,"Rice noodles, cooked",Cereal Grains and Pasta,0.2032,LOW
+myfcd_0164,"traditional malaysian kuih, cinnamon rolls (kuih cempiang)",wheat flour based,171849,"Bread, cinnamon",Baked Products,0.2031,LOW

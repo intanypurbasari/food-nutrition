@@ -1,0 +1,180 @@
+myfcd_food_id,food_name_original,category_normalized,_group
+myfcd_0001,"BISCUIT, COCONUT",cereals and grain products,cereals
+myfcd_0002,"BISCUIT, LEMON PUFF",cereals and grain products,cereals
+myfcd_0003,"BISCUIT, MARIE",cereals and grain products,cereals
+myfcd_0004,"BISCUIT, MILK (BISKUT SUSU)",cereals and grain products,cereals
+myfcd_0005,CROISSANT,cereals and grain products,cereals
+myfcd_0006,"BREAD, RAISIN (ROTI KISMIS)",cereals and grain products,cereals
+myfcd_0007,"BUN, CHEESE (BAN KEJU)",cereals and grain products,cereals
+myfcd_0009,"Bun, kaya (Ban kaya)",cereals and grain products,cereals
+myfcd_0012,"COOKIES, PEANUT",cereals and grain products,cereals
+myfcd_0013,"MUFFIN, CHOCOLATE",cereals and grain products,cereals
+myfcd_0014,"MUFFIN, VANILLA",cereals and grain products,cereals
+myfcd_0015,"CEREAL, BREAKFAST, BRAN FLAKES",cereals and grain products,cereals
+myfcd_0016,"CEREAL, BREAKFAST, CHOCOLATE FLAVOURED",cereals and grain products,cereals
+myfcd_0017,"CEREAL, BREAKFAST, GRANOLA",cereals and grain products,cereals
+myfcd_0018,"CEREAL, BREAKFAST, MULTICOLOURED, SUGAR-FILLED RING SHAPED",cereals and grain products,cereals
+myfcd_0019,"CEREAL, BREAKFAST, OAT/MULTIGRAIN",cereals and grain products,cereals
+myfcd_0020,"COOKIES/CRACKERS, SANDWICH WITH FLAVOURED CREAM OREO",cereals and grain products,cereals
+myfcd_0021,Breadfruits chips (Kerepek sukun),"starchy roots, tubers and products",cereals
+myfcd_0023,"Potato chips, spicy (Keropok ubi kentang berperisa rempah pedas)","starchy roots, tubers and products",cereals
+myfcd_0025,"TAPIOCA CHIPS, BARBEQUE (KEREPEK UBI KAYU PERISA BARBEQUE)","starchy roots, tubers and products",cereals
+myfcd_0026,"TAPIOCA CHIPS, BLACK PEPPER (KEREPEK UBI KAYU PERISA LADA HITAM)","starchy roots, tubers and products",cereals
+myfcd_0027,"TAPIOCA CHIPS, PLAIN, SALTED (KEREPEK UBI KAYU, BERGARAM)","starchy roots, tubers and products",cereals
+myfcd_0028,"TAPIOCA CHIPS, PLAIN, UNSALTED (KEREPEK UBI KAYU, TANPA GARAM)","starchy roots, tubers and products",cereals
+myfcd_0029,"TAPIOCA CHIPS, SPICY (KEREPEK UBI KAYU PEDAS)","starchy roots, tubers and products",cereals
+myfcd_0033,"SAUCE, SOYA, LIGHT",legumes and legume products,legumes_nuts
+myfcd_0039,"SAUCE, CHILI THAI",vegetables and vegetable products,vegetables
+myfcd_0042,HONEYDEW (TEMBIKAI SUSU),fruits and fruit products,fruits
+myfcd_0043,LYCHEE IN TIN,fruits and fruit products,fruits
+myfcd_0044,POMEGRANATE (DELIMA),fruits and fruit products,fruits
+myfcd_0045,ASPARTAME (ASPARTAM),sugars and syrups,sweets
+myfcd_0046,ORANGE FLAVOURED CANDY (GULA-GULA PERISA OREN),sugars and syrups,sweets
+myfcd_0047,STRAWBERRY FLAVOURED CANDY (GULA-GULA PERISA STRAWBERI),sugars and syrups,sweets
+myfcd_0048,CORDIAL ROOT BEER (KORDIAL RUT BIR),sugars and syrups,sweets
+myfcd_0049,"CORDIAL, SOURSOP (KORDIAL DURIAN BELANDA)",sugars and syrups,sweets
+myfcd_0050,"CORDIAL, GRAPE (KORDIAL ANGGUR)",sugars and syrups,sweets
+myfcd_0051,"CORDIAL, GUAVA (KORDIAL JAMBU BATU)",sugars and syrups,sweets
+myfcd_0052,"CORDIAL, KIWI (KORDIAL KIWI)",sugars and syrups,sweets
+myfcd_0053,"CORDIAL, LIME (KORDIAL LIMAU NIPIS)",sugars and syrups,sweets
+myfcd_0054,"CORDIAL, MANGO (KORDIAL MANGGA)",sugars and syrups,sweets
+myfcd_0055,"CORDIAL, ORANGE (KORDIAL OREN)",sugars and syrups,sweets
+myfcd_0056,"CORDIAL, PINEAPPLE(KORDIAL NENAS)",sugars and syrups,sweets
+myfcd_0057,"CORDIAL, ROSELLE (KORDIAL ROSEL)",sugars and syrups,sweets
+myfcd_0058,"CORDIAL, SARSI (KORDIAL SARSI)",sugars and syrups,sweets
+myfcd_0059,GLUCOSE (GLUKOSA),sugars and syrups,sweets
+myfcd_0061,"JAM, APRICOT (JEM APRIKOT)",sugars and syrups,sweets
+myfcd_0062,"JAM, BLUEBERRY (JEM BLUEBERI)",sugars and syrups,sweets
+myfcd_0064,"JAM, MANGO (JEM MEMPELAM)",sugars and syrups,sweets
+myfcd_0065,"JAM, PINEAPPLE (JEM NENAS)",sugars and syrups,sweets
+myfcd_0066,"JAM, STRAWBERRY (JEM STRAWBERI)",sugars and syrups,sweets
+myfcd_0070,PINEAPPLE FLAVOURED CANDY (GULA-GULA PERISA NANAS),sugars and syrups,sweets
+myfcd_0071,"BEEF, SAUSAGE (SOSEJ DAGING LEMBU)",meat and meat products,meat
+myfcd_0073,"HEN EGG, LOWER CHOLESTROL, WITH VITAMIN E (TELUR AYAM RENDAH KOLESTROL, DENGAN VITAMIN E)",eggs,dairy_egg
+myfcd_0076,"SAUCE, OYSTER FLAVOURED","fish, shellfish and products",fish
+myfcd_0077,BUTTER (MENTEGA KURANG MASIN),milk and milk products,dairy_egg
+myfcd_0078,CHEESE SPREAD (KEJU SAPUAN),milk and milk products,dairy_egg
+myfcd_0079,"CHEESE, BLUE (KEJU, BIRU)",milk and milk products,dairy_egg
+myfcd_0080,"CHEESE, BRIE (KEJU, BRIE)",milk and milk products,dairy_egg
+myfcd_0081,"CHEESE, CAMEMBERT (KEJU, CAMEMBERT)",milk and milk products,dairy_egg
+myfcd_0082,"CHEESE, CHEDDAR, REDUCED FAT (KEJU CHEDDAR, KURANG LEMAK)",milk and milk products,dairy_egg
+myfcd_0083,"CHEESE, CHESDALE SLICES, PROCESSED (KEPINGAN KEJU CHESDALE)",milk and milk products,dairy_egg
+myfcd_0084,"CHEESE, COLBY (KEJU, COLBY)",milk and milk products,dairy_egg
+myfcd_0085,"CHEESE, MOZARELLA (KEJU MOZARELLA)",milk and milk products,dairy_egg
+myfcd_0086,"CHEESE, PARMESAN (KEJU PARMESAN)",milk and milk products,dairy_egg
+myfcd_0087,"CHEESE, RICOTTA (KEJU, RICOTTA)",milk and milk products,dairy_egg
+myfcd_0088,"CREAM, WHIPPED (KRIM PUTAR)",milk and milk products,dairy_egg
+myfcd_0090,"CREAMER, POWDER (KRIMER SERBUK)",milk and milk products,dairy_egg
+myfcd_0091,"MILK, PASTEURISED, CHOCOLATE FLAVOUR",milk and milk products,dairy_egg
+myfcd_0092,"MILK, COW, FRESH",milk and milk products,dairy_egg
+myfcd_0093,"MILK DRINK, CULTURED",milk and milk products,dairy_egg
+myfcd_0094,"MILK, SWEETENED, CONDENSED",milk and milk products,dairy_egg
+myfcd_0095,"MILK, UHT, CHOCOLATE FLAVOUR",milk and milk products,dairy_egg
+myfcd_0096,"MILK, UHT, FULL CREAM",milk and milk products,dairy_egg
+myfcd_0097,"MILK, UHT, LOW FAT",milk and milk products,dairy_egg
+myfcd_0098,"YOGURT, DRINKING, PASTEURISED, NATURAL FLAVOUR",milk and milk products,dairy_egg
+myfcd_0099,"YOGURT, LOW FAT, NATURAL",milk and milk products,dairy_egg
+myfcd_0100,"ICE-CREAM, VANILLA",milk and milk products,dairy_egg
+myfcd_0101,"YOGURT, DRINKING, PASTEURISED, MIX FRUIT FLAVOURS",milk and milk products,dairy_egg
+myfcd_0102,"YOGURT, FLAVOURED (STRAWBERRY, ETC)",milk and milk products,dairy_egg
+myfcd_0103,CONDENSED/EVAPORATED MILK WITH ROSE CORDIAL (SIRAP BANDUNG),milk and milk products,dairy_egg
+myfcd_0105,"MARGARINE SPREAD, WITH SALT (SAPUAN MERJERIN BERGARAM)",oils and fats,fats
+myfcd_0106,"MARGARINE SPREAD, WITHOUT SALT (SAPUAN MERJERIN TANPA GARAM)",oils and fats,fats
+myfcd_0107,MAYONNAISE (MAYONIS),oils and fats,fats
+myfcd_0108,"OIL, BLEND (MINYAK CAMPURAN)",oils and fats,fats
+myfcd_0109,"OIL, CANOLA (MINYAK CANOLA)",oils and fats,fats
+myfcd_0111,"OIL, SUNFLOWER (MINYAK BUNGA MATAHARI)",oils and fats,fats
+myfcd_0112,"OIL, VEGETABLE (MINYAK SAYURAN)",oils and fats,fats
+myfcd_0113,"SAUCE, THOUSAND ISLAND",oils and fats,fats
+myfcd_0115,"DESSERT, CHILLED COCONUT MILK- & PALM SUGAR-BASED, WITH PANDAN JELLY NOODLES AND RED BEAN (CENDOL)",beverages,beverages
+myfcd_0116,"HOT CHOCOLATE, INSTANT PREMIX (WITH SUGAR, COCOA POWDER, CREAMER)",beverages,beverages
+myfcd_0117,ENERGY DRINK,beverages,beverages
+myfcd_0118,ISOTONIC DRINK,beverages,beverages
+myfcd_0119,"DESSERT, SWEET LOTUS SEED SOUP (LIN-CHI-KANG)",beverages,beverages
+myfcd_0120,FRUIT JUICE ORANGE,beverages,beverages
+myfcd_0121,"TEA, CHRYSANTHEMUM, PACKET, WITH ADDED SUGAR",beverages,beverages
+myfcd_0122,"TEA, GREEN, WITH ADDED SUGAR",beverages,beverages
+myfcd_0123,"TEA, KUNDUR, PACKET, WITH ADDED SUGAR",beverages,beverages
+myfcd_0124,"Tea, Stevia (Teh Stevia)",beverages,beverages
+myfcd_0125,CANNED COFFEE,beverages,beverages
+myfcd_0126,"MILK, MALTED (CHOCOLATE FLAVOUR)",beverages,beverages
+myfcd_0127,"SOYA BEAN DRINK, PACKET, WITH REGULAR ADDED SUGAR",beverages,beverages
+myfcd_0128,"TEA MIX, INSTANT",beverages,beverages
+myfcd_0129,"TEA, ICE LEMON, PACKET, WITH ADDED SUGAR",beverages,beverages
+myfcd_0130,"FLAVOURED DRINK, COLA TYPE",beverages,beverages
+myfcd_0131,"FRUIT JUICE DRINK, ORANGE",beverages,beverages
+myfcd_0132,"FRUIT DRINK, ORANGE",beverages,beverages
+myfcd_0133,"FRUIT JUICE, FRESH, ORANGE",beverages,beverages
+myfcd_0135,"CHOCOLATE, BREAD SPREAD",miscellaneous,misc
+myfcd_0137,"CHOCOLATE, HAZELNUT (COKLAT KACANG BADAM)",miscellaneous,misc
+myfcd_0138,"CHOCOLATE, MILK (COKLAT SUSU)",miscellaneous,misc
+myfcd_0139,"CHOCOLATE, RAISIN (COKLAT BERKISMIS)",miscellaneous,misc
+myfcd_0140,"CHOCOLATE, ROASTED ALMOND (COKLAT DENGAN KACANG BADAM)",miscellaneous,misc
+myfcd_0142,"CHOCOLATE, MIXED NUTS (COKLAT KACANG CAMPURAN)",miscellaneous,misc
+myfcd_0143,PLUM SAUCE (SOS PLUM),miscellaneous,misc
+myfcd_0144,VANILLA WAFER (WAFER VANILLA),miscellaneous,misc
+myfcd_0145,"WAFER, ORANGE FLAVOR (WAFER BERPERISA OREN)",miscellaneous,misc
+myfcd_0146,"WAFER, STRAWBERRY FLAVOR (WAFER BERPERISA STRAWBERI)",miscellaneous,misc
+myfcd_0147,CHOCOLATE SPREAD,miscellaneous,misc
+myfcd_0148,"TRADITIONAL MALAYSIAN KUIH, STEAMED GLUTINOUS RICE BALLS COATED WITH SESAME/PEANUT SUGAR CRUMBS (MOCHI@CHEE-PAH)",rice and rice flour based,cereals
+myfcd_0149,"TRADITIONAL MALAYSIAN KUIH, STEAMED RICE FLOUR WITH COCONUT MILK AND SUGAR IN SMALL MOULD, SERVED WITH GRATED COCONUT (KUIH LOMPANG)",rice and rice flour based,cereals
+myfcd_0150,"TRADITIONAL MALAYSIAN KUIH, STEAMED RICE CAKE WITH COCONUT AND PALM SUGAR,  CYLINDRICAL-SHAPED AND GREEN-COLORED (PUTU BAMBU)",rice and rice flour based,cereals
+myfcd_0151,"TRADITIONAL MALAYSIAN KUIH, TWO LAYERED STEAMED CAKE, TARO AND COCONUT MILK (KUIH TALAM KELADI)",rice and rice flour based,cereals
+myfcd_0152,KUIH TALAM LABU,rice and rice flour based,cereals
+myfcd_0153,"TRADITIONAL MALAYSIAN KUIH, SWEET GLUTINOUS RICE CAKE (WAJIK)",rice and rice flour based,cereals
+myfcd_0154,"DESSERT, RED TORTOISE CAKE (KUIH ANG KOO)",rice and rice flour based,cereals
+myfcd_0155,Bahulu Kemboja,wheat flour based,cereals
+myfcd_0156,KEK PISANG,wheat flour based,cereals
+myfcd_0157,"DESSERT, FRUIT CAKE (KEK BUAH)",wheat flour based,cereals
+myfcd_0158,"CAKE, SPONGE (KEK SPAN)",wheat flour based,cereals
+myfcd_0159,"CAKE, SWISS ROLL (KEK SWISS ROLL)",wheat flour based,cereals
+myfcd_0160,"CAKE, SWISS ROLL, CHOCOLATE FLAVOUR (KEK SWISS ROLL PERASA COKLAT)",wheat flour based,cereals
+myfcd_0161,CUCUR BAWANG,wheat flour based,cereals
+myfcd_0162,"CAKE, CUP, WITH FROSTING/GLAZE (KEK CAWAN)",wheat flour based,cereals
+myfcd_0163,KARIPAP SARDIN,wheat flour based,cereals
+myfcd_0164,"TRADITIONAL MALAYSIAN KUIH, CINNAMON ROLLS  (KUIH CEMPIANG)",wheat flour based,cereals
+myfcd_0165,CARA BERLAUK,wheat flour based,cereals
+myfcd_0167,LEPAT LABU,wheat flour based,cereals
+myfcd_0170,"CAKE, CHEESE (KEK KEJU)",wheat flour based,cereals
+myfcd_0172,"DESSERT, HONEYCOMB CAKE (KEK GULA HANGUS)",wheat flour based,cereals
+myfcd_0174,"PASTRY, DANISH",wheat flour based,cereals
+myfcd_0175,"PASTRY, PUFF, APPLE FILLING",wheat flour based,cereals
+myfcd_0176,"PASTRY, PUFF, CHOCOLATE FILLING",wheat flour based,cereals
+myfcd_0177,"TRADITIONAL MALAYSIAN KUIH, MINI EGG SPONGE CAKE (BAHULU CERMAI)",wheat flour based,cereals
+myfcd_0178,"DESSERT, MOON CAKES PURE LOTUS",wheat flour based,cereals
+myfcd_0179,Koleh Kacang,legume based,legumes_nuts
+myfcd_0180,"TRADITIONAL MALAYSIAN KUIH, FLOUR AND GHEE SUGAR BASED, SPHERE-SHAPED SWEETS (LADDU)",legume based,legumes_nuts
+myfcd_0181,"TRADITIONAL MALAYSIAN KUIH, GLUTINOUS RICE BALLS IN COCONUT MILK (BADAK BERENDAM)",glutinous rice based,cereals
+myfcd_0183,"TRADITIONAL MALAYSIAN KUIH, SESAME BALLS (KUIH BOM)",glutinous rice based,cereals
+myfcd_0184,"TRADITIONAL MALAYSIAN KUIH, SWEET BLACK GLUTINOUS RICE DUMPLING STUFFED WITH GRATED COCONUT FILLING (KUIH KOCI PULUT HITAM)",glutinous rice based,cereals
+myfcd_0186,"TRADITIONAL MALAYSIAN KUIH, GLUTINUOS RICE FLOUR BASED STUFFED WITH GRATED COCONUT COATED WITH MUNG BEAN POWDER (KUIH TEPUNG GOMAK)",glutinous rice based,cereals
+myfcd_0188,Keledek Goreng,tuber based,cereals
+myfcd_0189,Samosa,vegetables and fruits based,vegetables
+myfcd_0190,"DESSERT, COCONUT MILK BASED, SWEET POTATOES AND TARO IN COCONUT MILK (BUBUR CHA CHA)",porridge and ipengat/i,cereals
+myfcd_0194,"DESEERT, COCONUT MILK JELLY (AGAR-AGAR SANTAN)",miscellaneous,misc
+myfcd_0195,"DESSERT , CARAMEL PUDDING",miscellaneous,misc
+myfcd_0196,"CREAM ROLL, VANILLA FLAVOUR",miscellaneous,misc
+myfcd_0197,"TRADITIONAL MALAYSIAN KUIH, COCONUT CREAM COOKIES (KUIH BANGKIT)",miscellaneous,misc
+myfcd_0198,"TRADITIONAL MALAYSIAN KUIH, FLOUR BASED, WITH RED PALM SUGAR  (KUIH CINCIN)",miscellaneous,misc
+myfcd_0199,"DESSERT, BREAD PUDDING",miscellaneous,misc
+myfcd_0200,"DESSERT, PUDDING, MILK (PUDING SUSU)",miscellaneous,misc
+myfcd_0201,"DESSERT, BROWNIES, CHOCOLATE",miscellaneous,misc
+myfcd_0202,"DESSERT, CHEESE TART",miscellaneous,misc
+myfcd_0203,"DESSERT, SHAVED ICE, ABC (AIR BATU CAMPUR/AIS KACANG)",miscellaneous,misc
+myfcd_0204,"DOUGHNUT, WITH FROSTING/GLAZE (DONUT)",miscellaneous,misc
+myfcd_0205,"DESSERT, SOY MILK CUSTARD (TAUFU-FAH)",miscellaneous,misc
+myfcd_0206,"RICE, ""DAGANG"" (NASI DAGANG)(COMPLETE SET)",cereal based,cereals
+myfcd_0207,"RICE, ARAB (NASI ARAB)",cereal based,cereals
+myfcd_0209,"RICE, KERABU (NASI KERABU)(COMPLETE SET)",cereal based,cereals
+myfcd_0210,"RICE, BRIYANI (AYAM)",cereal based,cereals
+myfcd_0211,"RICE, BRIYANI (DAGING)",cereal based,cereals
+myfcd_0212,NASI ARAB SET KHABSYAH (KAMBING),cereal based,cereals
+myfcd_0214,"RICE, ""DAGANG"" (NASI DAGANG)(RICE ONLY)",cereal based,cereals
+myfcd_0217,CHICKEN CHOP (BELAHAN AYAM TANPA TULANG),meat dishes,meat
+myfcd_0218,CHICKEN SATAY (SATAY AYAM),meat dishes,meat
+myfcd_0223,"CUTTLEFISH, DRIED, FRIED IN CHILLI (SAMBAL SOTONG KERING)",fish and sea-food dishes,fish
+myfcd_0226,KALE WITH SALTED FISH (KAILAN IKAN MASIN),vegetable dishes,vegetables
+myfcd_0227,"MIX VEGETABLES, STIR FRIED (SAYUR CAMPUR GORENG)",vegetable dishes,vegetables
+myfcd_0232,"COFFEE, WITH MILK AND SUGAR, FROM MAMAK STALLS",miscellaneous,misc
+myfcd_0233,"PEARL MILK TEA (WITH BREWED TEA, MILK, SUGAR SYRUP, TAPIOCA PEARLS), NORMAL SUGAR",miscellaneous,misc
+myfcd_0234,"ICE CHOCOLATE BLENDED, WITH WHIPPING CREAM",miscellaneous,misc

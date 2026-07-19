@@ -1,0 +1,13 @@
+label,n_pairs,mean_r,median_r,min_r,max_r
+TKPI - semua nutrisi,153,0.195,0.109,-0.229,0.963
+TKPI - 15 mikronutrien (lengkap),91,0.29,0.255,-0.229,0.963
+TKPI - mikronutrien: mineral,21,0.537,0.311,0.247,0.963
+TKPI - mikronutrien: vitamin,21,0.206,0.199,-0.17,0.762
+TKPI - makronutrien (7),6,0.004,-0.001,-0.02,0.06
+TKPI - panel proksimat (6),6,0.004,-0.001,-0.02,0.06
+MyFCD - semua nutrisi,190,0.365,0.334,-0.362,1.0
+MyFCD - 15 mikronutrien (lengkap),78,0.489,0.44,0.027,1.0
+MyFCD - mikronutrien: mineral,21,0.76,0.787,0.553,1.0
+MyFCD - mikronutrien: vitamin,15,0.444,0.14,0.027,1.0
+MyFCD - makronutrien (7),21,0.828,0.897,0.669,1.0
+MyFCD - panel proksimat (6),15,0.862,0.905,0.692,1.0
