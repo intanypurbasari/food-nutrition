@@ -5,3 +5,5 @@ pydantic
 streamlit
 pytest
 python-dotenv
+scikit-learn
+scipy
