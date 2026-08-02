@@ -5,8 +5,13 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from config.imputation_settings import MYFCD_IMPUTED_MISSFOREST_PATH, TKPI_IMPUTED_MISSFOREST_PATH
+from config.imputation_settings import (
+    MYFCD_IMPUTED_CROSSDB_PATH,
+    MYFCD_IMPUTED_MISSFOREST_PATH,
+    TKPI_IMPUTED_MISSFOREST_PATH,
+)
 from src.imputation import io_utils
+from src.imputation.cross_transfer import cross_db_transfer_impute
 from src.imputation.missforest_imputer import missforest_impute
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -30,8 +35,29 @@ def run_within_database() -> None:
         io_utils.write_output(imputed, OUTPUT_PATHS[source])
 
 
+def run_cross_database_transfer() -> None:
+    target_columns = io_utils.columns_for_strategy("Cross-DB transfer / USDA")
+    print(f"[IMPUTE] missforest (cross-DB transfer, TKPI->MyFCD) target columns: {target_columns}")
+
+    train_df = io_utils.load_enriched("TKPI")
+    apply_df = io_utils.load_enriched("MyFCD")
+    train_df_before = train_df.copy()
+
+    imputed_myfcd = cross_db_transfer_impute(train_df=train_df, apply_df=apply_df, columns=target_columns)
+    print("[IMPUTE] MyFCD: applied cross_db_transfer_impute (trained on TKPI)")
+
+    assert train_df.equals(train_df_before), "cross_db_transfer_impute must not mutate train_df (TKPI)"
+
+    report = io_utils.validate_imputed_output(imputed_myfcd, "MyFCD", target_columns)
+    remaining = sum(report["remaining_missing_in_targeted_columns"].values())
+    print(f"[IMPUTE] MyFCD/crossdb: remaining missing in targeted columns = {remaining}")
+
+    io_utils.write_output(imputed_myfcd, MYFCD_IMPUTED_CROSSDB_PATH)
+
+
 def main() -> int:
     run_within_database()
+    run_cross_database_transfer()
     return 0
 
 
