@@ -25,6 +25,7 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Run nutrition repository pipeline end-to-end.")
     parser.add_argument("--skip-scrape", action="store_true")
     parser.add_argument("--limit", type=int, default=20)
+    parser.add_argument("--include-imputation", action="store_true")
     args = parser.parse_args()
 
     python = sys.executable
@@ -52,6 +53,16 @@ def main() -> int:
             ("export_repository_json", [python, "scripts/export_repository_json.py"]),
         ]
     )
+
+    if args.include_imputation:
+        stages.extend(
+            [
+                ("run_baseline_imputation", [python, "scripts/run_baseline_imputation.py"]),
+                ("run_missforest_imputation", [python, "scripts/run_missforest_imputation.py"]),
+                ("run_integration", [python, "scripts/run_integration.py"]),
+                ("export_evaluation_ready", [python, "scripts/export_evaluation_ready.py"]),
+            ]
+        )
 
     for name, command in stages:
         results.append(run_stage(name, command))

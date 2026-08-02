@@ -82,6 +82,13 @@ Output dasar pipeline:
 - `reports/integration_summary.md`
 - `app/prototype.py`
 
+Output Stage 3 (imputasi ML):
+
+- `data_processed/nutrition_repository_imputed.csv`
+- `data_processed/nutrition_repository_imputed_long.csv`
+- `reports/imputation_summary.md`
+- `reports/imputation_method_comparison.csv`
+
 ## Output Tahap Resolusi Entitas & Diagnosis Missing Data (Update)
 
 ### Entity Resolution (`data_processed/`)
@@ -109,6 +116,27 @@ Output dasar pipeline:
 - `heatmap_missing_TKPI.png`, `heatmap_missing_MyFCD.png` — Heatmap korelasi indikator kehilangan.
 - `SubStudy_Workflow_Diagram_EN.png` — Diagram alur sub-riset (versi Bahasa Inggris untuk manuskrip).
 - `Diagram_Alir_SubRiset_ID.png` — Diagram alur sub-riset (versi Bahasa Indonesia untuk laporan).
+
+## Stage 3 — Machine Learning Imputation
+
+Stage 3 mengimplementasikan tahap 3 dari alur "Metodologi Sub-Riset" di atas: imputasi nutrisi yang hilang menggunakan mean/median/KNN/MICE sebagai baseline pembanding, serta **MissForest** (dalam basis data dan cross-database transfer TKPI→MyFCD) sebagai metode utama, dengan strategi per nutrisi mengikuti routing yang sudah ditetapkan Stage 2 di `data_processed/availability_matrix.csv`. Nutrisi yang belum memiliki jalur data nyata (mis. `vitamin_a_mcg`) dilaporkan eksplisit sebagai *unresolved*, bukan diisi dengan nilai fabrikasi.
+
+Jalankan seluruh tahap Stage 3 berurutan:
+
+```bash
+python scripts/run_baseline_imputation.py
+python scripts/run_missforest_imputation.py
+python scripts/run_integration.py
+python scripts/export_evaluation_ready.py
+```
+
+atau lewat orchestrator utama dengan flag opsional `--include-imputation`:
+
+```bash
+python scripts/run_pipeline.py --skip-scrape --include-imputation
+```
+
+Detail metodologi lengkap, kode implementasi (`src/imputation/`), dan daftar output: lihat [`docs/stage3_imputation.md`](docs/stage3_imputation.md).
 
 ## Temuan Kunci
 
