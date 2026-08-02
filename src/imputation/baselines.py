@@ -1,4 +1,4 @@
-"""Baseline (mean / median / KNN) imputation methods.
+"""Baseline (mean / median / KNN / MICE) imputation methods.
 
 Each function operates only on the given `columns`, fit-and-transform on a
 single source's own data (no cross-source leakage between TKPI and MyFCD),
@@ -8,9 +8,13 @@ and leaves every other column in the DataFrame unchanged.
 from __future__ import annotations
 
 import pandas as pd
-from sklearn.impute import KNNImputer
+from sklearn.experimental import enable_iterative_imputer  # noqa: F401  (required by IterativeImputer)
+from sklearn.impute import IterativeImputer, KNNImputer
 
+from config.imputation_settings import RANDOM_SEED
 from src.cleaning.normalizers import is_missing
+
+MICE_MAX_ITER = 10
 
 
 def _to_numeric_with_missing(series: pd.Series) -> pd.Series:
@@ -72,6 +76,37 @@ def knn_impute(df: pd.DataFrame, columns: list[str], n_neighbors: int = 5) -> pd
         {column: _to_numeric_with_missing(result[column]) for column in present_columns}
     )
     imputer = KNNImputer(n_neighbors=n_neighbors)
+    imputed_values = imputer.fit_transform(numeric_block)
+    result[present_columns] = imputed_values
+    return result
+
+
+def mice_impute(df: pd.DataFrame, columns: list[str], random_state: int | None = None) -> pd.DataFrame:
+    """Fill missing values in `columns` via Multiple Imputation by Chained Equations.
+
+    Uses sklearn.impute.IterativeImputer (which requires importing
+    sklearn.experimental.enable_iterative_imputer first), restricted to
+    `columns` only. Only touches `columns`; every other column passes
+    through unchanged. Must be called separately per source, same contract
+    as the other baseline functions.
+
+    `random_state` defaults to config.imputation_settings.RANDOM_SEED when
+    None, for reproducibility. Uses max_iter=MICE_MAX_ITER (10); convergence
+    is not separately verified here - that belongs to Stage 4 evaluation,
+    not this function.
+    """
+    if random_state is None:
+        random_state = RANDOM_SEED
+
+    result = df.copy()
+    present_columns = [column for column in columns if column in result.columns]
+    if not present_columns:
+        return result
+
+    numeric_block = pd.DataFrame(
+        {column: _to_numeric_with_missing(result[column]) for column in present_columns}
+    )
+    imputer = IterativeImputer(max_iter=MICE_MAX_ITER, random_state=random_state)
     imputed_values = imputer.fit_transform(numeric_block)
     result[present_columns] = imputed_values
     return result

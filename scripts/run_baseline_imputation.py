@@ -8,11 +8,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from config.imputation_settings import MYFCD_IMPUTED_BASELINE_PATHS, TKPI_IMPUTED_BASELINE_PATHS
 from src.imputation import io_utils
-from src.imputation.baselines import knn_impute, mean_impute, median_impute
+from src.imputation.baselines import knn_impute, mean_impute, median_impute, mice_impute
 
 ROOT = Path(__file__).resolve().parents[1]
 
-METHODS = {"mean": mean_impute, "median": median_impute, "knn": knn_impute}
+METHODS = {"mean": mean_impute, "median": median_impute, "knn": knn_impute, "mice": mice_impute}
 
 OUTPUT_PATHS = {"TKPI": TKPI_IMPUTED_BASELINE_PATHS, "MyFCD": MYFCD_IMPUTED_BASELINE_PATHS}
 
