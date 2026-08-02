@@ -1,4 +1,4 @@
-"""Baseline (mean / median) imputation methods.
+"""Baseline (mean / median / KNN) imputation methods.
 
 Each function operates only on the given `columns`, fit-and-transform on a
 single source's own data (no cross-source leakage between TKPI and MyFCD),
@@ -8,6 +8,7 @@ and leaves every other column in the DataFrame unchanged.
 from __future__ import annotations
 
 import pandas as pd
+from sklearn.impute import KNNImputer
 
 from src.cleaning.normalizers import is_missing
 
@@ -46,4 +47,31 @@ def median_impute(df: pd.DataFrame, columns: list[str]) -> pd.DataFrame:
             continue
         numeric = _to_numeric_with_missing(result[column])
         result[column] = numeric.fillna(numeric.median())
+    return result
+
+
+def knn_impute(df: pd.DataFrame, columns: list[str], n_neighbors: int = 5) -> pd.DataFrame:
+    """Fill missing values in `columns` using multivariate KNN imputation.
+
+    Uses sklearn.impute.KNNImputer fit_transform restricted to `columns` only
+    (non-nutrient columns like food_id/category never influence or receive
+    neighbor-based fills). Only touches `columns`; every other column passes
+    through unchanged. Must be called separately per source, same contract
+    as mean_impute/median_impute.
+
+    KNNImputer has no random_state parameter - given fixed input data and a
+    fixed k (n_neighbors), its output is deterministic, so RANDOM_SEED from
+    config is not applicable here.
+    """
+    result = df.copy()
+    present_columns = [column for column in columns if column in result.columns]
+    if not present_columns:
+        return result
+
+    numeric_block = pd.DataFrame(
+        {column: _to_numeric_with_missing(result[column]) for column in present_columns}
+    )
+    imputer = KNNImputer(n_neighbors=n_neighbors)
+    imputed_values = imputer.fit_transform(numeric_block)
+    result[present_columns] = imputed_values
     return result

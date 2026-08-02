@@ -16,8 +16,16 @@ TKPI_MYFCD_LINKS_MUTUAL_PATH = ROOT / "data_processed" / "tkpi_myfcd_links_mutua
 NUTRITION_REPOSITORY_SAMPLE_PATH = ROOT / "data_processed" / "nutrition_repository_sample.csv"
 
 # --- Baseline imputation outputs (Milestones 3-5) ---
-TKPI_IMPUTED_BASELINE_PATH = ROOT / "data_processed" / "tkpi_imputed_baseline.csv"
-MYFCD_IMPUTED_BASELINE_PATH = ROOT / "data_processed" / "myfcd_imputed_baseline.csv"
+# Per-method suffixed paths (mean/median/knn/mice each write their own file,
+# so Milestone 9's evaluation export can compare methods independently).
+# Supersedes the Milestone 3 single shared filename below.
+BASELINE_METHODS = ["mean", "median", "knn", "mice"]
+TKPI_IMPUTED_BASELINE_PATHS = {
+    method: ROOT / "data_processed" / f"tkpi_imputed_baseline_{method}.csv" for method in BASELINE_METHODS
+}
+MYFCD_IMPUTED_BASELINE_PATHS = {
+    method: ROOT / "data_processed" / f"myfcd_imputed_baseline_{method}.csv" for method in BASELINE_METHODS
+}
 
 # --- MissForest outputs (Milestones 6-7) ---
 TKPI_IMPUTED_MISSFOREST_PATH = ROOT / "data_processed" / "tkpi_imputed_missforest.csv"
