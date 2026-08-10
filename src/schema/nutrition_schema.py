@@ -27,7 +27,6 @@ NUTRIENT_FIELDS = [
     "vitamin_b2_mg",
     "niacin_mg",
     "vitamin_c_mg",
-    "edible_portion_percent",
 ]
 
 
@@ -63,7 +62,6 @@ class NutritionRecord(BaseModel):
     vitamin_b2_mg: Optional[float] = None
     niacin_mg: Optional[float] = None
     vitamin_c_mg: Optional[float] = None
-    edible_portion_percent: Optional[float] = None
     unit_basis: str = "per 100g"
     scraped_at: datetime
     cleaned_at: Optional[datetime] = None
