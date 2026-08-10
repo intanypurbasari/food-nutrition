@@ -46,7 +46,7 @@ Masalahnya: TKPI dan MyFCD tidak memakai kunci pengenal yang sama, taksonomi kat
 | Sel nutrisi berhasil diimputasi (dari 22 nutrisi yang dirutekan) | 95,5% |
 | Metode imputasi diimplementasikan | 6 (mean, median, KNN, MICE, MissForest, cross-database transfer) |
 | Unit test | 23, seluruhnya hijau |
-| Baris ekspor siap-evaluasi (format long) | 195.822 |
+| Baris ekspor siap-evaluasi (format long) | 187.308 |
 
 ## Status per Tahap
 
@@ -241,7 +241,7 @@ Output (`data_processed/`, `reports/`):
 - `tkpi_imputed_missforest.csv`, `myfcd_imputed_missforest.csv`: hasil MissForest dalam-basis-data.
 - `myfcd_imputed_crossdb.csv`: hasil cross-database transfer.
 - **`nutrition_repository_imputed.csv`**: dataset terintegrasi final, 1.380 baris (1.146 TKPI + 234 MyFCD), nilai terbaik per nutrisi per pangan sesuai strategi Tahap 2.
-- **`nutrition_repository_imputed_long.csv`**: format long (195.822 baris, kolom `food_id, source_db, nutrient, method, value`) untuk kebutuhan Tahap 4.
+- **`nutrition_repository_imputed_long.csv`**: format long (187.308 baris, kolom `food_id, source_db, nutrient, method, value`) untuk kebutuhan Tahap 4.
 - `reports/imputation_summary.md`: akuntansi penuh, berapa sel terselesaikan per strategi dan berapa yang masih *unresolved*.
 - `reports/imputation_method_comparison.csv`: statistik deskriptif (count, mean, std) per nutrisi kali metode. **Bukan metrik akurasi**; perbandingan terhadap ground truth adalah tanggung jawab Tahap 4.
 
