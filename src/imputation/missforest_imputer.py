@@ -40,9 +40,9 @@ def _predictor_columns(df: pd.DataFrame) -> list[str]:
     Using the full feature space - not just the target `columns` - is what
     gives MissForest its multivariate signal from correlated nutrients,
     unlike the univariate mean/median baselines. Columns with zero observed
-    values in `df` (e.g. vitamin_a_mcg, edible_portion_percent - both 100%
-    missing in both sources) are excluded: scikit-learn's IterativeImputer
-    silently drops such columns from its output entirely, which would
+    values in `df` (e.g. vitamin_a_mcg, 100% missing in both sources) are
+    excluded: scikit-learn's IterativeImputer silently drops such columns
+    from its output entirely, which would
     otherwise misalign the result against the requested column list.
     """
     candidate_columns = [field for field in IMPUTATION_NUTRIENT_FIELDS if field in df.columns]
