@@ -165,8 +165,6 @@ def _rows_from_compare(compare_data: dict[str, Any], keep_ids: set[str]) -> list
             "notes": product_data.get("notes"),
             "myfcd_id": product_id,
         }
-        if product_data.get("perc_ep") not in {None, ""}:
-            record["edible_portion_percent"] = product_data.get("perc_ep")
         for nutrient_id, (field, target_unit) in MYFCD_NUTRIENT_MAP.items():
             value = _average_nutrient(product.get("product_nutrients", []), nutrient_id, target_unit, conv)
             if value is not None:
