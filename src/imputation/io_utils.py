@@ -56,8 +56,8 @@ def get_strategy(nutrient: str) -> str:
     """Return the strategi_imputasi value for `nutrient` from availability_matrix.csv.
 
     Raises KeyError (rather than defaulting) if the nutrient is not present
-    in the routing table, e.g. edible_portion_percent, which the Stage 2
-    availability matrix does not cover.
+    in the routing table, i.e. any nutrient the Stage 2 availability matrix
+    does not cover.
     """
     matrix = load_availability_matrix()
     if nutrient not in matrix.index:
@@ -68,9 +68,8 @@ def get_strategy(nutrient: str) -> str:
 def columns_for_strategy(strategy: str) -> list[str]:
     """Return NUTRIENT_FIELDS entries whose availability-matrix strategy matches `strategy`.
 
-    Nutrients absent from availability_matrix.csv (e.g. edible_portion_percent)
-    are skipped rather than raising, since they simply have no Stage 2 routing
-    decision assigned yet.
+    Nutrients absent from availability_matrix.csv are skipped rather than
+    raising, since they simply have no Stage 2 routing decision assigned yet.
     """
     matched = []
     for nutrient in IMPUTATION_NUTRIENT_FIELDS:
