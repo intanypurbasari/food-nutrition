@@ -47,7 +47,7 @@ Untuk nutrisi berstrategi **"Pinjam USDA (kosong di kedua basis)"**, Stage 3 mem
 
 `vitamin_a_mcg` memiliki strategi **"Pinjam USDA (kosong di kedua basis)"** di `availability_matrix.csv`, tetapi **bukan** salah satu dari 6 kolom yang benar-benar dipinjam Stage 1 dari USDA. Artinya belum ada jalur data nyata untuk mengisi nutrisi ini pada tahap Stage 3 saat ini. Sesuai kebijakan non-fabrikasi proyek ini, sel `vitamin_a_mcg` **dibiarkan kosong (NaN)** di seluruh output Stage 3 dan dilaporkan eksplisit sebagai *unresolved* di `reports/imputation_summary.md` — bukan bug, melainkan gap yang jujur dan tercatat. Menutup gap ini (mis. menambah value borrowing USDA untuk vitamin A) adalah pekerjaan lanjutan di luar cakupan Stage 3.
 
-Satu field lain, `edible_portion_percent`, tidak pernah masuk cakupan diagnosis Stage 2 (tidak ada baris untuknya di `availability_matrix.csv`). Stage 3 melewatkannya apa adanya (tidak diimputasi) dan melabelinya "tidak dirutekan Stage 2" di laporan, alih-alih diam-diam menganggapnya selesai atau gagal.
+Field lain, `edible_portion_percent`, sempat 100% kosong di kedua basis data dan tidak pernah masuk cakupan diagnosis Stage 2 (tidak ada baris untuknya di `availability_matrix.csv`). Karena tidak pernah terisi sejak tahap scraping paling awal dan tidak ada rencana pengisian, field ini **dihapus sepenuhnya dari skema** (`src/schema/nutrition_schema.py`) alih-alih dibiarkan sebagai kolom kosong permanen — bukan lagi diberi label "tidak dirutekan Stage 2", karena kolomnya sudah tidak ada sama sekali di seluruh output pipeline (data_clean, enriched, hingga dataset terintegrasi).
 
 ## Output
 
