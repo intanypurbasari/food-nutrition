@@ -33,7 +33,6 @@ Seluruh nilai nutrisi menggunakan basis `per 100g`, kecuali ada catatan lain pad
 | vitamin_b2_mg | float | mg | ya | 0.01 | Vitamin B2 (mg), riboflavin | Riboflavin (mg), vitamin_b2 |
 | niacin_mg | float | mg | ya | 0.4 | Niasin (mg), niasin | Niacin (mg), niacin |
 | vitamin_c_mg | float | mg | ya | 0.0 | Vitamin C (mg), vitamin_c | Vitamin C (mg), vitamin_c |
-| edible_portion_percent | float | percent | ya | 100.0 | BDD (%), bdd | Edible Portion (%), edible_portion |
 | unit_basis | string | - | tidak | per 100g | constant | constant |
 | scraped_at | datetime | ISO8601 | tidak | 2026-07-01T10:00:00 | generated | generated |
 | cleaned_at | datetime | ISO8601 | ya | 2026-07-01T11:00:00 | generated | generated |
