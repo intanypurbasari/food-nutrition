@@ -16,10 +16,13 @@ strategi_imputasi routing exactly:
   vitamin_a_mcg has this strategy but is NOT among those 6 columns, so it is
   left as NaN and reported as unresolved - never fabricated.
 
-Nutrients absent from availability_matrix.csv entirely (edible_portion_percent,
-which Stage 2's missingness diagnosis did not cover) are passed through from
-the enriched source unchanged and reported separately as "not routed by
+Nutrients absent from availability_matrix.csv entirely (i.e. any nutrient
+Stage 2's missingness diagnosis did not cover) are passed through from the
+enriched source unchanged and reported separately as "not routed by
 Stage 2", rather than silently folded into either resolved or unresolved.
+(edible_portion_percent was previously the only such case, but was removed
+from the schema entirely rather than left unrouted - see
+src/schema/nutrition_schema.py.)
 """
 
 from __future__ import annotations
