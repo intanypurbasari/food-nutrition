@@ -25,7 +25,6 @@ MICRO_FIELDS = [
     "vitamin_b2_mg",
     "niacin_mg",
     "vitamin_c_mg",
-    "edible_portion_percent",
 ]
 
 
