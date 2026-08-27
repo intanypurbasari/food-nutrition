@@ -6,7 +6,7 @@ import pandas as pd
 import streamlit as st
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_PATH = ROOT / "data_processed" / "nutrition_repository_sample.csv"
+DATA_PATH = ROOT / "data_processed" / "nutrition_repository_imputed.csv"
 
 MACRO_FIELDS = ["energy_kcal", "protein_g", "fat_g", "carbohydrate_g", "fiber_g", "water_g", "ash_g"]
 MICRO_FIELDS = [
@@ -37,7 +37,7 @@ st.set_page_config(page_title="Nutrition Repository", layout="wide")
 st.title("Nutrition Repository")
 
 if not DATA_PATH.exists():
-    st.error("File repository belum tersedia. Jalankan `python scripts/build_repository_sample.py` lalu `python scripts/export_repository_json.py` terlebih dahulu.")
+    st.error("File repository belum tersedia. Jalankan `python scripts/run_pipeline.py` atau `python scripts/run_integration.py` terlebih dahulu.")
     st.stop()
 
 try:
