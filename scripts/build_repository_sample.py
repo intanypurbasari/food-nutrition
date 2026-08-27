@@ -85,22 +85,9 @@ def main() -> int:
     else:
         merged = pd.DataFrame(columns=schema_columns())
 
-    output_path = ROOT / "data_processed" / "nutrition_repository_sample.csv"
+    output_path = ROOT / "data_processed" / "nutrition_repository_imputed.csv"
     merged.to_csv(output_path, index=False, encoding="utf-8")
 
-    counts = merged["source"].value_counts().to_dict() if not merged.empty else {}
-    duplicate_count = int(merged.duplicated(subset=["food_name_normalized"], keep=False).sum()) if not merged.empty else 0
-    lines = [
-        "# Integration Summary",
-        "",
-        f"- Total rows: {len(merged)}",
-        f"- TKPI rows: {counts.get('TKPI', 0)}",
-        f"- MyFCD rows: {counts.get('MyFCD', 0)}",
-        f"- Potential duplicate food-name rows flagged: {duplicate_count}",
-        "",
-        "Entity matching lintas sumber tidak dilakukan otomatis pada tahap ini. Nama makanan yang tampak mirip hanya diberi catatan untuk review manual/future work.",
-    ]
-    (ROOT / "reports" / "integration_summary.md").write_text("\n".join(lines), encoding="utf-8")
     print(f"[MERGE] repository rows written: {len(merged)}")
     return 0
 
