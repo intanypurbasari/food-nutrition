@@ -13,7 +13,7 @@ TKPI_ENRICHED_PATH = ROOT / "data_processed" / "tkpi_enriched.csv"
 MYFCD_ENRICHED_PATH = ROOT / "data_processed" / "myfcd_enriched.csv"
 AVAILABILITY_MATRIX_PATH = ROOT / "data_processed" / "availability_matrix.csv"
 TKPI_MYFCD_LINKS_MUTUAL_PATH = ROOT / "data_processed" / "tkpi_myfcd_links_mutual.csv"
-NUTRITION_REPOSITORY_SAMPLE_PATH = ROOT / "data_processed" / "nutrition_repository_sample.csv"
+NUTRITION_REPOSITORY_SAMPLE_PATH = ROOT / "data_processed" / "nutrition_repository_imputed.csv"
 
 # --- Baseline imputation outputs (Milestones 3-5) ---
 # Per-method suffixed paths (mean/median/knn/mice each write their own file,

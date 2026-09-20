@@ -71,8 +71,8 @@ def write_summary_report(stats: dict[str, dict[str, int]], total_rows: int) -> N
 
     lines.append("")
     lines.append(
-        "Nutrients with no strategy in availability_matrix.csv (e.g. edible_portion_percent) are "
-        "labeled as not routed by Stage 2 and passed through from the enriched source unchanged."
+        "Nutrients with no strategy in availability_matrix.csv are labeled as not routed by "
+        "Stage 2 and passed through from the enriched source unchanged."
     )
     lines.append(
         "vitamin_a_mcg has strategy \"Pinjam USDA (kosong di kedua basis)\" but is not among the 6 "

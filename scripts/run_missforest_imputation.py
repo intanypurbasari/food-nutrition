@@ -20,10 +20,25 @@ OUTPUT_PATHS = {"TKPI": TKPI_IMPUTED_MISSFOREST_PATH, "MyFCD": MYFCD_IMPUTED_MIS
 
 
 def run_within_database() -> None:
-    target_columns = io_utils.columns_for_strategy("Imputasi internal per basis")
-    print(f"[IMPUTE] missforest (within-database) target columns ({len(target_columns)}): {target_columns}")
+    internal_columns = io_utils.columns_for_strategy("Imputasi internal per basis")
+    crossdb_columns = io_utils.columns_for_strategy("Cross-DB transfer / USDA")
+
+    # TKPI is the cross-DB *training* source and has partial real data for
+    # crossdb-strategy nutrients (e.g. carotene_total_mcg, 53% filled) - its
+    # own gaps in those columns must be closed here via within-database
+    # MissForest, same as the internal-strategy columns. MyFCD has 0% real
+    # data for those columns and must rely purely on cross_db_transfer_impute
+    # (Milestone 7) - including them here would let MissForest "impute" a
+    # column with zero observed values, which is meaningless.
+    target_columns_by_source = {
+        "TKPI": internal_columns + crossdb_columns,
+        "MyFCD": internal_columns,
+    }
 
     for source in ["TKPI", "MyFCD"]:
+        target_columns = target_columns_by_source[source]
+        print(f"[IMPUTE] missforest (within-database) {source} target columns ({len(target_columns)}): {target_columns}")
+
         df = io_utils.load_enriched(source)
         imputed = missforest_impute(df, target_columns)
         print(f"[IMPUTE] {source}: applied missforest_impute")

@@ -49,7 +49,7 @@ Paket Python `missingpy` (implementasi MissForest yang umum dirujuk di literatur
 
 ### 3.5.3. Hasil Perutean Strategi Imputasi per Kelompok Nutrisi
 
-Sebanyak 22 dari 23 kolom nutrisi pada skema unifikasi memiliki strategi imputasi yang ditetapkan Tahap 2 pada `availability_matrix.csv`; satu kolom (`edible_portion_percent`) berada di luar cakupan diagnosis Tahap 2 (bukan bagian dari analisis missingness nutrisi) sehingga tidak diimputasi pada Tahap 3. Distribusi strategi per kelompok nutrisi disajikan pada Tabel 3.4.
+Seluruh 22 kolom nutrisi pada skema unifikasi memiliki strategi imputasi yang ditetapkan Tahap 2 pada `availability_matrix.csv`. (Skema sebelumnya memuat kolom ke-23, `edible_portion_percent`, yang tidak pernah masuk cakupan diagnosis Tahap 2 dan tidak pernah terisi sejak tahap scraping; kolom ini sudah dihapus sepenuhnya dari skema per keputusan tim, bukan lagi dilewatkan sebagai kolom kosong.) Distribusi strategi per kelompok nutrisi disajikan pada Tabel 3.4.
 
 **Tabel 3.4.** Distribusi strategi imputasi per kelompok nutrisi
 
@@ -58,8 +58,7 @@ Sebanyak 22 dari 23 kolom nutrisi pada skema unifikasi memiliki strategi imputas
 | Makronutrien/Proksimat | 7 | 7 | 0 | 0 |
 | Mineral | 7 | 7 | 0 | 0 |
 | Vitamin | 8 | 6 | 1 (`carotene_total_mcg`) | 1 (`vitamin_a_mcg`) |
-| Tidak dirutekan Tahap 2 | 1 (`edible_portion_percent`) | – | – | – |
-| **Total** | **23** | **20** | **1** | **1** |
+| **Total** | **22** | **20** | **1** | **1** |
 
 [GAMBAR 3.5.a — Diagram alur Tahap 3 tiga-strategi (imputasi internal / cross-DB transfer / pinjam USDA) yang telah didiskusikan dan disetujui tim, dilampirkan sebagai gambar terpisah pada laporan ini.]
 
@@ -78,7 +77,7 @@ Empat metode baseline diimplementasikan sesuai kebutuhan evaluasi pada Bab 2.7: 
 
 ### 3.5.5. Hasil MissForest Dalam-Basis-Data
 
-MissForest (via `IterativeImputer(RandomForestRegressor)`, `n_estimators=50`, `max_iter=10`) dilatih dan diterapkan secara terpisah pada TKPI dan MyFCD, menggunakan seluruh ruang fitur nutrisi bersama (bukan hanya kolom target) agar dapat memanfaatkan korelasi antar-nutrisi — inilah yang membedakannya secara metodologis dari baseline mean/median yang bersifat univariat. Kolom yang 100% kosong pada basis data terkait (`vitamin_a_mcg`, `edible_portion_percent`) dikeluarkan dari ruang prediktor karena tidak memberi sinyal apa pun. Hasil: seluruh 20 nutrisi bertarget terisi penuh (0 missing) pada kedua basis data, dan hasil terverifikasi reproducible (dua kali proses ulang dengan seed tetap = 42 menghasilkan keluaran identik).
+MissForest (via `IterativeImputer(RandomForestRegressor)`, `n_estimators=50`, `max_iter=10`) dilatih dan diterapkan secara terpisah pada TKPI dan MyFCD, menggunakan seluruh ruang fitur nutrisi bersama (bukan hanya kolom target) agar dapat memanfaatkan korelasi antar-nutrisi — inilah yang membedakannya secara metodologis dari baseline mean/median yang bersifat univariat. Kolom yang 100% kosong pada basis data terkait (`vitamin_a_mcg`) dikeluarkan dari ruang prediktor karena tidak memberi sinyal apa pun. TKPI mengimputasi 21 kolom target (20 nutrisi internal ditambah `carotene_total_mcg`, karena TKPI punya 53% data asli untuk nutrisi ini dan bisa dipakai untuk melatih model sendiri); MyFCD mengimputasi 20 kolom target (tidak termasuk `carotene_total_mcg`, karena MyFCD 0% data asli untuk nutrisi ini dan mengandalkan cross-database transfer sepenuhnya, lihat 3.5.6). Hasil: seluruh kolom target terisi penuh (0 missing) pada kedua basis data, dan hasil terverifikasi reproducible (dua kali proses ulang dengan seed tetap = 42 menghasilkan keluaran identik).
 
 ### 3.5.6. Hasil Cross-Database Transfer (TKPI → MyFCD) — Kebaruan Metodologis Utama
 
@@ -107,24 +106,23 @@ Satu nutrisi, `vitamin_a_mcg`, memiliki strategi "Pinjam USDA (kosong di kedua b
 
 Keluaran akhir Tahap 3, `nutrition_repository_imputed.csv`, memuat 1.380 baris (1.146 TKPI + 234 MyFCD), konsisten dengan total baris yang telah dilaporkan pada `integration_summary.md` sejak Tahap 1. Setiap sel nutrisi pada dataset ini diberi label sumber resolusi secara penuh dan dapat diaudit (Tabel 3.7).
 
-**Tabel 3.7.** Akuntansi resolusi sel nutrisi pada dataset terintegrasi (23 nutrisi × 1.380 baris = 31.740 sel)
+**Tabel 3.7.** Akuntansi resolusi sel nutrisi pada dataset terintegrasi (22 nutrisi × 1.380 baris = 30.360 sel)
 
 | Status Resolusi | Jumlah Sel | Persentase dari Total Sel |
 |---|---|---|
-| Terselesaikan — imputasi internal (MissForest) | 27.600 | 87,0% |
-| Terselesaikan — cross-database transfer | 234 | 0,7% |
-| Terselesaikan — sudah terisi asli (bagian TKPI dari nutrisi cross-DB) | 1.146 | 3,6% |
-| Belum terselesaikan — `vitamin_a_mcg` (menunggu value borrowing USDA) | 1.380 | 4,3% |
-| Di luar cakupan Tahap 2 — `edible_portion_percent` | 1.380 | 4,3% |
-| **Total** | **31.740** | **100%** |
+| Terselesaikan — imputasi internal (MissForest), 20 nutrisi | 27.600 | 90,9% |
+| Terselesaikan — imputasi internal (MissForest), sisi TKPI dari `carotene_total_mcg` | 1.146 | 3,8% |
+| Terselesaikan — cross-database transfer, sisi MyFCD dari `carotene_total_mcg` | 234 | 0,8% |
+| Belum terselesaikan — `vitamin_a_mcg` (menunggu value borrowing USDA) | 1.380 | 4,5% |
+| **Total** | **30.360** | **100%** |
 
-Jika dibatasi pada 22 nutrisi yang memang dirutekan Tahap 2 (mengeluarkan `edible_portion_percent`), tingkat penyelesaian Tahap 3 mencapai **95,5%** (28.980 dari 30.360 sel), dengan sisa 4,5% seluruhnya berasal dari satu gap yang sudah teridentifikasi dan tercatat di atas.
+Tingkat penyelesaian Tahap 3 mencapai **95,5%** (28.980 dari 30.360 sel), dengan sisa 4,5% seluruhnya berasal dari satu gap yang sudah teridentifikasi dan tercatat di atas (`vitamin_a_mcg`).
 
 [GAMBAR 3.5.c — Diagram lingkaran/batang status resolusi sel nutrisi sesuai Tabel 3.7. Sumber data: `reports/imputation_summary.md`.]
 
 ### 3.5.10. Ekspor Siap-Evaluasi untuk Tahap 4
 
-Untuk mendukung Tahap 4 (Kuantifikasi Ketidakpastian) dan evaluasi hold-out pada Bab 2.7, seluruh keluaran metode (mean, median, KNN, MICE, MissForest, cross-DB transfer, serta nilai asli sebelum imputasi) diekspor ke format long (`food_id, source_db, nutrient, method, value`) pada `nutrition_repository_imputed_long.csv` — total 195.822 baris — beserta statistik deskriptif per pasangan nutrisi × metode pada `reports/imputation_method_comparison.csv`. Statistik ini **bersifat deskriptif saja** (count/mean/std) dan secara eksplisit bukan metrik akurasi; perhitungan RMSE/nRMSE terhadap data hold-out adalah tanggung jawab Tahap 4 yang belum dimulai (lihat Bab 4).
+Untuk mendukung Tahap 4 (Kuantifikasi Ketidakpastian) dan evaluasi hold-out pada Bab 2.7, seluruh keluaran metode (mean, median, KNN, MICE, MissForest, cross-DB transfer, serta nilai asli sebelum imputasi) diekspor ke format long (`food_id, source_db, nutrient, method, value`) pada `nutrition_repository_imputed_long.csv` — total 187.308 baris — beserta statistik deskriptif per pasangan nutrisi × metode pada `reports/imputation_method_comparison.csv`. Statistik ini **bersifat deskriptif saja** (count/mean/std) dan secara eksplisit bukan metrik akurasi; perhitungan RMSE/nRMSE terhadap data hold-out adalah tanggung jawab Tahap 4 yang belum dimulai (lihat Bab 4).
 
 ### 3.5.11. Reproducibility dan Jaminan Kualitas
 
@@ -142,7 +140,7 @@ Seluruh metode stokastik (MICE, MissForest, cross-database transfer) menggunakan
 | `tkpi/myfcd_imputed_missforest.csv` | `data_processed/` | Hasil MissForest dalam-basis-data |
 | `myfcd_imputed_crossdb.csv` | `data_processed/` | Hasil cross-database transfer TKPI→MyFCD |
 | `nutrition_repository_imputed.csv` | `data_processed/` | Dataset terintegrasi final (1.380 baris) |
-| `nutrition_repository_imputed_long.csv` | `data_processed/` | Format long untuk Tahap 4 (195.822 baris) |
+| `nutrition_repository_imputed_long.csv` | `data_processed/` | Format long untuk Tahap 4 (187.308 baris) |
 | `imputation_summary.md` | `reports/` | Akuntansi resolusi per nutrisi |
 | `imputation_method_comparison.csv` | `reports/` | Statistik deskriptif per metode |
 | `stage3_imputation.md` | `docs/` | Dokumentasi metodologi lengkap |

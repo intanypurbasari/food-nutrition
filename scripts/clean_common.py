@@ -57,7 +57,6 @@ COMMON_ALIASES = {
     "vitamin_b2_mg": ["vitamin_b2_mg", "vitamin_b2", "riboflavin_mg", "riboflavin"],
     "niacin_mg": ["niacin_mg", "niacin", "niasin_mg", "niasin"],
     "vitamin_c_mg": ["vitamin_c_mg", "vitamin_c"],
-    "edible_portion_percent": ["edible_portion_percent", "bdd", "bdd_percent", "edible_portion"],
     "notes": ["notes", "catatan", "keterangan", "raw_text"],
 }
 

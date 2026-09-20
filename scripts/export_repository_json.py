@@ -18,9 +18,9 @@ def df_records(df: pd.DataFrame) -> list[dict]:
 
 
 def main() -> int:
-    input_path = ROOT / "data_processed" / "nutrition_repository_sample.csv"
+    input_path = ROOT / "data_processed" / "nutrition_repository_imputed.csv"
     if not input_path.exists() or input_path.stat().st_size == 0:
-        print("Repository CSV not found. Run scripts/build_repository_sample.py first.")
+        print("Repository CSV not found. Run scripts/run_integration.py first.")
         return 1
 
     try:
@@ -31,11 +31,6 @@ def main() -> int:
     records = df_records(df)
     out_dir = ROOT / "data_processed"
     out_dir.mkdir(exist_ok=True)
-
-    (out_dir / "nutrition_repository_sample.json").write_text(
-        json.dumps(records, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
 
     by_source = {"TKPI": [], "MyFCD": []}
     for source, group in df.groupby("source") if "source" in df.columns else []:

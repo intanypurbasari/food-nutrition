@@ -28,7 +28,6 @@
 | vitamin_b2_mg | Imputasi internal per basis | 1380 | 0 | 0 | 0 |
 | niacin_mg | Imputasi internal per basis | 1380 | 0 | 0 | 0 |
 | vitamin_c_mg | Imputasi internal per basis | 1380 | 0 | 0 | 0 |
-| edible_portion_percent | Tidak dirutekan Stage 2 (di luar cakupan availability_matrix) | 0 | 0 | 0 | 1380 |
 
-Nutrients with no strategy in availability_matrix.csv (e.g. edible_portion_percent) are labeled as not routed by Stage 2 and passed through from the enriched source unchanged.
+Nutrients with no strategy in availability_matrix.csv are labeled as not routed by Stage 2 and passed through from the enriched source unchanged.
 vitamin_a_mcg has strategy "Pinjam USDA (kosong di kedua basis)" but is not among the 6 columns Stage 1 actually borrowed from USDA, so it remains fully unresolved (NaN) rather than fabricated.

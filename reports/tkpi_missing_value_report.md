@@ -30,4 +30,3 @@
 | vitamin_b2_mg | 350 | 30.54% |
 | niacin_mg | 339 | 29.58% |
 | vitamin_c_mg | 289 | 25.22% |
-| edible_portion_percent | 1146 | 100.00% |
