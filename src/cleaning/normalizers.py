@@ -6,6 +6,8 @@ from typing import Any
 from src.schema.nutrition_schema import NUTRIENT_FIELDS
 
 
+THOUSANDS_SEPARATOR_PATTERN = re.compile(r"^[-+]?\d{1,3}(?:,\d{3})+(?:\.\d+)?$")
+
 MISSING_TOKENS = {"", "-", "--", "na", "n/a", "nan", "none", "null", "tidak ada", "tr", "trace"}
 
 
@@ -29,7 +31,10 @@ def normalize_numeric(value: Any) -> float | None:
     if text in {"", "-", "+", ".", ","}:
         return None
 
-    if "," in text and "." in text:
+    # Data mentah TKPI memakai konvensi internasional: "3,784" berarti 3784.
+    if THOUSANDS_SEPARATOR_PATTERN.match(text):
+        text = text.replace(",", "")
+    elif "," in text and "." in text:
         text = text.replace(",", "")
     elif "," in text:
         text = text.replace(",", ".")
