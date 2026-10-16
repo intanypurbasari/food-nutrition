@@ -74,7 +74,8 @@ TKPI_RAW_COLUMNS = [
 
 
 def _first_number(text: str) -> str | None:
-    match = re.search(r"[-+]?\d+(?:[.,]\d+)?", text.replace("\xa0", " "))
+    # Coba format ribuan TKPI ("2,522.6") dulu agar desimalnya tidak terpotong.
+    match = re.search(r"[-+]?(?:\d{1,3}(?:,\d{3})+(?:\.\d+)?|\d+(?:[.,]\d+)?)", text.replace("\xa0", " "))
     return match.group(0) if match else None
 
 
