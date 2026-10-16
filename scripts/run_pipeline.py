@@ -57,6 +57,7 @@ def main() -> int:
     if args.include_imputation:
         stages.extend(
             [
+                ("sync_enriched_base", [python, "scripts/sync_enriched_base.py"]),
                 ("run_baseline_imputation", [python, "scripts/run_baseline_imputation.py"]),
                 ("run_missforest_imputation", [python, "scripts/run_missforest_imputation.py"]),
                 ("run_integration", [python, "scripts/run_integration.py"]),
