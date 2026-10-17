@@ -45,6 +45,15 @@ def cross_db_transfer_impute(
         random_state = RANDOM_SEED
 
     imputer = fit_random_forest_imputer(train_df, random_state=random_state)
+    return apply_fitted_imputer(imputer, apply_df, columns)
+
+
+def apply_fitted_imputer(imputer, apply_df: pd.DataFrame, columns: list[str]) -> pd.DataFrame:
+    """Apply an imputer already fit by fit_random_forest_imputer to `apply_df`.
+
+    Split out of cross_db_transfer_impute so callers that apply one TKPI fit
+    to many MyFCD frames (hold-out evaluation, bootstrap) fit only once.
+    """
     predictor_columns = imputer.feature_names_in_stage3_
 
     apply_numeric_block = pd.DataFrame(
