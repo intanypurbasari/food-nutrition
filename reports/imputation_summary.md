@@ -30,4 +30,4 @@
 | vitamin_c_mg | Imputasi internal per basis | 1380 | 0 | 0 | 0 |
 
 Nutrients with no strategy in availability_matrix.csv are labeled as not routed by Stage 2 and passed through from the enriched source unchanged.
-vitamin_a_mcg has strategy "Pinjam USDA (kosong di kedua basis)" but is not among the 6 columns Stage 1 actually borrowed from USDA, so it remains fully unresolved (NaN) rather than fabricated.
+vitamin_a_mcg has strategy "Pinjam USDA (kosong di kedua basis)" but is not among the 6 columns Stage 1 actually borrowed from USDA, so it is unresolved here; scripts/borrow_vitamin_a.py fills it afterwards (see reports/vitamin_a_review.md).

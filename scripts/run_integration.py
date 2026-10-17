@@ -76,7 +76,8 @@ def write_summary_report(stats: dict[str, dict[str, int]], total_rows: int) -> N
     )
     lines.append(
         "vitamin_a_mcg has strategy \"Pinjam USDA (kosong di kedua basis)\" but is not among the 6 "
-        "columns Stage 1 actually borrowed from USDA, so it remains fully unresolved (NaN) rather than fabricated."
+        "columns Stage 1 actually borrowed from USDA, so it is unresolved here; scripts/borrow_vitamin_a.py fills it "
+        "afterwards (see reports/vitamin_a_review.md)."
     )
 
     IMPUTATION_SUMMARY_REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)

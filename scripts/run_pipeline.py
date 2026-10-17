@@ -61,6 +61,7 @@ def main() -> int:
                 ("run_baseline_imputation", [python, "scripts/run_baseline_imputation.py"]),
                 ("run_missforest_imputation", [python, "scripts/run_missforest_imputation.py"]),
                 ("run_integration", [python, "scripts/run_integration.py"]),
+                ("borrow_vitamin_a", [python, "scripts/borrow_vitamin_a.py"]),
                 ("export_evaluation_ready", [python, "scripts/export_evaluation_ready.py"]),
             ]
         )
