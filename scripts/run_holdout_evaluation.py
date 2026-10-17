@@ -6,8 +6,8 @@ cross-database transfer (MissForest fit on the full TKPI). Repeated with
 independent masks; see src/evaluation/holdout.py for the metric definitions.
 
 Outputs:
-- reports/holdout_evaluation_raw.csv   one row per source x nutrient x method x repeat
-- reports/holdout_evaluation.csv       mean/sd across repeats + best method per nutrient
+- reports/holdout_evaluation_raw.csv   one row per held-out cell x method x repeat (true vs imputed)
+- reports/holdout_evaluation.csv       pooled RMSE / nRMSE / MAE + best method per nutrient
 - reports/holdout_evaluation.md        readable summary tables
 (with --exclude-flagged-outliers the files are named holdout_evaluation_no_outliers*)
 """
@@ -71,7 +71,7 @@ def write_report(summary: pd.DataFrame, configs: dict[str, HoldoutConfig], exclu
         f"- Nutrisi dengan kurang dari {config.min_observed} nilai terukur tidak dievaluasi.",
         "- Outlier tertandai dikeluarkan: " + (", ".join(sorted(excluded)) if excluded else "tidak (semua baris dipakai)") + ".",
         "- nRMSE = RMSE / sd(nilai asli yang disembunyikan). 1,0 setara menebak rerata; makin kecil makin baik.",
-        "- Angka di tabel adalah rerata nRMSE antar pengulangan; **tebal** = metode terbaik untuk nutrisi itu.",
+        "- Angka di tabel adalah nRMSE gabungan seluruh sel hold-out dari semua pengulangan; **tebal** = metode terbaik untuk nutrisi itu.",
         "",
     ]
     for source in ["TKPI", "MyFCD"]:
@@ -79,22 +79,22 @@ def write_report(summary: pd.DataFrame, configs: dict[str, HoldoutConfig], exclu
         if part.empty:
             continue
         methods = [m for m in METHOD_ORDER if m in set(part["method"])]
-        lines += [f"## {source}", "", "| Nutrisi | n terukur | n hold-out | " + " | ".join(methods) + " |"]
+        lines += [f"## {source}", "", "| Nutrisi | n terukur | n sel hold-out | " + " | ".join(methods) + " |"]
         lines.append("|---|---|---|" + "---|" * len(methods))
         for nutrient, block in part.groupby("nutrient", sort=False):
             by_method = block.set_index("method")
             best = block["best_method"].iloc[0]
             cells = []
             for method in methods:
-                value = _fmt(by_method["nrmse_mean"].get(method))
+                value = _fmt(by_method["nrmse"].get(method))
                 cells.append(f"**{value}**" if method == best and value else value)
             first = block.iloc[0]
-            lines.append(f"| {nutrient} | {first['n_observed']} | {first['n_holdout']} | " + " | ".join(cells) + " |")
+            lines.append(f"| {nutrient} | {first['n_observed']} | {first['n_holdout_cells']} | " + " | ".join(cells) + " |")
         wins = part.drop_duplicates("nutrient")["best_method"].value_counts()
         lines += ["", "Jumlah nutrisi per metode terbaik: " + ", ".join(f"{m} {n}" for m, n in wins.items()), ""]
 
     myfcd = summary[(summary["source"] == "MyFCD") & summary["method"].isin(["missforest", "crossdb"])]
-    pivot = myfcd.pivot(index="nutrient", columns="method", values="nrmse_mean").dropna()
+    pivot = myfcd.pivot(index="nutrient", columns="method", values="nrmse").dropna()
     if not pivot.empty:
         better = int((pivot["crossdb"] < pivot["missforest"]).sum())
         lines += [
@@ -151,7 +151,13 @@ def main() -> int:
     stem = "holdout_evaluation_no_outliers" if args.exclude_flagged_outliers else "holdout_evaluation"
     REPORTS.mkdir(parents=True, exist_ok=True)
     results.to_csv(REPORTS / f"{stem}_raw.csv", index=False)
-    summary = summarise(results)
+    n_observed = {
+        (source, column): int(frame[column].notna().sum())
+        for source, frame in {"TKPI": tkpi, "MyFCD": myfcd}.items()
+        for column in IMPUTATION_NUTRIENT_FIELDS
+        if column in frame.columns
+    }
+    summary = summarise(results, n_observed)
     summary.to_csv(REPORTS / f"{stem}.csv", index=False)
     write_report(summary, configs, excluded, REPORTS / f"{stem}.md")
     print(f"[HOLDOUT] wrote reports/{stem}_raw.csv, {stem}.csv, {stem}.md")

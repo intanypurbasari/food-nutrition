@@ -42,8 +42,12 @@ def test_score_nrmse_is_one_for_mean_prediction():
 def test_evaluate_and_summarise_report_best_method():
     df = _frame()
     config = HoldoutConfig(fraction=0.15, repeats=2, seed=3)
-    results = evaluate_source("X", df, ["a", "b"], {"mean": mean_impute, "median": median_impute}, config, log=lambda _: None)
-    assert set(results["method"]) == {"mean", "median"}
-    assert set(results["repeat"]) == {1, 2}
-    summary = summarise(results)
+    cells = evaluate_source("X", df, ["a", "b"], {"mean": mean_impute, "median": median_impute}, config, log=lambda _: None)
+    assert set(cells["method"]) == {"mean", "median"}
+    assert set(cells["repeat"]) == {1, 2}
+    # the hidden true values are the original observed values
+    lookup = df.set_index("food_id")
+    assert all(lookup.at[f, n] == t for f, n, t in zip(cells["food_id"], cells["nutrient"], cells["true"]))
+    summary = summarise(cells, {("X", "a"): 40, ("X", "b"): 35})
     assert summary.groupby("nutrient")["best_method"].nunique().eq(1).all()
+    assert set(summary["n_holdout_cells"]) == {12, 10}  # 6 + 6 and 5 + 5 across two repeats

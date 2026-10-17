@@ -5,12 +5,15 @@ hidden, each method imputes the masked frame, and the imputed values are
 compared with the hidden true values. This is the accuracy counterpart of
 the descriptive statistics in reports/imputation_method_comparison.csv.
 
-Metrics per (source, nutrient, method, repeat):
+Metrics per (source, nutrient, method), pooled over the held-out cells of
+all repeats:
 - RMSE  = sqrt(mean((imputed - true)^2))
 - nRMSE = RMSE / sd(true held-out values), the per-variable form of the
   normalised RMSE used by Stekhoven & Buhlmann (2012) for MissForest. 1.0
   means no better than predicting the held-out mean; lower is better.
 - MAE   = mean(|imputed - true|)
+Pooling keeps nRMSE stable when one repeat happens to hide near-identical
+values (sd close to 0); the spread across repeats is reported separately.
 
 Each source is masked and imputed on its own, as in Stage 3. For MyFCD the
 cross-database transfer (imputer fit on the full TKPI, applied to the masked
@@ -86,7 +89,7 @@ def evaluate_source(
     config: HoldoutConfig,
     log: Callable[[str], None] = print,
 ) -> pd.DataFrame:
-    """Run every method on `repeats` independent masks of `df` and score it."""
+    """Run every method on `repeats` independent masks of `df`; one row per held-out cell."""
     rows = []
     for repeat in range(config.repeats):
         rng = np.random.default_rng(config.seed + repeat)
@@ -104,33 +107,41 @@ def evaluate_source(
                     # Method could not fill this column (e.g. no predictor signal).
                     continue
                 rows.append(
-                    {
-                        "source": source,
-                        "nutrient": column,
-                        "method": method,
-                        "repeat": repeat + 1,
-                        "n_observed": int(_numeric(df[column]).notna().sum()),
-                        "n_holdout": len(hidden_rows),
-                        **score(_numeric(df.loc[hidden_rows, column]), predicted),
-                    }
+                    pd.DataFrame(
+                        {
+                            "source": source,
+                            "nutrient": column,
+                            "method": method,
+                            "repeat": repeat + 1,
+                            "food_id": df.loc[hidden_rows, "food_id"].to_numpy(),
+                            "true": _numeric(df.loc[hidden_rows, column]).to_numpy(),
+                            "imputed": predicted.to_numpy(),
+                        }
+                    )
                 )
-    return pd.DataFrame(rows)
+    return pd.concat(rows, ignore_index=True) if rows else pd.DataFrame()
 
 
-def summarise(results: pd.DataFrame) -> pd.DataFrame:
-    """Mean and sd of each metric across repeats, plus the best method per nutrient (lowest mean nRMSE)."""
-    grouped = results.groupby(["source", "nutrient", "method"])
-    summary = grouped.agg(
-        n_observed=("n_observed", "first"),
-        n_holdout=("n_holdout", "first"),
-        rmse_mean=("rmse", "mean"),
-        nrmse_mean=("nrmse", "mean"),
-        nrmse_sd=("nrmse", "std"),
-        mae_mean=("mae", "mean"),
-    ).reset_index()
+def summarise(cells: pd.DataFrame, n_observed: dict[tuple[str, str], int]) -> pd.DataFrame:
+    """Pooled metrics per source x nutrient x method, plus the best method per nutrient (lowest nRMSE)."""
+    records = []
+    for (source, nutrient, method), block in cells.groupby(["source", "nutrient", "method"]):
+        per_repeat = [score(r["true"], r["imputed"])["nrmse"] for _, r in block.groupby("repeat")]
+        records.append(
+            {
+                "source": source,
+                "nutrient": nutrient,
+                "method": method,
+                "n_observed": n_observed.get((source, nutrient)),
+                "n_holdout_cells": len(block),
+                **score(block["true"], block["imputed"]),
+                "nrmse_repeat_sd": float(np.nanstd(per_repeat, ddof=1)) if len(per_repeat) > 1 else float("nan"),
+            }
+        )
+    summary = pd.DataFrame(records)
     # nRMSE is undefined when every held-out value is identical (sd = 0); RMSE breaks those ties.
     best = (
-        summary.sort_values(["nrmse_mean", "rmse_mean"], na_position="last")
+        summary.sort_values(["nrmse", "rmse"], na_position="last")
         .drop_duplicates(["source", "nutrient"])[["source", "nutrient", "method"]]
         .rename(columns={"method": "best_method"})
     )
