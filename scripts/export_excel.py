@@ -82,7 +82,8 @@ def main() -> None:
             "food_id", "food_name_original", "source", "category_normalized",
             "calcium_mg", "phosphorus_mg", "iron_mg", "sodium_mg", "potassium_mg", "copper_mg", "zinc_mg",
             "retinol_mcg", "beta_carotene_mcg", "carotene_total_mcg", "vitamin_a_mcg",
-            "vitamin_b1_mg", "vitamin_b2_mg", "niacin_mg", "vitamin_c_mg"
+            "vitamin_b1_mg", "vitamin_b2_mg", "niacin_mg", "vitamin_c_mg",
+            "magnesium_mg", "sugars_total_g", "saturated_fat_g", "cholesterol_mg", "vitamin_b6_mg", "vitamin_b12_mcg"
         ]
         micro_df = df[[c for c in micro_cols if c in df.columns]]
         micro_df.to_excel(writer, sheet_name="Vitamin & Mineral", index=False)

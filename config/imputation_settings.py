@@ -2,7 +2,7 @@
 
 from pathlib import Path
 
-from src.schema.nutrition_schema import NUTRIENT_FIELDS
+from src.schema.nutrition_schema import NUTRIENT_FIELDS, USDA_NUTRIENT_FIELDS
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -46,11 +46,4 @@ IMPUTATION_NUTRIENT_FIELDS = list(NUTRIENT_FIELDS)
 
 # USDA value-borrowed columns already present in *_enriched.csv (Stage 1 output).
 # Stage 3 consumes these as-is; it does not redo value borrowing.
-USDA_BORROWED_COLUMNS = [
-    "magnesium_mg",
-    "sugars_total_g",
-    "saturated_fat_g",
-    "cholesterol_mg",
-    "vitamin_b6_mg",
-    "vitamin_b12_mcg",
-]
+USDA_BORROWED_COLUMNS = list(USDA_NUTRIENT_FIELDS)

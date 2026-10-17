@@ -30,6 +30,20 @@ NUTRIENT_FIELDS = [
 ]
 
 
+# Nutrients absent from both TKPI and MyFCD, filled from USDA SR Legacy by
+# scripts/fill_usda_nutrients.py after Stage 3. Kept out of NUTRIENT_FIELDS so
+# they neither act as Stage 3 imputation predictors nor count toward
+# missing_nutrient_count / completeness_score of the source data.
+USDA_NUTRIENT_FIELDS = [
+    "magnesium_mg",
+    "sugars_total_g",
+    "saturated_fat_g",
+    "cholesterol_mg",
+    "vitamin_b6_mg",
+    "vitamin_b12_mcg",
+]
+
+
 class NutritionRecord(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
@@ -62,6 +76,12 @@ class NutritionRecord(BaseModel):
     vitamin_b2_mg: Optional[float] = None
     niacin_mg: Optional[float] = None
     vitamin_c_mg: Optional[float] = None
+    magnesium_mg: Optional[float] = None
+    sugars_total_g: Optional[float] = None
+    saturated_fat_g: Optional[float] = None
+    cholesterol_mg: Optional[float] = None
+    vitamin_b6_mg: Optional[float] = None
+    vitamin_b12_mcg: Optional[float] = None
     unit_basis: str = "per 100g"
     scraped_at: datetime
     cleaned_at: Optional[datetime] = None
