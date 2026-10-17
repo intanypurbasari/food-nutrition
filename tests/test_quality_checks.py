@@ -25,3 +25,13 @@ def test_quality_checks_detect_duplicates_as_warning():
     report = validate_dataframe(df, "TKPI")
     assert report["duplicate_count"] == 2
     assert report["warnings_by_type"]["duplicate_food_name_normalized"] == 2
+
+
+def test_quality_checks_flag_implausible_mineral_total_as_outlier():
+    df = pd.read_csv(FIXTURE).drop(columns=["fixture_label"])
+    df["sodium_mg"] = df["sodium_mg"].astype(float)
+    df.loc[0, "sodium_mg"] = 102198.4
+    report = validate_dataframe(df, "MyFCD")
+    assert report["invalid_rows"] == 0
+    assert report["warnings_by_type"]["outlier_implausible_minerals"] == 1
+    assert report["warnings"][-1]["food_id"] == df.loc[0, "food_id"]
