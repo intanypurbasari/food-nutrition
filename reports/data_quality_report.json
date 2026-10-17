@@ -5,7 +5,8 @@
   "duplicate_count": 0,
   "issues_by_type": {},
   "warnings_by_type": {
-    "range_warning": 4
+    "range_warning": 4,
+    "outlier_implausible_minerals": 1
   },
   "sources": [
     {
@@ -53,9 +54,20 @@
       "invalid_rows": 0,
       "duplicate_count": 0,
       "issues_by_type": {},
-      "warnings_by_type": {},
+      "warnings_by_type": {
+        "outlier_implausible_minerals": 1
+      },
       "issues": [],
-      "warnings": []
+      "warnings": [
+        {
+          "row": 5,
+          "type": "outlier_implausible_minerals",
+          "food_id": "myfcd_0006",
+          "food_name_original": "BREAD, RAISIN (ROTI KISMIS)",
+          "field": "mineral_total_g",
+          "value": 166.513
+        }
+      ]
     }
   ]
 }

@@ -66,6 +66,24 @@ def main() -> int:
     else:
         lines.append("- No warnings found.")
     lines.append("")
+    outliers = [
+        (report["source"], warning)
+        for report in combined["sources"]
+        for warning in report.get("warnings", [])
+        if warning["type"].startswith("outlier_")
+    ]
+    lines.append("## Outliers")
+    if outliers:
+        lines.append("Baris berikut ditandai sebagai outlier. Nilainya dibiarkan apa adanya dan tetap ikut imputasi.")
+        lines.append("")
+        for source, warning in outliers:
+            lines.append(
+                f"- {source} {warning['food_id']} ({warning['food_name_original']}): "
+                f"{warning['type']}, {warning['field']}={warning['value']}"
+            )
+    else:
+        lines.append("- No outliers found.")
+    lines.append("")
     lines.append("## Source Detail")
     for report in combined["sources"]:
         lines.append(f"- {report['source']}: {report['valid_rows']}/{report['total_rows']} valid rows")

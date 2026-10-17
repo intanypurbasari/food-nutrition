@@ -11,6 +11,9 @@ from src.schema.nutrition_schema import NUTRIENT_FIELDS
 
 
 REQUIRED_FIELDS = ["food_id", "food_name_original", "source", "unit_basis"]
+MINERAL_FIELDS_MG = ["calcium_mg", "phosphorus_mg", "iron_mg", "sodium_mg", "potassium_mg", "copper_mg", "zinc_mg"]
+# Per 100 g bahan, total mineral tidak mungkin melebihi 100 g.
+MAX_MINERAL_TOTAL_G = 100.0
 
 
 def _is_numeric_or_missing(value: Any) -> bool:
@@ -48,6 +51,24 @@ def validate_dataframe(df: pd.DataFrame, source_name: str) -> dict[str, Any]:
                 invalid_rows.add(int(index))
             elif energy > 900:
                 warnings.append({"row": int(index), "type": "range_warning", "field": "energy_kcal", "value": energy})
+
+        minerals = [
+            float(row.get(field))
+            for field in MINERAL_FIELDS_MG
+            if field in df.columns and _is_numeric_or_missing(row.get(field)) and not is_missing(row.get(field))
+        ]
+        mineral_total_g = sum(minerals) / 1000
+        if mineral_total_g > MAX_MINERAL_TOTAL_G:
+            warnings.append(
+                {
+                    "row": int(index),
+                    "type": "outlier_implausible_minerals",
+                    "food_id": row.get("food_id"),
+                    "food_name_original": row.get("food_name_original"),
+                    "field": "mineral_total_g",
+                    "value": round(mineral_total_g, 3),
+                }
+            )
 
         row_dict = row.to_dict()
         expected_missing = compute_missing_nutrient_count(row_dict)
