@@ -1146,236 +1146,236 @@ tkpi_1144,TKPI,,,,,,242.68,derived_partly_imputed
 tkpi_1145,TKPI,,,,,,4.82,derived_partly_imputed
 tkpi_1146,TKPI,,,,,,0.0,derived_measured
 myfcd_0001,MyFCD,171867.0,"Cookies, Marie biscuit",0.4305,MEDIUM,1.0,1.0,USDA_direct_medium
-myfcd_0002,MyFCD,,,,,,0.04,derived_measured
-myfcd_0003,MyFCD,171867.0,"Cookies, Marie biscuit",0.9437,HIGH,1.0,0.0,derived_measured
-myfcd_0004,MyFCD,,,,,,0.0468,derived_measured
-myfcd_0005,MyFCD,,,,,,0.0,derived_measured
-myfcd_0006,MyFCD,172680.0,"Bread, raisin, enriched",0.4713,MEDIUM,0.0,0.0118,derived_measured
-myfcd_0007,MyFCD,,,,,,0.0391,derived_imputed
-myfcd_0008,MyFCD,,,,,,0.0028,derived_imputed
-myfcd_0009,MyFCD,,,,,,0.0195,derived_imputed
-myfcd_0010,MyFCD,167943.0,"Bread, potato",0.4318,MEDIUM,24.0,0.0355,derived_partly_imputed
-myfcd_0011,MyFCD,,,,,,0.0194,derived_imputed
+myfcd_0002,MyFCD,,,,,,179.4217,derived_imputed
+myfcd_0003,MyFCD,171867.0,"Cookies, Marie biscuit",0.9437,HIGH,1.0,1.0,USDA_direct_high
+myfcd_0004,MyFCD,,,,,,117.645,derived_imputed
+myfcd_0005,MyFCD,,,,,,2.4367,derived_imputed
+myfcd_0006,MyFCD,172680.0,"Bread, raisin, enriched",0.4713,MEDIUM,0.0,0.0,USDA_direct_medium
+myfcd_0007,MyFCD,,,,,,1.4283,derived_imputed
+myfcd_0008,MyFCD,,,,,,13.3133,derived_imputed
+myfcd_0009,MyFCD,,,,,,12.2833,derived_imputed
+myfcd_0010,MyFCD,167943.0,"Bread, potato",0.4318,MEDIUM,24.0,24.0,USDA_direct_medium
+myfcd_0011,MyFCD,,,,,,7.5733,derived_imputed
 myfcd_0012,MyFCD,174964.0,"Cookies, peanut butter, prepared from recipe",0.6019,MEDIUM,137.0,137.0,USDA_direct_medium
-myfcd_0013,MyFCD,,,,,,0.0,derived_measured
-myfcd_0014,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0015,MyFCD,,,,,,0.0628,derived_imputed
+myfcd_0013,MyFCD,,,,,,149.4583,derived_imputed
+myfcd_0014,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0015,MyFCD,,,,,,507.0617,derived_imputed
 myfcd_0016,MyFCD,174096.0,"Cookies, chocolate, made with rice cereal",0.4369,MEDIUM,0.0,0.0,USDA_direct_medium
-myfcd_0017,MyFCD,,,,,,0.002,derived_imputed
-myfcd_0018,MyFCD,,,,,,0.1047,derived_imputed
+myfcd_0017,MyFCD,,,,,,74.6117,derived_imputed
+myfcd_0018,MyFCD,,,,,,9.815,derived_imputed
 myfcd_0019,MyFCD,171838.0,"Crackers, multigrain",0.4527,MEDIUM,0.0,0.0,USDA_direct_medium
-myfcd_0020,MyFCD,,,,,,0.1019,derived_imputed
-myfcd_0021,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0022,MyFCD,,,,,,0.1442,derived_imputed
-myfcd_0023,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0024,MyFCD,,,,,,0.101,derived_imputed
-myfcd_0025,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0026,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0027,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0028,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0029,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0030,MyFCD,,,,,,0.0,derived_measured
-myfcd_0031,MyFCD,173755.0,Carob flour,0.5732,MEDIUM,1.0,0.0,derived_measured
-myfcd_0032,MyFCD,,,,,,0.0,derived_measured
-myfcd_0033,MyFCD,,,,,,0.0695,derived_imputed
-myfcd_0034,MyFCD,,,,,,0.0,derived_measured
-myfcd_0035,MyFCD,,,,,,0.0695,derived_imputed
-myfcd_0036,MyFCD,,,,,,0.0695,derived_imputed
-myfcd_0037,MyFCD,,,,,,0.0695,derived_imputed
-myfcd_0038,MyFCD,,,,,,0.0695,derived_imputed
-myfcd_0039,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0040,MyFCD,,,,,,0.0695,derived_imputed
-myfcd_0041,MyFCD,,,,,,0.0695,derived_imputed
-myfcd_0042,MyFCD,,,,,,0.0695,derived_imputed
-myfcd_0043,MyFCD,,,,,,0.0695,derived_imputed
+myfcd_0020,MyFCD,,,,,,24.355,derived_imputed
+myfcd_0021,MyFCD,,,,,,164.085,derived_imputed
+myfcd_0022,MyFCD,,,,,,90.2783,derived_imputed
+myfcd_0023,MyFCD,,,,,,76.32,derived_imputed
+myfcd_0024,MyFCD,,,,,,35.5933,derived_imputed
+myfcd_0025,MyFCD,,,,,,131.7633,derived_imputed
+myfcd_0026,MyFCD,,,,,,135.065,derived_imputed
+myfcd_0027,MyFCD,,,,,,18.6883,derived_imputed
+myfcd_0028,MyFCD,,,,,,59.03,derived_imputed
+myfcd_0029,MyFCD,,,,,,131.5617,derived_imputed
+myfcd_0030,MyFCD,,,,,,13.7367,derived_imputed
+myfcd_0031,MyFCD,173755.0,Carob flour,0.5732,MEDIUM,1.0,1.0,USDA_direct_medium
+myfcd_0032,MyFCD,,,,,,541.835,derived_imputed
+myfcd_0033,MyFCD,,,,,,177.5367,derived_imputed
+myfcd_0034,MyFCD,,,,,,206.3317,derived_imputed
+myfcd_0035,MyFCD,,,,,,12.7,derived_imputed
+myfcd_0036,MyFCD,,,,,,106.4117,derived_imputed
+myfcd_0037,MyFCD,,,,,,101.61,derived_imputed
+myfcd_0038,MyFCD,,,,,,96.9583,derived_imputed
+myfcd_0039,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0040,MyFCD,,,,,,49.94,derived_imputed
+myfcd_0041,MyFCD,,,,,,131.5017,derived_imputed
+myfcd_0042,MyFCD,,,,,,131.615,derived_imputed
+myfcd_0043,MyFCD,,,,,,47.515,derived_imputed
 myfcd_0044,MyFCD,167787.0,"Pomegranate juice, bottled",0.5323,MEDIUM,0.0,0.0,USDA_direct_medium
-myfcd_0045,MyFCD,,,,,,0.0,derived_measured
-myfcd_0046,MyFCD,,,,,,0.0,derived_measured
-myfcd_0047,MyFCD,,,,,,0.0,derived_measured
-myfcd_0048,MyFCD,,,,,,0.0,derived_measured
-myfcd_0049,MyFCD,,,,,,0.5155,derived_measured
-myfcd_0050,MyFCD,,,,,,0.0,derived_measured
-myfcd_0051,MyFCD,,,,,,0.363,derived_measured
-myfcd_0052,MyFCD,,,,,,0.0,derived_measured
-myfcd_0053,MyFCD,,,,,,0.0,derived_measured
-myfcd_0054,MyFCD,,,,,,0.1086,derived_measured
-myfcd_0055,MyFCD,,,,,,0.0,derived_measured
-myfcd_0056,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0057,MyFCD,,,,,,0.0,derived_measured
-myfcd_0058,MyFCD,,,,,,0.0,derived_measured
-myfcd_0059,MyFCD,,,,,,0.0,derived_measured
+myfcd_0045,MyFCD,,,,,,206.9833,derived_imputed
+myfcd_0046,MyFCD,,,,,,141.5,derived_imputed
+myfcd_0047,MyFCD,,,,,,34.7367,derived_imputed
+myfcd_0048,MyFCD,,,,,,174.7217,derived_imputed
+myfcd_0049,MyFCD,,,,,,314.8617,derived_imputed
+myfcd_0050,MyFCD,,,,,,146.2567,derived_imputed
+myfcd_0051,MyFCD,,,,,,273.2583,derived_imputed
+myfcd_0052,MyFCD,,,,,,187.3067,derived_imputed
+myfcd_0053,MyFCD,,,,,,92.3133,derived_imputed
+myfcd_0054,MyFCD,,,,,,309.015,derived_imputed
+myfcd_0055,MyFCD,,,,,,284.9233,derived_imputed
+myfcd_0056,MyFCD,,,,,,70.5683,derived_imputed
+myfcd_0057,MyFCD,,,,,,151.7133,derived_imputed
+myfcd_0058,MyFCD,,,,,,135.4983,derived_imputed
+myfcd_0059,MyFCD,,,,,,8.8433,derived_imputed
 myfcd_0060,MyFCD,169640.0,Honey,1.0,HIGH,0.0,0.0,USDA_direct_high
-myfcd_0061,MyFCD,,,,,,0.3205,derived_imputed
-myfcd_0062,MyFCD,,,,,,0.2307,derived_imputed
-myfcd_0063,MyFCD,,,,,,0.2659,derived_imputed
-myfcd_0064,MyFCD,,,,,,0.0369,derived_imputed
-myfcd_0065,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0066,MyFCD,,,,,,0.2276,derived_imputed
+myfcd_0061,MyFCD,,,,,,270.0967,derived_imputed
+myfcd_0062,MyFCD,,,,,,156.68,derived_imputed
+myfcd_0063,MyFCD,,,,,,68.045,derived_imputed
+myfcd_0064,MyFCD,,,,,,12.285,derived_imputed
+myfcd_0065,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0066,MyFCD,,,,,,63.5717,derived_imputed
 myfcd_0067,MyFCD,168819.0,"Marmalade, orange",0.8351,HIGH,3.0,3.0,USDA_direct_high
-myfcd_0068,MyFCD,,,,,,0.0,derived_measured
-myfcd_0069,MyFCD,,,,,,0.0,derived_measured
-myfcd_0070,MyFCD,,,,,,0.0,derived_measured
-myfcd_0071,MyFCD,,,,,,0.0057,derived_imputed
-myfcd_0072,MyFCD,,,,,,0.0057,derived_imputed
-myfcd_0073,MyFCD,,,,,,0.0681,derived_imputed
-myfcd_0074,MyFCD,,,,,,0.0839,derived_imputed
-myfcd_0075,MyFCD,,,,,,0.0354,derived_imputed
-myfcd_0076,MyFCD,,,,,,0.0,derived_imputed
+myfcd_0068,MyFCD,,,,,,43.3967,derived_imputed
+myfcd_0069,MyFCD,,,,,,46.2283,derived_imputed
+myfcd_0070,MyFCD,,,,,,174.995,derived_imputed
+myfcd_0071,MyFCD,,,,,,189.5333,derived_imputed
+myfcd_0072,MyFCD,,,,,,149.4133,derived_imputed
+myfcd_0073,MyFCD,,,,,,32.6167,derived_imputed
+myfcd_0074,MyFCD,,,,,,248.0933,derived_imputed
+myfcd_0075,MyFCD,,,,,,138.7317,derived_imputed
+myfcd_0076,MyFCD,,,,,,1.0933,derived_imputed
 myfcd_0077,MyFCD,173410.0,"Butter, salted",0.4242,MEDIUM,684.0,684.0,USDA_direct_medium
-myfcd_0078,MyFCD,,,,,,0.0002,derived_imputed
+myfcd_0078,MyFCD,,,,,,214.9783,derived_imputed
 myfcd_0079,MyFCD,172175.0,"Cheese, blue",0.6301,MEDIUM,198.0,198.0,USDA_direct_medium
 myfcd_0080,MyFCD,172177.0,"Cheese, brie",0.9241,HIGH,174.0,174.0,USDA_direct_high
 myfcd_0081,MyFCD,172178.0,"Cheese, camembert",0.9241,HIGH,241.0,241.0,USDA_direct_high
 myfcd_0082,MyFCD,171295.0,"Cheese, cheddar, nonfat or fat free",0.4837,MEDIUM,60.0,60.0,USDA_direct_medium
-myfcd_0083,MyFCD,,,,,,0.0,derived_imputed
+myfcd_0083,MyFCD,,,,,,16.6583,derived_imputed
 myfcd_0084,MyFCD,173416.0,"Cheese, colby",0.9108,HIGH,264.0,264.0,USDA_direct_high
-myfcd_0085,MyFCD,,,,,,0.0,derived_imputed
+myfcd_0085,MyFCD,,,,,,16.58,derived_imputed
 myfcd_0086,MyFCD,170848.0,"Cheese, parmesan, hard",0.6172,MEDIUM,207.0,207.0,USDA_direct_medium
 myfcd_0087,MyFCD,170851.0,"Cheese, ricotta, whole milk",0.8466,HIGH,120.0,120.0,USDA_direct_high
-myfcd_0088,MyFCD,,,,,,0.0,derived_imputed
+myfcd_0088,MyFCD,,,,,,6.3783,derived_imputed
 myfcd_0089,MyFCD,173418.0,"Cheese, cream",0.4488,MEDIUM,308.0,308.0,USDA_direct_medium
-myfcd_0090,MyFCD,,,,,,0.0,derived_measured
-myfcd_0091,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0092,MyFCD,,,,,,0.0398,derived_imputed
-myfcd_0093,MyFCD,,,,,,0.0695,derived_imputed
+myfcd_0090,MyFCD,,,,,,45.885,derived_imputed
+myfcd_0091,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0092,MyFCD,,,,,,195.5583,derived_imputed
+myfcd_0093,MyFCD,,,,,,3.7967,derived_imputed
 myfcd_0094,MyFCD,171275.0,"Milk, canned, condensed, sweetened",1.0,HIGH,74.0,74.0,USDA_direct_high
-myfcd_0095,MyFCD,,,,,,0.0695,derived_imputed
-myfcd_0096,MyFCD,,,,,,0.0695,derived_imputed
+myfcd_0095,MyFCD,,,,,,3.895,derived_imputed
+myfcd_0096,MyFCD,,,,,,27.6533,derived_imputed
 myfcd_0097,MyFCD,169079.0,"Cheese, cream, low fat",0.4377,MEDIUM,161.0,161.0,USDA_direct_medium
-myfcd_0098,MyFCD,,,,,,0.0731,derived_imputed
+myfcd_0098,MyFCD,,,,,,147.9183,derived_imputed
 myfcd_0099,MyFCD,170888.0,"Yogurt, vanilla, low fat.",0.5127,MEDIUM,12.0,12.0,USDA_direct_medium
 myfcd_0100,MyFCD,172229.0,"Ice cream sandwich, made with light ice cream, vanilla",0.7464,HIGH,96.0,96.0,USDA_direct_high
-myfcd_0101,MyFCD,,,,,,0.0,derived_imputed
+myfcd_0101,MyFCD,,,,,,1.0933,derived_imputed
 myfcd_0102,MyFCD,170901.0,"Yogurt, Greek, strawberry, nonfat",0.401,MEDIUM,0.0,0.0,USDA_direct_medium
-myfcd_0103,MyFCD,,,,,,0.0695,derived_imputed
-myfcd_0104,MyFCD,173577.0,"Fish oil, cod liver",0.6958,HIGH,30000.0,0.0,derived_measured
-myfcd_0105,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0106,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0107,MyFCD,,,,,,0.0544,derived_imputed
-myfcd_0108,MyFCD,,,,,,0.0,derived_measured
-myfcd_0109,MyFCD,172336.0,"Oil, canola",0.8678,HIGH,0.0,0.0,derived_measured
-myfcd_0110,MyFCD,171412.0,"Oil, coconut",0.5489,MEDIUM,0.0,0.0,derived_measured
-myfcd_0111,MyFCD,,,,,,0.0,derived_measured
-myfcd_0112,MyFCD,,,,,,0.0,derived_measured
+myfcd_0103,MyFCD,,,,,,5.395,derived_imputed
+myfcd_0104,MyFCD,173577.0,"Fish oil, cod liver",0.6958,HIGH,30000.0,30000.0,USDA_direct_high
+myfcd_0105,MyFCD,,,,,,136.9233,derived_imputed
+myfcd_0106,MyFCD,,,,,,145.4983,derived_imputed
+myfcd_0107,MyFCD,,,,,,182.2617,derived_imputed
+myfcd_0108,MyFCD,,,,,,329.9667,derived_imputed
+myfcd_0109,MyFCD,172336.0,"Oil, canola",0.8678,HIGH,0.0,0.0,USDA_direct_high
+myfcd_0110,MyFCD,171412.0,"Oil, coconut",0.5489,MEDIUM,0.0,0.0,USDA_direct_medium
+myfcd_0111,MyFCD,,,,,,329.9667,derived_imputed
+myfcd_0112,MyFCD,,,,,,329.9667,derived_imputed
 myfcd_0113,MyFCD,171402.0,"Salad dressing, thousand island, commercial, regular",0.5674,MEDIUM,14.0,14.0,USDA_direct_medium
-myfcd_0114,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0115,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0116,MyFCD,,,,,,0.0908,derived_imputed
+myfcd_0114,MyFCD,,,,,,157.135,derived_imputed
+myfcd_0115,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0116,MyFCD,,,,,,17.1467,derived_imputed
 myfcd_0117,MyFCD,174108.0,"Beverages,  Energy drink, Citrus",0.6788,HIGH,0.0,0.0,USDA_direct_high
-myfcd_0118,MyFCD,,,,,,0.0695,derived_imputed
-myfcd_0119,MyFCD,,,,,,0.0,derived_imputed
+myfcd_0118,MyFCD,,,,,,517.7083,derived_imputed
+myfcd_0119,MyFCD,,,,,,1.0933,derived_imputed
 myfcd_0120,MyFCD,169044.0,"Beverages, Orange juice drink",0.7225,HIGH,2.0,2.0,USDA_direct_high
-myfcd_0121,MyFCD,,,,,,0.0695,derived_imputed
+myfcd_0121,MyFCD,,,,,,543.7117,derived_imputed
 myfcd_0122,MyFCD,174824.0,"Beverages, chocolate powder, no sugar added",0.5134,MEDIUM,0.0,0.0,USDA_direct_medium
-myfcd_0123,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0124,MyFCD,,,,,,0.0,derived_imputed
+myfcd_0123,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0124,MyFCD,,,,,,1.745,derived_imputed
 myfcd_0125,MyFCD,174133.0,"Beverages, coffee, instant, decaffeinated, powder",0.4891,MEDIUM,0.0,0.0,USDA_direct_medium
 myfcd_0126,MyFCD,174867.0,"Beverages, Malted drink mix, chocolate, powder, prepared with whole milk",0.5713,MEDIUM,26.0,26.0,USDA_direct_medium
-myfcd_0127,MyFCD,,,,,,0.0695,derived_imputed
+myfcd_0127,MyFCD,,,,,,24.7233,derived_imputed
 myfcd_0128,MyFCD,173230.0,"Beverages, tea, instant, unsweetened, powder",0.5376,MEDIUM,0.0,0.0,USDA_direct_medium
-myfcd_0129,MyFCD,,,,,,0.0695,derived_imputed
-myfcd_0130,MyFCD,,,,,,0.0,derived_imputed
+myfcd_0129,MyFCD,,,,,,519.1183,derived_imputed
+myfcd_0130,MyFCD,,,,,,1.0933,derived_imputed
 myfcd_0131,MyFCD,169044.0,"Beverages, Orange juice drink",0.8161,HIGH,2.0,2.0,USDA_direct_high
 myfcd_0132,MyFCD,169044.0,"Beverages, Orange juice drink",0.646,MEDIUM,2.0,2.0,USDA_direct_medium
 myfcd_0133,MyFCD,169044.0,"Beverages, Orange juice drink",0.7225,HIGH,2.0,2.0,USDA_direct_high
-myfcd_0134,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0135,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0136,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0137,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0138,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0139,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0140,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0141,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0142,MyFCD,,,,,,0.0,derived_imputed
+myfcd_0134,MyFCD,,,,,,1.7717,derived_imputed
+myfcd_0135,MyFCD,,,,,,23.1467,derived_imputed
+myfcd_0136,MyFCD,,,,,,1.9517,derived_imputed
+myfcd_0137,MyFCD,,,,,,33.6917,derived_imputed
+myfcd_0138,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0139,MyFCD,,,,,,154.9533,derived_imputed
+myfcd_0140,MyFCD,,,,,,1.5117,derived_imputed
+myfcd_0141,MyFCD,,,,,,0.9233,derived_imputed
+myfcd_0142,MyFCD,,,,,,4.305,derived_imputed
 myfcd_0143,MyFCD,172879.0,"Sauce, plum, ready-to-serve",0.7339,HIGH,2.0,2.0,USDA_direct_high
-myfcd_0144,MyFCD,173471.0,Vanilla extract,0.463,MEDIUM,0.0,0.0,derived_measured
-myfcd_0145,MyFCD,,,,,,0.0,derived_measured
-myfcd_0146,MyFCD,,,,,,0.0,derived_measured
-myfcd_0147,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0148,MyFCD,,,,,,0.0021,derived_imputed
-myfcd_0149,MyFCD,,,,,,0.0398,derived_imputed
-myfcd_0150,MyFCD,,,,,,0.0028,derived_imputed
-myfcd_0151,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0152,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0153,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0154,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0155,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0156,MyFCD,,,,,,0.0203,derived_imputed
-myfcd_0157,MyFCD,,,,,,0.0,derived_imputed
+myfcd_0144,MyFCD,173471.0,Vanilla extract,0.463,MEDIUM,0.0,0.0,USDA_direct_medium
+myfcd_0145,MyFCD,,,,,,1.8517,derived_imputed
+myfcd_0146,MyFCD,,,,,,7.2533,derived_imputed
+myfcd_0147,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0148,MyFCD,,,,,,9.61,derived_imputed
+myfcd_0149,MyFCD,,,,,,0.0,derived_imputed
+myfcd_0150,MyFCD,,,,,,0.0233,derived_imputed
+myfcd_0151,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0152,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0153,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0154,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0155,MyFCD,,,,,,162.4767,derived_imputed
+myfcd_0156,MyFCD,,,,,,162.65,derived_imputed
+myfcd_0157,MyFCD,,,,,,1.0933,derived_imputed
 myfcd_0158,MyFCD,172706.0,"Cake, sponge, commercially prepared",0.5137,MEDIUM,44.0,44.0,USDA_direct_medium
-myfcd_0159,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0160,MyFCD,,,,,,0.0028,derived_imputed
-myfcd_0161,MyFCD,,,,,,0.0369,derived_imputed
-myfcd_0162,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0163,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0164,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0165,MyFCD,,,,,,0.013,derived_imputed
-myfcd_0166,MyFCD,,,,,,0.0022,derived_imputed
-myfcd_0167,MyFCD,,,,,,0.0022,derived_imputed
-myfcd_0168,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0169,MyFCD,,,,,,0.0022,derived_imputed
+myfcd_0159,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0160,MyFCD,,,,,,15.67,derived_imputed
+myfcd_0161,MyFCD,,,,,,265.5283,derived_imputed
+myfcd_0162,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0163,MyFCD,,,,,,178.0583,derived_imputed
+myfcd_0164,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0165,MyFCD,,,,,,61.9133,derived_imputed
+myfcd_0166,MyFCD,,,,,,262.34,derived_imputed
+myfcd_0167,MyFCD,,,,,,6.8033,derived_imputed
+myfcd_0168,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0169,MyFCD,,,,,,264.5967,derived_imputed
 myfcd_0170,MyFCD,172699.0,"Cake, coffeecake, cheese",0.4055,MEDIUM,86.0,86.0,USDA_direct_medium
-myfcd_0171,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0172,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0173,MyFCD,,,,,,0.0,derived_imputed
+myfcd_0171,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0172,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0173,MyFCD,,,,,,0.1583,derived_imputed
 myfcd_0174,MyFCD,172754.0,"Danish pastry, cheese",0.8386,HIGH,35.0,35.0,USDA_direct_high
 myfcd_0175,MyFCD,172790.0,"Puff pastry, frozen, ready-to-bake",0.5749,MEDIUM,0.0,0.0,USDA_direct_medium
 myfcd_0176,MyFCD,172790.0,"Puff pastry, frozen, ready-to-bake",0.6123,MEDIUM,0.0,0.0,USDA_direct_medium
-myfcd_0177,MyFCD,,,,,,0.1417,derived_imputed
-myfcd_0178,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0179,MyFCD,,,,,,0.0022,derived_imputed
-myfcd_0180,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0181,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0182,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0183,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0184,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0185,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0186,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0187,MyFCD,,,,,,0.0908,derived_imputed
-myfcd_0188,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0189,MyFCD,,,,,,0.0619,derived_imputed
-myfcd_0190,MyFCD,,,,,,0.0962,derived_imputed
-myfcd_0191,MyFCD,,,,,,0.0043,derived_imputed
-myfcd_0192,MyFCD,,,,,,0.038,derived_imputed
-myfcd_0193,MyFCD,,,,,,0.0369,derived_imputed
-myfcd_0194,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0195,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0196,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0197,MyFCD,,,,,,0.1389,derived_imputed
-myfcd_0198,MyFCD,,,,,,0.0602,derived_imputed
-myfcd_0199,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0200,MyFCD,,,,,,0.0239,derived_imputed
-myfcd_0201,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0202,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0203,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0204,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0205,MyFCD,,,,,,0.0695,derived_imputed
-myfcd_0206,MyFCD,,,,,,0.0391,derived_imputed
-myfcd_0207,MyFCD,,,,,,0.0369,derived_imputed
-myfcd_0208,MyFCD,,,,,,0.0391,derived_imputed
-myfcd_0209,MyFCD,,,,,,0.0369,derived_imputed
-myfcd_0210,MyFCD,,,,,,0.0413,derived_imputed
-myfcd_0211,MyFCD,,,,,,0.0391,derived_imputed
-myfcd_0212,MyFCD,,,,,,0.0391,derived_imputed
-myfcd_0213,MyFCD,,,,,,0.0435,derived_imputed
-myfcd_0214,MyFCD,,,,,,0.0695,derived_imputed
-myfcd_0215,MyFCD,,,,,,0.0398,derived_imputed
-myfcd_0216,MyFCD,,,,,,0.0002,derived_imputed
-myfcd_0217,MyFCD,,,,,,0.0035,derived_imputed
-myfcd_0218,MyFCD,,,,,,0.0647,derived_imputed
-myfcd_0219,MyFCD,,,,,,0.0021,derived_imputed
-myfcd_0220,MyFCD,,,,,,0.005,derived_imputed
-myfcd_0221,MyFCD,,,,,,0.0731,derived_imputed
-myfcd_0222,MyFCD,,,,,,0.0731,derived_imputed
-myfcd_0223,MyFCD,,,,,,0.0028,derived_imputed
-myfcd_0224,MyFCD,,,,,,0.0361,derived_imputed
+myfcd_0177,MyFCD,,,,,,70.0383,derived_imputed
+myfcd_0178,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0179,MyFCD,,,,,,173.6,derived_imputed
+myfcd_0180,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0181,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0182,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0183,MyFCD,,,,,,0.17,derived_imputed
+myfcd_0184,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0185,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0186,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0187,MyFCD,,,,,,12.6617,derived_imputed
+myfcd_0188,MyFCD,,,,,,10.46,derived_imputed
+myfcd_0189,MyFCD,,,,,,543.2967,derived_imputed
+myfcd_0190,MyFCD,,,,,,9.6183,derived_imputed
+myfcd_0191,MyFCD,,,,,,6.585,derived_imputed
+myfcd_0192,MyFCD,,,,,,11.895,derived_imputed
+myfcd_0193,MyFCD,,,,,,10.5183,derived_imputed
+myfcd_0194,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0195,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0196,MyFCD,,,,,,0.0067,derived_imputed
+myfcd_0197,MyFCD,,,,,,107.5317,derived_imputed
+myfcd_0198,MyFCD,,,,,,147.07,derived_imputed
+myfcd_0199,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0200,MyFCD,,,,,,9.79,derived_imputed
+myfcd_0201,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0202,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0203,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0204,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0205,MyFCD,,,,,,0.0983,derived_imputed
+myfcd_0206,MyFCD,,,,,,1.175,derived_imputed
+myfcd_0207,MyFCD,,,,,,0.2117,derived_imputed
+myfcd_0208,MyFCD,,,,,,9.045,derived_imputed
+myfcd_0209,MyFCD,,,,,,0.1467,derived_imputed
+myfcd_0210,MyFCD,,,,,,0.0083,derived_imputed
+myfcd_0211,MyFCD,,,,,,65.2417,derived_imputed
+myfcd_0212,MyFCD,,,,,,7.08,derived_imputed
+myfcd_0213,MyFCD,,,,,,0.7817,derived_imputed
+myfcd_0214,MyFCD,,,,,,0.2083,derived_imputed
+myfcd_0215,MyFCD,,,,,,39.0267,derived_imputed
+myfcd_0216,MyFCD,,,,,,21.7467,derived_imputed
+myfcd_0217,MyFCD,,,,,,38.24,derived_imputed
+myfcd_0218,MyFCD,,,,,,302.1067,derived_imputed
+myfcd_0219,MyFCD,,,,,,18.4517,derived_imputed
+myfcd_0220,MyFCD,,,,,,1.7833,derived_imputed
+myfcd_0221,MyFCD,,,,,,82.5767,derived_imputed
+myfcd_0222,MyFCD,,,,,,143.915,derived_imputed
+myfcd_0223,MyFCD,,,,,,15.53,derived_imputed
+myfcd_0224,MyFCD,,,,,,67.8967,derived_imputed
 myfcd_0225,MyFCD,169975.0,"Cabbage, raw",0.5503,MEDIUM,5.0,5.0,USDA_direct_medium
-myfcd_0226,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0227,MyFCD,,,,,,0.0065,derived_imputed
+myfcd_0226,MyFCD,,,,,,20.48,derived_imputed
+myfcd_0227,MyFCD,,,,,,134.5917,derived_imputed
 myfcd_0228,MyFCD,168462.0,"Spinach, raw",0.439,MEDIUM,469.0,469.0,USDA_direct_medium
-myfcd_0229,MyFCD,,,,,,0.0695,derived_imputed
-myfcd_0230,MyFCD,,,,,,0.0248,derived_imputed
-myfcd_0231,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0232,MyFCD,,,,,,0.0369,derived_imputed
-myfcd_0233,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0234,MyFCD,,,,,,0.0391,derived_imputed
+myfcd_0229,MyFCD,,,,,,7.9467,derived_imputed
+myfcd_0230,MyFCD,,,,,,6.3433,derived_imputed
+myfcd_0231,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0232,MyFCD,,,,,,36.8083,derived_imputed
+myfcd_0233,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0234,MyFCD,,,,,,140.785,derived_imputed
