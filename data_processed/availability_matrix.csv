@@ -1,9 +1,9 @@
 ,TKPI_terisi,TKPI_total,MyFCD_terisi,MyFCD_total,TKPI_pct,MyFCD_pct,kelompok,strategi_imputasi
 vitamin_a_mcg,0,1146,0,234,0.0,0.0,Vitamin,Pinjam USDA (kosong di kedua basis)
-retinol_mcg,541,1146,38,234,47.2,16.2,Vitamin,Imputasi internal per basis
+retinol_mcg,541,1146,0,234,47.2,0.0,Vitamin,Cross-DB transfer / USDA
 carotene_total_mcg,607,1146,0,234,53.0,0.0,Vitamin,Cross-DB transfer / USDA
-beta_carotene_mcg,679,1146,37,234,59.2,15.8,Vitamin,Imputasi internal per basis
-copper_mg,795,1146,49,234,69.4,20.9,Mineral,Imputasi internal per basis
+beta_carotene_mcg,679,1146,0,234,59.2,0.0,Vitamin,Cross-DB transfer / USDA
+copper_mg,795,1146,0,234,69.4,0.0,Mineral,Cross-DB transfer / USDA
 vitamin_b2_mg,796,1146,10,234,69.5,4.3,Vitamin,Imputasi internal per basis
 zinc_mg,799,1146,49,234,69.7,20.9,Mineral,Imputasi internal per basis
 niacin_mg,807,1146,10,234,70.4,4.3,Vitamin,Imputasi internal per basis
