@@ -61,6 +61,18 @@ COMMON_ALIASES = {
 }
 
 
+
+# Source columns whose values are known to be unreliable and are treated as
+# not measured. MyFCD lists copper, retinol and beta-carotene with mixed
+# units per food (ug or mg) and the stored values are mostly 0 or ~0.0001,
+# far below plausible levels (e.g. carob flour copper 1 ug vs 571 ug in
+# USDA). Checked against the MyFCD site: the scraper reproduces the site, so
+# the error is in the source and cannot be corrected with one factor.
+UNRELIABLE_SOURCE_FIELDS = {
+    "MyFCD": ["copper_mg", "retinol_mcg", "beta_carotene_mcg"],
+}
+UNRELIABLE_NOTE = "nilai sumber tidak andal, dikosongkan: {fields}"
+
 def _json_safe(value: Any) -> Any:
     if value is None:
         return None
@@ -89,6 +101,7 @@ def clean_dataframe(df: pd.DataFrame, source: str, source_prefix: str) -> tuple[
     df = normalize_columns(df)
     cleaned_rows: list[dict[str, Any]] = []
     dropped_rows = []
+    excluded_counts: dict[str, int] = {}
     cleaned_at = datetime.now(timezone.utc).isoformat()
 
     for idx, row in df.iterrows():
@@ -114,6 +127,14 @@ def clean_dataframe(df: pd.DataFrame, source: str, source_prefix: str) -> tuple[
         for nutrient in NUTRIENT_FIELDS:
             record[nutrient] = normalize_numeric(pick_value(row, COMMON_ALIASES.get(nutrient, [nutrient])))
 
+        blanked = [field for field in UNRELIABLE_SOURCE_FIELDS.get(source, []) if record.get(field) is not None]
+        for field in blanked:
+            record[field] = None
+            excluded_counts[field] = excluded_counts.get(field, 0) + 1
+        if blanked:
+            note = UNRELIABLE_NOTE.format(fields=", ".join(blanked))
+            record["notes"] = f"{record['notes']} | {note}" if record["notes"] else note
+
         record["missing_nutrient_count"] = compute_missing_nutrient_count(record)
         record["completeness_score"] = compute_completeness_score(record)
         validated = NutritionRecord(**record)
@@ -124,6 +145,7 @@ def clean_dataframe(df: pd.DataFrame, source: str, source_prefix: str) -> tuple[
         "input_rows": int(len(df)),
         "output_rows": int(len(cleaned_rows)),
         "dropped_rows": dropped_rows,
+        "excluded_counts": excluded_counts,
     }
 
 
@@ -152,6 +174,14 @@ def write_clean_outputs(df: pd.DataFrame, source_slug: str, report_title: str, s
         missing = int(df[field].isna().sum()) if field in df else total
         percent = (missing / total * 100) if total else 0
         lines.append(f"| {field} | {missing} | {percent:.2f}% |")
+    if summary.get("excluded_counts"):
+        lines.append("")
+        lines.append("## Nilai sumber yang dikosongkan")
+        lines.append("")
+        lines.append("Kolom berikut dianggap tidak terukur karena nilai sumbernya tidak andal (lihat UNRELIABLE_SOURCE_FIELDS di scripts/clean_common.py).")
+        lines.append("")
+        for field, count in summary["excluded_counts"].items():
+            lines.append(f"- {field}: {count} nilai dikosongkan")
     if summary["dropped_rows"]:
         lines.append("")
         lines.append("## Dropped Rows")

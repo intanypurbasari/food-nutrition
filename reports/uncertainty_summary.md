@@ -1,6 +1,6 @@
 # Bootstrap Uncertainty
 
-- B = 50 resample baris (dengan pengembalian) per sumber, seed 42+b.
+- B = 50 resample baris (dengan pengembalian) per sumber, seed 42+b; waktu 19 menit.
 - Tiap replikasi melatih ulang MissForest pada resample lalu mengimputasi data asli, jadi tiap sel yang aslinya kosong mendapat B prediksi.
 - relative_sd = sd bootstrap / sebaran nilai terukur nutrisi itu di sumber yang sama. Sebaran diukur dengan IQR/1,349 (setara sd untuk data normal, tetapi tahan outlier); bila IQR = 0, dipakai sd.
 - Pasangan dengan kurang dari 5 sel imputasi tidak ditandai.
@@ -26,26 +26,26 @@
 | TKPI | phosphorus_mg | missforest | 40 | 15.3 | 55.3 | 0.129 | 0.291 |  |
 | TKPI | fat_g | missforest | 1 | 0.342 | 1.05 | 0.061 | 0.061 |  |
 | TKPI | water_g | missforest | 2 | 0.558 | 2.17 | 0.014 | 0.015 |  |
-| MyFCD | zinc_mg | missforest | 185 | 17.9 | 53.4 | 59.728 | 463.105 | ⚠️ tinggi |
-| MyFCD | iron_mg | missforest | 186 | 3.16 | 7.34 | 5.136 | 42.548 | ⚠️ tinggi |
-| MyFCD | niacin_mg | missforest | 224 | 3.6 | 12 | 2.489 | 3.000 | ⚠️ tinggi |
-| MyFCD | vitamin_b2_mg | missforest | 224 | 0.434 | 1.46 | 2.384 | 3.084 | ⚠️ tinggi |
-| MyFCD | vitamin_b1_mg | missforest | 224 | 0.14 | 0.501 | 2.107 | 3.097 | ⚠️ tinggi |
-| MyFCD | carotene_total_mcg | crossdb | 234 | 995 | 3.21e+03 | 1.434 | 3.887 | ⚠️ tinggi |
-| MyFCD | phosphorus_mg | missforest | 127 | 110 | 379 | 1.313 | 2.034 | ⚠️ tinggi |
-| MyFCD | calcium_mg | missforest | 167 | 43.7 | 145 | 0.931 | 1.232 | ⚠️ tinggi |
-| MyFCD | protein_g | missforest | 84 | 4.78 | 16.1 | 0.914 | 0.914 | ⚠️ tinggi |
-| MyFCD | fiber_g | missforest | 95 | 2.73 | 9.69 | 0.762 | 1.182 | ⚠️ tinggi |
-| MyFCD | potassium_mg | missforest | 161 | 110 | 326 | 0.718 | 1.500 | ⚠️ tinggi |
-| MyFCD | vitamin_c_mg | missforest | 207 | 2.26 | 7.67 | 0.673 | 0.734 | ⚠️ tinggi |
-| MyFCD | sodium_mg | missforest | 170 | 129 | 445 | 0.591 | 0.814 | ⚠️ tinggi |
-| MyFCD | fat_g | missforest | 83 | 6.28 | 20.8 | 0.462 | 0.631 |  |
-| MyFCD | ash_g | missforest | 95 | 0.462 | 1.73 | 0.411 | 0.786 |  |
-| MyFCD | water_g | missforest | 84 | 16.4 | 58.8 | 0.410 | 0.437 |  |
-| MyFCD | energy_kcal | missforest | 129 | 80.7 | 279 | 0.400 | 0.419 |  |
-| MyFCD | carbohydrate_g | missforest | 125 | 11.3 | 44.1 | 0.359 | 0.478 |  |
-| MyFCD | retinol_mcg | missforest | 196 | 0.0293 | 0.0901 | 0.291 | 0.623 |  |
-| MyFCD | beta_carotene_mcg | missforest | 197 | 0.0413 | 0.0867 | 0.193 | 1.906 |  |
-| MyFCD | copper_mg | missforest | 185 | 1.99 | 4.03 | 0.069 | 0.620 |  |
+| MyFCD | zinc_mg | missforest | 185 | 7.49 | 2.39 | 24.937 | 412.030 | ⚠️ tinggi |
+| MyFCD | beta_carotene_mcg | crossdb | 234 | 545 | 1.27e+03 | 4.366 | 18.388 | ⚠️ tinggi |
+| MyFCD | copper_mg | crossdb | 234 | 0.935 | 1.54 | 4.207 | 137.169 | ⚠️ tinggi |
+| MyFCD | iron_mg | missforest | 186 | 2.04 | 7.34 | 3.320 | 36.897 | ⚠️ tinggi |
+| MyFCD | retinol_mcg | crossdb | 234 | 93.9 | 289 | 3.247 | 49.461 | ⚠️ tinggi |
+| MyFCD | niacin_mg | missforest | 224 | 3.54 | 11.8 | 2.442 | 3.105 | ⚠️ tinggi |
+| MyFCD | vitamin_b1_mg | missforest | 224 | 0.157 | 0.544 | 2.360 | 3.160 | ⚠️ tinggi |
+| MyFCD | vitamin_b2_mg | missforest | 224 | 0.38 | 1.18 | 2.084 | 2.716 | ⚠️ tinggi |
+| MyFCD | carotene_total_mcg | crossdb | 234 | 1.27e+03 | 4.09e+03 | 1.832 | 4.914 | ⚠️ tinggi |
+| MyFCD | fiber_g | missforest | 95 | 5.15 | 19.9 | 1.439 | 1.637 | ⚠️ tinggi |
+| MyFCD | phosphorus_mg | missforest | 127 | 117 | 393 | 1.392 | 1.927 | ⚠️ tinggi |
+| MyFCD | protein_g | missforest | 84 | 4.94 | 17.6 | 0.946 | 0.946 | ⚠️ tinggi |
+| MyFCD | potassium_mg | missforest | 161 | 133 | 463 | 0.867 | 1.847 | ⚠️ tinggi |
+| MyFCD | calcium_mg | missforest | 167 | 39 | 145 | 0.829 | 1.206 | ⚠️ tinggi |
+| MyFCD | sodium_mg | missforest | 170 | 136 | 438 | 0.625 | 1.328 | ⚠️ tinggi |
+| MyFCD | vitamin_c_mg | missforest | 207 | 1.87 | 6.79 | 0.558 | 0.648 | ⚠️ tinggi |
+| MyFCD | fat_g | missforest | 83 | 6.66 | 22.3 | 0.490 | 0.727 |  |
+| MyFCD | energy_kcal | missforest | 129 | 88.6 | 284 | 0.439 | 0.445 |  |
+| MyFCD | water_g | missforest | 84 | 16.8 | 55.8 | 0.421 | 0.457 |  |
+| MyFCD | ash_g | missforest | 95 | 0.427 | 1.59 | 0.380 | 0.608 |  |
+| MyFCD | carbohydrate_g | missforest | 125 | 11.3 | 38.4 | 0.360 | 0.477 |  |
 
-Nutrisi berketidakpastian tinggi: 21 dari 39 pasangan sumber x nutrisi.
+Nutrisi berketidakpastian tinggi: 24 dari 39 pasangan sumber x nutrisi.

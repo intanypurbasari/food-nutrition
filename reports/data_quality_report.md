@@ -15,7 +15,7 @@
 ## Outliers
 Baris berikut ditandai sebagai outlier. Nilainya dibiarkan apa adanya dan tetap ikut imputasi.
 
-- MyFCD myfcd_0006 (BREAD, RAISIN (ROTI KISMIS)): outlier_implausible_minerals, mineral_total_g=166.513
+- MyFCD myfcd_0006 (BREAD, RAISIN (ROTI KISMIS)): outlier_implausible_minerals, mineral_total_g=166.313
 
 ## Source Detail
 - TKPI: 1146/1146 valid rows
