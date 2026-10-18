@@ -61,6 +61,48 @@ COMMON_ALIASES = {
 }
 
 
+
+# Source columns whose values are known to be unreliable and are treated as
+# not measured. MyFCD lists copper, retinol and beta-carotene with mixed
+# units per food (ug or mg) and the stored values are mostly 0 or ~0.0001,
+# far below plausible levels (e.g. carob flour copper 1 ug vs 571 ug in
+# USDA). Checked against the MyFCD site: the scraper reproduces the site, so
+# the error is in the source and cannot be corrected with one factor.
+UNRELIABLE_SOURCE_FIELDS = {
+    "MyFCD": ["copper_mg", "retinol_mcg", "beta_carotene_mcg"],
+}
+UNRELIABLE_NOTE = "nilai sumber tidak andal, dikosongkan: {fields}"
+
+# Values recorded in ug under an mg column (unity measure error, factor 1000).
+# A value above the threshold is divided by 1000; the original is kept in
+# notes. TKPI copper: 18 values of 26-4303 "mg" while the natural maximum in
+# USDA SR Legacy is ~15 mg/100 g (liver; p99.9 = 11 mg) and same-type TKPI
+# foods sit at 0.04-0.34 mg (e.g. bananas) - read as ug they match. Basis:
+# FAO/INFOODS Guidelines for Checking Food Composition Data (2012) and for
+# Converting Units (2012); Di Zio, Guarnera & Luzi (2005), Survey Methodology
+# 31(1):53-63. Values between REVIEW_RANGE bounds are kept but reported.
+UNIT_ERROR_CORRECTIONS = {
+    "TKPI": {
+        "copper_mg": {
+            "threshold": 20.0,
+            "factor": 1000.0,
+            "review_range": (5.0, 20.0),
+        }
+    },
+}
+# Single source cells that are chemically impossible and are treated as not
+# measured, keyed by the source's own food code. Verified on panganku.org.
+# - CP006 Kacang kedelai, goreng: Na 3492, K 11890, Cu 26.3, Zn 60 mg give
+#   16.5 g of minerals against 3.7 g ash (minerals cannot exceed ash).
+# - KR003 Lemak babi (lard): Cu 9 mg with 0 g ash and every other mineral 0.
+UNRELIABLE_SOURCE_CELLS = {
+    "TKPI": {
+        "CP006": ["sodium_mg", "potassium_mg", "copper_mg", "zinc_mg"],
+        "KR003": ["copper_mg"],
+    },
+}
+UNIT_CORRECTION_NOTE = "{field} dikoreksi ug->mg: {original:g} -> {corrected:g}"
+
 def _json_safe(value: Any) -> Any:
     if value is None:
         return None
@@ -89,6 +131,9 @@ def clean_dataframe(df: pd.DataFrame, source: str, source_prefix: str) -> tuple[
     df = normalize_columns(df)
     cleaned_rows: list[dict[str, Any]] = []
     dropped_rows = []
+    excluded_counts: dict[str, int] = {}
+    unit_corrections: list[dict[str, Any]] = []
+    review_values: list[dict[str, Any]] = []
     cleaned_at = datetime.now(timezone.utc).isoformat()
 
     for idx, row in df.iterrows():
@@ -114,6 +159,34 @@ def clean_dataframe(df: pd.DataFrame, source: str, source_prefix: str) -> tuple[
         for nutrient in NUTRIENT_FIELDS:
             record[nutrient] = normalize_numeric(pick_value(row, COMMON_ALIASES.get(nutrient, [nutrient])))
 
+        source_code = str(row.get("kode_pangan") or row.get("myfcd_id") or "").strip()
+        for field, rule in UNIT_ERROR_CORRECTIONS.get(source, {}).items():
+            value = record.get(field)
+            if value is None:
+                continue
+            low, high = rule["review_range"]
+            if field in UNRELIABLE_SOURCE_CELLS.get(source, {}).get(source_code, []):
+                continue  # blanked below
+            if value > rule["threshold"]:
+                corrected = value / rule["factor"]
+                record[field] = corrected
+                note = UNIT_CORRECTION_NOTE.format(field=field, original=value, corrected=corrected)
+                record["notes"] = f"{record['notes']} | {note}" if record["notes"] else note
+                unit_corrections.append({"food_id": record["food_id"], "food_name_original": record["food_name_original"],
+                                         "field": field, "original": value, "corrected": corrected})
+            elif low < value <= high:
+                review_values.append({"food_id": record["food_id"], "food_name_original": record["food_name_original"],
+                                      "field": field, "value": value})
+
+        unreliable = UNRELIABLE_SOURCE_FIELDS.get(source, []) + UNRELIABLE_SOURCE_CELLS.get(source, {}).get(source_code, [])
+        blanked = [field for field in unreliable if record.get(field) is not None]
+        for field in blanked:
+            record[field] = None
+            excluded_counts[field] = excluded_counts.get(field, 0) + 1
+        if blanked:
+            note = UNRELIABLE_NOTE.format(fields=", ".join(blanked))
+            record["notes"] = f"{record['notes']} | {note}" if record["notes"] else note
+
         record["missing_nutrient_count"] = compute_missing_nutrient_count(record)
         record["completeness_score"] = compute_completeness_score(record)
         validated = NutritionRecord(**record)
@@ -124,6 +197,9 @@ def clean_dataframe(df: pd.DataFrame, source: str, source_prefix: str) -> tuple[
         "input_rows": int(len(df)),
         "output_rows": int(len(cleaned_rows)),
         "dropped_rows": dropped_rows,
+        "excluded_counts": excluded_counts,
+        "unit_corrections": unit_corrections,
+        "review_values": review_values,
     }
 
 
@@ -152,6 +228,30 @@ def write_clean_outputs(df: pd.DataFrame, source_slug: str, report_title: str, s
         missing = int(df[field].isna().sum()) if field in df else total
         percent = (missing / total * 100) if total else 0
         lines.append(f"| {field} | {missing} | {percent:.2f}% |")
+    if summary.get("excluded_counts"):
+        lines.append("")
+        lines.append("## Nilai sumber yang dikosongkan")
+        lines.append("")
+        lines.append("Kolom berikut dianggap tidak terukur karena nilai sumbernya tidak andal (lihat UNRELIABLE_SOURCE_FIELDS dan UNRELIABLE_SOURCE_CELLS di scripts/clean_common.py).")
+        lines.append("")
+        for field, count in summary["excluded_counts"].items():
+            lines.append(f"- {field}: {count} nilai dikosongkan")
+    if summary.get("unit_corrections"):
+        lines.append("")
+        lines.append("## Koreksi kesalahan satuan (ug tercatat sebagai mg)")
+        lines.append("")
+        lines.append("Nilai di atas ambang dibagi 1000 (lihat UNIT_ERROR_CORRECTIONS di scripts/clean_common.py). Nilai asli tetap tercatat di kolom notes.")
+        lines.append("")
+        lines.append("| food_id | Pangan | Kolom | Nilai asli | Setelah koreksi |")
+        lines.append("|---|---|---|---:|---:|")
+        for item in summary["unit_corrections"]:
+            lines.append(f"| {item['food_id']} | {item['food_name_original']} | {item['field']} | {item['original']:g} | {item['corrected']:g} |")
+    if summary.get("review_values"):
+        lines.append("")
+        lines.append("## Perlu ditinjau manual (tidak dibagi 1000)")
+        lines.append("")
+        for item in summary["review_values"]:
+            lines.append(f"- {item['food_id']} {item['food_name_original']}: {item['field']} = {item['value']:g}")
     if summary["dropped_rows"]:
         lines.append("")
         lines.append("## Dropped Rows")

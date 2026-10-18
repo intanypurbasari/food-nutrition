@@ -18,10 +18,10 @@
 | iron_mg | Imputasi internal per basis | 1380 | 0 | 0 | 0 |
 | sodium_mg | Imputasi internal per basis | 1380 | 0 | 0 | 0 |
 | potassium_mg | Imputasi internal per basis | 1380 | 0 | 0 | 0 |
-| copper_mg | Imputasi internal per basis | 1380 | 0 | 0 | 0 |
+| copper_mg | Cross-DB transfer / USDA | 1146 | 234 | 0 | 0 |
 | zinc_mg | Imputasi internal per basis | 1380 | 0 | 0 | 0 |
-| retinol_mcg | Imputasi internal per basis | 1380 | 0 | 0 | 0 |
-| beta_carotene_mcg | Imputasi internal per basis | 1380 | 0 | 0 | 0 |
+| retinol_mcg | Cross-DB transfer / USDA | 1146 | 234 | 0 | 0 |
+| beta_carotene_mcg | Cross-DB transfer / USDA | 1146 | 234 | 0 | 0 |
 | carotene_total_mcg | Cross-DB transfer / USDA | 1146 | 234 | 0 | 0 |
 | vitamin_a_mcg | Pinjam USDA (kosong di kedua basis) | 0 | 0 | 0 | 1380 |
 | vitamin_b1_mg | Imputasi internal per basis | 1380 | 0 | 0 | 0 |

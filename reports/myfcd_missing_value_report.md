@@ -20,13 +20,21 @@
 | iron_mg | 186 | 79.49% |
 | sodium_mg | 170 | 72.65% |
 | potassium_mg | 161 | 68.80% |
-| copper_mg | 185 | 79.06% |
+| copper_mg | 234 | 100.00% |
 | zinc_mg | 185 | 79.06% |
-| retinol_mcg | 196 | 83.76% |
-| beta_carotene_mcg | 197 | 84.19% |
+| retinol_mcg | 234 | 100.00% |
+| beta_carotene_mcg | 234 | 100.00% |
 | carotene_total_mcg | 234 | 100.00% |
 | vitamin_a_mcg | 234 | 100.00% |
 | vitamin_b1_mg | 224 | 95.73% |
 | vitamin_b2_mg | 224 | 95.73% |
 | niacin_mg | 224 | 95.73% |
 | vitamin_c_mg | 207 | 88.46% |
+
+## Nilai sumber yang dikosongkan
+
+Kolom berikut dianggap tidak terukur karena nilai sumbernya tidak andal (lihat UNRELIABLE_SOURCE_FIELDS dan UNRELIABLE_SOURCE_CELLS di scripts/clean_common.py).
+
+- copper_mg: 49 nilai dikosongkan
+- retinol_mcg: 38 nilai dikosongkan
+- beta_carotene_mcg: 37 nilai dikosongkan
