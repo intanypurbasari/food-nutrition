@@ -36,3 +36,19 @@ def test_other_sources_keep_those_fields():
     df, summary = clean_dataframe(_raw("TKPI"), "TKPI", "tkpi")
     assert df.loc[0, "copper_mg"] == 0.0001
     assert summary["excluded_counts"] == {}
+
+
+def test_tkpi_copper_unit_error_is_divided_by_1000_and_noted():
+    raw = pd.DataFrame(
+        [
+            {"food_name_original": "Apel", "source": "TKPI", "copper_mg": 124.2},
+            {"food_name_original": "Hati", "source": "TKPI", "copper_mg": 9.5},
+            {"food_name_original": "Pisang", "source": "TKPI", "copper_mg": 0.2},
+        ]
+    )
+    df, summary = clean_dataframe(raw, "TKPI", "tkpi")
+    assert abs(df.loc[0, "copper_mg"] - 0.1242) < 1e-12
+    assert "124.2 -> 0.1242" in df.loc[0, "notes"]
+    assert df.loc[1, "copper_mg"] == 9.5 and df.loc[2, "copper_mg"] == 0.2
+    assert len(summary["unit_corrections"]) == 1
+    assert [item["food_name_original"] for item in summary["review_values"]] == ["Hati"]

@@ -73,6 +73,29 @@ UNRELIABLE_SOURCE_FIELDS = {
 }
 UNRELIABLE_NOTE = "nilai sumber tidak andal, dikosongkan: {fields}"
 
+# Values recorded in ug under an mg column (unity measure error, factor 1000).
+# A value above the threshold is divided by 1000; the original is kept in
+# notes. TKPI copper: 18 values of 26-4303 "mg" while the natural maximum in
+# USDA SR Legacy is ~15 mg/100 g (liver; p99.9 = 11 mg) and same-type TKPI
+# foods sit at 0.04-0.34 mg (e.g. bananas) - read as ug they match. Basis:
+# FAO/INFOODS Guidelines for Checking Food Composition Data (2012) and for
+# Converting Units (2012); Di Zio, Guarnera & Luzi (2005), Survey Methodology
+# 31(1):53-63. Values between REVIEW_RANGE bounds are kept but reported.
+UNIT_ERROR_CORRECTIONS = {
+    "TKPI": {
+        "copper_mg": {
+            "threshold": 20.0,
+            "factor": 1000.0,
+            "review_range": (5.0, 20.0),
+            # Not a ug/mg error: /1000 gives 0.026 mg (fried soybean is ~1.6 mg)
+            # and the same row has zinc 60 mg, so the row looks shifted rather
+            # than mislabelled. Treated as not measured instead of corrected.
+            "blank_instead": {"Kacang kedelai, goreng"},
+        }
+    },
+}
+UNIT_CORRECTION_NOTE = "{field} dikoreksi ug->mg: {original:g} -> {corrected:g}"
+
 def _json_safe(value: Any) -> Any:
     if value is None:
         return None
@@ -102,6 +125,8 @@ def clean_dataframe(df: pd.DataFrame, source: str, source_prefix: str) -> tuple[
     cleaned_rows: list[dict[str, Any]] = []
     dropped_rows = []
     excluded_counts: dict[str, int] = {}
+    unit_corrections: list[dict[str, Any]] = []
+    review_values: list[dict[str, Any]] = []
     cleaned_at = datetime.now(timezone.utc).isoformat()
 
     for idx, row in df.iterrows():
@@ -127,6 +152,29 @@ def clean_dataframe(df: pd.DataFrame, source: str, source_prefix: str) -> tuple[
         for nutrient in NUTRIENT_FIELDS:
             record[nutrient] = normalize_numeric(pick_value(row, COMMON_ALIASES.get(nutrient, [nutrient])))
 
+        for field, rule in UNIT_ERROR_CORRECTIONS.get(source, {}).items():
+            value = record.get(field)
+            if value is None:
+                continue
+            low, high = rule["review_range"]
+            if record["food_name_original"] in rule.get("blank_instead", set()):
+                record[field] = None
+                excluded_counts[field] = excluded_counts.get(field, 0) + 1
+                note = UNRELIABLE_NOTE.format(fields=field)
+                record["notes"] = f"{record['notes']} | {note}" if record["notes"] else note
+                review_values.append({"food_id": record["food_id"], "food_name_original": record["food_name_original"],
+                                      "field": field, "value": value})
+            elif value > rule["threshold"]:
+                corrected = value / rule["factor"]
+                record[field] = corrected
+                note = UNIT_CORRECTION_NOTE.format(field=field, original=value, corrected=corrected)
+                record["notes"] = f"{record['notes']} | {note}" if record["notes"] else note
+                unit_corrections.append({"food_id": record["food_id"], "food_name_original": record["food_name_original"],
+                                         "field": field, "original": value, "corrected": corrected})
+            elif low < value <= high:
+                review_values.append({"food_id": record["food_id"], "food_name_original": record["food_name_original"],
+                                      "field": field, "value": value})
+
         blanked = [field for field in UNRELIABLE_SOURCE_FIELDS.get(source, []) if record.get(field) is not None]
         for field in blanked:
             record[field] = None
@@ -146,6 +194,8 @@ def clean_dataframe(df: pd.DataFrame, source: str, source_prefix: str) -> tuple[
         "output_rows": int(len(cleaned_rows)),
         "dropped_rows": dropped_rows,
         "excluded_counts": excluded_counts,
+        "unit_corrections": unit_corrections,
+        "review_values": review_values,
     }
 
 
@@ -182,6 +232,22 @@ def write_clean_outputs(df: pd.DataFrame, source_slug: str, report_title: str, s
         lines.append("")
         for field, count in summary["excluded_counts"].items():
             lines.append(f"- {field}: {count} nilai dikosongkan")
+    if summary.get("unit_corrections"):
+        lines.append("")
+        lines.append("## Koreksi kesalahan satuan (ug tercatat sebagai mg)")
+        lines.append("")
+        lines.append("Nilai di atas ambang dibagi 1000 (lihat UNIT_ERROR_CORRECTIONS di scripts/clean_common.py). Nilai asli tetap tercatat di kolom notes.")
+        lines.append("")
+        lines.append("| food_id | Pangan | Kolom | Nilai asli | Setelah koreksi |")
+        lines.append("|---|---|---|---:|---:|")
+        for item in summary["unit_corrections"]:
+            lines.append(f"| {item['food_id']} | {item['food_name_original']} | {item['field']} | {item['original']:g} | {item['corrected']:g} |")
+    if summary.get("review_values"):
+        lines.append("")
+        lines.append("## Perlu ditinjau manual (tidak dibagi 1000)")
+        lines.append("")
+        for item in summary["review_values"]:
+            lines.append(f"- {item['food_id']} {item['food_name_original']}: {item['field']} = {item['value']:g}")
     if summary["dropped_rows"]:
         lines.append("")
         lines.append("## Dropped Rows")
