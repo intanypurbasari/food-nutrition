@@ -5,6 +5,7 @@
   "duplicate_count": 0,
   "issues_by_type": {},
   "warnings_by_type": {
+    "outlier_minerals_exceed_ash": 5,
     "range_warning": 4,
     "outlier_implausible_minerals": 1
   },
@@ -17,10 +18,56 @@
       "duplicate_count": 0,
       "issues_by_type": {},
       "warnings_by_type": {
+        "outlier_minerals_exceed_ash": 5,
         "range_warning": 4
       },
       "issues": [],
       "warnings": [
+        {
+          "row": 43,
+          "type": "outlier_minerals_exceed_ash",
+          "food_id": "tkpi_0044",
+          "food_name_original": "Misoa",
+          "field": "mineral_total_g",
+          "value": 3.289,
+          "ash_g": 1.3
+        },
+        {
+          "row": 272,
+          "type": "outlier_minerals_exceed_ash",
+          "food_id": "tkpi_0273",
+          "food_name_original": "Kacang panjang, biji, kering (Yardlong bean, seeded, dried)",
+          "field": "mineral_total_g",
+          "value": 1.735,
+          "ash_g": 0.4
+        },
+        {
+          "row": 331,
+          "type": "outlier_minerals_exceed_ash",
+          "food_id": "tkpi_0332",
+          "food_name_original": "Keju kacang tanah (peanut butter)",
+          "field": "mineral_total_g",
+          "value": 1.273,
+          "ash_g": 0.1
+        },
+        {
+          "row": 828,
+          "type": "outlier_minerals_exceed_ash",
+          "food_id": "tkpi_0829",
+          "food_name_original": "Oramu ninahu ndawa olaho, masakan",
+          "field": "mineral_total_g",
+          "value": 2.499,
+          "ash_g": 0.1
+        },
+        {
+          "row": 858,
+          "type": "outlier_minerals_exceed_ash",
+          "food_id": "tkpi_0859",
+          "food_name_original": "Tinoransa, masakan",
+          "field": "mineral_total_g",
+          "value": 2.978,
+          "ash_g": 1.2
+        },
         {
           "row": 1074,
           "type": "range_warning",

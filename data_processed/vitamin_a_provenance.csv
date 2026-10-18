@@ -1,10 +1,10 @@
 food_id,source,usda_fdc_id,usda_food_name,similarity_score,confidence,usda_rae,vitamin_a_mcg,vitamin_a_mcg_source
 tkpi_0001,TKPI,,,,,,0.0,derived_measured
 tkpi_0002,TKPI,,,,,,0.0,derived_measured
-tkpi_0003,TKPI,,,,,,2.96,derived_partly_imputed
+tkpi_0003,TKPI,,,,,,0.12,derived_partly_imputed
 tkpi_0004,TKPI,,,,,,0.0,derived_measured
-tkpi_0005,TKPI,170288.0,"Corn grain, yellow",0.4681,MEDIUM,11.0,58.1967,derived_partly_imputed
-tkpi_0006,TKPI,,,,,,28.5633,derived_partly_imputed
+tkpi_0005,TKPI,170288.0,"Corn grain, yellow",0.4681,MEDIUM,11.0,56.0167,derived_partly_imputed
+tkpi_0006,TKPI,,,,,,25.2233,derived_partly_imputed
 tkpi_0007,TKPI,,,,,,0.0,derived_measured
 tkpi_0008,TKPI,169711.0,"Rice, white, glutinous, unenriched, cooked",0.4711,MEDIUM,0.0,0.0,derived_measured
 tkpi_0009,TKPI,,,,,,0.0,derived_measured
@@ -14,131 +14,131 @@ tkpi_0012,TKPI,,,,,,0.0,derived_measured
 tkpi_0013,TKPI,,,,,,0.0,derived_measured
 tkpi_0014,TKPI,169716.0,Sorghum grain,0.5498,MEDIUM,0.0,0.0,derived_measured
 tkpi_0015,TKPI,,,,,,9.4167,derived_measured
-tkpi_0016,TKPI,170288.0,"Corn grain, yellow",0.4438,MEDIUM,11.0,68.54,derived_partly_imputed
-tkpi_0017,TKPI,,,,,,84.0833,derived_partly_imputed
-tkpi_0018,TKPI,,,,,,59.58,derived_partly_imputed
-tkpi_0019,TKPI,,,,,,11.3333,derived_imputed
-tkpi_0020,TKPI,169702.0,"Millet, raw",0.5229,MEDIUM,0.0,9.75,derived_partly_imputed
-tkpi_0021,TKPI,168871.0,"Millet, cooked",0.4309,MEDIUM,0.0,129.15,derived_partly_imputed
+tkpi_0016,TKPI,170288.0,"Corn grain, yellow",0.4438,MEDIUM,11.0,64.3,derived_partly_imputed
+tkpi_0017,TKPI,,,,,,55.7233,derived_partly_imputed
+tkpi_0018,TKPI,,,,,,56.92,derived_partly_imputed
+tkpi_0019,TKPI,,,,,,12.375,derived_imputed
+tkpi_0020,TKPI,169702.0,"Millet, raw",0.5229,MEDIUM,0.0,4.37,derived_partly_imputed
+tkpi_0021,TKPI,168871.0,"Millet, cooked",0.4309,MEDIUM,0.0,29.57,derived_partly_imputed
 tkpi_0022,TKPI,,,,,,0.0,derived_measured
-tkpi_0023,TKPI,,,,,,1.02,derived_partly_imputed
+tkpi_0023,TKPI,,,,,,0.0,derived_partly_imputed
 tkpi_0024,TKPI,,,,,,0.0,derived_measured
 tkpi_0025,TKPI,,,,,,0.0,derived_measured
 tkpi_0026,TKPI,,,,,,0.0,derived_measured
 tkpi_0027,TKPI,,,,,,0.0,derived_measured
-tkpi_0028,TKPI,,,,,,68.8733,derived_partly_imputed
-tkpi_0029,TKPI,,,,,,0.06,derived_partly_imputed
-tkpi_0030,TKPI,,,,,,0.42,derived_partly_imputed
-tkpi_0031,TKPI,,,,,,12.3433,derived_partly_imputed
-tkpi_0032,TKPI,,,,,,13.98,derived_partly_imputed
-tkpi_0033,TKPI,,,,,,72.0867,derived_partly_imputed
-tkpi_0034,TKPI,,,,,,0.14,derived_partly_imputed
+tkpi_0028,TKPI,,,,,,69.2783,derived_partly_imputed
+tkpi_0029,TKPI,,,,,,0.14,derived_partly_imputed
+tkpi_0030,TKPI,,,,,,0.68,derived_partly_imputed
+tkpi_0031,TKPI,,,,,,12.5833,derived_partly_imputed
+tkpi_0032,TKPI,,,,,,8.66,derived_partly_imputed
+tkpi_0033,TKPI,,,,,,70.3867,derived_partly_imputed
+tkpi_0034,TKPI,,,,,,1.06,derived_partly_imputed
 tkpi_0035,TKPI,,,,,,0.0,derived_measured
 tkpi_0036,TKPI,,,,,,0.0,derived_measured
 tkpi_0037,TKPI,,,,,,0.0,derived_imputed
 tkpi_0038,TKPI,,,,,,0.0,derived_measured
 tkpi_0039,TKPI,,,,,,0.0,derived_measured
 tkpi_0040,TKPI,,,,,,0.0,derived_measured
-tkpi_0041,TKPI,,,,,,0.005,derived_imputed
-tkpi_0042,TKPI,,,,,,0.6,derived_partly_imputed
-tkpi_0043,TKPI,,,,,,6.6467,derived_imputed
+tkpi_0041,TKPI,,,,,,0.805,derived_imputed
+tkpi_0042,TKPI,,,,,,0.76,derived_partly_imputed
+tkpi_0043,TKPI,,,,,,7.41,derived_imputed
 tkpi_0044,TKPI,,,,,,0.0,derived_measured
 tkpi_0045,TKPI,,,,,,0.0,derived_measured
 tkpi_0046,TKPI,,,,,,0.0,derived_measured
-tkpi_0047,TKPI,,,,,,0.18,derived_imputed
-tkpi_0048,TKPI,,,,,,8.5683,derived_imputed
-tkpi_0049,TKPI,,,,,,6.3217,derived_imputed
+tkpi_0047,TKPI,,,,,,0.0,derived_imputed
+tkpi_0048,TKPI,,,,,,3.0933,derived_imputed
+tkpi_0049,TKPI,,,,,,9.3167,derived_imputed
 tkpi_0050,TKPI,,,,,,1.1667,derived_measured
-tkpi_0051,TKPI,,,,,,81.6617,derived_imputed
-tkpi_0052,TKPI,,,,,,1.6433,derived_partly_imputed
-tkpi_0053,TKPI,,,,,,271.3683,derived_imputed
-tkpi_0054,TKPI,,,,,,78.5233,derived_imputed
-tkpi_0055,TKPI,,,,,,5.6567,derived_imputed
-tkpi_0056,TKPI,,,,,,19.57,derived_partly_imputed
-tkpi_0057,TKPI,,,,,,10.4733,derived_imputed
-tkpi_0058,TKPI,,,,,,3.9467,derived_imputed
-tkpi_0059,TKPI,,,,,,260.3967,derived_imputed
-tkpi_0060,TKPI,,,,,,13.475,derived_partly_imputed
-tkpi_0061,TKPI,,,,,,143.03,derived_partly_imputed
-tkpi_0062,TKPI,,,,,,127.6733,derived_partly_imputed
-tkpi_0063,TKPI,,,,,,7.335,derived_imputed
+tkpi_0051,TKPI,,,,,,86.6783,derived_imputed
+tkpi_0052,TKPI,,,,,,3.2683,derived_partly_imputed
+tkpi_0053,TKPI,,,,,,281.8633,derived_imputed
+tkpi_0054,TKPI,,,,,,268.8,derived_imputed
+tkpi_0055,TKPI,,,,,,11.4933,derived_imputed
+tkpi_0056,TKPI,,,,,,9.8983,derived_partly_imputed
+tkpi_0057,TKPI,,,,,,0.6783,derived_imputed
+tkpi_0058,TKPI,,,,,,60.195,derived_imputed
+tkpi_0059,TKPI,,,,,,188.6983,derived_imputed
+tkpi_0060,TKPI,,,,,,8.7583,derived_partly_imputed
+tkpi_0061,TKPI,,,,,,149.11,derived_partly_imputed
+tkpi_0062,TKPI,,,,,,124.3417,derived_partly_imputed
+tkpi_0063,TKPI,,,,,,0.0,derived_imputed
 tkpi_0064,TKPI,,,,,,0.0,derived_measured
 tkpi_0065,TKPI,,,,,,0.0,derived_measured
-tkpi_0066,TKPI,,,,,,12.9567,derived_partly_imputed
+tkpi_0066,TKPI,,,,,,11.375,derived_partly_imputed
 tkpi_0067,TKPI,,,,,,0.0,derived_measured
-tkpi_0068,TKPI,,,,,,4.6217,derived_imputed
+tkpi_0068,TKPI,,,,,,6.6317,derived_imputed
 tkpi_0069,TKPI,,,,,,0.0,derived_measured
-tkpi_0070,TKPI,,,,,,7.6217,derived_partly_imputed
-tkpi_0071,TKPI,,,,,,2.26,derived_partly_imputed
-tkpi_0072,TKPI,,,,,,2.0117,derived_partly_imputed
-tkpi_0073,TKPI,,,,,,1197.6833,derived_imputed
-tkpi_0074,TKPI,,,,,,4.705,derived_partly_imputed
-tkpi_0075,TKPI,,,,,,0.0,derived_imputed
+tkpi_0070,TKPI,,,,,,4.995,derived_partly_imputed
+tkpi_0071,TKPI,,,,,,0.72,derived_partly_imputed
+tkpi_0072,TKPI,,,,,,3.4733,derived_partly_imputed
+tkpi_0073,TKPI,,,,,,1194.7133,derived_imputed
+tkpi_0074,TKPI,,,,,,0.0567,derived_partly_imputed
+tkpi_0075,TKPI,,,,,,0.0233,derived_imputed
 tkpi_0076,TKPI,,,,,,21.3333,derived_measured
 tkpi_0077,TKPI,,,,,,114.5,derived_measured
-tkpi_0078,TKPI,,,,,,152.96,derived_imputed
-tkpi_0079,TKPI,,,,,,32.05,derived_partly_imputed
-tkpi_0080,TKPI,,,,,,150.5933,derived_imputed
-tkpi_0081,TKPI,,,,,,11.3917,derived_partly_imputed
-tkpi_0082,TKPI,,,,,,2.5217,derived_imputed
-tkpi_0083,TKPI,,,,,,6.3083,derived_partly_imputed
-tkpi_0084,TKPI,,,,,,9.9267,derived_partly_imputed
-tkpi_0085,TKPI,,,,,,7.8683,derived_imputed
-tkpi_0086,TKPI,,,,,,0.025,derived_partly_imputed
-tkpi_0087,TKPI,,,,,,14.13,derived_imputed
-tkpi_0088,TKPI,,,,,,1.6267,derived_imputed
-tkpi_0089,TKPI,,,,,,27.9133,derived_imputed
-tkpi_0090,TKPI,,,,,,22.6367,derived_imputed
-tkpi_0091,TKPI,,,,,,9.805,derived_imputed
-tkpi_0092,TKPI,,,,,,10.2,derived_imputed
-tkpi_0093,TKPI,,,,,,34.8567,derived_partly_imputed
-tkpi_0094,TKPI,,,,,,0.9583,derived_imputed
-tkpi_0095,TKPI,,,,,,0.0067,derived_partly_imputed
-tkpi_0096,TKPI,,,,,,96.85,derived_partly_imputed
-tkpi_0097,TKPI,,,,,,13.2717,derived_imputed
-tkpi_0098,TKPI,,,,,,1.18,derived_imputed
-tkpi_0099,TKPI,,,,,,66.42,derived_partly_imputed
-tkpi_0100,TKPI,,,,,,0.0067,derived_partly_imputed
-tkpi_0101,TKPI,,,,,,14.0133,derived_imputed
-tkpi_0102,TKPI,,,,,,10.2333,derived_imputed
-tkpi_0103,TKPI,,,,,,9.4967,derived_imputed
-tkpi_0104,TKPI,,,,,,167.9167,derived_partly_imputed
+tkpi_0078,TKPI,,,,,,112.3317,derived_imputed
+tkpi_0079,TKPI,,,,,,22.8517,derived_partly_imputed
+tkpi_0080,TKPI,,,,,,248.7733,derived_imputed
+tkpi_0081,TKPI,,,,,,12.4117,derived_partly_imputed
+tkpi_0082,TKPI,,,,,,0.1533,derived_imputed
+tkpi_0083,TKPI,,,,,,0.355,derived_partly_imputed
+tkpi_0084,TKPI,,,,,,11.3983,derived_partly_imputed
+tkpi_0085,TKPI,,,,,,0.0,derived_imputed
+tkpi_0086,TKPI,,,,,,0.0,derived_partly_imputed
+tkpi_0087,TKPI,,,,,,8.445,derived_imputed
+tkpi_0088,TKPI,,,,,,5.99,derived_imputed
+tkpi_0089,TKPI,,,,,,39.99,derived_imputed
+tkpi_0090,TKPI,,,,,,6.4817,derived_imputed
+tkpi_0091,TKPI,,,,,,7.4533,derived_imputed
+tkpi_0092,TKPI,,,,,,9.3817,derived_imputed
+tkpi_0093,TKPI,,,,,,38.975,derived_partly_imputed
+tkpi_0094,TKPI,,,,,,0.9183,derived_imputed
+tkpi_0095,TKPI,,,,,,0.055,derived_partly_imputed
+tkpi_0096,TKPI,,,,,,107.3433,derived_partly_imputed
+tkpi_0097,TKPI,,,,,,11.4417,derived_imputed
+tkpi_0098,TKPI,,,,,,0.5433,derived_imputed
+tkpi_0099,TKPI,,,,,,75.055,derived_partly_imputed
+tkpi_0100,TKPI,,,,,,0.0167,derived_partly_imputed
+tkpi_0101,TKPI,,,,,,7.2067,derived_imputed
+tkpi_0102,TKPI,,,,,,1.585,derived_imputed
+tkpi_0103,TKPI,,,,,,1.0983,derived_imputed
+tkpi_0104,TKPI,,,,,,177.4633,derived_partly_imputed
 tkpi_0105,TKPI,,,,,,0.0,derived_measured
-tkpi_0106,TKPI,,,,,,47.5283,derived_partly_imputed
-tkpi_0107,TKPI,,,,,,81.4583,derived_partly_imputed
+tkpi_0106,TKPI,,,,,,93.5733,derived_partly_imputed
+tkpi_0107,TKPI,,,,,,30.145,derived_partly_imputed
 tkpi_0108,TKPI,,,,,,0.0,derived_measured
-tkpi_0109,TKPI,,,,,,62.185,derived_partly_imputed
+tkpi_0109,TKPI,,,,,,66.9767,derived_partly_imputed
 tkpi_0110,TKPI,,,,,,0.0,derived_measured
 tkpi_0111,TKPI,,,,,,0.0,derived_measured
 tkpi_0112,TKPI,,,,,,0.0,derived_measured
-tkpi_0113,TKPI,,,,,,103.5083,derived_partly_imputed
-tkpi_0114,TKPI,,,,,,47.56,derived_imputed
-tkpi_0115,TKPI,,,,,,9.6083,derived_imputed
-tkpi_0116,TKPI,,,,,,0.1033,derived_imputed
-tkpi_0117,TKPI,,,,,,203.545,derived_partly_imputed
+tkpi_0113,TKPI,,,,,,156.7867,derived_partly_imputed
+tkpi_0114,TKPI,,,,,,51.8617,derived_imputed
+tkpi_0115,TKPI,,,,,,0.0,derived_imputed
+tkpi_0116,TKPI,,,,,,0.0583,derived_imputed
+tkpi_0117,TKPI,,,,,,214.3067,derived_partly_imputed
 tkpi_0118,TKPI,,,,,,0.0,derived_measured
-tkpi_0119,TKPI,,,,,,1.865,derived_imputed
-tkpi_0120,TKPI,,,,,,11.2533,derived_imputed
+tkpi_0119,TKPI,,,,,,4.2783,derived_imputed
+tkpi_0120,TKPI,,,,,,0.3733,derived_imputed
 tkpi_0121,TKPI,,,,,,0.0,derived_measured
-tkpi_0122,TKPI,,,,,,0.0,derived_imputed
+tkpi_0122,TKPI,,,,,,0.05,derived_imputed
 tkpi_0123,TKPI,,,,,,0.0,derived_measured
-tkpi_0124,TKPI,,,,,,180.3983,derived_imputed
+tkpi_0124,TKPI,,,,,,170.1217,derived_imputed
 tkpi_0125,TKPI,,,,,,0.0,derived_measured
-tkpi_0126,TKPI,,,,,,60.4483,derived_imputed
-tkpi_0127,TKPI,168911.0,"Spaghetti, spinach, dry",0.716,HIGH,23.0,66.0,derived_partly_imputed
-tkpi_0128,TKPI,,,,,,7.8183,derived_imputed
+tkpi_0126,TKPI,,,,,,44.42,derived_imputed
+tkpi_0127,TKPI,168911.0,"Spaghetti, spinach, dry",0.716,HIGH,23.0,71.4783,derived_partly_imputed
+tkpi_0128,TKPI,,,,,,0.115,derived_imputed
 tkpi_0129,TKPI,,,,,,0.0,derived_imputed
-tkpi_0130,TKPI,,,,,,6.1317,derived_partly_imputed
+tkpi_0130,TKPI,,,,,,8.9433,derived_partly_imputed
 tkpi_0131,TKPI,,,,,,0.0,derived_measured
-tkpi_0132,TKPI,,,,,,0.6317,derived_partly_imputed
-tkpi_0133,TKPI,,,,,,54.6117,derived_partly_imputed
+tkpi_0132,TKPI,,,,,,0.1767,derived_partly_imputed
+tkpi_0133,TKPI,,,,,,42.1867,derived_partly_imputed
 tkpi_0134,TKPI,,,,,,0.0,derived_partly_imputed
-tkpi_0135,TKPI,,,,,,0.5367,derived_partly_imputed
+tkpi_0135,TKPI,,,,,,2.2983,derived_partly_imputed
 tkpi_0136,TKPI,168490.0,"Arrowroot, raw",1.0,HIGH,1.0,1.25,derived_measured
 tkpi_0137,TKPI,170071.0,"Yam, raw",0.4238,MEDIUM,7.0,0.0,derived_measured
 tkpi_0138,TKPI,,,,,,0.0,derived_measured
 tkpi_0139,TKPI,,,,,,0.0,derived_measured
-tkpi_0140,TKPI,170071.0,"Yam, raw",0.4905,MEDIUM,7.0,0.0,derived_partly_imputed
+tkpi_0140,TKPI,170071.0,"Yam, raw",0.4905,MEDIUM,7.0,0.44,derived_partly_imputed
 tkpi_0141,TKPI,,,,,,0.0,derived_measured
 tkpi_0142,TKPI,,,,,,0.0,derived_measured
 tkpi_0143,TKPI,170071.0,"Yam, raw",0.4015,MEDIUM,7.0,0.0,derived_measured
@@ -147,16 +147,16 @@ tkpi_0145,TKPI,170071.0,"Yam, raw",0.4426,MEDIUM,7.0,0.0,derived_measured
 tkpi_0146,TKPI,,,,,,0.0,derived_measured
 tkpi_0147,TKPI,170071.0,"Yam, raw",0.4339,MEDIUM,7.0,0.0,derived_measured
 tkpi_0148,TKPI,170071.0,"Yam, raw",0.6379,MEDIUM,7.0,0.0,derived_measured
-tkpi_0149,TKPI,,,,,,16.72,derived_partly_imputed
+tkpi_0149,TKPI,,,,,,2.1,derived_partly_imputed
 tkpi_0150,TKPI,,,,,,0.0,derived_measured
 tkpi_0151,TKPI,169985.0,"Cassava, raw",0.4858,MEDIUM,1.0,0.0,derived_measured
 tkpi_0152,TKPI,,,,,,0.0,derived_measured
-tkpi_0153,TKPI,,,,,,2.4,derived_imputed
-tkpi_0154,TKPI,,,,,,0.2417,derived_partly_imputed
+tkpi_0153,TKPI,,,,,,10.4467,derived_imputed
+tkpi_0154,TKPI,,,,,,0.15,derived_partly_imputed
 tkpi_0155,TKPI,169985.0,"Cassava, raw",0.4842,MEDIUM,1.0,0.0,derived_measured
 tkpi_0156,TKPI,,,,,,0.0,derived_measured
-tkpi_0157,TKPI,169985.0,"Cassava, raw",0.5236,MEDIUM,1.0,0.0,derived_partly_imputed
-tkpi_0158,TKPI,169308.0,"Taro, raw",0.4083,MEDIUM,4.0,7.4967,derived_partly_imputed
+tkpi_0157,TKPI,169985.0,"Cassava, raw",0.5236,MEDIUM,1.0,0.6,derived_partly_imputed
+tkpi_0158,TKPI,169308.0,"Taro, raw",0.4083,MEDIUM,4.0,3.7767,derived_partly_imputed
 tkpi_0159,TKPI,170071.0,"Yam, raw",0.4204,MEDIUM,7.0,2.0,derived_measured
 tkpi_0160,TKPI,,,,,,0.0,derived_measured
 tkpi_0161,TKPI,,,,,,0.0,derived_measured
@@ -166,7 +166,7 @@ tkpi_0164,TKPI,169985.0,"Cassava, raw",0.4604,MEDIUM,1.0,0.0,derived_measured
 tkpi_0165,TKPI,,,,,,0.0,derived_measured
 tkpi_0166,TKPI,,,,,,1.0833,derived_measured
 tkpi_0167,TKPI,,,,,,1.0833,derived_measured
-tkpi_0168,TKPI,,,,,,14.16,derived_partly_imputed
+tkpi_0168,TKPI,,,,,,18.26,derived_partly_imputed
 tkpi_0169,TKPI,,,,,,0.0,derived_measured
 tkpi_0170,TKPI,,,,,,0.0,derived_measured
 tkpi_0171,TKPI,,,,,,0.0,derived_measured
@@ -183,682 +183,682 @@ tkpi_0181,TKPI,,,,,,0.0,derived_measured
 tkpi_0182,TKPI,,,,,,0.0,derived_measured
 tkpi_0183,TKPI,,,,,,0.0,derived_measured
 tkpi_0184,TKPI,,,,,,0.0,derived_measured
-tkpi_0185,TKPI,,,,,,28.025,derived_partly_imputed
+tkpi_0185,TKPI,,,,,,27.3033,derived_partly_imputed
 tkpi_0186,TKPI,,,,,,0.0,derived_measured
-tkpi_0187,TKPI,,,,,,2.96,derived_partly_imputed
-tkpi_0188,TKPI,,,,,,0.3233,derived_partly_imputed
-tkpi_0189,TKPI,,,,,,0.18,derived_partly_imputed
+tkpi_0187,TKPI,,,,,,5.42,derived_partly_imputed
+tkpi_0188,TKPI,,,,,,0.3833,derived_partly_imputed
+tkpi_0189,TKPI,,,,,,0.26,derived_partly_imputed
 tkpi_0190,TKPI,,,,,,138.9167,derived_measured
 tkpi_0191,TKPI,,,,,,0.0,derived_measured
-tkpi_0192,TKPI,,,,,,6.03,derived_partly_imputed
-tkpi_0193,TKPI,,,,,,10.78,derived_partly_imputed
-tkpi_0194,TKPI,,,,,,0.54,derived_partly_imputed
-tkpi_0195,TKPI,,,,,,1.2,derived_partly_imputed
+tkpi_0192,TKPI,,,,,,1.9133,derived_partly_imputed
+tkpi_0193,TKPI,,,,,,24.6717,derived_partly_imputed
+tkpi_0194,TKPI,,,,,,1.06,derived_partly_imputed
+tkpi_0195,TKPI,,,,,,4.06,derived_partly_imputed
 tkpi_0196,TKPI,,,,,,0.0,derived_measured
-tkpi_0197,TKPI,,,,,,6.0883,derived_partly_imputed
-tkpi_0198,TKPI,,,,,,0.0233,derived_imputed
+tkpi_0197,TKPI,,,,,,4.8417,derived_partly_imputed
+tkpi_0198,TKPI,,,,,,0.0,derived_imputed
 tkpi_0199,TKPI,,,,,,0.0,derived_partly_imputed
 tkpi_0200,TKPI,,,,,,17.75,derived_measured
-tkpi_0201,TKPI,,,,,,159.5917,derived_imputed
-tkpi_0202,TKPI,,,,,,48.145,derived_partly_imputed
+tkpi_0201,TKPI,,,,,,227.0617,derived_imputed
+tkpi_0202,TKPI,,,,,,50.105,derived_partly_imputed
 tkpi_0203,TKPI,,,,,,0.0,derived_measured
-tkpi_0204,TKPI,,,,,,3.35,derived_partly_imputed
+tkpi_0204,TKPI,,,,,,3.65,derived_partly_imputed
 tkpi_0205,TKPI,,,,,,0.0,derived_measured
-tkpi_0206,TKPI,,,,,,0.5033,derived_partly_imputed
+tkpi_0206,TKPI,,,,,,66.3417,derived_partly_imputed
 tkpi_0207,TKPI,,,,,,76.6667,derived_measured
-tkpi_0208,TKPI,,,,,,205.945,derived_imputed
+tkpi_0208,TKPI,,,,,,258.2133,derived_imputed
 tkpi_0209,TKPI,,,,,,32.0,derived_measured
-tkpi_0210,TKPI,,,,,,15.2967,derived_partly_imputed
-tkpi_0211,TKPI,,,,,,14.45,derived_partly_imputed
-tkpi_0212,TKPI,,,,,,19.485,derived_partly_imputed
-tkpi_0213,TKPI,,,,,,1.66,derived_partly_imputed
+tkpi_0210,TKPI,,,,,,14.6117,derived_partly_imputed
+tkpi_0211,TKPI,,,,,,11.9,derived_partly_imputed
+tkpi_0212,TKPI,,,,,,11.325,derived_partly_imputed
+tkpi_0213,TKPI,,,,,,6.1,derived_partly_imputed
 tkpi_0214,TKPI,,,,,,0.0,derived_measured
 tkpi_0215,TKPI,,,,,,0.0,derived_partly_imputed
-tkpi_0216,TKPI,,,,,,12.6133,derived_partly_imputed
-tkpi_0217,TKPI,,,,,,3.025,derived_partly_imputed
-tkpi_0218,TKPI,,,,,,0.2267,derived_partly_imputed
-tkpi_0219,TKPI,,,,,,19.3667,derived_partly_imputed
-tkpi_0220,TKPI,,,,,,0.4517,derived_partly_imputed
-tkpi_0221,TKPI,,,,,,0.16,derived_partly_imputed
+tkpi_0216,TKPI,,,,,,5.375,derived_partly_imputed
+tkpi_0217,TKPI,,,,,,3.665,derived_partly_imputed
+tkpi_0218,TKPI,,,,,,0.2467,derived_partly_imputed
+tkpi_0219,TKPI,,,,,,18.5667,derived_partly_imputed
+tkpi_0220,TKPI,,,,,,1.6067,derived_partly_imputed
+tkpi_0221,TKPI,,,,,,0.12,derived_partly_imputed
 tkpi_0222,TKPI,,,,,,0.0,derived_measured
-tkpi_0223,TKPI,,,,,,5.24,derived_partly_imputed
-tkpi_0224,TKPI,,,,,,0.08,derived_partly_imputed
+tkpi_0223,TKPI,,,,,,8.32,derived_partly_imputed
+tkpi_0224,TKPI,,,,,,0.1,derived_partly_imputed
 tkpi_0225,TKPI,,,,,,0.0,derived_measured
-tkpi_0226,TKPI,,,,,,104.4267,derived_partly_imputed
+tkpi_0226,TKPI,,,,,,105.2867,derived_partly_imputed
 tkpi_0227,TKPI,,,,,,0.0,derived_measured
-tkpi_0228,TKPI,,,,,,24.82,derived_partly_imputed
+tkpi_0228,TKPI,,,,,,4.04,derived_partly_imputed
 tkpi_0229,TKPI,,,,,,0.0,derived_measured
-tkpi_0230,TKPI,,,,,,0.0133,derived_partly_imputed
+tkpi_0230,TKPI,,,,,,0.0633,derived_partly_imputed
 tkpi_0231,TKPI,,,,,,0.0,derived_measured
-tkpi_0232,TKPI,168490.0,"Arrowroot, raw",0.7464,HIGH,1.0,1.7467,derived_partly_imputed
-tkpi_0233,TKPI,,,,,,0.04,derived_partly_imputed
-tkpi_0234,TKPI,,,,,,2.7433,derived_partly_imputed
-tkpi_0235,TKPI,,,,,,0.04,derived_partly_imputed
-tkpi_0236,TKPI,,,,,,0.64,derived_partly_imputed
-tkpi_0237,TKPI,,,,,,1.62,derived_partly_imputed
-tkpi_0238,TKPI,,,,,,0.1,derived_partly_imputed
-tkpi_0239,TKPI,,,,,,2.18,derived_partly_imputed
-tkpi_0240,TKPI,,,,,,0.54,derived_partly_imputed
-tkpi_0241,TKPI,,,,,,0.18,derived_partly_imputed
-tkpi_0242,TKPI,,,,,,3.9,derived_partly_imputed
-tkpi_0243,TKPI,,,,,,4.0267,derived_partly_imputed
+tkpi_0232,TKPI,168490.0,"Arrowroot, raw",0.7464,HIGH,1.0,2.5667,derived_partly_imputed
+tkpi_0233,TKPI,,,,,,0.02,derived_partly_imputed
+tkpi_0234,TKPI,,,,,,0.2033,derived_partly_imputed
+tkpi_0235,TKPI,,,,,,0.12,derived_partly_imputed
+tkpi_0236,TKPI,,,,,,1.06,derived_partly_imputed
+tkpi_0237,TKPI,,,,,,0.68,derived_partly_imputed
+tkpi_0238,TKPI,,,,,,0.82,derived_partly_imputed
+tkpi_0239,TKPI,,,,,,3.8,derived_partly_imputed
+tkpi_0240,TKPI,,,,,,0.4,derived_partly_imputed
+tkpi_0241,TKPI,,,,,,0.28,derived_partly_imputed
+tkpi_0242,TKPI,,,,,,10.9,derived_partly_imputed
+tkpi_0243,TKPI,,,,,,2.1667,derived_partly_imputed
 tkpi_0244,TKPI,,,,,,0.0,derived_measured
-tkpi_0245,TKPI,,,,,,10.8533,derived_partly_imputed
-tkpi_0246,TKPI,,,,,,10.515,derived_imputed
+tkpi_0245,TKPI,,,,,,11.5533,derived_partly_imputed
+tkpi_0246,TKPI,,,,,,11.9083,derived_imputed
 tkpi_0247,TKPI,174283.0,"Winged beans, mature seeds, raw",0.4184,MEDIUM,0.0,0.0,USDA_direct_medium
-tkpi_0248,TKPI,,,,,,20.9033,derived_imputed
-tkpi_0249,TKPI,,,,,,562.5517,derived_partly_imputed
-tkpi_0250,TKPI,,,,,,108.3167,derived_partly_imputed
-tkpi_0251,TKPI,,,,,,473.4917,derived_partly_imputed
-tkpi_0252,TKPI,,,,,,183.6467,derived_partly_imputed
-tkpi_0253,TKPI,,,,,,15.19,derived_partly_imputed
-tkpi_0254,TKPI,,,,,,7.0433,derived_partly_imputed
-tkpi_0255,TKPI,,,,,,8.2417,derived_imputed
-tkpi_0256,TKPI,,,,,,19.33,derived_partly_imputed
-tkpi_0257,TKPI,,,,,,20.0,derived_partly_imputed
-tkpi_0258,TKPI,174256.0,"Mung beans, mature seeds, raw",0.5199,MEDIUM,6.0,17.58,derived_partly_imputed
-tkpi_0259,TKPI,175186.0,"Beans, black turtle, mature seeds, raw",0.6206,MEDIUM,0.0,4.2333,derived_partly_imputed
-tkpi_0260,TKPI,,,,,,49.19,derived_imputed
-tkpi_0261,TKPI,,,,,,25.05,derived_partly_imputed
-tkpi_0262,TKPI,,,,,,16.45,derived_imputed
-tkpi_0263,TKPI,,,,,,9.05,derived_imputed
+tkpi_0248,TKPI,,,,,,13.9617,derived_imputed
+tkpi_0249,TKPI,,,,,,397.0433,derived_partly_imputed
+tkpi_0250,TKPI,,,,,,7.2767,derived_partly_imputed
+tkpi_0251,TKPI,,,,,,30.6333,derived_partly_imputed
+tkpi_0252,TKPI,,,,,,337.8467,derived_partly_imputed
+tkpi_0253,TKPI,,,,,,19.56,derived_partly_imputed
+tkpi_0254,TKPI,,,,,,5.2233,derived_partly_imputed
+tkpi_0255,TKPI,,,,,,15.2033,derived_imputed
+tkpi_0256,TKPI,,,,,,17.59,derived_partly_imputed
+tkpi_0257,TKPI,,,,,,18.1,derived_partly_imputed
+tkpi_0258,TKPI,174256.0,"Mung beans, mature seeds, raw",0.5199,MEDIUM,6.0,15.9,derived_partly_imputed
+tkpi_0259,TKPI,175186.0,"Beans, black turtle, mature seeds, raw",0.6206,MEDIUM,0.0,8.6733,derived_partly_imputed
+tkpi_0260,TKPI,,,,,,54.4433,derived_imputed
+tkpi_0261,TKPI,,,,,,22.85,derived_partly_imputed
+tkpi_0262,TKPI,,,,,,18.0033,derived_imputed
+tkpi_0263,TKPI,,,,,,9.1217,derived_imputed
 tkpi_0264,TKPI,175210.0,"Hyacinth beans, mature seeds, raw",0.487,MEDIUM,0.0,0.0,USDA_direct_medium
-tkpi_0265,TKPI,,,,,,10.2933,derived_partly_imputed
-tkpi_0266,TKPI,,,,,,23.7533,derived_partly_imputed
-tkpi_0267,TKPI,,,,,,5.48,derived_partly_imputed
-tkpi_0268,TKPI,,,,,,224.0567,derived_partly_imputed
+tkpi_0265,TKPI,,,,,,279.1333,derived_partly_imputed
+tkpi_0266,TKPI,,,,,,11.1133,derived_partly_imputed
+tkpi_0267,TKPI,,,,,,5.62,derived_partly_imputed
+tkpi_0268,TKPI,,,,,,245.6767,derived_partly_imputed
 tkpi_0269,TKPI,173744.0,"Beans, kidney, red, mature seeds, raw",0.4186,MEDIUM,0.0,0.0,USDA_direct_medium
-tkpi_0270,TKPI,,,,,,53.83,derived_partly_imputed
-tkpi_0271,TKPI,,,,,,6.84,derived_partly_imputed
-tkpi_0272,TKPI,,,,,,191.9167,derived_partly_imputed
+tkpi_0270,TKPI,,,,,,33.93,derived_partly_imputed
+tkpi_0271,TKPI,,,,,,8.54,derived_partly_imputed
+tkpi_0272,TKPI,,,,,,293.3167,derived_partly_imputed
 tkpi_0273,TKPI,174281.0,"Yardlong beans, mature seeds, raw",0.4178,MEDIUM,3.0,181.8333,derived_measured
-tkpi_0274,TKPI,,,,,,7.06,derived_partly_imputed
+tkpi_0274,TKPI,,,,,,319.8,derived_partly_imputed
 tkpi_0275,TKPI,,,,,,0.0,derived_measured
-tkpi_0276,TKPI,,,,,,5.62,derived_partly_imputed
-tkpi_0277,TKPI,,,,,,13.3567,derived_partly_imputed
-tkpi_0278,TKPI,,,,,,502.74,derived_imputed
-tkpi_0279,TKPI,,,,,,9.8067,derived_partly_imputed
-tkpi_0280,TKPI,,,,,,188.1233,derived_imputed
-tkpi_0281,TKPI,,,,,,228.98,derived_partly_imputed
-tkpi_0282,TKPI,,,,,,73.35,derived_partly_imputed
-tkpi_0283,TKPI,175210.0,"Hyacinth beans, mature seeds, raw",0.4133,MEDIUM,0.0,3.2167,derived_partly_imputed
-tkpi_0284,TKPI,,,,,,1.76,derived_partly_imputed
-tkpi_0285,TKPI,,,,,,4.14,derived_partly_imputed
-tkpi_0286,TKPI,,,,,,2.84,derived_partly_imputed
-tkpi_0287,TKPI,,,,,,0.08,derived_partly_imputed
-tkpi_0288,TKPI,,,,,,1.56,derived_partly_imputed
+tkpi_0276,TKPI,,,,,,7.34,derived_partly_imputed
+tkpi_0277,TKPI,,,,,,20.1167,derived_partly_imputed
+tkpi_0278,TKPI,,,,,,154.8,derived_imputed
+tkpi_0279,TKPI,,,,,,12.2667,derived_partly_imputed
+tkpi_0280,TKPI,,,,,,80.4067,derived_imputed
+tkpi_0281,TKPI,,,,,,329.26,derived_partly_imputed
+tkpi_0282,TKPI,,,,,,56.69,derived_partly_imputed
+tkpi_0283,TKPI,175210.0,"Hyacinth beans, mature seeds, raw",0.4133,MEDIUM,0.0,1.0367,derived_partly_imputed
+tkpi_0284,TKPI,,,,,,4.38,derived_partly_imputed
+tkpi_0285,TKPI,,,,,,1.28,derived_partly_imputed
+tkpi_0286,TKPI,,,,,,1.8,derived_partly_imputed
+tkpi_0287,TKPI,,,,,,0.0,derived_partly_imputed
+tkpi_0288,TKPI,,,,,,2.58,derived_partly_imputed
 tkpi_0289,TKPI,,,,,,0.0,derived_measured
-tkpi_0290,TKPI,,,,,,50.56,derived_partly_imputed
-tkpi_0291,TKPI,,,,,,32.1617,derived_imputed
-tkpi_0292,TKPI,,,,,,9504.9583,derived_imputed
-tkpi_0293,TKPI,,,,,,232.7,derived_imputed
+tkpi_0290,TKPI,,,,,,11.06,derived_partly_imputed
+tkpi_0291,TKPI,,,,,,26.8383,derived_imputed
+tkpi_0292,TKPI,,,,,,10676.33,derived_imputed
+tkpi_0293,TKPI,,,,,,198.6783,derived_imputed
 tkpi_0294,TKPI,,,,,,0.0,derived_measured
-tkpi_0295,TKPI,,,,,,677.0983,derived_imputed
-tkpi_0296,TKPI,170150.0,"Seeds, sesame seeds, whole, dried",0.5233,MEDIUM,0.0,247.75,derived_partly_imputed
-tkpi_0297,TKPI,,,,,,40.1033,derived_imputed
-tkpi_0298,TKPI,,,,,,84.94,derived_imputed
-tkpi_0299,TKPI,,,,,,0.92,derived_imputed
-tkpi_0300,TKPI,,,,,,197.84,derived_partly_imputed
-tkpi_0301,TKPI,,,,,,9.32,derived_partly_imputed
-tkpi_0302,TKPI,,,,,,853.4833,derived_imputed
-tkpi_0303,TKPI,,,,,,1.6333,derived_partly_imputed
-tkpi_0304,TKPI,,,,,,1.9267,derived_imputed
-tkpi_0305,TKPI,,,,,,5.16,derived_partly_imputed
-tkpi_0306,TKPI,,,,,,190.8967,derived_partly_imputed
-tkpi_0307,TKPI,,,,,,9.13,derived_partly_imputed
-tkpi_0308,TKPI,,,,,,3.9283,derived_imputed
-tkpi_0309,TKPI,,,,,,3.065,derived_imputed
-tkpi_0310,TKPI,,,,,,52.405,derived_imputed
-tkpi_0311,TKPI,,,,,,1.955,derived_imputed
-tkpi_0312,TKPI,,,,,,11.92,derived_partly_imputed
-tkpi_0313,TKPI,,,,,,6.3,derived_partly_imputed
+tkpi_0295,TKPI,,,,,,595.3067,derived_imputed
+tkpi_0296,TKPI,170150.0,"Seeds, sesame seeds, whole, dried",0.5233,MEDIUM,0.0,362.47,derived_partly_imputed
+tkpi_0297,TKPI,,,,,,30.3283,derived_imputed
+tkpi_0298,TKPI,,,,,,242.3717,derived_imputed
+tkpi_0299,TKPI,,,,,,0.33,derived_imputed
+tkpi_0300,TKPI,,,,,,372.4,derived_partly_imputed
+tkpi_0301,TKPI,,,,,,10.72,derived_partly_imputed
+tkpi_0302,TKPI,,,,,,399.2333,derived_imputed
+tkpi_0303,TKPI,,,,,,2.0933,derived_partly_imputed
+tkpi_0304,TKPI,,,,,,4.03,derived_imputed
+tkpi_0305,TKPI,,,,,,3.24,derived_partly_imputed
+tkpi_0306,TKPI,,,,,,308.7167,derived_partly_imputed
+tkpi_0307,TKPI,,,,,,6.5517,derived_partly_imputed
+tkpi_0308,TKPI,,,,,,389.2783,derived_imputed
+tkpi_0309,TKPI,,,,,,4.24,derived_imputed
+tkpi_0310,TKPI,,,,,,353.4367,derived_imputed
+tkpi_0311,TKPI,,,,,,8.66,derived_imputed
+tkpi_0312,TKPI,,,,,,168.04,derived_partly_imputed
+tkpi_0313,TKPI,,,,,,2.98,derived_partly_imputed
 tkpi_0314,TKPI,,,,,,2.0,derived_measured
-tkpi_0315,TKPI,,,,,,15.1017,derived_imputed
-tkpi_0316,TKPI,,,,,,65.6717,derived_partly_imputed
-tkpi_0317,TKPI,,,,,,191.4317,derived_partly_imputed
-tkpi_0318,TKPI,,,,,,149.0233,derived_partly_imputed
+tkpi_0315,TKPI,,,,,,9.4283,derived_imputed
+tkpi_0316,TKPI,,,,,,18.7217,derived_partly_imputed
+tkpi_0317,TKPI,,,,,,495.3133,derived_partly_imputed
+tkpi_0318,TKPI,,,,,,142.6483,derived_partly_imputed
 tkpi_0319,TKPI,,,,,,0.0,derived_measured
-tkpi_0320,TKPI,,,,,,72.61,derived_imputed
-tkpi_0321,TKPI,,,,,,0.8,derived_partly_imputed
-tkpi_0322,TKPI,,,,,,6.5783,derived_partly_imputed
-tkpi_0323,TKPI,,,,,,7.5017,derived_partly_imputed
-tkpi_0324,TKPI,,,,,,13.6117,derived_partly_imputed
-tkpi_0325,TKPI,,,,,,1.8,derived_partly_imputed
-tkpi_0326,TKPI,,,,,,16.8367,derived_partly_imputed
-tkpi_0327,TKPI,,,,,,2.3217,derived_imputed
-tkpi_0328,TKPI,,,,,,203.9883,derived_imputed
-tkpi_0329,TKPI,,,,,,207.5817,derived_imputed
-tkpi_0330,TKPI,,,,,,1.2883,derived_imputed
-tkpi_0331,TKPI,,,,,,8.4933,derived_imputed
+tkpi_0320,TKPI,,,,,,143.4133,derived_imputed
+tkpi_0321,TKPI,,,,,,2.5,derived_partly_imputed
+tkpi_0322,TKPI,,,,,,12.955,derived_partly_imputed
+tkpi_0323,TKPI,,,,,,3.4467,derived_partly_imputed
+tkpi_0324,TKPI,,,,,,59.5867,derived_partly_imputed
+tkpi_0325,TKPI,,,,,,3.2283,derived_partly_imputed
+tkpi_0326,TKPI,,,,,,9.6633,derived_partly_imputed
+tkpi_0327,TKPI,,,,,,10.095,derived_imputed
+tkpi_0328,TKPI,,,,,,278.4883,derived_imputed
+tkpi_0329,TKPI,,,,,,1056.76,derived_imputed
+tkpi_0330,TKPI,,,,,,3.845,derived_imputed
+tkpi_0331,TKPI,,,,,,583.8067,derived_imputed
 tkpi_0332,TKPI,,,,,,0.0,derived_measured
-tkpi_0333,TKPI,,,,,,5.88,derived_partly_imputed
-tkpi_0334,TKPI,,,,,,130.7933,derived_imputed
-tkpi_0335,TKPI,,,,,,183.5567,derived_imputed
-tkpi_0336,TKPI,,,,,,31.4483,derived_imputed
-tkpi_0337,TKPI,,,,,,5.6367,derived_imputed
-tkpi_0338,TKPI,,,,,,19.2517,derived_imputed
-tkpi_0339,TKPI,,,,,,11.3417,derived_imputed
-tkpi_0340,TKPI,,,,,,37.6867,derived_imputed
-tkpi_0341,TKPI,,,,,,63.9517,derived_imputed
-tkpi_0342,TKPI,,,,,,9.1033,derived_partly_imputed
-tkpi_0343,TKPI,,,,,,3.7283,derived_imputed
-tkpi_0344,TKPI,,,,,,0.055,derived_imputed
-tkpi_0345,TKPI,,,,,,2.2167,derived_imputed
-tkpi_0346,TKPI,,,,,,220.7283,derived_partly_imputed
-tkpi_0347,TKPI,,,,,,1.8483,derived_partly_imputed
-tkpi_0348,TKPI,,,,,,21.225,derived_imputed
-tkpi_0349,TKPI,,,,,,6.3217,derived_imputed
-tkpi_0350,TKPI,,,,,,10.2967,derived_imputed
-tkpi_0351,TKPI,,,,,,2.3883,derived_imputed
-tkpi_0352,TKPI,,,,,,2.6683,derived_imputed
-tkpi_0353,TKPI,,,,,,5.8533,derived_imputed
-tkpi_0354,TKPI,,,,,,225.7067,derived_partly_imputed
-tkpi_0355,TKPI,,,,,,193.16,derived_partly_imputed
-tkpi_0356,TKPI,,,,,,30.425,derived_imputed
-tkpi_0357,TKPI,,,,,,168.4133,derived_partly_imputed
-tkpi_0358,TKPI,,,,,,19.64,derived_partly_imputed
-tkpi_0359,TKPI,,,,,,76.8117,derived_partly_imputed
-tkpi_0360,TKPI,,,,,,78.3183,derived_imputed
-tkpi_0361,TKPI,,,,,,37.88,derived_partly_imputed
-tkpi_0362,TKPI,,,,,,95.0133,derived_imputed
-tkpi_0363,TKPI,,,,,,63.2667,derived_imputed
-tkpi_0364,TKPI,,,,,,33.78,derived_partly_imputed
-tkpi_0365,TKPI,,,,,,68.0717,derived_imputed
-tkpi_0366,TKPI,,,,,,2.49,derived_partly_imputed
-tkpi_0367,TKPI,,,,,,10.8833,derived_imputed
-tkpi_0368,TKPI,,,,,,221.7933,derived_imputed
-tkpi_0369,TKPI,,,,,,6.425,derived_imputed
-tkpi_0370,TKPI,,,,,,22.2433,derived_imputed
-tkpi_0371,TKPI,,,,,,95.6233,derived_imputed
-tkpi_0372,TKPI,,,,,,20.0917,derived_imputed
-tkpi_0373,TKPI,,,,,,16.72,derived_partly_imputed
-tkpi_0374,TKPI,,,,,,0.5967,derived_partly_imputed
-tkpi_0375,TKPI,,,,,,19.4233,derived_imputed
-tkpi_0376,TKPI,,,,,,114.8333,derived_imputed
-tkpi_0377,TKPI,,,,,,363.3317,derived_imputed
-tkpi_0378,TKPI,,,,,,36.14,derived_partly_imputed
-tkpi_0379,TKPI,,,,,,16.055,derived_imputed
-tkpi_0380,TKPI,,,,,,1.59,derived_partly_imputed
-tkpi_0381,TKPI,,,,,,112.1933,derived_partly_imputed
-tkpi_0382,TKPI,,,,,,31.24,derived_partly_imputed
+tkpi_0333,TKPI,,,,,,7.58,derived_partly_imputed
+tkpi_0334,TKPI,,,,,,31.885,derived_imputed
+tkpi_0335,TKPI,,,,,,130.1317,derived_imputed
+tkpi_0336,TKPI,,,,,,34.7667,derived_imputed
+tkpi_0337,TKPI,,,,,,4.7483,derived_imputed
+tkpi_0338,TKPI,,,,,,35.0683,derived_imputed
+tkpi_0339,TKPI,,,,,,10.8633,derived_imputed
+tkpi_0340,TKPI,,,,,,26.4833,derived_imputed
+tkpi_0341,TKPI,,,,,,79.5367,derived_imputed
+tkpi_0342,TKPI,,,,,,6.225,derived_partly_imputed
+tkpi_0343,TKPI,,,,,,8.175,derived_imputed
+tkpi_0344,TKPI,,,,,,2.465,derived_imputed
+tkpi_0345,TKPI,,,,,,9.0783,derived_imputed
+tkpi_0346,TKPI,,,,,,151.8017,derived_partly_imputed
+tkpi_0347,TKPI,,,,,,5.6183,derived_partly_imputed
+tkpi_0348,TKPI,,,,,,19.6517,derived_imputed
+tkpi_0349,TKPI,,,,,,9.3467,derived_imputed
+tkpi_0350,TKPI,,,,,,25.97,derived_imputed
+tkpi_0351,TKPI,,,,,,11.15,derived_imputed
+tkpi_0352,TKPI,,,,,,6.4183,derived_imputed
+tkpi_0353,TKPI,,,,,,11.3567,derived_imputed
+tkpi_0354,TKPI,,,,,,258.8267,derived_partly_imputed
+tkpi_0355,TKPI,,,,,,218.92,derived_partly_imputed
+tkpi_0356,TKPI,,,,,,40.3383,derived_imputed
+tkpi_0357,TKPI,,,,,,292.5533,derived_partly_imputed
+tkpi_0358,TKPI,,,,,,11.66,derived_partly_imputed
+tkpi_0359,TKPI,,,,,,101.9533,derived_partly_imputed
+tkpi_0360,TKPI,,,,,,82.2767,derived_imputed
+tkpi_0361,TKPI,,,,,,42.08,derived_partly_imputed
+tkpi_0362,TKPI,,,,,,70.1517,derived_imputed
+tkpi_0363,TKPI,,,,,,63.22,derived_imputed
+tkpi_0364,TKPI,,,,,,42.16,derived_partly_imputed
+tkpi_0365,TKPI,,,,,,59.4767,derived_imputed
+tkpi_0366,TKPI,,,,,,11.0067,derived_partly_imputed
+tkpi_0367,TKPI,,,,,,20.4233,derived_imputed
+tkpi_0368,TKPI,,,,,,361.9283,derived_imputed
+tkpi_0369,TKPI,,,,,,5.8517,derived_imputed
+tkpi_0370,TKPI,,,,,,3.3317,derived_imputed
+tkpi_0371,TKPI,,,,,,80.9233,derived_imputed
+tkpi_0372,TKPI,,,,,,19.2817,derived_imputed
+tkpi_0373,TKPI,,,,,,16.38,derived_partly_imputed
+tkpi_0374,TKPI,,,,,,0.0183,derived_partly_imputed
+tkpi_0375,TKPI,,,,,,22.0917,derived_imputed
+tkpi_0376,TKPI,,,,,,106.0367,derived_imputed
+tkpi_0377,TKPI,,,,,,477.585,derived_imputed
+tkpi_0378,TKPI,,,,,,225.58,derived_partly_imputed
+tkpi_0379,TKPI,,,,,,15.6583,derived_imputed
+tkpi_0380,TKPI,,,,,,9.0117,derived_partly_imputed
+tkpi_0381,TKPI,,,,,,86.6333,derived_partly_imputed
+tkpi_0382,TKPI,,,,,,20.22,derived_partly_imputed
 tkpi_0383,TKPI,169250.0,"Lotus root, raw",0.6346,MEDIUM,0.0,6.9167,derived_measured
 tkpi_0384,TKPI,,,,,,0.0,derived_measured
-tkpi_0385,TKPI,,,,,,304.8433,derived_partly_imputed
-tkpi_0386,TKPI,168412.0,"Endive, raw",0.6865,HIGH,108.0,143.0833,derived_partly_imputed
-tkpi_0387,TKPI,,,,,,91.86,derived_partly_imputed
-tkpi_0388,TKPI,,,,,,2.92,derived_partly_imputed
-tkpi_0389,TKPI,,,,,,66.7867,derived_partly_imputed
-tkpi_0390,TKPI,168462.0,"Spinach, raw",0.6364,MEDIUM,469.0,226.2567,derived_partly_imputed
+tkpi_0385,TKPI,,,,,,291.59,derived_partly_imputed
+tkpi_0386,TKPI,168412.0,"Endive, raw",0.6865,HIGH,108.0,143.5033,derived_partly_imputed
+tkpi_0387,TKPI,,,,,,94.62,derived_partly_imputed
+tkpi_0388,TKPI,,,,,,1.88,derived_partly_imputed
+tkpi_0389,TKPI,,,,,,69.8867,derived_partly_imputed
+tkpi_0390,TKPI,168462.0,"Spinach, raw",0.6364,MEDIUM,469.0,225.9167,derived_partly_imputed
 tkpi_0391,TKPI,168462.0,"Spinach, raw",0.4611,MEDIUM,469.0,610.4167,derived_measured
-tkpi_0392,TKPI,170375.0,"Beet greens, raw",0.5289,MEDIUM,316.0,0.0,derived_partly_imputed
-tkpi_0393,TKPI,,,,,,279.8033,derived_partly_imputed
+tkpi_0392,TKPI,170375.0,"Beet greens, raw",0.5289,MEDIUM,316.0,1.12,derived_partly_imputed
+tkpi_0393,TKPI,,,,,,6.9633,derived_partly_imputed
 tkpi_0394,TKPI,,,,,,0.0,derived_measured
 tkpi_0395,TKPI,,,,,,64.3333,derived_measured
-tkpi_0396,TKPI,,,,,,247.0067,derived_partly_imputed
-tkpi_0397,TKPI,,,,,,104.9,derived_partly_imputed
-tkpi_0398,TKPI,,,,,,140.1433,derived_partly_imputed
-tkpi_0399,TKPI,,,,,,1388.9033,derived_partly_imputed
+tkpi_0396,TKPI,,,,,,244.1067,derived_partly_imputed
+tkpi_0397,TKPI,,,,,,105.32,derived_partly_imputed
+tkpi_0398,TKPI,,,,,,139.5833,derived_partly_imputed
+tkpi_0399,TKPI,,,,,,801.6033,derived_partly_imputed
 tkpi_0400,TKPI,,,,,,18.1667,derived_measured
-tkpi_0401,TKPI,,,,,,226.3867,derived_partly_imputed
-tkpi_0402,TKPI,,,,,,481.28,derived_partly_imputed
-tkpi_0403,TKPI,,,,,,293.63,derived_imputed
-tkpi_0404,TKPI,,,,,,44.6767,derived_partly_imputed
-tkpi_0405,TKPI,,,,,,208.6467,derived_partly_imputed
-tkpi_0406,TKPI,,,,,,83.0633,derived_partly_imputed
+tkpi_0401,TKPI,,,,,,186.2717,derived_partly_imputed
+tkpi_0402,TKPI,,,,,,622.6917,derived_partly_imputed
+tkpi_0403,TKPI,,,,,,232.6567,derived_imputed
+tkpi_0404,TKPI,,,,,,42.4167,derived_partly_imputed
+tkpi_0405,TKPI,,,,,,71.6267,derived_partly_imputed
+tkpi_0406,TKPI,,,,,,67.2833,derived_partly_imputed
 tkpi_0407,TKPI,,,,,,391.75,derived_measured
-tkpi_0408,TKPI,,,,,,272.6683,derived_partly_imputed
-tkpi_0409,TKPI,,,,,,430.9133,derived_partly_imputed
-tkpi_0410,TKPI,,,,,,397.4467,derived_partly_imputed
-tkpi_0411,TKPI,,,,,,268.2133,derived_partly_imputed
-tkpi_0412,TKPI,,,,,,150.5433,derived_imputed
-tkpi_0413,TKPI,,,,,,247.835,derived_partly_imputed
+tkpi_0408,TKPI,,,,,,293.7367,derived_partly_imputed
+tkpi_0409,TKPI,,,,,,503.9333,derived_partly_imputed
+tkpi_0410,TKPI,,,,,,376.8667,derived_partly_imputed
+tkpi_0411,TKPI,,,,,,214.065,derived_partly_imputed
+tkpi_0412,TKPI,,,,,,77.7033,derived_imputed
+tkpi_0413,TKPI,,,,,,219.94,derived_partly_imputed
 tkpi_0414,TKPI,,,,,,241.0833,derived_partly_imputed
 tkpi_0415,TKPI,,,,,,227.8333,derived_measured
-tkpi_0416,TKPI,,,,,,833.51,derived_partly_imputed
-tkpi_0417,TKPI,,,,,,1271.9867,derived_partly_imputed
+tkpi_0416,TKPI,,,,,,840.13,derived_partly_imputed
+tkpi_0417,TKPI,,,,,,958.3267,derived_partly_imputed
 tkpi_0418,TKPI,170478.0,"Winged bean leaves, raw",0.5603,MEDIUM,405.0,331.75,derived_partly_imputed
-tkpi_0419,TKPI,,,,,,136.3533,derived_partly_imputed
-tkpi_0420,TKPI,,,,,,273.0467,derived_partly_imputed
-tkpi_0421,TKPI,,,,,,115.0133,derived_partly_imputed
-tkpi_0422,TKPI,,,,,,2540.8867,derived_partly_imputed
+tkpi_0419,TKPI,,,,,,136.5333,derived_partly_imputed
+tkpi_0420,TKPI,,,,,,278.6267,derived_partly_imputed
+tkpi_0421,TKPI,,,,,,108.7133,derived_partly_imputed
+tkpi_0422,TKPI,,,,,,2534.0667,derived_partly_imputed
 tkpi_0423,TKPI,169230.0,"Garlic, raw",0.6018,MEDIUM,0.0,351.3333,derived_measured
 tkpi_0424,TKPI,,,,,,150.5,derived_measured
 tkpi_0425,TKPI,,,,,,198.8333,derived_partly_imputed
-tkpi_0426,TKPI,169975.0,"Cabbage, raw",0.5036,MEDIUM,5.0,835.27,derived_partly_imputed
-tkpi_0427,TKPI,,,,,,108.2467,derived_partly_imputed
-tkpi_0428,TKPI,,,,,,398.99,derived_partly_imputed
-tkpi_0429,TKPI,,,,,,105.8333,derived_partly_imputed
+tkpi_0426,TKPI,169975.0,"Cabbage, raw",0.5036,MEDIUM,5.0,837.09,derived_partly_imputed
+tkpi_0427,TKPI,,,,,,246.3667,derived_partly_imputed
+tkpi_0428,TKPI,,,,,,405.71,derived_partly_imputed
+tkpi_0429,TKPI,,,,,,109.7133,derived_partly_imputed
 tkpi_0430,TKPI,,,,,,575.0,derived_measured
-tkpi_0431,TKPI,,,,,,67.75,derived_partly_imputed
-tkpi_0432,TKPI,,,,,,187.1567,derived_imputed
-tkpi_0433,TKPI,170095.0,"Radish seeds, sprouted, raw",0.5105,MEDIUM,20.0,437.0567,derived_partly_imputed
-tkpi_0434,TKPI,169308.0,"Taro, raw",0.4275,MEDIUM,4.0,216.5733,derived_partly_imputed
-tkpi_0435,TKPI,,,,,,397.2733,derived_imputed
-tkpi_0436,TKPI,,,,,,8.0083,derived_partly_imputed
-tkpi_0437,TKPI,,,,,,723.6833,derived_partly_imputed
+tkpi_0431,TKPI,,,,,,67.51,derived_partly_imputed
+tkpi_0432,TKPI,,,,,,144.53,derived_imputed
+tkpi_0433,TKPI,170095.0,"Radish seeds, sprouted, raw",0.5105,MEDIUM,20.0,440.4967,derived_partly_imputed
+tkpi_0434,TKPI,169308.0,"Taro, raw",0.4275,MEDIUM,4.0,222.6333,derived_partly_imputed
+tkpi_0435,TKPI,,,,,,374.8,derived_imputed
+tkpi_0436,TKPI,,,,,,10.765,derived_partly_imputed
+tkpi_0437,TKPI,,,,,,450.8033,derived_partly_imputed
 tkpi_0438,TKPI,,,,,,0.1667,derived_measured
-tkpi_0439,TKPI,,,,,,1206.77,derived_partly_imputed
-tkpi_0440,TKPI,,,,,,72.95,derived_partly_imputed
+tkpi_0439,TKPI,,,,,,1222.05,derived_partly_imputed
+tkpi_0440,TKPI,,,,,,74.19,derived_partly_imputed
 tkpi_0441,TKPI,,,,,,135.4167,derived_measured
-tkpi_0442,TKPI,,,,,,166.6,derived_partly_imputed
-tkpi_0443,TKPI,,,,,,21.1967,derived_partly_imputed
-tkpi_0444,TKPI,,,,,,4.54,derived_partly_imputed
-tkpi_0445,TKPI,,,,,,26.3433,derived_partly_imputed
-tkpi_0446,TKPI,,,,,,153.06,derived_partly_imputed
-tkpi_0447,TKPI,,,,,,11183.22,derived_partly_imputed
-tkpi_0448,TKPI,,,,,,456.425,derived_partly_imputed
+tkpi_0442,TKPI,,,,,,32.18,derived_partly_imputed
+tkpi_0443,TKPI,,,,,,21.6367,derived_partly_imputed
+tkpi_0444,TKPI,,,,,,7.36,derived_partly_imputed
+tkpi_0445,TKPI,,,,,,6.8033,derived_partly_imputed
+tkpi_0446,TKPI,,,,,,153.84,derived_partly_imputed
+tkpi_0447,TKPI,,,,,,11886.43,derived_partly_imputed
+tkpi_0448,TKPI,,,,,,591.4983,derived_partly_imputed
 tkpi_0449,TKPI,,,,,,342.6667,derived_measured
 tkpi_0450,TKPI,,,,,,5.3333,derived_measured
-tkpi_0451,TKPI,,,,,,128.49,derived_partly_imputed
-tkpi_0452,TKPI,,,,,,291.21,derived_imputed
+tkpi_0451,TKPI,,,,,,125.6917,derived_partly_imputed
+tkpi_0452,TKPI,,,,,,276.28,derived_imputed
 tkpi_0453,TKPI,,,,,,267.0,derived_measured
-tkpi_0454,TKPI,,,,,,2069.0967,derived_partly_imputed
-tkpi_0455,TKPI,,,,,,695.73,derived_partly_imputed
-tkpi_0456,TKPI,,,,,,328.9,derived_partly_imputed
+tkpi_0454,TKPI,,,,,,2090.9967,derived_partly_imputed
+tkpi_0455,TKPI,,,,,,664.29,derived_partly_imputed
+tkpi_0456,TKPI,,,,,,334.26,derived_partly_imputed
 tkpi_0457,TKPI,,,,,,848.1667,derived_measured
 tkpi_0458,TKPI,169308.0,"Taro, raw",0.5304,MEDIUM,4.0,318.0,derived_measured
-tkpi_0459,TKPI,,,,,,147.43,derived_partly_imputed
-tkpi_0460,TKPI,,,,,,297.22,derived_partly_imputed
+tkpi_0459,TKPI,,,,,,184.59,derived_partly_imputed
+tkpi_0460,TKPI,,,,,,297.0,derived_partly_imputed
 tkpi_0461,TKPI,,,,,,454.4167,derived_measured
-tkpi_0462,TKPI,,,,,,150.9433,derived_partly_imputed
-tkpi_0463,TKPI,,,,,,182.48,derived_partly_imputed
-tkpi_0464,TKPI,,,,,,6.6433,derived_partly_imputed
-tkpi_0465,TKPI,,,,,,18.4167,derived_partly_imputed
-tkpi_0466,TKPI,,,,,,216.6933,derived_imputed
+tkpi_0462,TKPI,,,,,,206.0033,derived_partly_imputed
+tkpi_0463,TKPI,,,,,,224.9,derived_partly_imputed
+tkpi_0464,TKPI,,,,,,6.8833,derived_partly_imputed
+tkpi_0465,TKPI,,,,,,5.9167,derived_partly_imputed
+tkpi_0466,TKPI,,,,,,183.0867,derived_imputed
 tkpi_0467,TKPI,,,,,,1.9167,derived_measured
-tkpi_0468,TKPI,,,,,,170.67,derived_imputed
+tkpi_0468,TKPI,,,,,,288.1017,derived_imputed
 tkpi_0469,TKPI,,,,,,0.9167,derived_measured
 tkpi_0470,TKPI,,,,,,0.0833,derived_measured
-tkpi_0471,TKPI,,,,,,1.62,derived_partly_imputed
-tkpi_0472,TKPI,168580.0,"Mushrooms, oyster, raw",0.4027,MEDIUM,2.0,3.14,derived_partly_imputed
-tkpi_0473,TKPI,,,,,,283.98,derived_partly_imputed
+tkpi_0471,TKPI,,,,,,1.24,derived_partly_imputed
+tkpi_0472,TKPI,168580.0,"Mushrooms, oyster, raw",0.4027,MEDIUM,2.0,2.06,derived_partly_imputed
+tkpi_0473,TKPI,,,,,,285.08,derived_partly_imputed
 tkpi_0474,TKPI,,,,,,16.75,derived_measured
-tkpi_0475,TKPI,,,,,,14.675,derived_imputed
-tkpi_0476,TKPI,,,,,,164.5267,derived_partly_imputed
-tkpi_0477,TKPI,,,,,,203.43,derived_partly_imputed
+tkpi_0475,TKPI,,,,,,13.0833,derived_imputed
+tkpi_0476,TKPI,,,,,,186.1067,derived_partly_imputed
+tkpi_0477,TKPI,,,,,,16.69,derived_partly_imputed
 tkpi_0478,TKPI,,,,,,16.4167,derived_measured
 tkpi_0479,TKPI,,,,,,10.4167,derived_measured
-tkpi_0480,TKPI,,,,,,164.0133,derived_imputed
-tkpi_0481,TKPI,,,,,,5.5267,derived_partly_imputed
+tkpi_0480,TKPI,,,,,,172.35,derived_imputed
+tkpi_0481,TKPI,,,,,,6.6467,derived_partly_imputed
 tkpi_0482,TKPI,,,,,,239.0,derived_partly_imputed
-tkpi_0483,TKPI,,,,,,243.1767,derived_partly_imputed
-tkpi_0484,TKPI,,,,,,7.9,derived_partly_imputed
-tkpi_0485,TKPI,,,,,,2.99,derived_partly_imputed
-tkpi_0486,TKPI,170478.0,"Winged bean leaves, raw",0.554,MEDIUM,405.0,23.17,derived_partly_imputed
+tkpi_0483,TKPI,,,,,,240.4567,derived_partly_imputed
+tkpi_0484,TKPI,,,,,,7.12,derived_partly_imputed
+tkpi_0485,TKPI,,,,,,5.41,derived_partly_imputed
+tkpi_0486,TKPI,170478.0,"Winged bean leaves, raw",0.554,MEDIUM,405.0,24.99,derived_partly_imputed
 tkpi_0487,TKPI,,,,,,0.0,derived_measured
 tkpi_0488,TKPI,,,,,,0.0,derived_partly_imputed
-tkpi_0489,TKPI,,,,,,17.23,derived_partly_imputed
-tkpi_0490,TKPI,,,,,,148.5,derived_partly_imputed
+tkpi_0489,TKPI,,,,,,17.39,derived_partly_imputed
+tkpi_0490,TKPI,,,,,,166.52,derived_partly_imputed
 tkpi_0491,TKPI,,,,,,1.5,derived_measured
 tkpi_0492,TKPI,,,,,,1.5833,derived_measured
 tkpi_0493,TKPI,,,,,,2.0833,derived_measured
-tkpi_0494,TKPI,169234.0,"Hyacinth-beans, immature seeds, raw",0.4138,MEDIUM,43.0,6.5367,derived_partly_imputed
-tkpi_0495,TKPI,,,,,,3.52,derived_partly_imputed
-tkpi_0496,TKPI,,,,,,5.1533,derived_partly_imputed
-tkpi_0497,TKPI,,,,,,4.9267,derived_imputed
-tkpi_0498,TKPI,,,,,,10.28,derived_partly_imputed
-tkpi_0499,TKPI,169994.0,"Chives, raw",0.6073,MEDIUM,218.0,226.05,derived_partly_imputed
-tkpi_0500,TKPI,,,,,,231.8267,derived_partly_imputed
-tkpi_0501,TKPI,,,,,,88.4233,derived_partly_imputed
-tkpi_0502,TKPI,,,,,,1.3033,derived_partly_imputed
-tkpi_0503,TKPI,,,,,,3.3767,derived_partly_imputed
-tkpi_0504,TKPI,168448.0,"Pumpkin, raw",0.5077,MEDIUM,426.0,147.59,derived_partly_imputed
+tkpi_0494,TKPI,169234.0,"Hyacinth-beans, immature seeds, raw",0.4138,MEDIUM,43.0,5.0367,derived_partly_imputed
+tkpi_0495,TKPI,,,,,,3.38,derived_partly_imputed
+tkpi_0496,TKPI,,,,,,4.5733,derived_partly_imputed
+tkpi_0497,TKPI,,,,,,14.595,derived_imputed
+tkpi_0498,TKPI,,,,,,6.56,derived_partly_imputed
+tkpi_0499,TKPI,169994.0,"Chives, raw",0.6073,MEDIUM,218.0,230.25,derived_partly_imputed
+tkpi_0500,TKPI,,,,,,232.6267,derived_partly_imputed
+tkpi_0501,TKPI,,,,,,54.0283,derived_partly_imputed
+tkpi_0502,TKPI,,,,,,0.5833,derived_partly_imputed
+tkpi_0503,TKPI,,,,,,1.3567,derived_partly_imputed
+tkpi_0504,TKPI,168448.0,"Pumpkin, raw",0.5077,MEDIUM,426.0,177.11,derived_partly_imputed
 tkpi_0505,TKPI,,,,,,4.0,derived_partly_imputed
-tkpi_0506,TKPI,168448.0,"Pumpkin, raw",0.5077,MEDIUM,426.0,62.3733,derived_partly_imputed
-tkpi_0507,TKPI,,,,,,5.1067,derived_partly_imputed
-tkpi_0508,TKPI,170061.0,"Turnip greens, raw",0.4659,MEDIUM,579.0,1.38,derived_partly_imputed
-tkpi_0509,TKPI,,,,,,3.9833,derived_partly_imputed
-tkpi_0510,TKPI,,,,,,61.4667,derived_imputed
-tkpi_0511,TKPI,,,,,,135.13,derived_partly_imputed
-tkpi_0512,TKPI,,,,,,1.83,derived_partly_imputed
+tkpi_0506,TKPI,168448.0,"Pumpkin, raw",0.5077,MEDIUM,426.0,62.8333,derived_partly_imputed
+tkpi_0507,TKPI,,,,,,3.1667,derived_partly_imputed
+tkpi_0508,TKPI,170061.0,"Turnip greens, raw",0.4659,MEDIUM,579.0,0.0,derived_partly_imputed
+tkpi_0509,TKPI,,,,,,2.0833,derived_partly_imputed
+tkpi_0510,TKPI,,,,,,116.0783,derived_imputed
+tkpi_0511,TKPI,,,,,,140.87,derived_partly_imputed
+tkpi_0512,TKPI,,,,,,1.75,derived_partly_imputed
 tkpi_0513,TKPI,,,,,,16.4167,derived_measured
-tkpi_0514,TKPI,,,,,,161.35,derived_partly_imputed
-tkpi_0515,TKPI,,,,,,1.4,derived_partly_imputed
-tkpi_0516,TKPI,,,,,,281.88,derived_partly_imputed
-tkpi_0517,TKPI,170416.0,"Parsley, fresh",0.6708,HIGH,421.0,261.2,derived_partly_imputed
-tkpi_0518,TKPI,,,,,,298.6467,derived_imputed
-tkpi_0519,TKPI,,,,,,399.4333,derived_partly_imputed
-tkpi_0520,TKPI,,,,,,1.5533,derived_partly_imputed
-tkpi_0521,TKPI,,,,,,4.39,derived_partly_imputed
-tkpi_0522,TKPI,,,,,,180.1067,derived_partly_imputed
-tkpi_0523,TKPI,169256.0,"Mustard greens, raw",0.411,MEDIUM,151.0,170.1667,derived_partly_imputed
+tkpi_0514,TKPI,,,,,,247.11,derived_partly_imputed
+tkpi_0515,TKPI,,,,,,0.28,derived_partly_imputed
+tkpi_0516,TKPI,,,,,,303.36,derived_partly_imputed
+tkpi_0517,TKPI,170416.0,"Parsley, fresh",0.6708,HIGH,421.0,424.48,derived_partly_imputed
+tkpi_0518,TKPI,,,,,,304.7333,derived_imputed
+tkpi_0519,TKPI,,,,,,400.7733,derived_partly_imputed
+tkpi_0520,TKPI,,,,,,0.8333,derived_partly_imputed
+tkpi_0521,TKPI,,,,,,4.33,derived_partly_imputed
+tkpi_0522,TKPI,,,,,,338.3667,derived_partly_imputed
+tkpi_0523,TKPI,169256.0,"Mustard greens, raw",0.411,MEDIUM,151.0,198.1867,derived_partly_imputed
 tkpi_0524,TKPI,170390.0,"Cabbage, chinese (pak-choi), raw",0.4909,MEDIUM,223.0,71.8333,derived_measured
-tkpi_0525,TKPI,,,,,,114.7867,derived_partly_imputed
-tkpi_0526,TKPI,,,,,,70.6767,derived_partly_imputed
-tkpi_0527,TKPI,169249.0,"Lettuce, green leaf, raw",0.4767,MEDIUM,370.0,130.7867,derived_partly_imputed
+tkpi_0525,TKPI,,,,,,115.7867,derived_partly_imputed
+tkpi_0526,TKPI,,,,,,73.3167,derived_partly_imputed
+tkpi_0527,TKPI,169249.0,"Lettuce, green leaf, raw",0.4767,MEDIUM,370.0,132.2467,derived_partly_imputed
 tkpi_0528,TKPI,170068.0,"Watercress, raw",0.5939,MEDIUM,160.0,102.5,derived_measured
-tkpi_0529,TKPI,169988.0,"Celery, raw",0.647,MEDIUM,22.0,6.51,derived_partly_imputed
-tkpi_0530,TKPI,,,,,,9.7167,derived_partly_imputed
-tkpi_0531,TKPI,,,,,,8.72,derived_partly_imputed
-tkpi_0532,TKPI,,,,,,27.7567,derived_partly_imputed
-tkpi_0533,TKPI,,,,,,7.14,derived_partly_imputed
-tkpi_0534,TKPI,,,,,,3.6567,derived_partly_imputed
-tkpi_0535,TKPI,,,,,,32.5433,derived_partly_imputed
-tkpi_0536,TKPI,169228.0,"Eggplant, raw",0.6749,HIGH,1.0,4.5533,derived_partly_imputed
-tkpi_0537,TKPI,,,,,,10.7233,derived_partly_imputed
-tkpi_0538,TKPI,,,,,,492.59,derived_partly_imputed
+tkpi_0529,TKPI,169988.0,"Celery, raw",0.647,MEDIUM,22.0,6.19,derived_partly_imputed
+tkpi_0530,TKPI,,,,,,10.1967,derived_partly_imputed
+tkpi_0531,TKPI,,,,,,4.46,derived_partly_imputed
+tkpi_0532,TKPI,,,,,,28.7767,derived_partly_imputed
+tkpi_0533,TKPI,,,,,,8.5,derived_partly_imputed
+tkpi_0534,TKPI,,,,,,2.9767,derived_partly_imputed
+tkpi_0535,TKPI,,,,,,30.4633,derived_partly_imputed
+tkpi_0536,TKPI,169228.0,"Eggplant, raw",0.6749,HIGH,1.0,4.2733,derived_partly_imputed
+tkpi_0537,TKPI,,,,,,11.1233,derived_partly_imputed
+tkpi_0538,TKPI,,,,,,545.0133,derived_partly_imputed
 tkpi_0539,TKPI,,,,,,7.0833,derived_measured
-tkpi_0540,TKPI,,,,,,172.02,derived_partly_imputed
+tkpi_0540,TKPI,,,,,,77.94,derived_partly_imputed
 tkpi_0541,TKPI,169228.0,"Eggplant, raw",0.5706,MEDIUM,1.0,6.9167,derived_measured
-tkpi_0542,TKPI,170458.0,"Tomato juice, canned, with salt added",0.4573,MEDIUM,23.0,25.3867,derived_partly_imputed
-tkpi_0543,TKPI,,,,,,183.4567,derived_partly_imputed
-tkpi_0544,TKPI,,,,,,34.12,derived_partly_imputed
-tkpi_0545,TKPI,,,,,,3.12,derived_imputed
-tkpi_0546,TKPI,,,,,,1.7733,derived_partly_imputed
-tkpi_0547,TKPI,,,,,,18.5267,derived_partly_imputed
-tkpi_0548,TKPI,170491.0,"Carrot juice, canned",0.5399,MEDIUM,956.0,315.6133,derived_partly_imputed
+tkpi_0542,TKPI,170458.0,"Tomato juice, canned, with salt added",0.4573,MEDIUM,23.0,25.1067,derived_partly_imputed
+tkpi_0543,TKPI,,,,,,185.6567,derived_partly_imputed
+tkpi_0544,TKPI,,,,,,35.36,derived_partly_imputed
+tkpi_0545,TKPI,,,,,,2.4933,derived_imputed
+tkpi_0546,TKPI,,,,,,2.0533,derived_partly_imputed
+tkpi_0547,TKPI,,,,,,7.7467,derived_partly_imputed
+tkpi_0548,TKPI,170491.0,"Carrot juice, canned",0.5399,MEDIUM,956.0,330.0333,derived_partly_imputed
 tkpi_0549,TKPI,,,,,,224.9167,derived_measured
 tkpi_0550,TKPI,,,,,,273.5,derived_measured
-tkpi_0551,TKPI,,,,,,16.5233,derived_partly_imputed
+tkpi_0551,TKPI,,,,,,7.4633,derived_partly_imputed
 tkpi_0552,TKPI,,,,,,220.4167,derived_measured
 tkpi_0553,TKPI,,,,,,927.5833,derived_measured
-tkpi_0554,TKPI,,,,,,331.12,derived_partly_imputed
-tkpi_0555,TKPI,,,,,,184.0867,derived_partly_imputed
-tkpi_0556,TKPI,,,,,,324.81,derived_partly_imputed
+tkpi_0554,TKPI,,,,,,344.52,derived_partly_imputed
+tkpi_0555,TKPI,,,,,,200.2667,derived_partly_imputed
+tkpi_0556,TKPI,,,,,,324.75,derived_partly_imputed
 tkpi_0557,TKPI,,,,,,386.75,derived_measured
-tkpi_0558,TKPI,,,,,,439.75,derived_partly_imputed
+tkpi_0558,TKPI,,,,,,442.43,derived_partly_imputed
 tkpi_0559,TKPI,,,,,,10.9167,derived_measured
 tkpi_0560,TKPI,,,,,,10.6667,derived_measured
 tkpi_0561,TKPI,,,,,,197.5,derived_measured
 tkpi_0562,TKPI,,,,,,197.5,derived_measured
-tkpi_0563,TKPI,,,,,,18.0033,derived_partly_imputed
-tkpi_0564,TKPI,,,,,,208.87,derived_partly_imputed
-tkpi_0565,TKPI,,,,,,20.655,derived_partly_imputed
-tkpi_0566,TKPI,,,,,,5.9933,derived_partly_imputed
+tkpi_0563,TKPI,,,,,,16.7233,derived_partly_imputed
+tkpi_0564,TKPI,,,,,,210.17,derived_partly_imputed
+tkpi_0565,TKPI,,,,,,20.93,derived_partly_imputed
+tkpi_0566,TKPI,,,,,,3.8333,derived_partly_imputed
 tkpi_0567,TKPI,,,,,,8.25,derived_measured
 tkpi_0568,TKPI,,,,,,318.6667,derived_measured
 tkpi_0569,TKPI,,,,,,332.8333,derived_measured
-tkpi_0570,TKPI,,,,,,122.1083,derived_partly_imputed
-tkpi_0571,TKPI,,,,,,281.2367,derived_partly_imputed
-tkpi_0572,TKPI,,,,,,185.38,derived_partly_imputed
-tkpi_0573,TKPI,,,,,,137.76,derived_partly_imputed
-tkpi_0574,TKPI,,,,,,248.4667,derived_partly_imputed
-tkpi_0575,TKPI,,,,,,22.585,derived_partly_imputed
-tkpi_0576,TKPI,,,,,,357.55,derived_partly_imputed
-tkpi_0577,TKPI,,,,,,131.2033,derived_partly_imputed
-tkpi_0578,TKPI,,,,,,120.2117,derived_partly_imputed
-tkpi_0579,TKPI,,,,,,211.2633,derived_partly_imputed
-tkpi_0580,TKPI,,,,,,4.56,derived_partly_imputed
-tkpi_0581,TKPI,,,,,,396.0817,derived_partly_imputed
-tkpi_0582,TKPI,,,,,,276.3933,derived_imputed
-tkpi_0583,TKPI,,,,,,286.4933,derived_partly_imputed
-tkpi_0584,TKPI,,,,,,285.3333,derived_partly_imputed
-tkpi_0585,TKPI,,,,,,0.355,derived_partly_imputed
-tkpi_0586,TKPI,,,,,,184.42,derived_partly_imputed
-tkpi_0587,TKPI,,,,,,357.95,derived_partly_imputed
-tkpi_0588,TKPI,,,,,,230.5783,derived_imputed
-tkpi_0589,TKPI,,,,,,61.1733,derived_imputed
-tkpi_0590,TKPI,,,,,,169.04,derived_partly_imputed
-tkpi_0591,TKPI,,,,,,270.7833,derived_partly_imputed
-tkpi_0592,TKPI,,,,,,98.72,derived_partly_imputed
-tkpi_0593,TKPI,,,,,,284.6233,derived_partly_imputed
-tkpi_0594,TKPI,,,,,,130.5233,derived_partly_imputed
-tkpi_0595,TKPI,,,,,,139.5883,derived_partly_imputed
-tkpi_0596,TKPI,,,,,,33.28,derived_partly_imputed
-tkpi_0597,TKPI,,,,,,28.8467,derived_imputed
-tkpi_0598,TKPI,,,,,,95.2267,derived_partly_imputed
-tkpi_0599,TKPI,,,,,,243.235,derived_imputed
-tkpi_0600,TKPI,,,,,,277.3067,derived_imputed
-tkpi_0601,TKPI,,,,,,199.45,derived_partly_imputed
-tkpi_0602,TKPI,,,,,,6.89,derived_partly_imputed
-tkpi_0603,TKPI,,,,,,10.44,derived_partly_imputed
-tkpi_0604,TKPI,,,,,,89.625,derived_partly_imputed
-tkpi_0605,TKPI,,,,,,2.4517,derived_imputed
-tkpi_0606,TKPI,,,,,,4.66,derived_partly_imputed
-tkpi_0607,TKPI,,,,,,165.3367,derived_partly_imputed
-tkpi_0608,TKPI,,,,,,105.7967,derived_partly_imputed
-tkpi_0609,TKPI,,,,,,133.0633,derived_partly_imputed
-tkpi_0610,TKPI,,,,,,17.25,derived_partly_imputed
-tkpi_0611,TKPI,,,,,,4.4183,derived_partly_imputed
-tkpi_0612,TKPI,,,,,,131.2867,derived_partly_imputed
+tkpi_0570,TKPI,,,,,,69.6217,derived_partly_imputed
+tkpi_0571,TKPI,,,,,,307.0567,derived_partly_imputed
+tkpi_0572,TKPI,,,,,,329.0,derived_partly_imputed
+tkpi_0573,TKPI,,,,,,165.24,derived_partly_imputed
+tkpi_0574,TKPI,,,,,,25.5067,derived_partly_imputed
+tkpi_0575,TKPI,,,,,,31.025,derived_partly_imputed
+tkpi_0576,TKPI,,,,,,453.77,derived_partly_imputed
+tkpi_0577,TKPI,,,,,,129.5633,derived_partly_imputed
+tkpi_0578,TKPI,,,,,,113.4817,derived_partly_imputed
+tkpi_0579,TKPI,,,,,,256.5167,derived_partly_imputed
+tkpi_0580,TKPI,,,,,,3.6683,derived_partly_imputed
+tkpi_0581,TKPI,,,,,,473.045,derived_partly_imputed
+tkpi_0582,TKPI,,,,,,82.585,derived_imputed
+tkpi_0583,TKPI,,,,,,252.1933,derived_partly_imputed
+tkpi_0584,TKPI,,,,,,383.4533,derived_partly_imputed
+tkpi_0585,TKPI,,,,,,0.2683,derived_partly_imputed
+tkpi_0586,TKPI,,,,,,109.58,derived_partly_imputed
+tkpi_0587,TKPI,,,,,,249.71,derived_partly_imputed
+tkpi_0588,TKPI,,,,,,214.0733,derived_imputed
+tkpi_0589,TKPI,,,,,,34.1667,derived_imputed
+tkpi_0590,TKPI,,,,,,216.28,derived_partly_imputed
+tkpi_0591,TKPI,,,,,,255.3433,derived_partly_imputed
+tkpi_0592,TKPI,,,,,,109.86,derived_partly_imputed
+tkpi_0593,TKPI,,,,,,401.2233,derived_partly_imputed
+tkpi_0594,TKPI,,,,,,138.4017,derived_partly_imputed
+tkpi_0595,TKPI,,,,,,202.5717,derived_partly_imputed
+tkpi_0596,TKPI,,,,,,35.74,derived_partly_imputed
+tkpi_0597,TKPI,,,,,,10.7267,derived_imputed
+tkpi_0598,TKPI,,,,,,92.8667,derived_partly_imputed
+tkpi_0599,TKPI,,,,,,174.8667,derived_imputed
+tkpi_0600,TKPI,,,,,,290.5233,derived_imputed
+tkpi_0601,TKPI,,,,,,236.3217,derived_partly_imputed
+tkpi_0602,TKPI,,,,,,8.77,derived_partly_imputed
+tkpi_0603,TKPI,,,,,,11.7,derived_partly_imputed
+tkpi_0604,TKPI,,,,,,99.895,derived_partly_imputed
+tkpi_0605,TKPI,,,,,,1.075,derived_imputed
+tkpi_0606,TKPI,,,,,,4.26,derived_partly_imputed
+tkpi_0607,TKPI,,,,,,153.535,derived_partly_imputed
+tkpi_0608,TKPI,,,,,,107.2767,derived_partly_imputed
+tkpi_0609,TKPI,,,,,,136.8433,derived_partly_imputed
+tkpi_0610,TKPI,,,,,,16.49,derived_partly_imputed
+tkpi_0611,TKPI,,,,,,3.5617,derived_partly_imputed
+tkpi_0612,TKPI,,,,,,179.3667,derived_partly_imputed
 tkpi_0613,TKPI,,,,,,2.5,derived_partly_imputed
-tkpi_0614,TKPI,,,,,,32.1667,derived_partly_imputed
+tkpi_0614,TKPI,,,,,,26.7667,derived_partly_imputed
 tkpi_0615,TKPI,171715.0,"Carambola, (starfruit), raw",0.4678,MEDIUM,3.0,2.4167,derived_partly_imputed
-tkpi_0616,TKPI,,,,,,529.475,derived_partly_imputed
-tkpi_0617,TKPI,,,,,,100.6433,derived_imputed
-tkpi_0618,TKPI,,,,,,163.9967,derived_imputed
-tkpi_0619,TKPI,,,,,,27.7433,derived_partly_imputed
-tkpi_0620,TKPI,169942.0,"Persimmons, japanese, dried",0.6103,MEDIUM,38.0,11.75,derived_partly_imputed
-tkpi_0621,TKPI,,,,,,26.28,derived_partly_imputed
-tkpi_0622,TKPI,,,,,,7.68,derived_partly_imputed
-tkpi_0623,TKPI,169108.0,"Passion-fruit, (granadilla), purple, raw",0.6302,MEDIUM,64.0,178.2133,derived_partly_imputed
-tkpi_0624,TKPI,,,,,,4.9833,derived_partly_imputed
-tkpi_0625,TKPI,,,,,,37.9267,derived_imputed
+tkpi_0616,TKPI,,,,,,626.4467,derived_partly_imputed
+tkpi_0617,TKPI,,,,,,80.5167,derived_imputed
+tkpi_0618,TKPI,,,,,,71.1933,derived_imputed
+tkpi_0619,TKPI,,,,,,70.5733,derived_partly_imputed
+tkpi_0620,TKPI,169942.0,"Persimmons, japanese, dried",0.6103,MEDIUM,38.0,12.87,derived_partly_imputed
+tkpi_0621,TKPI,,,,,,10.54,derived_partly_imputed
+tkpi_0622,TKPI,,,,,,5.84,derived_partly_imputed
+tkpi_0623,TKPI,169108.0,"Passion-fruit, (granadilla), purple, raw",0.6302,MEDIUM,64.0,315.3733,derived_partly_imputed
+tkpi_0624,TKPI,,,,,,4.2033,derived_partly_imputed
+tkpi_0625,TKPI,,,,,,8.8517,derived_imputed
 tkpi_0626,TKPI,,,,,,1.4167,derived_partly_imputed
-tkpi_0627,TKPI,,,,,,3.3033,derived_partly_imputed
-tkpi_0628,TKPI,,,,,,159.06,derived_imputed
+tkpi_0627,TKPI,,,,,,3.5633,derived_partly_imputed
+tkpi_0628,TKPI,,,,,,221.6417,derived_imputed
 tkpi_0629,TKPI,169107.0,"Papaya nectar, canned",0.6459,MEDIUM,18.0,0.0,derived_measured
-tkpi_0630,TKPI,,,,,,7.3633,derived_partly_imputed
-tkpi_0631,TKPI,,,,,,0.76,derived_partly_imputed
-tkpi_0632,TKPI,168192.0,"Durian, raw or frozen",1.0,HIGH,2.0,15.1267,derived_partly_imputed
+tkpi_0630,TKPI,,,,,,6.5833,derived_partly_imputed
+tkpi_0631,TKPI,,,,,,0.06,derived_partly_imputed
+tkpi_0632,TKPI,168192.0,"Durian, raw or frozen",1.0,HIGH,2.0,14.0267,derived_partly_imputed
 tkpi_0633,TKPI,,,,,,27.4167,derived_measured
-tkpi_0634,TKPI,,,,,,214.8633,derived_partly_imputed
-tkpi_0635,TKPI,,,,,,123.3183,derived_partly_imputed
-tkpi_0636,TKPI,169108.0,"Passion-fruit, (granadilla), purple, raw",0.6857,HIGH,64.0,46.15,derived_partly_imputed
-tkpi_0637,TKPI,,,,,,33.3767,derived_partly_imputed
-tkpi_0638,TKPI,,,,,,6.23,derived_partly_imputed
-tkpi_0639,TKPI,,,,,,23.9467,derived_partly_imputed
-tkpi_0640,TKPI,,,,,,2.33,derived_partly_imputed
+tkpi_0634,TKPI,,,,,,212.8433,derived_partly_imputed
+tkpi_0635,TKPI,,,,,,73.1033,derived_partly_imputed
+tkpi_0636,TKPI,169108.0,"Passion-fruit, (granadilla), purple, raw",0.6857,HIGH,64.0,48.13,derived_partly_imputed
+tkpi_0637,TKPI,,,,,,28.3167,derived_partly_imputed
+tkpi_0638,TKPI,,,,,,4.35,derived_partly_imputed
+tkpi_0639,TKPI,,,,,,241.1267,derived_partly_imputed
+tkpi_0640,TKPI,,,,,,2.25,derived_partly_imputed
 tkpi_0641,TKPI,,,,,,5.1967,derived_partly_imputed
-tkpi_0642,TKPI,,,,,,241.3267,derived_partly_imputed
-tkpi_0643,TKPI,,,,,,136.8467,derived_partly_imputed
-tkpi_0644,TKPI,167754.0,"Pummelo, raw",0.6271,MEDIUM,0.0,2.83,derived_partly_imputed
-tkpi_0645,TKPI,,,,,,1.11,derived_partly_imputed
-tkpi_0646,TKPI,,,,,,0.88,derived_partly_imputed
-tkpi_0647,TKPI,,,,,,0.0833,derived_partly_imputed
-tkpi_0648,TKPI,,,,,,0.36,derived_partly_imputed
+tkpi_0642,TKPI,,,,,,11.3467,derived_partly_imputed
+tkpi_0643,TKPI,,,,,,137.7267,derived_partly_imputed
+tkpi_0644,TKPI,167754.0,"Pummelo, raw",0.6271,MEDIUM,0.0,3.19,derived_partly_imputed
+tkpi_0645,TKPI,,,,,,0.83,derived_partly_imputed
+tkpi_0646,TKPI,,,,,,0.86,derived_partly_imputed
+tkpi_0647,TKPI,,,,,,0.2033,derived_partly_imputed
+tkpi_0648,TKPI,,,,,,0.32,derived_partly_imputed
 tkpi_0649,TKPI,168156.0,"Lime juice, raw",0.4986,MEDIUM,2.0,1.9167,derived_partly_imputed
-tkpi_0650,TKPI,,,,,,1.02,derived_partly_imputed
-tkpi_0651,TKPI,,,,,,9.67,derived_partly_imputed
-tkpi_0652,TKPI,,,,,,16.1467,derived_partly_imputed
-tkpi_0653,TKPI,,,,,,153.2367,derived_partly_imputed
-tkpi_0654,TKPI,,,,,,37.1283,derived_imputed
+tkpi_0650,TKPI,,,,,,0.0,derived_partly_imputed
+tkpi_0651,TKPI,,,,,,8.39,derived_partly_imputed
+tkpi_0652,TKPI,,,,,,15.1867,derived_partly_imputed
+tkpi_0653,TKPI,,,,,,208.1767,derived_partly_imputed
+tkpi_0654,TKPI,,,,,,91.9933,derived_imputed
 tkpi_0655,TKPI,,,,,,0.0,derived_measured
-tkpi_0656,TKPI,,,,,,26.82,derived_partly_imputed
-tkpi_0657,TKPI,169942.0,"Persimmons, japanese, dried",0.4516,MEDIUM,38.0,142.5033,derived_partly_imputed
+tkpi_0656,TKPI,,,,,,27.4,derived_partly_imputed
+tkpi_0657,TKPI,169942.0,"Persimmons, japanese, dried",0.4516,MEDIUM,38.0,207.1633,derived_partly_imputed
 tkpi_0658,TKPI,,,,,,0.0,derived_partly_imputed
-tkpi_0659,TKPI,,,,,,2.7483,derived_imputed
-tkpi_0660,TKPI,,,,,,1.3367,derived_imputed
-tkpi_0661,TKPI,167747.0,"Lemon juice, raw",0.8792,HIGH,0.0,5.04,derived_partly_imputed
-tkpi_0662,TKPI,,,,,,161.7383,derived_imputed
-tkpi_0663,TKPI,169091.0,"Mango, dried, sweetened",0.4941,MEDIUM,67.0,29.2733,derived_partly_imputed
-tkpi_0664,TKPI,,,,,,1.2733,derived_partly_imputed
-tkpi_0665,TKPI,,,,,,6272.2967,derived_partly_imputed
-tkpi_0666,TKPI,,,,,,168.8733,derived_partly_imputed
-tkpi_0667,TKPI,,,,,,25.06,derived_partly_imputed
-tkpi_0668,TKPI,,,,,,151.0533,derived_partly_imputed
-tkpi_0669,TKPI,,,,,,315.1033,derived_partly_imputed
-tkpi_0670,TKPI,,,,,,81.1267,derived_partly_imputed
+tkpi_0659,TKPI,,,,,,2.58,derived_imputed
+tkpi_0660,TKPI,,,,,,1.0283,derived_imputed
+tkpi_0661,TKPI,167747.0,"Lemon juice, raw",0.8792,HIGH,0.0,290.4,derived_partly_imputed
+tkpi_0662,TKPI,,,,,,119.845,derived_imputed
+tkpi_0663,TKPI,169091.0,"Mango, dried, sweetened",0.4941,MEDIUM,67.0,26.5333,derived_partly_imputed
+tkpi_0664,TKPI,,,,,,0.8333,derived_partly_imputed
+tkpi_0665,TKPI,,,,,,5085.1367,derived_partly_imputed
+tkpi_0666,TKPI,,,,,,235.9533,derived_partly_imputed
+tkpi_0667,TKPI,,,,,,21.04,derived_partly_imputed
+tkpi_0668,TKPI,,,,,,203.6333,derived_partly_imputed
+tkpi_0669,TKPI,,,,,,389.1633,derived_partly_imputed
+tkpi_0670,TKPI,,,,,,79.3867,derived_partly_imputed
 tkpi_0671,TKPI,,,,,,0.3333,derived_measured
 tkpi_0672,TKPI,,,,,,12.1667,derived_partly_imputed
 tkpi_0673,TKPI,169090.0,"Mangosteen, canned, syrup pack",0.5581,MEDIUM,2.0,0.0,derived_partly_imputed
 tkpi_0674,TKPI,,,,,,80.75,derived_measured
 tkpi_0675,TKPI,,,,,,0.1667,derived_partly_imputed
 tkpi_0676,TKPI,169912.0,"Melon balls, frozen",0.6515,HIGH,89.0,0.0833,derived_partly_imputed
-tkpi_0677,TKPI,,,,,,3.8233,derived_imputed
-tkpi_0678,TKPI,,,,,,1.4167,derived_partly_imputed
+tkpi_0677,TKPI,,,,,,23.195,derived_imputed
+tkpi_0678,TKPI,,,,,,2.2767,derived_partly_imputed
 tkpi_0679,TKPI,,,,,,1.4167,derived_measured
-tkpi_0680,TKPI,,,,,,13.1767,derived_partly_imputed
-tkpi_0681,TKPI,,,,,,3.37,derived_imputed
-tkpi_0682,TKPI,169107.0,"Papaya nectar, canned",0.4817,MEDIUM,18.0,87.88,derived_partly_imputed
+tkpi_0680,TKPI,,,,,,12.4167,derived_partly_imputed
+tkpi_0681,TKPI,,,,,,4.1283,derived_imputed
+tkpi_0682,TKPI,169107.0,"Papaya nectar, canned",0.4817,MEDIUM,18.0,88.54,derived_partly_imputed
 tkpi_0683,TKPI,,,,,,3.0833,derived_partly_imputed
-tkpi_0684,TKPI,,,,,,1.63,derived_partly_imputed
+tkpi_0684,TKPI,,,,,,0.75,derived_partly_imputed
 tkpi_0685,TKPI,,,,,,2.0,derived_partly_imputed
-tkpi_0686,TKPI,,,,,,2.1033,derived_partly_imputed
+tkpi_0686,TKPI,,,,,,1.0833,derived_partly_imputed
 tkpi_0687,TKPI,,,,,,0.9167,derived_partly_imputed
-tkpi_0688,TKPI,,,,,,16.68,derived_partly_imputed
-tkpi_0689,TKPI,,,,,,0.61,derived_partly_imputed
+tkpi_0688,TKPI,,,,,,6.1,derived_partly_imputed
+tkpi_0689,TKPI,,,,,,0.49,derived_partly_imputed
 tkpi_0690,TKPI,,,,,,0.0,derived_partly_imputed
-tkpi_0691,TKPI,,,,,,2.77,derived_partly_imputed
+tkpi_0691,TKPI,,,,,,277.85,derived_partly_imputed
 tkpi_0692,TKPI,,,,,,3.1667,derived_partly_imputed
-tkpi_0693,TKPI,,,,,,5.5233,derived_partly_imputed
+tkpi_0693,TKPI,,,,,,3.5833,derived_partly_imputed
 tkpi_0694,TKPI,,,,,,1.1667,derived_partly_imputed
-tkpi_0695,TKPI,,,,,,4.27,derived_partly_imputed
-tkpi_0696,TKPI,,,,,,1.6767,derived_partly_imputed
-tkpi_0697,TKPI,,,,,,7.34,derived_partly_imputed
-tkpi_0698,TKPI,,,,,,12.2567,derived_partly_imputed
-tkpi_0699,TKPI,,,,,,4.9833,derived_partly_imputed
+tkpi_0695,TKPI,,,,,,4.39,derived_partly_imputed
+tkpi_0696,TKPI,,,,,,1.4167,derived_partly_imputed
+tkpi_0697,TKPI,,,,,,5.36,derived_partly_imputed
+tkpi_0698,TKPI,,,,,,6.1967,derived_partly_imputed
+tkpi_0699,TKPI,,,,,,3.1233,derived_partly_imputed
 tkpi_0700,TKPI,,,,,,13.25,derived_partly_imputed
 tkpi_0701,TKPI,,,,,,6.0,derived_measured
 tkpi_0702,TKPI,,,,,,0.4167,derived_partly_imputed
-tkpi_0703,TKPI,,,,,,5.2767,derived_partly_imputed
-tkpi_0704,TKPI,,,,,,3.19,derived_partly_imputed
-tkpi_0705,TKPI,168167.0,"Rambutan, canned, syrup pack",0.7002,HIGH,0.0,1.02,derived_partly_imputed
+tkpi_0703,TKPI,,,,,,4.9767,derived_partly_imputed
+tkpi_0704,TKPI,,,,,,2.25,derived_partly_imputed
+tkpi_0705,TKPI,168167.0,"Rambutan, canned, syrup pack",0.7002,HIGH,0.0,0.0,derived_partly_imputed
 tkpi_0706,TKPI,168167.0,"Rambutan, canned, syrup pack",0.8024,HIGH,0.0,0.0,derived_partly_imputed
 tkpi_0707,TKPI,,,,,,0.25,derived_measured
 tkpi_0708,TKPI,,,,,,0.3333,derived_measured
-tkpi_0709,TKPI,,,,,,0.245,derived_partly_imputed
+tkpi_0709,TKPI,,,,,,0.5167,derived_partly_imputed
 tkpi_0710,TKPI,,,,,,0.4733,derived_partly_imputed
 tkpi_0711,TKPI,167759.0,"Sapodilla, raw",0.5394,MEDIUM,3.0,0.0,derived_measured
 tkpi_0712,TKPI,167759.0,"Sapodilla, raw",0.5394,MEDIUM,3.0,9.9167,derived_measured
 tkpi_0713,TKPI,,,,,,9.25,derived_measured
-tkpi_0714,TKPI,,,,,,32.27,derived_partly_imputed
+tkpi_0714,TKPI,,,,,,30.77,derived_partly_imputed
 tkpi_0715,TKPI,167761.0,"Soursop, raw",0.6839,HIGH,0.0,0.6667,derived_partly_imputed
 tkpi_0716,TKPI,,,,,,30.3333,derived_measured
-tkpi_0717,TKPI,,,,,,8.5367,derived_partly_imputed
-tkpi_0718,TKPI,171714.0,"Breadfruit, raw",0.4938,MEDIUM,0.0,275.1733,derived_partly_imputed
-tkpi_0719,TKPI,171714.0,"Breadfruit, raw",0.5544,MEDIUM,0.0,152.68,derived_partly_imputed
-tkpi_0720,TKPI,,,,,,16.3967,derived_imputed
-tkpi_0721,TKPI,,,,,,16.015,derived_imputed
-tkpi_0722,TKPI,,,,,,0.0067,derived_imputed
-tkpi_0723,TKPI,,,,,,9.9667,derived_imputed
-tkpi_0724,TKPI,,,,,,121.255,derived_imputed
-tkpi_0725,TKPI,,,,,,124.4933,derived_imputed
-tkpi_0726,TKPI,,,,,,376.9933,derived_partly_imputed
+tkpi_0717,TKPI,,,,,,11.575,derived_partly_imputed
+tkpi_0718,TKPI,171714.0,"Breadfruit, raw",0.4938,MEDIUM,0.0,286.8733,derived_partly_imputed
+tkpi_0719,TKPI,171714.0,"Breadfruit, raw",0.5544,MEDIUM,0.0,168.3,derived_partly_imputed
+tkpi_0720,TKPI,,,,,,112.8233,derived_imputed
+tkpi_0721,TKPI,,,,,,6.04,derived_imputed
+tkpi_0722,TKPI,,,,,,0.025,derived_imputed
+tkpi_0723,TKPI,,,,,,7.285,derived_imputed
+tkpi_0724,TKPI,,,,,,65.96,derived_imputed
+tkpi_0725,TKPI,,,,,,89.05,derived_imputed
+tkpi_0726,TKPI,,,,,,428.7533,derived_partly_imputed
 tkpi_0727,TKPI,168192.0,"Durian, raw or frozen",0.6661,HIGH,2.0,2.0,USDA_direct_high
-tkpi_0728,TKPI,,,,,,0.0083,derived_imputed
-tkpi_0729,TKPI,,,,,,157.2233,derived_partly_imputed
+tkpi_0728,TKPI,,,,,,0.0,derived_imputed
+tkpi_0729,TKPI,,,,,,273.8033,derived_partly_imputed
 tkpi_0730,TKPI,,,,,,0.8333,derived_partly_imputed
-tkpi_0731,TKPI,,,,,,0.0267,derived_imputed
-tkpi_0732,TKPI,,,,,,4.66,derived_imputed
-tkpi_0733,TKPI,,,,,,5.7917,derived_imputed
-tkpi_0734,TKPI,,,,,,0.675,derived_imputed
-tkpi_0735,TKPI,,,,,,1.1033,derived_partly_imputed
-tkpi_0736,TKPI,,,,,,2.38,derived_partly_imputed
-tkpi_0737,TKPI,,,,,,4268.9183,derived_imputed
+tkpi_0731,TKPI,,,,,,5.1633,derived_imputed
+tkpi_0732,TKPI,,,,,,4.64,derived_imputed
+tkpi_0733,TKPI,,,,,,4.2583,derived_imputed
+tkpi_0734,TKPI,,,,,,0.015,derived_imputed
+tkpi_0735,TKPI,,,,,,1.8033,derived_partly_imputed
+tkpi_0736,TKPI,,,,,,1.3,derived_partly_imputed
+tkpi_0737,TKPI,,,,,,323.74,derived_imputed
 tkpi_0738,TKPI,,,,,,15.0833,derived_measured
 tkpi_0739,TKPI,,,,,,8.5,derived_measured
 tkpi_0740,TKPI,,,,,,18.9167,derived_measured
 tkpi_0741,TKPI,172413.0,"Goose, domesticated, meat only, raw",0.4392,MEDIUM,12.0,273.0,derived_measured
 tkpi_0742,TKPI,,,,,,245.0,derived_measured
-tkpi_0743,TKPI,,,,,,43.05,derived_partly_imputed
+tkpi_0743,TKPI,,,,,,31.105,derived_partly_imputed
 tkpi_0744,TKPI,,,,,,4971.0833,derived_measured
 tkpi_0745,TKPI,,,,,,0.0,derived_measured
 tkpi_0746,TKPI,,,,,,0.0,derived_measured
 tkpi_0747,TKPI,,,,,,39.8333,derived_measured
 tkpi_0748,TKPI,,,,,,4303.5,derived_measured
 tkpi_0749,TKPI,,,,,,273.0,derived_measured
-tkpi_0750,TKPI,,,,,,10.36,derived_partly_imputed
-tkpi_0751,TKPI,,,,,,220.38,derived_partly_imputed
-tkpi_0752,TKPI,,,,,,276.1783,derived_partly_imputed
+tkpi_0750,TKPI,,,,,,8.94,derived_partly_imputed
+tkpi_0751,TKPI,,,,,,13.04,derived_partly_imputed
+tkpi_0752,TKPI,,,,,,310.5667,derived_partly_imputed
 tkpi_0753,TKPI,,,,,,0.0,derived_measured
 tkpi_0754,TKPI,,,,,,0.0,derived_measured
 tkpi_0755,TKPI,174442.0,"Lamb, New Zealand, imported, kidney, raw",0.4491,MEDIUM,61.0,390.9167,derived_measured
 tkpi_0756,TKPI,175303.0,"Game meat, goat, raw",0.5656,MEDIUM,0.0,0.0,derived_measured
 tkpi_0757,TKPI,174347.0,"Game meat, rabbit, wild, raw",0.4044,MEDIUM,0.0,0.0,derived_measured
 tkpi_0758,TKPI,175299.0,"Game meat, buffalo, water, raw",0.477,MEDIUM,0.0,0.0,USDA_direct_medium
-tkpi_0759,TKPI,175087.0,"Game meat, horse, cooked, roasted",0.5573,MEDIUM,0.0,0.1583,derived_partly_imputed
+tkpi_0759,TKPI,175087.0,"Game meat, horse, cooked, roasted",0.5573,MEDIUM,0.0,0.2967,derived_partly_imputed
 tkpi_0760,TKPI,170599.0,"Beef, variety meats and by-products, tripe, raw",0.427,MEDIUM,0.0,4.0833,derived_measured
 tkpi_0761,TKPI,,,,,,12.0,derived_measured
 tkpi_0762,TKPI,,,,,,21.0833,derived_measured
 tkpi_0763,TKPI,,,,,,25.5,derived_measured
-tkpi_0764,TKPI,,,,,,205.8667,derived_partly_imputed
+tkpi_0764,TKPI,,,,,,30.8867,derived_partly_imputed
 tkpi_0765,TKPI,,,,,,32.8333,derived_measured
 tkpi_0766,TKPI,174442.0,"Lamb, New Zealand, imported, kidney, raw",0.4121,MEDIUM,61.0,396.5833,derived_measured
 tkpi_0767,TKPI,170599.0,"Beef, variety meats and by-products, tripe, raw",0.453,MEDIUM,0.0,859.8333,derived_measured
 tkpi_0768,TKPI,169451.0,"Beef, variety meats and by-products, liver, raw",0.6058,MEDIUM,4968.0,13332.5833,derived_measured
 tkpi_0769,TKPI,168622.0,"Beef, variety meats and by-products, brain, raw",0.4212,MEDIUM,7.0,0.0,derived_measured
 tkpi_0770,TKPI,,,,,,61.0,derived_measured
-tkpi_0771,TKPI,,,,,,234.96,derived_partly_imputed
-tkpi_0772,TKPI,,,,,,59.3217,derived_partly_imputed
-tkpi_0773,TKPI,,,,,,13.8417,derived_partly_imputed
-tkpi_0774,TKPI,,,,,,38.12,derived_partly_imputed
-tkpi_0775,TKPI,,,,,,183.56,derived_partly_imputed
-tkpi_0776,TKPI,168223.0,"Pork, fresh, leg (ham), whole, separable lean and fat, cooked, roasted",0.5832,MEDIUM,3.0,203.2483,derived_partly_imputed
-tkpi_0777,TKPI,,,,,,15.2,derived_partly_imputed
-tkpi_0778,TKPI,,,,,,2866.7383,derived_partly_imputed
+tkpi_0771,TKPI,,,,,,228.4,derived_partly_imputed
+tkpi_0772,TKPI,,,,,,61.6583,derived_partly_imputed
+tkpi_0773,TKPI,,,,,,68.2983,derived_partly_imputed
+tkpi_0774,TKPI,,,,,,297.36,derived_partly_imputed
+tkpi_0775,TKPI,,,,,,291.3,derived_partly_imputed
+tkpi_0776,TKPI,168223.0,"Pork, fresh, leg (ham), whole, separable lean and fat, cooked, roasted",0.5832,MEDIUM,3.0,166.7717,derived_partly_imputed
+tkpi_0777,TKPI,,,,,,7.22,derived_partly_imputed
+tkpi_0778,TKPI,,,,,,2819.3117,derived_partly_imputed
 tkpi_0779,TKPI,,,,,,3393.1667,derived_measured
-tkpi_0780,TKPI,,,,,,159.01,derived_imputed
-tkpi_0781,TKPI,,,,,,291.7833,derived_partly_imputed
+tkpi_0780,TKPI,,,,,,194.4417,derived_imputed
+tkpi_0781,TKPI,,,,,,290.6983,derived_partly_imputed
 tkpi_0782,TKPI,,,,,,20.0,derived_measured
 tkpi_0783,TKPI,,,,,,19.1667,derived_measured
-tkpi_0784,TKPI,,,,,,21.42,derived_partly_imputed
-tkpi_0785,TKPI,,,,,,3.1433,derived_partly_imputed
+tkpi_0784,TKPI,,,,,,30.0683,derived_partly_imputed
+tkpi_0785,TKPI,,,,,,3.7067,derived_partly_imputed
 tkpi_0786,TKPI,,,,,,4.3333,derived_measured
-tkpi_0787,TKPI,,,,,,185.8533,derived_partly_imputed
-tkpi_0788,TKPI,,,,,,1256.7433,derived_partly_imputed
-tkpi_0789,TKPI,,,,,,3086.8717,derived_partly_imputed
-tkpi_0790,TKPI,,,,,,907.3317,derived_partly_imputed
-tkpi_0791,TKPI,,,,,,1926.16,derived_partly_imputed
-tkpi_0792,TKPI,,,,,,17.4,derived_partly_imputed
-tkpi_0793,TKPI,,,,,,22.3267,derived_partly_imputed
-tkpi_0794,TKPI,,,,,,13.8183,derived_partly_imputed
+tkpi_0787,TKPI,,,,,,11.8767,derived_partly_imputed
+tkpi_0788,TKPI,,,,,,1227.6933,derived_partly_imputed
+tkpi_0789,TKPI,,,,,,2848.1033,derived_partly_imputed
+tkpi_0790,TKPI,,,,,,796.2783,derived_partly_imputed
+tkpi_0791,TKPI,,,,,,1496.22,derived_partly_imputed
+tkpi_0792,TKPI,,,,,,18.2683,derived_partly_imputed
+tkpi_0793,TKPI,,,,,,22.2133,derived_partly_imputed
+tkpi_0794,TKPI,,,,,,13.7367,derived_partly_imputed
 tkpi_0795,TKPI,,,,,,10.0,derived_measured
-tkpi_0796,TKPI,,,,,,40.5267,derived_partly_imputed
-tkpi_0797,TKPI,,,,,,32.46,derived_partly_imputed
-tkpi_0798,TKPI,,,,,,33.4267,derived_partly_imputed
-tkpi_0799,TKPI,,,,,,8.36,derived_partly_imputed
-tkpi_0800,TKPI,,,,,,6.6433,derived_partly_imputed
-tkpi_0801,TKPI,,,,,,10.3317,derived_partly_imputed
-tkpi_0802,TKPI,,,,,,17.0167,derived_partly_imputed
-tkpi_0803,TKPI,,,,,,20.7467,derived_partly_imputed
-tkpi_0804,TKPI,,,,,,12.5333,derived_partly_imputed
-tkpi_0805,TKPI,,,,,,1124.305,derived_partly_imputed
-tkpi_0806,TKPI,,,,,,2237.8383,derived_partly_imputed
-tkpi_0807,TKPI,,,,,,347.7267,derived_partly_imputed
-tkpi_0808,TKPI,,,,,,35.5,derived_partly_imputed
-tkpi_0809,TKPI,,,,,,87.82,derived_partly_imputed
-tkpi_0810,TKPI,,,,,,16.4967,derived_partly_imputed
-tkpi_0811,TKPI,,,,,,27.0733,derived_partly_imputed
-tkpi_0812,TKPI,,,,,,72.4967,derived_partly_imputed
-tkpi_0813,TKPI,,,,,,91.3367,derived_partly_imputed
-tkpi_0814,TKPI,,,,,,299.545,derived_imputed
-tkpi_0815,TKPI,,,,,,314.205,derived_imputed
-tkpi_0816,TKPI,,,,,,221.71,derived_partly_imputed
-tkpi_0817,TKPI,,,,,,123.565,derived_partly_imputed
-tkpi_0818,TKPI,,,,,,152.3083,derived_partly_imputed
-tkpi_0819,TKPI,,,,,,143.6833,derived_imputed
-tkpi_0820,TKPI,,,,,,112.66,derived_partly_imputed
-tkpi_0821,TKPI,,,,,,303.175,derived_partly_imputed
-tkpi_0822,TKPI,,,,,,115.6233,derived_partly_imputed
-tkpi_0823,TKPI,,,,,,78.645,derived_partly_imputed
-tkpi_0824,TKPI,,,,,,15.1,derived_partly_imputed
-tkpi_0825,TKPI,,,,,,16.22,derived_partly_imputed
-tkpi_0826,TKPI,,,,,,24.0783,derived_partly_imputed
-tkpi_0827,TKPI,,,,,,101.665,derived_partly_imputed
-tkpi_0828,TKPI,,,,,,11.3833,derived_imputed
-tkpi_0829,TKPI,,,,,,4349.855,derived_partly_imputed
-tkpi_0830,TKPI,,,,,,1075.7717,derived_partly_imputed
-tkpi_0831,TKPI,,,,,,140.4567,derived_partly_imputed
-tkpi_0832,TKPI,,,,,,150.845,derived_partly_imputed
-tkpi_0833,TKPI,,,,,,44.1683,derived_partly_imputed
-tkpi_0834,TKPI,,,,,,258.3883,derived_partly_imputed
-tkpi_0835,TKPI,,,,,,5.64,derived_partly_imputed
+tkpi_0796,TKPI,,,,,,41.525,derived_partly_imputed
+tkpi_0797,TKPI,,,,,,32.2733,derived_partly_imputed
+tkpi_0798,TKPI,,,,,,40.14,derived_partly_imputed
+tkpi_0799,TKPI,,,,,,8.5517,derived_partly_imputed
+tkpi_0800,TKPI,,,,,,6.5333,derived_partly_imputed
+tkpi_0801,TKPI,,,,,,8.3917,derived_partly_imputed
+tkpi_0802,TKPI,,,,,,16.2917,derived_partly_imputed
+tkpi_0803,TKPI,,,,,,20.9633,derived_partly_imputed
+tkpi_0804,TKPI,,,,,,11.3433,derived_partly_imputed
+tkpi_0805,TKPI,,,,,,1087.9733,derived_partly_imputed
+tkpi_0806,TKPI,,,,,,2198.9717,derived_partly_imputed
+tkpi_0807,TKPI,,,,,,247.2933,derived_partly_imputed
+tkpi_0808,TKPI,,,,,,36.2133,derived_partly_imputed
+tkpi_0809,TKPI,,,,,,148.7867,derived_partly_imputed
+tkpi_0810,TKPI,,,,,,11.64,derived_partly_imputed
+tkpi_0811,TKPI,,,,,,24.845,derived_partly_imputed
+tkpi_0812,TKPI,,,,,,103.305,derived_partly_imputed
+tkpi_0813,TKPI,,,,,,151.465,derived_partly_imputed
+tkpi_0814,TKPI,,,,,,240.655,derived_imputed
+tkpi_0815,TKPI,,,,,,269.6017,derived_imputed
+tkpi_0816,TKPI,,,,,,122.1967,derived_partly_imputed
+tkpi_0817,TKPI,,,,,,116.295,derived_partly_imputed
+tkpi_0818,TKPI,,,,,,167.64,derived_partly_imputed
+tkpi_0819,TKPI,,,,,,20.735,derived_imputed
+tkpi_0820,TKPI,,,,,,114.3383,derived_partly_imputed
+tkpi_0821,TKPI,,,,,,300.9733,derived_partly_imputed
+tkpi_0822,TKPI,,,,,,90.98,derived_partly_imputed
+tkpi_0823,TKPI,,,,,,89.8883,derived_partly_imputed
+tkpi_0824,TKPI,,,,,,11.94,derived_partly_imputed
+tkpi_0825,TKPI,,,,,,9.04,derived_partly_imputed
+tkpi_0826,TKPI,,,,,,32.925,derived_partly_imputed
+tkpi_0827,TKPI,,,,,,62.0633,derived_partly_imputed
+tkpi_0828,TKPI,,,,,,6.37,derived_imputed
+tkpi_0829,TKPI,,,,,,4205.9667,derived_partly_imputed
+tkpi_0830,TKPI,,,,,,973.9117,derived_partly_imputed
+tkpi_0831,TKPI,,,,,,142.2567,derived_partly_imputed
+tkpi_0832,TKPI,,,,,,141.975,derived_partly_imputed
+tkpi_0833,TKPI,,,,,,43.925,derived_partly_imputed
+tkpi_0834,TKPI,,,,,,259.4483,derived_partly_imputed
+tkpi_0835,TKPI,,,,,,9.34,derived_partly_imputed
 tkpi_0836,TKPI,,,,,,133.0,derived_measured
-tkpi_0837,TKPI,,,,,,1310.5733,derived_partly_imputed
+tkpi_0837,TKPI,,,,,,1316.4167,derived_partly_imputed
 tkpi_0838,TKPI,,,,,,141.75,derived_measured
-tkpi_0839,TKPI,,,,,,125.59,derived_partly_imputed
-tkpi_0840,TKPI,,,,,,168.76,derived_partly_imputed
-tkpi_0841,TKPI,,,,,,114.3983,derived_partly_imputed
-tkpi_0842,TKPI,,,,,,154.0617,derived_partly_imputed
-tkpi_0843,TKPI,,,,,,334.0,derived_imputed
-tkpi_0844,TKPI,,,,,,107.2133,derived_imputed
+tkpi_0839,TKPI,,,,,,130.8683,derived_partly_imputed
+tkpi_0840,TKPI,,,,,,184.0467,derived_partly_imputed
+tkpi_0841,TKPI,,,,,,109.71,derived_partly_imputed
+tkpi_0842,TKPI,,,,,,253.4117,derived_partly_imputed
+tkpi_0843,TKPI,,,,,,207.2483,derived_imputed
+tkpi_0844,TKPI,,,,,,28.18,derived_imputed
 tkpi_0845,TKPI,,,,,,7.6667,derived_measured
-tkpi_0846,TKPI,,,,,,65.46,derived_partly_imputed
-tkpi_0847,TKPI,,,,,,31.065,derived_partly_imputed
-tkpi_0848,TKPI,,,,,,99.615,derived_partly_imputed
-tkpi_0849,TKPI,,,,,,168.6083,derived_partly_imputed
-tkpi_0850,TKPI,,,,,,247.2283,derived_partly_imputed
-tkpi_0851,TKPI,,,,,,25.415,derived_partly_imputed
-tkpi_0852,TKPI,,,,,,202.145,derived_partly_imputed
-tkpi_0853,TKPI,,,,,,19.145,derived_partly_imputed
-tkpi_0854,TKPI,,,,,,118.77,derived_partly_imputed
-tkpi_0855,TKPI,,,,,,41.0583,derived_partly_imputed
-tkpi_0856,TKPI,,,,,,85.4833,derived_partly_imputed
-tkpi_0857,TKPI,,,,,,234.7767,derived_imputed
-tkpi_0858,TKPI,,,,,,682.9417,derived_partly_imputed
-tkpi_0859,TKPI,,,,,,775.6383,derived_partly_imputed
-tkpi_0860,TKPI,,,,,,338.86,derived_partly_imputed
+tkpi_0846,TKPI,,,,,,69.26,derived_partly_imputed
+tkpi_0847,TKPI,,,,,,27.9583,derived_partly_imputed
+tkpi_0848,TKPI,,,,,,94.295,derived_partly_imputed
+tkpi_0849,TKPI,,,,,,109.1267,derived_partly_imputed
+tkpi_0850,TKPI,,,,,,142.0883,derived_partly_imputed
+tkpi_0851,TKPI,,,,,,25.095,derived_partly_imputed
+tkpi_0852,TKPI,,,,,,34.1483,derived_partly_imputed
+tkpi_0853,TKPI,,,,,,17.0567,derived_partly_imputed
+tkpi_0854,TKPI,,,,,,21.6533,derived_partly_imputed
+tkpi_0855,TKPI,,,,,,42.3983,derived_partly_imputed
+tkpi_0856,TKPI,,,,,,87.9383,derived_partly_imputed
+tkpi_0857,TKPI,,,,,,251.575,derived_imputed
+tkpi_0858,TKPI,,,,,,676.575,derived_partly_imputed
+tkpi_0859,TKPI,,,,,,712.8783,derived_partly_imputed
+tkpi_0860,TKPI,,,,,,376.66,derived_partly_imputed
 tkpi_0861,TKPI,,,,,,51.25,derived_measured
 tkpi_0862,TKPI,,,,,,1.6667,derived_measured
 tkpi_0863,TKPI,,,,,,45.0,derived_measured
@@ -867,175 +867,175 @@ tkpi_0865,TKPI,173698.0,"Fish, snapper, mixed species, raw",0.4067,MEDIUM,32.0,0
 tkpi_0866,TKPI,173675.0,"Fish, milkfish, raw",0.6608,HIGH,30.0,46.75,derived_measured
 tkpi_0867,TKPI,,,,,,5.1667,derived_measured
 tkpi_0868,TKPI,,,,,,732.0,derived_measured
-tkpi_0869,TKPI,,,,,,252.26,derived_partly_imputed
-tkpi_0870,TKPI,,,,,,12.16,derived_partly_imputed
+tkpi_0869,TKPI,,,,,,19.8,derived_partly_imputed
+tkpi_0870,TKPI,,,,,,6.94,derived_partly_imputed
 tkpi_0871,TKPI,,,,,,45.0,derived_measured
-tkpi_0872,TKPI,,,,,,241.42,derived_partly_imputed
-tkpi_0873,TKPI,,,,,,98.6283,derived_partly_imputed
-tkpi_0874,TKPI,,,,,,206.905,derived_imputed
-tkpi_0875,TKPI,,,,,,213.9,derived_partly_imputed
-tkpi_0876,TKPI,,,,,,11.7867,derived_imputed
-tkpi_0877,TKPI,,,,,,188.875,derived_imputed
+tkpi_0872,TKPI,,,,,,381.98,derived_partly_imputed
+tkpi_0873,TKPI,,,,,,46.7067,derived_partly_imputed
+tkpi_0874,TKPI,,,,,,336.4283,derived_imputed
+tkpi_0875,TKPI,,,,,,365.1,derived_partly_imputed
+tkpi_0876,TKPI,,,,,,232.8833,derived_imputed
+tkpi_0877,TKPI,,,,,,280.075,derived_imputed
 tkpi_0878,TKPI,,,,,,386.0,derived_measured
-tkpi_0879,TKPI,,,,,,163.59,derived_imputed
-tkpi_0880,TKPI,,,,,,986.5983,derived_partly_imputed
-tkpi_0881,TKPI,,,,,,323.6033,derived_imputed
-tkpi_0882,TKPI,,,,,,0.5267,derived_partly_imputed
+tkpi_0879,TKPI,,,,,,271.4967,derived_imputed
+tkpi_0880,TKPI,,,,,,928.22,derived_partly_imputed
+tkpi_0881,TKPI,,,,,,302.0733,derived_imputed
+tkpi_0882,TKPI,,,,,,0.425,derived_partly_imputed
 tkpi_0883,TKPI,175163.0,"Fish, yellowtail, mixed species, raw",0.4551,MEDIUM,29.0,42.4167,derived_measured
-tkpi_0884,TKPI,,,,,,382.875,derived_partly_imputed
-tkpi_0885,TKPI,,,,,,227.395,derived_imputed
-tkpi_0886,TKPI,,,,,,100.5217,derived_partly_imputed
+tkpi_0884,TKPI,,,,,,395.5083,derived_partly_imputed
+tkpi_0885,TKPI,,,,,,184.5133,derived_imputed
+tkpi_0886,TKPI,,,,,,133.3817,derived_partly_imputed
 tkpi_0887,TKPI,173697.0,"Fish, shark, mixed species, raw",0.5374,MEDIUM,70.0,70.0,USDA_direct_medium
-tkpi_0888,TKPI,,,,,,18.47,derived_partly_imputed
-tkpi_0889,TKPI,,,,,,9.33,derived_partly_imputed
-tkpi_0890,TKPI,,,,,,18.735,derived_partly_imputed
-tkpi_0891,TKPI,,,,,,21.9683,derived_imputed
-tkpi_0892,TKPI,,,,,,56.4433,derived_partly_imputed
-tkpi_0893,TKPI,,,,,,12.0017,derived_imputed
-tkpi_0894,TKPI,168149.0,"Fish, mackerel, salted",0.4288,MEDIUM,47.0,147.6133,derived_partly_imputed
-tkpi_0895,TKPI,,,,,,0.5233,derived_partly_imputed
-tkpi_0896,TKPI,,,,,,407.2983,derived_partly_imputed
-tkpi_0897,TKPI,,,,,,0.25,derived_partly_imputed
+tkpi_0888,TKPI,,,,,,18.36,derived_partly_imputed
+tkpi_0889,TKPI,,,,,,9.4383,derived_partly_imputed
+tkpi_0890,TKPI,,,,,,31.905,derived_partly_imputed
+tkpi_0891,TKPI,,,,,,381.79,derived_imputed
+tkpi_0892,TKPI,,,,,,61.8367,derived_partly_imputed
+tkpi_0893,TKPI,,,,,,15.7433,derived_imputed
+tkpi_0894,TKPI,168149.0,"Fish, mackerel, salted",0.4288,MEDIUM,47.0,174.8267,derived_partly_imputed
+tkpi_0895,TKPI,,,,,,0.4217,derived_partly_imputed
+tkpi_0896,TKPI,,,,,,409.0783,derived_partly_imputed
+tkpi_0897,TKPI,,,,,,0.3117,derived_partly_imputed
 tkpi_0898,TKPI,,,,,,45.0,derived_measured
-tkpi_0899,TKPI,,,,,,6.33,derived_partly_imputed
-tkpi_0900,TKPI,168149.0,"Fish, mackerel, salted",0.4288,MEDIUM,47.0,1252.31,derived_partly_imputed
+tkpi_0899,TKPI,,,,,,4.3517,derived_partly_imputed
+tkpi_0900,TKPI,168149.0,"Fish, mackerel, salted",0.4288,MEDIUM,47.0,1078.2483,derived_partly_imputed
 tkpi_0901,TKPI,,,,,,30.0,derived_measured
-tkpi_0902,TKPI,,,,,,33.1,derived_partly_imputed
-tkpi_0903,TKPI,,,,,,698.5883,derived_partly_imputed
-tkpi_0904,TKPI,,,,,,15.1033,derived_imputed
+tkpi_0902,TKPI,,,,,,33.1967,derived_partly_imputed
+tkpi_0903,TKPI,,,,,,665.4183,derived_partly_imputed
+tkpi_0904,TKPI,,,,,,13.1983,derived_imputed
 tkpi_0905,TKPI,171952.0,"Fish, carp, raw",0.5285,MEDIUM,9.0,45.6667,derived_measured
-tkpi_0906,TKPI,,,,,,21.2167,derived_partly_imputed
+tkpi_0906,TKPI,,,,,,21.3033,derived_partly_imputed
 tkpi_0907,TKPI,175176.0,"Fish, tilapia, raw",0.5311,MEDIUM,0.0,6.25,derived_measured
-tkpi_0908,TKPI,,,,,,200.885,derived_imputed
-tkpi_0909,TKPI,,,,,,174.165,derived_imputed
+tkpi_0908,TKPI,,,,,,28.085,derived_imputed
+tkpi_0909,TKPI,,,,,,283.6183,derived_imputed
 tkpi_0910,TKPI,,,,,,485.0,derived_measured
-tkpi_0911,TKPI,,,,,,176.66,derived_partly_imputed
-tkpi_0912,TKPI,,,,,,30.9833,derived_partly_imputed
-tkpi_0913,TKPI,,,,,,97.7033,derived_partly_imputed
-tkpi_0914,TKPI,,,,,,206.035,derived_imputed
-tkpi_0915,TKPI,,,,,,51.885,derived_imputed
+tkpi_0911,TKPI,,,,,,16.6,derived_partly_imputed
+tkpi_0912,TKPI,,,,,,9.9433,derived_partly_imputed
+tkpi_0913,TKPI,,,,,,89.455,derived_partly_imputed
+tkpi_0914,TKPI,,,,,,423.4433,derived_imputed
+tkpi_0915,TKPI,,,,,,334.265,derived_imputed
 tkpi_0916,TKPI,,,,,,195.0,derived_measured
 tkpi_0917,TKPI,,,,,,45.0,derived_measured
-tkpi_0918,TKPI,,,,,,13.1,derived_partly_imputed
+tkpi_0918,TKPI,,,,,,15.04,derived_partly_imputed
 tkpi_0919,TKPI,,,,,,15.0,derived_measured
-tkpi_0920,TKPI,,,,,,316.7267,derived_partly_imputed
-tkpi_0921,TKPI,,,,,,31.2017,derived_imputed
-tkpi_0922,TKPI,,,,,,25.64,derived_imputed
-tkpi_0923,TKPI,,,,,,168.07,derived_imputed
+tkpi_0920,TKPI,,,,,,310.91,derived_partly_imputed
+tkpi_0921,TKPI,,,,,,29.1583,derived_imputed
+tkpi_0922,TKPI,,,,,,347.14,derived_imputed
+tkpi_0923,TKPI,,,,,,108.0367,derived_imputed
 tkpi_0924,TKPI,,,,,,30.0,derived_measured
-tkpi_0925,TKPI,,,,,,20.07,derived_imputed
+tkpi_0925,TKPI,,,,,,5.5517,derived_imputed
 tkpi_0926,TKPI,,,,,,39.0,derived_measured
 tkpi_0927,TKPI,,,,,,13.0,derived_measured
-tkpi_0928,TKPI,,,,,,612.015,derived_partly_imputed
+tkpi_0928,TKPI,,,,,,595.9667,derived_partly_imputed
 tkpi_0929,TKPI,,,,,,181.0,derived_measured
-tkpi_0930,TKPI,,,,,,41.89,derived_partly_imputed
+tkpi_0930,TKPI,,,,,,32.5267,derived_partly_imputed
 tkpi_0931,TKPI,167744.0,"Mollusks, snail, raw",0.5862,MEDIUM,30.0,20.3333,derived_measured
-tkpi_0932,TKPI,,,,,,141.9883,derived_partly_imputed
-tkpi_0933,TKPI,,,,,,101.86,derived_partly_imputed
-tkpi_0934,TKPI,168148.0,"Frog legs, raw",0.4673,MEDIUM,15.0,0.9667,derived_partly_imputed
-tkpi_0935,TKPI,,,,,,0.415,derived_partly_imputed
-tkpi_0936,TKPI,,,,,,8.335,derived_partly_imputed
-tkpi_0937,TKPI,,,,,,784.9717,derived_imputed
+tkpi_0932,TKPI,,,,,,79.2717,derived_partly_imputed
+tkpi_0933,TKPI,,,,,,12.3667,derived_partly_imputed
+tkpi_0934,TKPI,168148.0,"Frog legs, raw",0.4673,MEDIUM,15.0,0.7917,derived_partly_imputed
+tkpi_0935,TKPI,,,,,,0.7183,derived_partly_imputed
+tkpi_0936,TKPI,,,,,,6.2567,derived_partly_imputed
+tkpi_0937,TKPI,,,,,,260.6183,derived_imputed
 tkpi_0938,TKPI,,,,,,602.3333,derived_measured
 tkpi_0939,TKPI,,,,,,18.0,derived_measured
-tkpi_0940,TKPI,,,,,,0.7067,derived_partly_imputed
-tkpi_0941,TKPI,,,,,,200.63,derived_partly_imputed
-tkpi_0942,TKPI,,,,,,171.3,derived_partly_imputed
+tkpi_0940,TKPI,,,,,,8.615,derived_partly_imputed
+tkpi_0941,TKPI,,,,,,21.09,derived_partly_imputed
+tkpi_0942,TKPI,,,,,,25.74,derived_partly_imputed
 tkpi_0943,TKPI,,,,,,18.3333,derived_measured
-tkpi_0944,TKPI,,,,,,199.4283,derived_partly_imputed
-tkpi_0945,TKPI,,,,,,4.8867,derived_partly_imputed
+tkpi_0944,TKPI,,,,,,306.3083,derived_partly_imputed
+tkpi_0945,TKPI,,,,,,15.58,derived_partly_imputed
 tkpi_0946,TKPI,,,,,,4.6667,derived_measured
-tkpi_0947,TKPI,,,,,,91.4083,derived_imputed
+tkpi_0947,TKPI,,,,,,573.62,derived_imputed
 tkpi_0948,TKPI,,,,,,6.0,derived_measured
-tkpi_0949,TKPI,,,,,,17.4583,derived_imputed
-tkpi_0950,TKPI,,,,,,227.74,derived_partly_imputed
-tkpi_0951,TKPI,175156.0,"Fish, tuna, fresh, skipjack, raw",0.6673,HIGH,16.0,1552.4583,derived_partly_imputed
-tkpi_0952,TKPI,175156.0,"Fish, tuna, fresh, skipjack, raw",0.6734,HIGH,16.0,2.3333,derived_partly_imputed
-tkpi_0953,TKPI,,,,,,18.2133,derived_partly_imputed
-tkpi_0954,TKPI,,,,,,119.725,derived_partly_imputed
-tkpi_0955,TKPI,,,,,,99.6017,derived_partly_imputed
-tkpi_0956,TKPI,,,,,,3777.7233,derived_imputed
-tkpi_0957,TKPI,173697.0,"Fish, shark, mixed species, raw",0.5374,MEDIUM,70.0,792.6283,derived_partly_imputed
-tkpi_0958,TKPI,,,,,,3.075,derived_partly_imputed
-tkpi_0959,TKPI,,,,,,4622.5033,derived_imputed
-tkpi_0960,TKPI,,,,,,227.83,derived_imputed
-tkpi_0961,TKPI,,,,,,53.825,derived_imputed
-tkpi_0962,TKPI,,,,,,9.0517,derived_partly_imputed
+tkpi_0949,TKPI,,,,,,276.2183,derived_imputed
+tkpi_0950,TKPI,,,,,,314.9,derived_partly_imputed
+tkpi_0951,TKPI,175156.0,"Fish, tuna, fresh, skipjack, raw",0.6673,HIGH,16.0,1553.1467,derived_partly_imputed
+tkpi_0952,TKPI,175156.0,"Fish, tuna, fresh, skipjack, raw",0.6734,HIGH,16.0,1.4183,derived_partly_imputed
+tkpi_0953,TKPI,,,,,,17.355,derived_partly_imputed
+tkpi_0954,TKPI,,,,,,138.7,derived_partly_imputed
+tkpi_0955,TKPI,,,,,,119.3583,derived_partly_imputed
+tkpi_0956,TKPI,,,,,,253.8383,derived_imputed
+tkpi_0957,TKPI,173697.0,"Fish, shark, mixed species, raw",0.5374,MEDIUM,70.0,713.6183,derived_partly_imputed
+tkpi_0958,TKPI,,,,,,4.2067,derived_partly_imputed
+tkpi_0959,TKPI,,,,,,5819.58,derived_imputed
+tkpi_0960,TKPI,,,,,,281.3483,derived_imputed
+tkpi_0961,TKPI,,,,,,85.2417,derived_imputed
+tkpi_0962,TKPI,,,,,,8.7783,derived_partly_imputed
 tkpi_0963,TKPI,,,,,,12.25,derived_measured
-tkpi_0964,TKPI,,,,,,10.7433,derived_partly_imputed
-tkpi_0965,TKPI,,,,,,25.205,derived_partly_imputed
-tkpi_0966,TKPI,,,,,,61.035,derived_imputed
-tkpi_0967,TKPI,,,,,,72.4483,derived_imputed
+tkpi_0964,TKPI,,,,,,8.3317,derived_partly_imputed
+tkpi_0965,TKPI,,,,,,30.2817,derived_partly_imputed
+tkpi_0966,TKPI,,,,,,18.4367,derived_imputed
+tkpi_0967,TKPI,,,,,,242.2567,derived_imputed
 tkpi_0968,TKPI,,,,,,33.3333,derived_measured
-tkpi_0969,TKPI,,,,,,120.7133,derived_partly_imputed
-tkpi_0970,TKPI,,,,,,81.675,derived_partly_imputed
-tkpi_0971,TKPI,,,,,,110.3667,derived_partly_imputed
-tkpi_0972,TKPI,,,,,,135.295,derived_partly_imputed
-tkpi_0973,TKPI,,,,,,134.6517,derived_partly_imputed
-tkpi_0974,TKPI,,,,,,61.1267,derived_partly_imputed
-tkpi_0975,TKPI,,,,,,5.4867,derived_partly_imputed
-tkpi_0976,TKPI,,,,,,178.51,derived_imputed
-tkpi_0977,TKPI,,,,,,201.645,derived_imputed
-tkpi_0978,TKPI,,,,,,138.2017,derived_partly_imputed
+tkpi_0969,TKPI,,,,,,22.4867,derived_partly_imputed
+tkpi_0970,TKPI,,,,,,46.6517,derived_partly_imputed
+tkpi_0971,TKPI,,,,,,47.77,derived_partly_imputed
+tkpi_0972,TKPI,,,,,,61.84,derived_partly_imputed
+tkpi_0973,TKPI,,,,,,62.435,derived_partly_imputed
+tkpi_0974,TKPI,,,,,,81.9067,derived_partly_imputed
+tkpi_0975,TKPI,,,,,,11.3583,derived_partly_imputed
+tkpi_0976,TKPI,,,,,,303.5033,derived_imputed
+tkpi_0977,TKPI,,,,,,268.425,derived_imputed
+tkpi_0978,TKPI,,,,,,49.51,derived_partly_imputed
 tkpi_0979,TKPI,,,,,,0.0,derived_measured
 tkpi_0980,TKPI,,,,,,0.0,derived_measured
-tkpi_0981,TKPI,,,,,,2665.7817,derived_partly_imputed
+tkpi_0981,TKPI,,,,,,2514.03,derived_partly_imputed
 tkpi_0982,TKPI,,,,,,320.0,derived_measured
-tkpi_0983,TKPI,,,,,,143.765,derived_partly_imputed
-tkpi_0984,TKPI,,,,,,95.3017,derived_partly_imputed
-tkpi_0985,TKPI,174182.0,"Fish, anchovy, european, raw",0.5052,MEDIUM,15.0,216.165,derived_partly_imputed
-tkpi_0986,TKPI,,,,,,153.9633,derived_partly_imputed
+tkpi_0983,TKPI,,,,,,97.8733,derived_partly_imputed
+tkpi_0984,TKPI,,,,,,119.135,derived_partly_imputed
+tkpi_0985,TKPI,174182.0,"Fish, anchovy, european, raw",0.5052,MEDIUM,15.0,210.4783,derived_partly_imputed
+tkpi_0986,TKPI,,,,,,86.7533,derived_partly_imputed
 tkpi_0987,TKPI,,,,,,61.0,derived_measured
-tkpi_0988,TKPI,,,,,,2173.03,derived_imputed
-tkpi_0989,TKPI,,,,,,14.58,derived_partly_imputed
+tkpi_0988,TKPI,,,,,,5002.3467,derived_imputed
+tkpi_0989,TKPI,,,,,,7.3817,derived_partly_imputed
 tkpi_0990,TKPI,,,,,,0.0,derived_measured
-tkpi_0991,TKPI,,,,,,1384.41,derived_partly_imputed
+tkpi_0991,TKPI,,,,,,1305.5017,derived_partly_imputed
 tkpi_0992,TKPI,,,,,,76.0,derived_measured
 tkpi_0993,TKPI,,,,,,2.0,derived_measured
-tkpi_0994,TKPI,,,,,,62.0133,derived_partly_imputed
-tkpi_0995,TKPI,,,,,,65.3667,derived_imputed
-tkpi_0996,TKPI,,,,,,51.1233,derived_imputed
-tkpi_0997,TKPI,,,,,,167.99,derived_imputed
-tkpi_0998,TKPI,,,,,,899.5183,derived_partly_imputed
-tkpi_0999,TKPI,,,,,,212.7933,derived_imputed
-tkpi_1000,TKPI,,,,,,98.9467,derived_partly_imputed
-tkpi_1001,TKPI,,,,,,103.6017,derived_partly_imputed
-tkpi_1002,TKPI,,,,,,28.8083,derived_partly_imputed
-tkpi_1003,TKPI,,,,,,57.7867,derived_partly_imputed
-tkpi_1004,TKPI,,,,,,2395.92,derived_imputed
-tkpi_1005,TKPI,,,,,,364.8583,derived_imputed
-tkpi_1006,TKPI,,,,,,87.1117,derived_partly_imputed
-tkpi_1007,TKPI,,,,,,144.195,derived_imputed
-tkpi_1008,TKPI,,,,,,151.8717,derived_imputed
-tkpi_1009,TKPI,,,,,,391.41,derived_partly_imputed
-tkpi_1010,TKPI,,,,,,106.405,derived_partly_imputed
+tkpi_0994,TKPI,,,,,,79.0217,derived_partly_imputed
+tkpi_0995,TKPI,,,,,,291.8917,derived_imputed
+tkpi_0996,TKPI,,,,,,201.21,derived_imputed
+tkpi_0997,TKPI,,,,,,21.2467,derived_imputed
+tkpi_0998,TKPI,,,,,,934.7717,derived_partly_imputed
+tkpi_0999,TKPI,,,,,,114.225,derived_imputed
+tkpi_1000,TKPI,,,,,,101.81,derived_partly_imputed
+tkpi_1001,TKPI,,,,,,173.4567,derived_partly_imputed
+tkpi_1002,TKPI,,,,,,40.6733,derived_partly_imputed
+tkpi_1003,TKPI,,,,,,114.0717,derived_partly_imputed
+tkpi_1004,TKPI,,,,,,190.2017,derived_imputed
+tkpi_1005,TKPI,,,,,,351.1317,derived_imputed
+tkpi_1006,TKPI,,,,,,104.2133,derived_partly_imputed
+tkpi_1007,TKPI,,,,,,209.4683,derived_imputed
+tkpi_1008,TKPI,,,,,,218.1317,derived_imputed
+tkpi_1009,TKPI,,,,,,390.1833,derived_partly_imputed
+tkpi_1010,TKPI,,,,,,89.8733,derived_partly_imputed
 tkpi_1011,TKPI,,,,,,224.0,derived_measured
-tkpi_1012,TKPI,,,,,,116.07,derived_partly_imputed
-tkpi_1013,TKPI,,,,,,191.285,derived_imputed
-tkpi_1014,TKPI,,,,,,4687.8667,derived_partly_imputed
+tkpi_1012,TKPI,,,,,,113.4833,derived_partly_imputed
+tkpi_1013,TKPI,,,,,,150.18,derived_imputed
+tkpi_1014,TKPI,,,,,,4626.9133,derived_partly_imputed
 tkpi_1015,TKPI,,,,,,3.1667,derived_measured
-tkpi_1016,TKPI,,,,,,158.8633,derived_imputed
-tkpi_1017,TKPI,,,,,,147.795,derived_partly_imputed
-tkpi_1018,TKPI,,,,,,158.8067,derived_imputed
-tkpi_1019,TKPI,,,,,,64.9533,derived_imputed
-tkpi_1020,TKPI,,,,,,0.0067,derived_partly_imputed
-tkpi_1021,TKPI,,,,,,240.8717,derived_imputed
-tkpi_1022,TKPI,,,,,,61.81,derived_partly_imputed
-tkpi_1023,TKPI,,,,,,152.735,derived_imputed
-tkpi_1024,TKPI,,,,,,63.9283,derived_imputed
-tkpi_1025,TKPI,,,,,,0.0067,derived_partly_imputed
+tkpi_1016,TKPI,,,,,,178.9,derived_imputed
+tkpi_1017,TKPI,,,,,,132.615,derived_partly_imputed
+tkpi_1018,TKPI,,,,,,281.4833,derived_imputed
+tkpi_1019,TKPI,,,,,,6.7867,derived_imputed
+tkpi_1020,TKPI,,,,,,0.075,derived_partly_imputed
+tkpi_1021,TKPI,,,,,,172.9383,derived_imputed
+tkpi_1022,TKPI,,,,,,48.2983,derived_partly_imputed
+tkpi_1023,TKPI,,,,,,41.1883,derived_imputed
+tkpi_1024,TKPI,,,,,,77.7767,derived_imputed
+tkpi_1025,TKPI,,,,,,0.0,derived_partly_imputed
 tkpi_1026,TKPI,,,,,,64.0,derived_measured
-tkpi_1027,TKPI,,,,,,970.2583,derived_partly_imputed
+tkpi_1027,TKPI,,,,,,919.0783,derived_partly_imputed
 tkpi_1028,TKPI,,,,,,49.75,derived_measured
-tkpi_1029,TKPI,,,,,,62.39,derived_partly_imputed
-tkpi_1030,TKPI,,,,,,61.0233,derived_partly_imputed
-tkpi_1031,TKPI,,,,,,64.1583,derived_partly_imputed
-tkpi_1032,TKPI,,,,,,5.3067,derived_partly_imputed
-tkpi_1033,TKPI,,,,,,1148.9333,derived_partly_imputed
-tkpi_1034,TKPI,,,,,,117.8583,derived_partly_imputed
-tkpi_1035,TKPI,,,,,,119.2833,derived_partly_imputed
-tkpi_1036,TKPI,,,,,,602.2583,derived_partly_imputed
-tkpi_1037,TKPI,,,,,,7.1467,derived_partly_imputed
+tkpi_1029,TKPI,,,,,,51.0167,derived_partly_imputed
+tkpi_1030,TKPI,,,,,,46.1183,derived_partly_imputed
+tkpi_1031,TKPI,,,,,,45.9317,derived_partly_imputed
+tkpi_1032,TKPI,,,,,,6.7667,derived_partly_imputed
+tkpi_1033,TKPI,,,,,,827.0483,derived_partly_imputed
+tkpi_1034,TKPI,,,,,,129.8133,derived_partly_imputed
+tkpi_1035,TKPI,,,,,,119.5767,derived_partly_imputed
+tkpi_1036,TKPI,,,,,,583.02,derived_partly_imputed
+tkpi_1037,TKPI,,,,,,6.7867,derived_partly_imputed
 tkpi_1038,TKPI,,,,,,204.9167,derived_measured
 tkpi_1039,TKPI,,,,,,62.8333,derived_measured
 tkpi_1040,TKPI,,,,,,611.25,derived_measured
@@ -1044,338 +1044,338 @@ tkpi_1042,TKPI,,,,,,216.4167,derived_measured
 tkpi_1043,TKPI,172189.0,"Egg, duck, whole, fresh, raw",0.4625,MEDIUM,194.0,932.25,derived_measured
 tkpi_1044,TKPI,172189.0,"Egg, duck, whole, fresh, raw",0.4669,MEDIUM,194.0,0.0,derived_measured
 tkpi_1045,TKPI,172189.0,"Egg, duck, whole, fresh, raw",0.491,MEDIUM,194.0,417.25,derived_measured
-tkpi_1046,TKPI,,,,,,4049.6933,derived_partly_imputed
+tkpi_1046,TKPI,,,,,,4225.1133,derived_partly_imputed
 tkpi_1047,TKPI,,,,,,83.4167,derived_measured
 tkpi_1048,TKPI,172191.0,"Egg, quail, whole, fresh, raw",0.5042,MEDIUM,156.0,101.6667,derived_measured
-tkpi_1049,TKPI,,,,,,46.8467,derived_partly_imputed
+tkpi_1049,TKPI,,,,,,38.5067,derived_partly_imputed
 tkpi_1050,TKPI,172189.0,"Egg, duck, whole, fresh, raw",0.5607,MEDIUM,194.0,254.0833,derived_measured
-tkpi_1051,TKPI,,,,,,131.7,derived_partly_imputed
+tkpi_1051,TKPI,,,,,,127.5217,derived_partly_imputed
 tkpi_1052,TKPI,,,,,,1866.0,derived_measured
 tkpi_1053,TKPI,,,,,,790.4167,derived_measured
-tkpi_1054,TKPI,,,,,,18.27,derived_partly_imputed
-tkpi_1055,TKPI,,,,,,161.2733,derived_partly_imputed
+tkpi_1054,TKPI,,,,,,15.81,derived_partly_imputed
+tkpi_1055,TKPI,,,,,,177.5283,derived_partly_imputed
 tkpi_1056,TKPI,,,,,,267.9167,derived_measured
-tkpi_1057,TKPI,,,,,,7.1433,derived_partly_imputed
+tkpi_1057,TKPI,,,,,,2.1833,derived_partly_imputed
 tkpi_1058,TKPI,,,,,,38.0,derived_measured
-tkpi_1059,TKPI,,,,,,74.7967,derived_partly_imputed
-tkpi_1060,TKPI,,,,,,14.8833,derived_partly_imputed
+tkpi_1059,TKPI,,,,,,83.7067,derived_partly_imputed
+tkpi_1060,TKPI,,,,,,10.5233,derived_partly_imputed
 tkpi_1061,TKPI,,,,,,40.0,derived_measured
 tkpi_1062,TKPI,,,,,,158.0,derived_measured
-tkpi_1063,TKPI,,,,,,167.5133,derived_partly_imputed
+tkpi_1063,TKPI,,,,,,471.2533,derived_partly_imputed
 tkpi_1064,TKPI,,,,,,237.6667,derived_measured
 tkpi_1065,TKPI,,,,,,173.0,derived_measured
 tkpi_1066,TKPI,,,,,,309.9167,derived_measured
 tkpi_1067,TKPI,,,,,,485.8333,derived_measured
 tkpi_1068,TKPI,,,,,,158.8333,derived_measured
-tkpi_1069,TKPI,,,,,,125.7167,derived_partly_imputed
-tkpi_1070,TKPI,,,,,,233.8333,derived_partly_imputed
-tkpi_1071,TKPI,170887.0,"Yogurt, plain, skim milk",0.4129,MEDIUM,2.0,13.81,derived_partly_imputed
+tkpi_1069,TKPI,,,,,,162.3217,derived_partly_imputed
+tkpi_1070,TKPI,,,,,,337.5733,derived_partly_imputed
+tkpi_1071,TKPI,170887.0,"Yogurt, plain, skim milk",0.4129,MEDIUM,2.0,207.145,derived_partly_imputed
 tkpi_1072,TKPI,,,,,,22.8333,derived_measured
-tkpi_1073,TKPI,,,,,,0.72,derived_partly_imputed
+tkpi_1073,TKPI,,,,,,0.3,derived_partly_imputed
 tkpi_1074,TKPI,,,,,,0.0,derived_measured
 tkpi_1075,TKPI,171401.0,Lard,0.4057,MEDIUM,0.0,0.0,derived_measured
 tkpi_1076,TKPI,167704.0,"Salad dressing, bacon and tomato",0.4496,MEDIUM,11.0,0.0,derived_measured
-tkpi_1077,TKPI,,,,,,102.0317,derived_imputed
+tkpi_1077,TKPI,,,,,,309.7583,derived_imputed
 tkpi_1078,TKPI,,,,,,23.5833,derived_measured
 tkpi_1079,TKPI,173577.0,"Fish oil, cod liver",0.4136,MEDIUM,30000.0,21212.0,derived_measured
 tkpi_1080,TKPI,,,,,,24242.0,derived_measured
 tkpi_1081,TKPI,,,,,,0.0,derived_measured
 tkpi_1082,TKPI,,,,,,0.0,derived_measured
 tkpi_1083,TKPI,171412.0,"Oil, coconut",0.5625,MEDIUM,0.0,0.0,derived_measured
-tkpi_1084,TKPI,171015.0,"Oil, palm",0.4144,MEDIUM,0.0,17704.1433,derived_partly_imputed
+tkpi_1084,TKPI,171015.0,"Oil, palm",0.4144,MEDIUM,0.0,18790.1133,derived_partly_imputed
 tkpi_1085,TKPI,171016.0,"Oil, sesame, salad or cooking",0.4575,MEDIUM,0.0,0.0,derived_measured
-tkpi_1086,TKPI,171413.0,"Oil, olive, salad or cooking",0.438,MEDIUM,0.0,16361.01,derived_partly_imputed
+tkpi_1086,TKPI,171413.0,"Oil, olive, salad or cooking",0.438,MEDIUM,0.0,15618.23,derived_partly_imputed
 tkpi_1087,TKPI,,,,,,658.75,derived_measured
 tkpi_1088,TKPI,,,,,,1012.9167,derived_measured
-tkpi_1089,TKPI,,,,,,0.7017,derived_partly_imputed
+tkpi_1089,TKPI,,,,,,0.1583,derived_partly_imputed
 tkpi_1090,TKPI,,,,,,0.0,derived_measured
-tkpi_1091,TKPI,,,,,,3.4167,derived_imputed
-tkpi_1092,TKPI,,,,,,3.9667,derived_partly_imputed
-tkpi_1093,TKPI,,,,,,14.42,derived_partly_imputed
-tkpi_1094,TKPI,,,,,,140.3283,derived_imputed
+tkpi_1091,TKPI,,,,,,8.8017,derived_imputed
+tkpi_1092,TKPI,,,,,,1.7667,derived_partly_imputed
+tkpi_1093,TKPI,,,,,,17.74,derived_partly_imputed
+tkpi_1094,TKPI,,,,,,161.2467,derived_imputed
 tkpi_1095,TKPI,,,,,,0.0,derived_measured
 tkpi_1096,TKPI,,,,,,0.0,derived_measured
 tkpi_1097,TKPI,167743.0,"Syrup, Cane",0.4316,MEDIUM,0.0,0.0,derived_measured
 tkpi_1098,TKPI,,,,,,0.0,derived_measured
-tkpi_1099,TKPI,168779.0,"Puddings, chocolate, dry mix, instant",0.4069,MEDIUM,0.0,6.7,derived_partly_imputed
+tkpi_1099,TKPI,168779.0,"Puddings, chocolate, dry mix, instant",0.4069,MEDIUM,0.0,5.72,derived_partly_imputed
 tkpi_1100,TKPI,169640.0,Honey,0.6298,MEDIUM,0.0,0.0,derived_measured
-tkpi_1101,TKPI,,,,,,3.8167,derived_partly_imputed
-tkpi_1102,TKPI,,,,,,1.0633,derived_partly_imputed
+tkpi_1101,TKPI,,,,,,3.5767,derived_partly_imputed
+tkpi_1102,TKPI,,,,,,2.4833,derived_partly_imputed
 tkpi_1103,TKPI,,,,,,0.0,derived_measured
-tkpi_1104,TKPI,167953.0,Fruit syrup,0.4579,MEDIUM,0.0,0.84,derived_partly_imputed
-tkpi_1105,TKPI,,,,,,8.92,derived_partly_imputed
-tkpi_1106,TKPI,,,,,,2121.82,derived_partly_imputed
+tkpi_1104,TKPI,167953.0,Fruit syrup,0.4579,MEDIUM,0.0,0.24,derived_partly_imputed
+tkpi_1105,TKPI,,,,,,7.36,derived_partly_imputed
+tkpi_1106,TKPI,,,,,,700.12,derived_partly_imputed
 tkpi_1107,TKPI,,,,,,225.0,derived_measured
 tkpi_1108,TKPI,,,,,,700.0,derived_measured
-tkpi_1109,TKPI,,,,,,64.0433,derived_partly_imputed
-tkpi_1110,TKPI,,,,,,63.1433,derived_partly_imputed
-tkpi_1111,TKPI,,,,,,2.1,derived_partly_imputed
+tkpi_1109,TKPI,,,,,,66.5633,derived_partly_imputed
+tkpi_1110,TKPI,,,,,,61.3833,derived_partly_imputed
+tkpi_1111,TKPI,,,,,,0.18,derived_partly_imputed
 tkpi_1112,TKPI,,,,,,3.4167,derived_partly_imputed
 tkpi_1113,TKPI,,,,,,0.75,derived_partly_imputed
-tkpi_1114,TKPI,,,,,,0.8717,derived_imputed
-tkpi_1115,TKPI,,,,,,0.1667,derived_partly_imputed
-tkpi_1116,TKPI,171325.0,"Spices, garlic powder",0.4073,MEDIUM,0.0,4.06,derived_partly_imputed
-tkpi_1117,TKPI,,,,,,249.2,derived_partly_imputed
-tkpi_1118,TKPI,,,,,,237.9767,derived_partly_imputed
-tkpi_1119,TKPI,,,,,,491.4167,derived_partly_imputed
-tkpi_1120,TKPI,,,,,,4.3867,derived_partly_imputed
-tkpi_1121,TKPI,,,,,,967.8967,derived_partly_imputed
-tkpi_1122,TKPI,,,,,,489.1433,derived_partly_imputed
-tkpi_1123,TKPI,,,,,,891.2867,derived_partly_imputed
-tkpi_1124,TKPI,171321.0,"Spices, cloves, ground",0.4965,MEDIUM,8.0,294.8033,derived_partly_imputed
+tkpi_1114,TKPI,,,,,,1.57,derived_imputed
+tkpi_1115,TKPI,,,,,,0.6067,derived_partly_imputed
+tkpi_1116,TKPI,171325.0,"Spices, garlic powder",0.4073,MEDIUM,0.0,0.56,derived_partly_imputed
+tkpi_1117,TKPI,,,,,,271.0,derived_partly_imputed
+tkpi_1118,TKPI,,,,,,305.1767,derived_partly_imputed
+tkpi_1119,TKPI,,,,,,496.7767,derived_partly_imputed
+tkpi_1120,TKPI,,,,,,6.7467,derived_partly_imputed
+tkpi_1121,TKPI,,,,,,929.4167,derived_partly_imputed
+tkpi_1122,TKPI,,,,,,490.9033,derived_partly_imputed
+tkpi_1123,TKPI,,,,,,890.9867,derived_partly_imputed
+tkpi_1124,TKPI,171321.0,"Spices, cloves, ground",0.4965,MEDIUM,8.0,318.6233,derived_partly_imputed
 tkpi_1125,TKPI,170917.0,"Spices, bay leaf",0.5561,MEDIUM,309.0,450.0,derived_measured
-tkpi_1126,TKPI,170926.0,"Spices, ginger, ground",0.4009,MEDIUM,2.0,0.0,derived_partly_imputed
-tkpi_1127,TKPI,,,,,,6.02,derived_partly_imputed
-tkpi_1128,TKPI,170922.0,"Spices, coriander seed",0.6762,HIGH,0.0,89.15,derived_partly_imputed
-tkpi_1129,TKPI,,,,,,4.51,derived_imputed
-tkpi_1130,TKPI,172231.0,"Spices, turmeric, ground",0.4965,MEDIUM,0.0,3.96,derived_partly_imputed
-tkpi_1131,TKPI,,,,,,11.42,derived_partly_imputed
-tkpi_1132,TKPI,171326.0,"Spices, nutmeg, ground",0.4009,MEDIUM,5.0,176.3233,derived_partly_imputed
+tkpi_1126,TKPI,170926.0,"Spices, ginger, ground",0.4009,MEDIUM,2.0,1.78,derived_partly_imputed
+tkpi_1127,TKPI,,,,,,4.9,derived_partly_imputed
+tkpi_1128,TKPI,170922.0,"Spices, coriander seed",0.6762,HIGH,0.0,62.21,derived_partly_imputed
+tkpi_1129,TKPI,,,,,,27.6883,derived_imputed
+tkpi_1130,TKPI,172231.0,"Spices, turmeric, ground",0.4965,MEDIUM,0.0,1.0,derived_partly_imputed
+tkpi_1131,TKPI,,,,,,237.58,derived_partly_imputed
+tkpi_1132,TKPI,171326.0,"Spices, nutmeg, ground",0.4009,MEDIUM,5.0,0.6233,derived_partly_imputed
 tkpi_1133,TKPI,,,,,,34.0,derived_measured
-tkpi_1134,TKPI,,,,,,159.24,derived_partly_imputed
+tkpi_1134,TKPI,,,,,,247.12,derived_partly_imputed
 tkpi_1135,TKPI,171606.0,Fish broth,0.4292,MEDIUM,1.0,1.0,USDA_direct_medium
-tkpi_1136,TKPI,173469.0,"Vinegar, cider",0.4033,MEDIUM,0.0,332.82,derived_partly_imputed
-tkpi_1137,TKPI,,,,,,13.64,derived_partly_imputed
-tkpi_1138,TKPI,,,,,,2.5767,derived_imputed
-tkpi_1139,TKPI,,,,,,62.0,derived_partly_imputed
-tkpi_1140,TKPI,,,,,,4.46,derived_partly_imputed
-tkpi_1141,TKPI,,,,,,49.57,derived_partly_imputed
-tkpi_1142,TKPI,,,,,,121.0767,derived_partly_imputed
-tkpi_1143,TKPI,,,,,,27.2,derived_partly_imputed
-tkpi_1144,TKPI,,,,,,242.68,derived_partly_imputed
-tkpi_1145,TKPI,,,,,,4.82,derived_partly_imputed
+tkpi_1136,TKPI,173469.0,"Vinegar, cider",0.4033,MEDIUM,0.0,505.92,derived_partly_imputed
+tkpi_1137,TKPI,,,,,,16.09,derived_partly_imputed
+tkpi_1138,TKPI,,,,,,3.9033,derived_imputed
+tkpi_1139,TKPI,,,,,,36.8,derived_partly_imputed
+tkpi_1140,TKPI,,,,,,3.12,derived_partly_imputed
+tkpi_1141,TKPI,,,,,,58.33,derived_partly_imputed
+tkpi_1142,TKPI,,,,,,19.2167,derived_partly_imputed
+tkpi_1143,TKPI,,,,,,26.92,derived_partly_imputed
+tkpi_1144,TKPI,,,,,,1225.86,derived_partly_imputed
+tkpi_1145,TKPI,,,,,,7.04,derived_partly_imputed
 tkpi_1146,TKPI,,,,,,0.0,derived_measured
 myfcd_0001,MyFCD,171867.0,"Cookies, Marie biscuit",0.4305,MEDIUM,1.0,1.0,USDA_direct_medium
-myfcd_0002,MyFCD,,,,,,179.4217,derived_imputed
+myfcd_0002,MyFCD,,,,,,130.76,derived_imputed
 myfcd_0003,MyFCD,171867.0,"Cookies, Marie biscuit",0.9437,HIGH,1.0,1.0,USDA_direct_high
-myfcd_0004,MyFCD,,,,,,117.645,derived_imputed
-myfcd_0005,MyFCD,,,,,,2.4367,derived_imputed
+myfcd_0004,MyFCD,,,,,,110.7533,derived_imputed
+myfcd_0005,MyFCD,,,,,,1.12,derived_imputed
 myfcd_0006,MyFCD,172680.0,"Bread, raisin, enriched",0.4713,MEDIUM,0.0,0.0,USDA_direct_medium
-myfcd_0007,MyFCD,,,,,,1.4283,derived_imputed
-myfcd_0008,MyFCD,,,,,,13.3133,derived_imputed
-myfcd_0009,MyFCD,,,,,,12.2833,derived_imputed
+myfcd_0007,MyFCD,,,,,,5.2983,derived_imputed
+myfcd_0008,MyFCD,,,,,,9.8467,derived_imputed
+myfcd_0009,MyFCD,,,,,,10.4483,derived_imputed
 myfcd_0010,MyFCD,167943.0,"Bread, potato",0.4318,MEDIUM,24.0,24.0,USDA_direct_medium
-myfcd_0011,MyFCD,,,,,,7.5733,derived_imputed
+myfcd_0011,MyFCD,,,,,,162.5567,derived_imputed
 myfcd_0012,MyFCD,174964.0,"Cookies, peanut butter, prepared from recipe",0.6019,MEDIUM,137.0,137.0,USDA_direct_medium
-myfcd_0013,MyFCD,,,,,,149.4583,derived_imputed
-myfcd_0014,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0015,MyFCD,,,,,,507.0617,derived_imputed
+myfcd_0013,MyFCD,,,,,,199.1967,derived_imputed
+myfcd_0014,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0015,MyFCD,,,,,,130.405,derived_imputed
 myfcd_0016,MyFCD,174096.0,"Cookies, chocolate, made with rice cereal",0.4369,MEDIUM,0.0,0.0,USDA_direct_medium
-myfcd_0017,MyFCD,,,,,,74.6117,derived_imputed
-myfcd_0018,MyFCD,,,,,,9.815,derived_imputed
+myfcd_0017,MyFCD,,,,,,7.795,derived_imputed
+myfcd_0018,MyFCD,,,,,,44.4433,derived_imputed
 myfcd_0019,MyFCD,171838.0,"Crackers, multigrain",0.4527,MEDIUM,0.0,0.0,USDA_direct_medium
-myfcd_0020,MyFCD,,,,,,24.355,derived_imputed
-myfcd_0021,MyFCD,,,,,,164.085,derived_imputed
-myfcd_0022,MyFCD,,,,,,90.2783,derived_imputed
-myfcd_0023,MyFCD,,,,,,76.32,derived_imputed
-myfcd_0024,MyFCD,,,,,,35.5933,derived_imputed
-myfcd_0025,MyFCD,,,,,,131.7633,derived_imputed
-myfcd_0026,MyFCD,,,,,,135.065,derived_imputed
-myfcd_0027,MyFCD,,,,,,18.6883,derived_imputed
-myfcd_0028,MyFCD,,,,,,59.03,derived_imputed
-myfcd_0029,MyFCD,,,,,,131.5617,derived_imputed
-myfcd_0030,MyFCD,,,,,,13.7367,derived_imputed
+myfcd_0020,MyFCD,,,,,,124.325,derived_imputed
+myfcd_0021,MyFCD,,,,,,112.0317,derived_imputed
+myfcd_0022,MyFCD,,,,,,53.5017,derived_imputed
+myfcd_0023,MyFCD,,,,,,6434.7717,derived_imputed
+myfcd_0024,MyFCD,,,,,,111.0467,derived_imputed
+myfcd_0025,MyFCD,,,,,,289.1933,derived_imputed
+myfcd_0026,MyFCD,,,,,,373.125,derived_imputed
+myfcd_0027,MyFCD,,,,,,451.8533,derived_imputed
+myfcd_0028,MyFCD,,,,,,112.8233,derived_imputed
+myfcd_0029,MyFCD,,,,,,170.34,derived_imputed
+myfcd_0030,MyFCD,,,,,,16.4167,derived_imputed
 myfcd_0031,MyFCD,173755.0,Carob flour,0.5732,MEDIUM,1.0,1.0,USDA_direct_medium
-myfcd_0032,MyFCD,,,,,,541.835,derived_imputed
-myfcd_0033,MyFCD,,,,,,177.5367,derived_imputed
-myfcd_0034,MyFCD,,,,,,206.3317,derived_imputed
-myfcd_0035,MyFCD,,,,,,12.7,derived_imputed
-myfcd_0036,MyFCD,,,,,,106.4117,derived_imputed
-myfcd_0037,MyFCD,,,,,,101.61,derived_imputed
-myfcd_0038,MyFCD,,,,,,96.9583,derived_imputed
-myfcd_0039,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0040,MyFCD,,,,,,49.94,derived_imputed
-myfcd_0041,MyFCD,,,,,,131.5017,derived_imputed
-myfcd_0042,MyFCD,,,,,,131.615,derived_imputed
-myfcd_0043,MyFCD,,,,,,47.515,derived_imputed
+myfcd_0032,MyFCD,,,,,,165.0683,derived_imputed
+myfcd_0033,MyFCD,,,,,,397.305,derived_imputed
+myfcd_0034,MyFCD,,,,,,4642.7333,derived_imputed
+myfcd_0035,MyFCD,,,,,,9.6217,derived_imputed
+myfcd_0036,MyFCD,,,,,,6.5933,derived_imputed
+myfcd_0037,MyFCD,,,,,,7.01,derived_imputed
+myfcd_0038,MyFCD,,,,,,9.7117,derived_imputed
+myfcd_0039,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0040,MyFCD,,,,,,16.0217,derived_imputed
+myfcd_0041,MyFCD,,,,,,22.9017,derived_imputed
+myfcd_0042,MyFCD,,,,,,114.9217,derived_imputed
+myfcd_0043,MyFCD,,,,,,479.1167,derived_imputed
 myfcd_0044,MyFCD,167787.0,"Pomegranate juice, bottled",0.5323,MEDIUM,0.0,0.0,USDA_direct_medium
-myfcd_0045,MyFCD,,,,,,206.9833,derived_imputed
-myfcd_0046,MyFCD,,,,,,141.5,derived_imputed
-myfcd_0047,MyFCD,,,,,,34.7367,derived_imputed
-myfcd_0048,MyFCD,,,,,,174.7217,derived_imputed
-myfcd_0049,MyFCD,,,,,,314.8617,derived_imputed
-myfcd_0050,MyFCD,,,,,,146.2567,derived_imputed
-myfcd_0051,MyFCD,,,,,,273.2583,derived_imputed
-myfcd_0052,MyFCD,,,,,,187.3067,derived_imputed
-myfcd_0053,MyFCD,,,,,,92.3133,derived_imputed
-myfcd_0054,MyFCD,,,,,,309.015,derived_imputed
-myfcd_0055,MyFCD,,,,,,284.9233,derived_imputed
-myfcd_0056,MyFCD,,,,,,70.5683,derived_imputed
-myfcd_0057,MyFCD,,,,,,151.7133,derived_imputed
-myfcd_0058,MyFCD,,,,,,135.4983,derived_imputed
-myfcd_0059,MyFCD,,,,,,8.8433,derived_imputed
+myfcd_0045,MyFCD,,,,,,46.1467,derived_imputed
+myfcd_0046,MyFCD,,,,,,176.69,derived_imputed
+myfcd_0047,MyFCD,,,,,,30.205,derived_imputed
+myfcd_0048,MyFCD,,,,,,300.1233,derived_imputed
+myfcd_0049,MyFCD,,,,,,164.2233,derived_imputed
+myfcd_0050,MyFCD,,,,,,273.255,derived_imputed
+myfcd_0051,MyFCD,,,,,,136.3333,derived_imputed
+myfcd_0052,MyFCD,,,,,,396.045,derived_imputed
+myfcd_0053,MyFCD,,,,,,241.385,derived_imputed
+myfcd_0054,MyFCD,,,,,,121.0967,derived_imputed
+myfcd_0055,MyFCD,,,,,,448.8333,derived_imputed
+myfcd_0056,MyFCD,,,,,,59.855,derived_imputed
+myfcd_0057,MyFCD,,,,,,92.0717,derived_imputed
+myfcd_0058,MyFCD,,,,,,300.7183,derived_imputed
+myfcd_0059,MyFCD,,,,,,11.1467,derived_imputed
 myfcd_0060,MyFCD,169640.0,Honey,1.0,HIGH,0.0,0.0,USDA_direct_high
-myfcd_0061,MyFCD,,,,,,270.0967,derived_imputed
-myfcd_0062,MyFCD,,,,,,156.68,derived_imputed
-myfcd_0063,MyFCD,,,,,,68.045,derived_imputed
-myfcd_0064,MyFCD,,,,,,12.285,derived_imputed
-myfcd_0065,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0066,MyFCD,,,,,,63.5717,derived_imputed
+myfcd_0061,MyFCD,,,,,,267.505,derived_imputed
+myfcd_0062,MyFCD,,,,,,638.8817,derived_imputed
+myfcd_0063,MyFCD,,,,,,572.4683,derived_imputed
+myfcd_0064,MyFCD,,,,,,15.2083,derived_imputed
+myfcd_0065,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0066,MyFCD,,,,,,321.5183,derived_imputed
 myfcd_0067,MyFCD,168819.0,"Marmalade, orange",0.8351,HIGH,3.0,3.0,USDA_direct_high
-myfcd_0068,MyFCD,,,,,,43.3967,derived_imputed
-myfcd_0069,MyFCD,,,,,,46.2283,derived_imputed
-myfcd_0070,MyFCD,,,,,,174.995,derived_imputed
-myfcd_0071,MyFCD,,,,,,189.5333,derived_imputed
-myfcd_0072,MyFCD,,,,,,149.4133,derived_imputed
-myfcd_0073,MyFCD,,,,,,32.6167,derived_imputed
-myfcd_0074,MyFCD,,,,,,248.0933,derived_imputed
-myfcd_0075,MyFCD,,,,,,138.7317,derived_imputed
-myfcd_0076,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0068,MyFCD,,,,,,35.7467,derived_imputed
+myfcd_0069,MyFCD,,,,,,30.745,derived_imputed
+myfcd_0070,MyFCD,,,,,,142.0233,derived_imputed
+myfcd_0071,MyFCD,,,,,,209.2067,derived_imputed
+myfcd_0072,MyFCD,,,,,,240.49,derived_imputed
+myfcd_0073,MyFCD,,,,,,53.0183,derived_imputed
+myfcd_0074,MyFCD,,,,,,26.315,derived_imputed
+myfcd_0075,MyFCD,,,,,,810.975,derived_imputed
+myfcd_0076,MyFCD,,,,,,0.355,derived_imputed
 myfcd_0077,MyFCD,173410.0,"Butter, salted",0.4242,MEDIUM,684.0,684.0,USDA_direct_medium
-myfcd_0078,MyFCD,,,,,,214.9783,derived_imputed
+myfcd_0078,MyFCD,,,,,,22.0,derived_imputed
 myfcd_0079,MyFCD,172175.0,"Cheese, blue",0.6301,MEDIUM,198.0,198.0,USDA_direct_medium
 myfcd_0080,MyFCD,172177.0,"Cheese, brie",0.9241,HIGH,174.0,174.0,USDA_direct_high
 myfcd_0081,MyFCD,172178.0,"Cheese, camembert",0.9241,HIGH,241.0,241.0,USDA_direct_high
 myfcd_0082,MyFCD,171295.0,"Cheese, cheddar, nonfat or fat free",0.4837,MEDIUM,60.0,60.0,USDA_direct_medium
-myfcd_0083,MyFCD,,,,,,16.6583,derived_imputed
+myfcd_0083,MyFCD,,,,,,180.3167,derived_imputed
 myfcd_0084,MyFCD,173416.0,"Cheese, colby",0.9108,HIGH,264.0,264.0,USDA_direct_high
-myfcd_0085,MyFCD,,,,,,16.58,derived_imputed
+myfcd_0085,MyFCD,,,,,,197.605,derived_imputed
 myfcd_0086,MyFCD,170848.0,"Cheese, parmesan, hard",0.6172,MEDIUM,207.0,207.0,USDA_direct_medium
 myfcd_0087,MyFCD,170851.0,"Cheese, ricotta, whole milk",0.8466,HIGH,120.0,120.0,USDA_direct_high
-myfcd_0088,MyFCD,,,,,,6.3783,derived_imputed
+myfcd_0088,MyFCD,,,,,,7.96,derived_imputed
 myfcd_0089,MyFCD,173418.0,"Cheese, cream",0.4488,MEDIUM,308.0,308.0,USDA_direct_medium
-myfcd_0090,MyFCD,,,,,,45.885,derived_imputed
-myfcd_0091,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0092,MyFCD,,,,,,195.5583,derived_imputed
-myfcd_0093,MyFCD,,,,,,3.7967,derived_imputed
+myfcd_0090,MyFCD,,,,,,123.2667,derived_imputed
+myfcd_0091,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0092,MyFCD,,,,,,179.875,derived_imputed
+myfcd_0093,MyFCD,,,,,,1.5083,derived_imputed
 myfcd_0094,MyFCD,171275.0,"Milk, canned, condensed, sweetened",1.0,HIGH,74.0,74.0,USDA_direct_high
-myfcd_0095,MyFCD,,,,,,3.895,derived_imputed
-myfcd_0096,MyFCD,,,,,,27.6533,derived_imputed
+myfcd_0095,MyFCD,,,,,,6.9033,derived_imputed
+myfcd_0096,MyFCD,,,,,,17.1283,derived_imputed
 myfcd_0097,MyFCD,169079.0,"Cheese, cream, low fat",0.4377,MEDIUM,161.0,161.0,USDA_direct_medium
-myfcd_0098,MyFCD,,,,,,147.9183,derived_imputed
+myfcd_0098,MyFCD,,,,,,339.67,derived_imputed
 myfcd_0099,MyFCD,170888.0,"Yogurt, vanilla, low fat.",0.5127,MEDIUM,12.0,12.0,USDA_direct_medium
 myfcd_0100,MyFCD,172229.0,"Ice cream sandwich, made with light ice cream, vanilla",0.7464,HIGH,96.0,96.0,USDA_direct_high
-myfcd_0101,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0101,MyFCD,,,,,,0.355,derived_imputed
 myfcd_0102,MyFCD,170901.0,"Yogurt, Greek, strawberry, nonfat",0.401,MEDIUM,0.0,0.0,USDA_direct_medium
-myfcd_0103,MyFCD,,,,,,5.395,derived_imputed
+myfcd_0103,MyFCD,,,,,,7.7317,derived_imputed
 myfcd_0104,MyFCD,173577.0,"Fish oil, cod liver",0.6958,HIGH,30000.0,30000.0,USDA_direct_high
-myfcd_0105,MyFCD,,,,,,136.9233,derived_imputed
-myfcd_0106,MyFCD,,,,,,145.4983,derived_imputed
-myfcd_0107,MyFCD,,,,,,182.2617,derived_imputed
-myfcd_0108,MyFCD,,,,,,329.9667,derived_imputed
+myfcd_0105,MyFCD,,,,,,104.5233,derived_imputed
+myfcd_0106,MyFCD,,,,,,150.65,derived_imputed
+myfcd_0107,MyFCD,,,,,,286.5867,derived_imputed
+myfcd_0108,MyFCD,,,,,,5466.075,derived_imputed
 myfcd_0109,MyFCD,172336.0,"Oil, canola",0.8678,HIGH,0.0,0.0,USDA_direct_high
 myfcd_0110,MyFCD,171412.0,"Oil, coconut",0.5489,MEDIUM,0.0,0.0,USDA_direct_medium
-myfcd_0111,MyFCD,,,,,,329.9667,derived_imputed
-myfcd_0112,MyFCD,,,,,,329.9667,derived_imputed
+myfcd_0111,MyFCD,,,,,,5466.075,derived_imputed
+myfcd_0112,MyFCD,,,,,,5466.075,derived_imputed
 myfcd_0113,MyFCD,171402.0,"Salad dressing, thousand island, commercial, regular",0.5674,MEDIUM,14.0,14.0,USDA_direct_medium
-myfcd_0114,MyFCD,,,,,,157.135,derived_imputed
-myfcd_0115,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0116,MyFCD,,,,,,17.1467,derived_imputed
+myfcd_0114,MyFCD,,,,,,152.505,derived_imputed
+myfcd_0115,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0116,MyFCD,,,,,,265.9983,derived_imputed
 myfcd_0117,MyFCD,174108.0,"Beverages,  Energy drink, Citrus",0.6788,HIGH,0.0,0.0,USDA_direct_high
-myfcd_0118,MyFCD,,,,,,517.7083,derived_imputed
-myfcd_0119,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0118,MyFCD,,,,,,332.9917,derived_imputed
+myfcd_0119,MyFCD,,,,,,0.355,derived_imputed
 myfcd_0120,MyFCD,169044.0,"Beverages, Orange juice drink",0.7225,HIGH,2.0,2.0,USDA_direct_high
-myfcd_0121,MyFCD,,,,,,543.7117,derived_imputed
+myfcd_0121,MyFCD,,,,,,283.6133,derived_imputed
 myfcd_0122,MyFCD,174824.0,"Beverages, chocolate powder, no sugar added",0.5134,MEDIUM,0.0,0.0,USDA_direct_medium
-myfcd_0123,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0124,MyFCD,,,,,,1.745,derived_imputed
+myfcd_0123,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0124,MyFCD,,,,,,4.4833,derived_imputed
 myfcd_0125,MyFCD,174133.0,"Beverages, coffee, instant, decaffeinated, powder",0.4891,MEDIUM,0.0,0.0,USDA_direct_medium
 myfcd_0126,MyFCD,174867.0,"Beverages, Malted drink mix, chocolate, powder, prepared with whole milk",0.5713,MEDIUM,26.0,26.0,USDA_direct_medium
-myfcd_0127,MyFCD,,,,,,24.7233,derived_imputed
+myfcd_0127,MyFCD,,,,,,103.9767,derived_imputed
 myfcd_0128,MyFCD,173230.0,"Beverages, tea, instant, unsweetened, powder",0.5376,MEDIUM,0.0,0.0,USDA_direct_medium
-myfcd_0129,MyFCD,,,,,,519.1183,derived_imputed
-myfcd_0130,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0129,MyFCD,,,,,,315.8567,derived_imputed
+myfcd_0130,MyFCD,,,,,,0.355,derived_imputed
 myfcd_0131,MyFCD,169044.0,"Beverages, Orange juice drink",0.8161,HIGH,2.0,2.0,USDA_direct_high
 myfcd_0132,MyFCD,169044.0,"Beverages, Orange juice drink",0.646,MEDIUM,2.0,2.0,USDA_direct_medium
 myfcd_0133,MyFCD,169044.0,"Beverages, Orange juice drink",0.7225,HIGH,2.0,2.0,USDA_direct_high
-myfcd_0134,MyFCD,,,,,,1.7717,derived_imputed
-myfcd_0135,MyFCD,,,,,,23.1467,derived_imputed
-myfcd_0136,MyFCD,,,,,,1.9517,derived_imputed
-myfcd_0137,MyFCD,,,,,,33.6917,derived_imputed
-myfcd_0138,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0139,MyFCD,,,,,,154.9533,derived_imputed
-myfcd_0140,MyFCD,,,,,,1.5117,derived_imputed
-myfcd_0141,MyFCD,,,,,,0.9233,derived_imputed
-myfcd_0142,MyFCD,,,,,,4.305,derived_imputed
+myfcd_0134,MyFCD,,,,,,1.97,derived_imputed
+myfcd_0135,MyFCD,,,,,,0.1467,derived_imputed
+myfcd_0136,MyFCD,,,,,,3.6233,derived_imputed
+myfcd_0137,MyFCD,,,,,,154.8567,derived_imputed
+myfcd_0138,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0139,MyFCD,,,,,,1459.175,derived_imputed
+myfcd_0140,MyFCD,,,,,,9.08,derived_imputed
+myfcd_0141,MyFCD,,,,,,1.3233,derived_imputed
+myfcd_0142,MyFCD,,,,,,3.3167,derived_imputed
 myfcd_0143,MyFCD,172879.0,"Sauce, plum, ready-to-serve",0.7339,HIGH,2.0,2.0,USDA_direct_high
 myfcd_0144,MyFCD,173471.0,Vanilla extract,0.463,MEDIUM,0.0,0.0,USDA_direct_medium
-myfcd_0145,MyFCD,,,,,,1.8517,derived_imputed
-myfcd_0146,MyFCD,,,,,,7.2533,derived_imputed
-myfcd_0147,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0148,MyFCD,,,,,,9.61,derived_imputed
+myfcd_0145,MyFCD,,,,,,1.8,derived_imputed
+myfcd_0146,MyFCD,,,,,,0.0433,derived_imputed
+myfcd_0147,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0148,MyFCD,,,,,,0.6017,derived_imputed
 myfcd_0149,MyFCD,,,,,,0.0,derived_imputed
-myfcd_0150,MyFCD,,,,,,0.0233,derived_imputed
-myfcd_0151,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0152,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0153,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0154,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0155,MyFCD,,,,,,162.4767,derived_imputed
-myfcd_0156,MyFCD,,,,,,162.65,derived_imputed
-myfcd_0157,MyFCD,,,,,,1.0933,derived_imputed
+myfcd_0150,MyFCD,,,,,,0.1517,derived_imputed
+myfcd_0151,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0152,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0153,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0154,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0155,MyFCD,,,,,,62.2317,derived_imputed
+myfcd_0156,MyFCD,,,,,,18.9717,derived_imputed
+myfcd_0157,MyFCD,,,,,,0.355,derived_imputed
 myfcd_0158,MyFCD,172706.0,"Cake, sponge, commercially prepared",0.5137,MEDIUM,44.0,44.0,USDA_direct_medium
-myfcd_0159,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0160,MyFCD,,,,,,15.67,derived_imputed
-myfcd_0161,MyFCD,,,,,,265.5283,derived_imputed
-myfcd_0162,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0163,MyFCD,,,,,,178.0583,derived_imputed
-myfcd_0164,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0165,MyFCD,,,,,,61.9133,derived_imputed
-myfcd_0166,MyFCD,,,,,,262.34,derived_imputed
-myfcd_0167,MyFCD,,,,,,6.8033,derived_imputed
-myfcd_0168,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0169,MyFCD,,,,,,264.5967,derived_imputed
+myfcd_0159,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0160,MyFCD,,,,,,56.595,derived_imputed
+myfcd_0161,MyFCD,,,,,,212.1767,derived_imputed
+myfcd_0162,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0163,MyFCD,,,,,,219.3583,derived_imputed
+myfcd_0164,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0165,MyFCD,,,,,,46.0933,derived_imputed
+myfcd_0166,MyFCD,,,,,,176.885,derived_imputed
+myfcd_0167,MyFCD,,,,,,0.0483,derived_imputed
+myfcd_0168,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0169,MyFCD,,,,,,165.3483,derived_imputed
 myfcd_0170,MyFCD,172699.0,"Cake, coffeecake, cheese",0.4055,MEDIUM,86.0,86.0,USDA_direct_medium
-myfcd_0171,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0172,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0173,MyFCD,,,,,,0.1583,derived_imputed
+myfcd_0171,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0172,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0173,MyFCD,,,,,,0.75,derived_imputed
 myfcd_0174,MyFCD,172754.0,"Danish pastry, cheese",0.8386,HIGH,35.0,35.0,USDA_direct_high
 myfcd_0175,MyFCD,172790.0,"Puff pastry, frozen, ready-to-bake",0.5749,MEDIUM,0.0,0.0,USDA_direct_medium
 myfcd_0176,MyFCD,172790.0,"Puff pastry, frozen, ready-to-bake",0.6123,MEDIUM,0.0,0.0,USDA_direct_medium
-myfcd_0177,MyFCD,,,,,,70.0383,derived_imputed
-myfcd_0178,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0179,MyFCD,,,,,,173.6,derived_imputed
-myfcd_0180,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0181,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0182,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0183,MyFCD,,,,,,0.17,derived_imputed
-myfcd_0184,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0185,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0186,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0187,MyFCD,,,,,,12.6617,derived_imputed
-myfcd_0188,MyFCD,,,,,,10.46,derived_imputed
-myfcd_0189,MyFCD,,,,,,543.2967,derived_imputed
-myfcd_0190,MyFCD,,,,,,9.6183,derived_imputed
-myfcd_0191,MyFCD,,,,,,6.585,derived_imputed
-myfcd_0192,MyFCD,,,,,,11.895,derived_imputed
-myfcd_0193,MyFCD,,,,,,10.5183,derived_imputed
-myfcd_0194,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0195,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0196,MyFCD,,,,,,0.0067,derived_imputed
-myfcd_0197,MyFCD,,,,,,107.5317,derived_imputed
-myfcd_0198,MyFCD,,,,,,147.07,derived_imputed
-myfcd_0199,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0200,MyFCD,,,,,,9.79,derived_imputed
-myfcd_0201,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0202,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0203,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0204,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0205,MyFCD,,,,,,0.0983,derived_imputed
-myfcd_0206,MyFCD,,,,,,1.175,derived_imputed
-myfcd_0207,MyFCD,,,,,,0.2117,derived_imputed
-myfcd_0208,MyFCD,,,,,,9.045,derived_imputed
-myfcd_0209,MyFCD,,,,,,0.1467,derived_imputed
-myfcd_0210,MyFCD,,,,,,0.0083,derived_imputed
-myfcd_0211,MyFCD,,,,,,65.2417,derived_imputed
-myfcd_0212,MyFCD,,,,,,7.08,derived_imputed
-myfcd_0213,MyFCD,,,,,,0.7817,derived_imputed
-myfcd_0214,MyFCD,,,,,,0.2083,derived_imputed
-myfcd_0215,MyFCD,,,,,,39.0267,derived_imputed
-myfcd_0216,MyFCD,,,,,,21.7467,derived_imputed
-myfcd_0217,MyFCD,,,,,,38.24,derived_imputed
-myfcd_0218,MyFCD,,,,,,302.1067,derived_imputed
-myfcd_0219,MyFCD,,,,,,18.4517,derived_imputed
-myfcd_0220,MyFCD,,,,,,1.7833,derived_imputed
-myfcd_0221,MyFCD,,,,,,82.5767,derived_imputed
-myfcd_0222,MyFCD,,,,,,143.915,derived_imputed
-myfcd_0223,MyFCD,,,,,,15.53,derived_imputed
-myfcd_0224,MyFCD,,,,,,67.8967,derived_imputed
+myfcd_0177,MyFCD,,,,,,0.235,derived_imputed
+myfcd_0178,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0179,MyFCD,,,,,,132.3467,derived_imputed
+myfcd_0180,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0181,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0182,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0183,MyFCD,,,,,,3.5817,derived_imputed
+myfcd_0184,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0185,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0186,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0187,MyFCD,,,,,,24.935,derived_imputed
+myfcd_0188,MyFCD,,,,,,5.41,derived_imputed
+myfcd_0189,MyFCD,,,,,,290.2717,derived_imputed
+myfcd_0190,MyFCD,,,,,,0.2417,derived_imputed
+myfcd_0191,MyFCD,,,,,,0.045,derived_imputed
+myfcd_0192,MyFCD,,,,,,0.0717,derived_imputed
+myfcd_0193,MyFCD,,,,,,0.0517,derived_imputed
+myfcd_0194,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0195,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0196,MyFCD,,,,,,4.4267,derived_imputed
+myfcd_0197,MyFCD,,,,,,119.9733,derived_imputed
+myfcd_0198,MyFCD,,,,,,245.1233,derived_imputed
+myfcd_0199,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0200,MyFCD,,,,,,7.205,derived_imputed
+myfcd_0201,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0202,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0203,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0204,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0205,MyFCD,,,,,,0.0,derived_imputed
+myfcd_0206,MyFCD,,,,,,0.2317,derived_imputed
+myfcd_0207,MyFCD,,,,,,5.345,derived_imputed
+myfcd_0208,MyFCD,,,,,,0.4483,derived_imputed
+myfcd_0209,MyFCD,,,,,,0.11,derived_imputed
+myfcd_0210,MyFCD,,,,,,0.16,derived_imputed
+myfcd_0211,MyFCD,,,,,,0.2683,derived_imputed
+myfcd_0212,MyFCD,,,,,,0.2167,derived_imputed
+myfcd_0213,MyFCD,,,,,,0.0933,derived_imputed
+myfcd_0214,MyFCD,,,,,,0.125,derived_imputed
+myfcd_0215,MyFCD,,,,,,4.5267,derived_imputed
+myfcd_0216,MyFCD,,,,,,7.4067,derived_imputed
+myfcd_0217,MyFCD,,,,,,71.775,derived_imputed
+myfcd_0218,MyFCD,,,,,,170.7117,derived_imputed
+myfcd_0219,MyFCD,,,,,,2.7367,derived_imputed
+myfcd_0220,MyFCD,,,,,,1.1033,derived_imputed
+myfcd_0221,MyFCD,,,,,,245.7967,derived_imputed
+myfcd_0222,MyFCD,,,,,,198.3967,derived_imputed
+myfcd_0223,MyFCD,,,,,,12.14,derived_imputed
+myfcd_0224,MyFCD,,,,,,289.095,derived_imputed
 myfcd_0225,MyFCD,169975.0,"Cabbage, raw",0.5503,MEDIUM,5.0,5.0,USDA_direct_medium
-myfcd_0226,MyFCD,,,,,,20.48,derived_imputed
-myfcd_0227,MyFCD,,,,,,134.5917,derived_imputed
+myfcd_0226,MyFCD,,,,,,97.0117,derived_imputed
+myfcd_0227,MyFCD,,,,,,31.435,derived_imputed
 myfcd_0228,MyFCD,168462.0,"Spinach, raw",0.439,MEDIUM,469.0,469.0,USDA_direct_medium
-myfcd_0229,MyFCD,,,,,,7.9467,derived_imputed
-myfcd_0230,MyFCD,,,,,,6.3433,derived_imputed
-myfcd_0231,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0232,MyFCD,,,,,,36.8083,derived_imputed
-myfcd_0233,MyFCD,,,,,,1.0933,derived_imputed
-myfcd_0234,MyFCD,,,,,,140.785,derived_imputed
+myfcd_0229,MyFCD,,,,,,0.2617,derived_imputed
+myfcd_0230,MyFCD,,,,,,9.275,derived_imputed
+myfcd_0231,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0232,MyFCD,,,,,,51.1983,derived_imputed
+myfcd_0233,MyFCD,,,,,,0.355,derived_imputed
+myfcd_0234,MyFCD,,,,,,250.2633,derived_imputed

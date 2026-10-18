@@ -33,7 +33,7 @@
 
 ## Nilai sumber yang dikosongkan
 
-Kolom berikut dianggap tidak terukur karena nilai sumbernya tidak andal (lihat UNRELIABLE_SOURCE_FIELDS di scripts/clean_common.py).
+Kolom berikut dianggap tidak terukur karena nilai sumbernya tidak andal (lihat UNRELIABLE_SOURCE_FIELDS dan UNRELIABLE_SOURCE_CELLS di scripts/clean_common.py).
 
 - copper_mg: 49 nilai dikosongkan
 - retinol_mcg: 38 nilai dikosongkan
