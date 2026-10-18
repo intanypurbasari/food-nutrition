@@ -1,4 +1,4 @@
-"""Export nutrition_repository_imputed.csv to a professionally formatted Excel (.xlsx) file."""
+"""Export the stacked (nutrition_repository_imputed) and integrated repositories to formatted Excel files."""
 
 from __future__ import annotations
 
@@ -9,8 +9,10 @@ from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 
 ROOT = Path(__file__).resolve().parents[1]
-CSV_PATH = ROOT / "data_processed" / "nutrition_repository_imputed.csv"
-EXCEL_PATH = ROOT / "data_processed" / "nutrition_repository_imputed.xlsx"
+EXPORTS = [
+    (ROOT / "data_processed" / "nutrition_repository_imputed.csv", ROOT / "data_processed" / "nutrition_repository_imputed.xlsx"),
+    (ROOT / "data_processed" / "nutrition_repository_integrated.csv", ROOT / "data_processed" / "nutrition_repository_integrated.xlsx"),
+]
 
 
 def style_sheet(ws, is_summary: bool = False) -> None:
@@ -61,6 +63,12 @@ def style_sheet(ws, is_summary: bool = False) -> None:
 
 
 def main() -> None:
+    for csv_path, excel_path in EXPORTS:
+        if csv_path.exists():
+            export(csv_path, excel_path)
+
+
+def export(CSV_PATH: Path, EXCEL_PATH: Path) -> None:
     print(f"[EXCEL] Loading {CSV_PATH.name}...")
     df = pd.read_csv(CSV_PATH)
 

@@ -63,6 +63,7 @@ def main() -> int:
                 ("run_integration", [python, "scripts/run_integration.py"]),
                 ("borrow_vitamin_a", [python, "scripts/borrow_vitamin_a.py"]),
                 ("fill_usda_nutrients", [python, "scripts/fill_usda_nutrients.py"]),
+                ("integrate_databases", [python, "scripts/integrate_databases.py"]),
                 ("export_evaluation_ready", [python, "scripts/export_evaluation_ready.py"]),
             ]
         )
