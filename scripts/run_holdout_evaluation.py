@@ -27,7 +27,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from config.imputation_settings import IMPUTATION_NUTRIENT_FIELDS, RANDOM_SEED
 from src.evaluation.holdout import HoldoutConfig, evaluate_source, summarise
 from src.imputation import io_utils
-from src.imputation.baselines import knn_impute, mean_impute, median_impute, mice_impute
+from src.imputation.baselines import group_median_impute, knn_impute, mean_impute, median_impute, mice_impute
 from src.imputation.cross_transfer import apply_fitted_imputer
 from src.imputation.missforest_imputer import fit_random_forest_imputer, missforest_impute
 
@@ -38,11 +38,12 @@ QUALITY_REPORT_PATH = ROOT / "reports" / "data_quality_report.json"
 BASE_METHODS = {
     "mean": mean_impute,
     "median": median_impute,
+    "group_median": group_median_impute,
     "knn": knn_impute,
     "mice": mice_impute,
     "missforest": missforest_impute,
 }
-METHOD_ORDER = ["mean", "median", "knn", "mice", "missforest", "crossdb"]
+METHOD_ORDER = ["mean", "median", "group_median", "knn", "mice", "missforest", "crossdb"]
 
 
 def _fmt(value: float) -> str:

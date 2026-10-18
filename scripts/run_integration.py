@@ -60,12 +60,13 @@ def write_summary_report(stats: dict[str, dict[str, int]], total_rows: int) -> N
         "- Per-nutrient cell resolution, routed via data_processed/availability_matrix.csv's strategi_imputasi.",
         "- resolved_count + unresolved_count always sums to total_rows for every nutrient (full accounting, no silent gaps).",
         "",
-        "| Nutrient | Strategy | Resolved (internal) | Resolved (cross-DB) | Resolved (USDA-borrow) | Unresolved |",
-        "|---|---|---|---|---|---|",
+        "| Nutrient | Strategy | Method TKPI | Method MyFCD | Resolved (internal) | Resolved (cross-DB) | Resolved (USDA-borrow) | Unresolved |",
+        "|---|---|---|---|---|---|---|---|",
     ]
     for nutrient, entry in stats.items():
         lines.append(
-            f"| {nutrient} | {entry['strategy']} | {entry['resolved_internal']} | "
+            f"| {nutrient} | {entry['strategy']} | {entry.get('methods', {}).get('TKPI', '')} | "
+            f"{entry.get('methods', {}).get('MyFCD', '')} | {entry['resolved_internal']} | "
             f"{entry['resolved_crossdb']} | {entry['resolved_usda_borrow']} | {entry['unresolved']} |"
         )
 
@@ -87,7 +88,9 @@ def write_summary_report(stats: dict[str, dict[str, int]], total_rows: int) -> N
 
 def main() -> int:
     tkpi_sources, myfcd_sources = load_all_sources()
-    integrated, stats = assemble_integrated(tkpi_sources, myfcd_sources)
+    selection = io_utils.load_method_selection()
+    print(f"[IMPUTE] method selection: {'data_processed/method_selection.csv' if selection is not None else 'none (availability_matrix routing)'}")
+    integrated, stats = assemble_integrated(tkpi_sources, myfcd_sources, selection)
 
     io_utils.write_output(integrated, NUTRITION_REPOSITORY_IMPUTED_PATH)
     write_summary_report(stats, total_rows=len(integrated))

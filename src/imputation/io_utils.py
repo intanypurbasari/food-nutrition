@@ -14,6 +14,7 @@ from config.imputation_settings import (
     MYFCD_ENRICHED_PATH,
     TKPI_ENRICHED_PATH,
     AVAILABILITY_MATRIX_PATH,
+    METHOD_SELECTION_PATH,
     TKPI_MYFCD_LINKS_MUTUAL_PATH,
     IMPUTATION_NUTRIENT_FIELDS,
 )
@@ -80,6 +81,27 @@ def columns_for_strategy(strategy: str) -> list[str]:
         if nutrient_strategy == strategy:
             matched.append(nutrient)
     return matched
+
+
+def observed_columns(df: pd.DataFrame) -> list[str]:
+    """NUTRIENT_FIELDS entries with at least one observed value in `df`.
+
+    Every Stage 3 method imputes this same column set per source, matching
+    the column set the hold-out evaluation scores the methods on, so the
+    method chosen per nutrient is used exactly as it was evaluated.
+    """
+    return [
+        column
+        for column in IMPUTATION_NUTRIENT_FIELDS
+        if column in df.columns and not df[column].apply(is_missing).all()
+    ]
+
+
+def load_method_selection() -> pd.DataFrame | None:
+    """method_selection.csv indexed by (source, nutrient), or None if it does not exist yet."""
+    if not METHOD_SELECTION_PATH.exists() or METHOD_SELECTION_PATH.stat().st_size == 0:
+        return None
+    return pd.read_csv(METHOD_SELECTION_PATH).set_index(["source", "nutrient"])
 
 
 def load_mutual_links() -> pd.DataFrame:

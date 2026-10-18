@@ -35,13 +35,30 @@ SUMMARY_PATH = ROOT / "reports" / "uncertainty_summary.csv"
 REPORT_PATH = ROOT / "reports" / "uncertainty_summary.md"
 
 
+def method_plan(frames: dict[str, pd.DataFrame]) -> dict[str, dict[str, str]]:
+    """source -> {nutrient: method}, from method_selection.csv (or the strategy routing if absent)."""
+    selection = io_utils.load_method_selection()
+    if selection is not None:
+        plan: dict[str, dict[str, str]] = {source: {} for source in frames}
+        for (source, nutrient), row in selection.iterrows():
+            plan[source][nutrient] = row["method"]
+        return plan
+    internal = io_utils.columns_for_strategy("Imputasi internal per basis")
+    crossdb = io_utils.columns_for_strategy("Cross-DB transfer / USDA")
+    return {
+        "TKPI": {n: "missforest" for n in internal + crossdb},
+        "MyFCD": {**{n: "missforest" for n in internal}, **{n: "crossdb" for n in crossdb}},
+    }
+
+
 def write_report(summary: pd.DataFrame, config: BootstrapConfig, threshold: float, minutes: float | None) -> None:
     runtime = "" if minutes is None else f"; waktu {minutes:.0f} menit"
     lines = [
         "# Bootstrap Uncertainty",
         "",
         f"- B = {config.n_boot} resample baris (dengan pengembalian) per sumber, seed {config.seed}+b{runtime}.",
-        "- Tiap replikasi melatih ulang MissForest pada resample lalu mengimputasi data asli, jadi tiap sel yang aslinya kosong mendapat B prediksi.",
+        "- Tiap replikasi melatih ulang metode yang dipakai Tahap 3 untuk nutrisi itu (data_processed/method_selection.csv) pada resample, "
+        "lalu mengimputasi data asli; tiap sel yang aslinya kosong mendapat B prediksi.",
         "- relative_sd = sd bootstrap / sebaran nilai terukur nutrisi itu di sumber yang sama. Sebaran diukur dengan IQR/1,349 "
         "(setara sd untuk data normal, tetapi tahan outlier); bila IQR = 0, dipakai sd.",
         "- Pasangan dengan kurang dari 5 sel imputasi tidak ditandai.",
@@ -76,15 +93,15 @@ def main() -> int:
 
     tkpi = io_utils.load_enriched("TKPI")
     myfcd = io_utils.load_enriched("MyFCD")
-    internal = io_utils.columns_for_strategy("Imputasi internal per basis")
-    crossdb = io_utils.columns_for_strategy("Cross-DB transfer / USDA")
+    frames = {"TKPI": tkpi, "MyFCD": myfcd}
+    plan = method_plan(frames)
 
     if args.summary_only:
         cells = pd.read_csv(CELLS_PATH).drop(columns=["relative_sd", "high_uncertainty_nutrient"], errors="ignore")
         minutes = None
     else:
         start = time.time()
-        cells = run_bootstrap(tkpi, myfcd, internal + crossdb, internal, crossdb, config)
+        cells = run_bootstrap(frames, plan, config)
         minutes = (time.time() - start) / 60
         repository = pd.read_csv(NUTRITION_REPOSITORY_IMPUTED_PATH).set_index("food_id")
         cells.insert(

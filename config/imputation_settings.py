@@ -12,6 +12,9 @@ RANDOM_SEED = 42
 TKPI_ENRICHED_PATH = ROOT / "data_processed" / "tkpi_enriched.csv"
 MYFCD_ENRICHED_PATH = ROOT / "data_processed" / "myfcd_enriched.csv"
 AVAILABILITY_MATRIX_PATH = ROOT / "data_processed" / "availability_matrix.csv"
+# Imputation method per source x nutrient, chosen from the hold-out evaluation
+# by scripts/select_imputation_methods.py.
+METHOD_SELECTION_PATH = ROOT / "data_processed" / "method_selection.csv"
 TKPI_MYFCD_LINKS_MUTUAL_PATH = ROOT / "data_processed" / "tkpi_myfcd_links_mutual.csv"
 NUTRITION_REPOSITORY_SAMPLE_PATH = ROOT / "data_processed" / "nutrition_repository_imputed.csv"
 
@@ -19,7 +22,7 @@ NUTRITION_REPOSITORY_SAMPLE_PATH = ROOT / "data_processed" / "nutrition_reposito
 # Per-method suffixed paths (mean/median/knn/mice each write their own file,
 # so Milestone 9's evaluation export can compare methods independently).
 # Supersedes the Milestone 3 single shared filename below.
-BASELINE_METHODS = ["mean", "median", "knn", "mice"]
+BASELINE_METHODS = ["mean", "median", "group_median", "knn", "mice"]
 TKPI_IMPUTED_BASELINE_PATHS = {
     method: ROOT / "data_processed" / f"tkpi_imputed_baseline_{method}.csv" for method in BASELINE_METHODS
 }

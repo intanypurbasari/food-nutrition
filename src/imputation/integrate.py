@@ -41,10 +41,23 @@ def _missing_count(series: pd.Series) -> int:
     return int(series.apply(is_missing).sum())
 
 
+def _method_frame(sources: dict[str, pd.DataFrame], method: str) -> pd.DataFrame:
+    key = method if method in ("missforest", "crossdb") else f"baseline_{method}"
+    if key not in sources:
+        raise KeyError(f"No output loaded for method '{method}'")
+    return sources[key]
+
+
 def _assemble_source_nutrients(
-    source_name: str, sources: dict[str, pd.DataFrame], stats: dict[str, dict[str, int]]
+    source_name: str, sources: dict[str, pd.DataFrame], stats: dict[str, dict[str, int]],
+    selection: pd.DataFrame | None = None,
 ) -> pd.DataFrame:
-    """Build the nutrient columns for one source (TKPI or MyFCD), updating `stats` in place."""
+    """Build the nutrient columns for one source (TKPI or MyFCD), updating `stats` in place.
+
+    With a method selection (data_processed/method_selection.csv) each
+    nutrient takes the chosen method's output; nutrients the selection does
+    not list fall back to the availability-matrix routing below.
+    """
     base = sources["enriched"].copy()
     internal = sources["missforest"]
     crossdb = sources.get("crossdb")  # only present for MyFCD
@@ -52,8 +65,17 @@ def _assemble_source_nutrients(
     for nutrient in IMPUTATION_NUTRIENT_FIELDS:
         entry = stats.setdefault(
             nutrient,
-            {"strategy": None, "resolved_internal": 0, "resolved_crossdb": 0, "resolved_usda_borrow": 0, "unresolved": 0},
+            {"strategy": None, "resolved_internal": 0, "resolved_crossdb": 0, "resolved_usda_borrow": 0, "unresolved": 0,
+             "methods": {}},
         )
+
+        if selection is not None and (source_name, nutrient) in selection.index:
+            method = selection.loc[(source_name, nutrient), "method"]
+            base[nutrient] = _method_frame(sources, method)[nutrient]
+            entry["strategy"] = entry["strategy"] or "Dipilih per nutrisi (method_selection.csv)"
+            entry["methods"][source_name] = method
+            entry["resolved_crossdb" if method == "crossdb" else "resolved_internal"] += len(base)
+            continue
 
         try:
             strategy = io_utils.get_strategy(nutrient)
@@ -88,7 +110,8 @@ def _assemble_source_nutrients(
 
 
 def assemble_integrated(
-    tkpi_sources: dict[str, pd.DataFrame], myfcd_sources: dict[str, pd.DataFrame]
+    tkpi_sources: dict[str, pd.DataFrame], myfcd_sources: dict[str, pd.DataFrame],
+    selection: pd.DataFrame | None = None,
 ) -> tuple[pd.DataFrame, dict[str, dict[str, int]]]:
     """Assemble the integrated dataset and a per-nutrient resolution-stats dict.
 
@@ -99,8 +122,8 @@ def assemble_integrated(
     """
     stats: dict[str, dict[str, int]] = {}
 
-    tkpi_assembled = _assemble_source_nutrients("TKPI", tkpi_sources, stats)
-    myfcd_assembled = _assemble_source_nutrients("MyFCD", myfcd_sources, stats)
+    tkpi_assembled = _assemble_source_nutrients("TKPI", tkpi_sources, stats, selection)
+    myfcd_assembled = _assemble_source_nutrients("MyFCD", myfcd_sources, stats, selection)
 
     combined = pd.concat([tkpi_assembled, myfcd_assembled], ignore_index=True)
 

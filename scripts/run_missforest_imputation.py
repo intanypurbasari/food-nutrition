@@ -20,26 +20,16 @@ OUTPUT_PATHS = {"TKPI": TKPI_IMPUTED_MISSFOREST_PATH, "MyFCD": MYFCD_IMPUTED_MIS
 
 
 def run_within_database() -> None:
-    internal_columns = io_utils.columns_for_strategy("Imputasi internal per basis")
-    crossdb_columns = io_utils.columns_for_strategy("Cross-DB transfer / USDA")
-
-    # TKPI is the cross-DB *training* source and has partial real data for
-    # crossdb-strategy nutrients (e.g. carotene_total_mcg, 53% filled) - its
-    # own gaps in those columns must be closed here via within-database
-    # MissForest, same as the internal-strategy columns. MyFCD has 0% real
-    # data for those columns and must rely purely on cross_db_transfer_impute
-    # (Milestone 7) - including them here would let MissForest "impute" a
-    # column with zero observed values, which is meaningless.
-    target_columns_by_source = {
-        "TKPI": internal_columns + crossdb_columns,
-        "MyFCD": internal_columns,
-    }
-
+    # Each source imputes every column it has observed values for (the same
+    # set the hold-out evaluation scores), so MissForest can be chosen for any
+    # of them in data_processed/method_selection.csv. Columns with no observed
+    # value in a source (e.g. MyFCD carotene_total_mcg) are left to the
+    # cross-DB transfer - MissForest cannot "impute" a column it never sees.
     for source in ["TKPI", "MyFCD"]:
-        target_columns = target_columns_by_source[source]
+        df = io_utils.load_enriched(source)
+        target_columns = io_utils.observed_columns(df)
         print(f"[IMPUTE] missforest (within-database) {source} target columns ({len(target_columns)}): {target_columns}")
 
-        df = io_utils.load_enriched(source)
         imputed = missforest_impute(df, target_columns)
         print(f"[IMPUTE] {source}: applied missforest_impute")
 
@@ -51,7 +41,9 @@ def run_within_database() -> None:
 
 
 def run_cross_database_transfer() -> None:
-    target_columns = io_utils.columns_for_strategy("Cross-DB transfer / USDA")
+    # Transfer every nutrient TKPI observes, so the transfer can be chosen per
+    # nutrient wherever it beats MyFCD's own methods in the hold-out evaluation.
+    target_columns = io_utils.observed_columns(io_utils.load_enriched("TKPI"))
     print(f"[IMPUTE] missforest (cross-DB transfer, TKPI->MyFCD) target columns: {target_columns}")
 
     train_df = io_utils.load_enriched("TKPI")
