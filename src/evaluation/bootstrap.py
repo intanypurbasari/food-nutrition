@@ -23,7 +23,7 @@ from sklearn.experimental import enable_iterative_imputer  # noqa: F401  (requir
 from sklearn.impute import IterativeImputer, KNNImputer
 
 from config.imputation_settings import IMPUTATION_NUTRIENT_FIELDS
-from src.imputation.baselines import MICE_MAX_ITER
+from src.imputation.baselines import GROUP_COLUMN, MICE_MAX_ITER, group_medians
 
 from src.cleaning.normalizers import is_missing
 from src.imputation.cross_transfer import apply_fitted_imputer
@@ -65,6 +65,12 @@ def _fit_apply(method: str, train: pd.DataFrame, apply: pd.DataFrame, columns: l
     """
     usable = _observed(train, columns)
     result = apply.copy()
+    if method == "group_median":
+        for column in usable:
+            medians, overall = group_medians(train, column)
+            groups = apply[GROUP_COLUMN] if GROUP_COLUMN in apply.columns else pd.Series(None, index=apply.index)
+            result[column] = numeric(apply[column]).fillna(groups.map(medians).astype(float).fillna(overall))
+        return result
     if method in ("mean", "median"):
         for column in usable:
             values = numeric(train[column])
@@ -138,7 +144,7 @@ def run_bootstrap(
     """Long table of per-cell bootstrap statistics for every originally missing cell.
 
     `plan` maps source -> {nutrient: method}; methods are missforest, crossdb
-    (TKPI fit applied to that source), mice, knn, median and mean. Baseline
+    (TKPI fit applied to that source), mice, knn, group_median, median and mean. Baseline
     methods use the source's observed columns as their feature space, exactly
     as in Stage 3.
     """

@@ -51,3 +51,20 @@ def test_mice_impute_is_reproducible_given_fixed_seed():
     result_b = mice_impute(df, columns, random_state=42)
     pd.testing.assert_frame_equal(result_a[columns], result_b[columns])
     assert result_a[columns].isna().sum().sum() == 0
+
+
+def test_group_median_uses_the_food_group_and_falls_back_to_overall_median():
+    import numpy as np
+
+    from src.imputation.baselines import group_median_impute
+
+    df = pd.DataFrame(
+        {
+            "category_normalized": ["daging"] * 4 + ["sayuran"] * 4 + ["bumbu"] * 2,
+            "retinol_mcg": [100.0, 120.0, 140.0, np.nan, 0.0, 0.0, 2.0, np.nan, 5.0, np.nan],
+        }
+    )
+    result = group_median_impute(df, ["retinol_mcg"])
+    assert result.loc[3, "retinol_mcg"] == 120.0  # meat median
+    assert result.loc[7, "retinol_mcg"] == 0.0  # vegetable median
+    assert result.loc[9, "retinol_mcg"] == df["retinol_mcg"].median()  # bumbu has < 3 observed

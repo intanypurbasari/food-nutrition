@@ -54,6 +54,39 @@ def median_impute(df: pd.DataFrame, columns: list[str]) -> pd.DataFrame:
     return result
 
 
+GROUP_COLUMN = "category_normalized"
+MIN_GROUP_OBSERVED = 3
+
+
+def group_medians(train: pd.DataFrame, column: str, min_group: int = MIN_GROUP_OBSERVED) -> tuple[dict, float]:
+    """Per food-group medians of `column` (groups with >= min_group observed values) and the overall median."""
+    values = _to_numeric_with_missing(train[column])
+    groups = train[GROUP_COLUMN] if GROUP_COLUMN in train.columns else pd.Series(None, index=train.index)
+    by_group = values.groupby(groups).agg(["median", "count"])
+    medians = by_group.loc[by_group["count"] >= min_group, "median"].to_dict()
+    return medians, values.median()
+
+
+def group_median_impute(df: pd.DataFrame, columns: list[str], min_group: int = MIN_GROUP_OBSERVED) -> pd.DataFrame:
+    """Fill missing values in `columns` with the median of the food's own group (category_normalized).
+
+    Groups with fewer than `min_group` observed values for a column fall back
+    to the column's overall median. Unlike plain median imputation this keeps
+    between-group differences, e.g. retinol for meat versus vegetables. Only
+    touches `columns`; must be called separately per source.
+    """
+    result = df.copy()
+    for column in columns:
+        if column not in result.columns:
+            continue
+        medians, overall = group_medians(df, column, min_group)
+        numeric = _to_numeric_with_missing(result[column])
+        groups = result[GROUP_COLUMN] if GROUP_COLUMN in result.columns else pd.Series(None, index=result.index)
+        fill = groups.map(medians).astype(float).fillna(overall)
+        result[column] = numeric.fillna(fill)
+    return result
+
+
 def knn_impute(df: pd.DataFrame, columns: list[str], n_neighbors: int = 5) -> pd.DataFrame:
     """Fill missing values in `columns` using multivariate KNN imputation.
 

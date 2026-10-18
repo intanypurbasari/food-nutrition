@@ -7,6 +7,7 @@ bootstrap use instead of the single-method routing.
 Rule
 ----
 1. Candidates are the methods scored for that source x nutrient (mean, median,
+   median per food group,
    KNN, MICE, MissForest; for MyFCD also the cross-DB transfer from TKPI).
 2. Every method whose pooled nRMSE is within TOLERANCE of the lowest counts as
    tied. Among tied methods the first in PREFERENCE wins: multivariate methods
@@ -39,7 +40,7 @@ HOLDOUT_SUMMARY_PATH = ROOT / "reports" / "holdout_evaluation.csv"
 REPORT_PATH = ROOT / "reports" / "method_selection.md"
 
 TOLERANCE = 0.02
-PREFERENCE = ["missforest", "crossdb", "mice", "knn", "median", "mean"]
+PREFERENCE = ["missforest", "crossdb", "mice", "knn", "group_median", "median", "mean"]
 DEFAULT_METHOD = "missforest"
 
 

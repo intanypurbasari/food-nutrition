@@ -22,7 +22,7 @@ NUTRITION_REPOSITORY_SAMPLE_PATH = ROOT / "data_processed" / "nutrition_reposito
 # Per-method suffixed paths (mean/median/knn/mice each write their own file,
 # so Milestone 9's evaluation export can compare methods independently).
 # Supersedes the Milestone 3 single shared filename below.
-BASELINE_METHODS = ["mean", "median", "knn", "mice"]
+BASELINE_METHODS = ["mean", "median", "group_median", "knn", "mice"]
 TKPI_IMPUTED_BASELINE_PATHS = {
     method: ROOT / "data_processed" / f"tkpi_imputed_baseline_{method}.csv" for method in BASELINE_METHODS
 }
