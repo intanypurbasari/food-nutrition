@@ -24,11 +24,12 @@ def main() -> int:
 
     methods_to_run = [args.method] if args.method else list(METHODS)
 
-    target_columns = io_utils.columns_for_strategy("Imputasi internal per basis")
-    print(f"[IMPUTE] baseline target columns ({len(target_columns)}): {target_columns}")
-
     for source in ["TKPI", "MyFCD"]:
         raw_df = io_utils.load_enriched(source)
+        # Every observed column, so any method can be chosen per nutrient
+        # (data_processed/method_selection.csv) on the column set it was evaluated on.
+        target_columns = io_utils.observed_columns(raw_df)
+        print(f"[IMPUTE] baseline {source} target columns ({len(target_columns)}): {target_columns}")
         for method_name in methods_to_run:
             df = METHODS[method_name](raw_df, target_columns)
             print(f"[IMPUTE] {source}: applied {method_name}_impute")

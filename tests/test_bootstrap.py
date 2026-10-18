@@ -17,14 +17,17 @@ def _load(name: str) -> pd.DataFrame:
 def test_bootstrap_covers_every_missing_cell_with_an_interval():
     tkpi = _load("sample_fixture_enriched_tkpi.csv")
     myfcd = _load("sample_fixture_enriched_myfcd.csv")
-    cells = run_bootstrap(
-        tkpi, myfcd, INTERNAL + ["carotene_total_mcg"], INTERNAL, ["carotene_total_mcg"],
-        BootstrapConfig(n_boot=3, seed=1, n_jobs=1),
-    )
+    plan = {
+        "TKPI": {**{n: "missforest" for n in INTERNAL}, "carotene_total_mcg": "mice"},
+        "MyFCD": {"water_g": "median", "iron_mg": "knn", "calcium_mg": "mean", "phosphorus_mg": "missforest",
+                  "potassium_mg": "mice", "carotene_total_mcg": "crossdb"},
+    }
+    cells = run_bootstrap({"TKPI": tkpi, "MyFCD": myfcd}, plan, BootstrapConfig(n_boot=3, seed=1, n_jobs=1))
     for source, frame, columns in [("TKPI", tkpi, INTERNAL + ["carotene_total_mcg"]), ("MyFCD", myfcd, INTERNAL + ["carotene_total_mcg"])]:
         expected = int(frame[columns].isna().sum().sum())
         assert (cells["source"] == source).sum() == expected
-    assert set(cells.loc[cells["nutrient"] == "carotene_total_mcg", "method"]) <= {"crossdb", "missforest"}
+    assert set(cells.loc[(cells["source"] == "MyFCD") & (cells["nutrient"] == "carotene_total_mcg"), "method"]) == {"crossdb"}
+    assert set(cells["method"]) == {"missforest", "mice", "median", "knn", "mean", "crossdb"}
     filled = cells[cells["n_boot"] > 0]
     assert (filled["ci_low"] <= filled["ci_high"]).all()
 

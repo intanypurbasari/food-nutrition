@@ -12,6 +12,9 @@ RANDOM_SEED = 42
 TKPI_ENRICHED_PATH = ROOT / "data_processed" / "tkpi_enriched.csv"
 MYFCD_ENRICHED_PATH = ROOT / "data_processed" / "myfcd_enriched.csv"
 AVAILABILITY_MATRIX_PATH = ROOT / "data_processed" / "availability_matrix.csv"
+# Imputation method per source x nutrient, chosen from the hold-out evaluation
+# by scripts/select_imputation_methods.py.
+METHOD_SELECTION_PATH = ROOT / "data_processed" / "method_selection.csv"
 TKPI_MYFCD_LINKS_MUTUAL_PATH = ROOT / "data_processed" / "tkpi_myfcd_links_mutual.csv"
 NUTRITION_REPOSITORY_SAMPLE_PATH = ROOT / "data_processed" / "nutrition_repository_imputed.csv"
 

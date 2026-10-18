@@ -90,3 +90,20 @@ def test_full_accounting_sums_to_total_rows_for_every_nutrient():
     for nutrient, entry in stats.items():
         total = entry["resolved_internal"] + entry["resolved_crossdb"] + entry["resolved_usda_borrow"] + entry["unresolved"]
         assert total == total_rows, f"{nutrient}: {entry}"
+
+
+def test_method_selection_overrides_strategy_routing():
+    tkpi_sources, myfcd_sources = _build_sources()
+    myfcd_sources["baseline_median"] = myfcd_sources["enriched"].copy()
+    myfcd_sources["baseline_median"]["iron_mg"] = 123.0
+    selection = pd.DataFrame(
+        [{"source": "MyFCD", "nutrient": "iron_mg", "method": "median"}]
+    ).set_index(["source", "nutrient"])
+
+    integrated, stats = assemble_integrated(tkpi_sources, myfcd_sources, selection)
+
+    myfcd_rows = integrated[integrated["source"] == "MyFCD"]
+    assert (myfcd_rows["iron_mg"] == 123.0).all()
+    assert stats["iron_mg"]["methods"] == {"MyFCD": "median"}
+    # nutrients not in the selection keep the availability-matrix routing
+    assert (myfcd_rows["carotene_total_mcg"] == 999.0).all()
