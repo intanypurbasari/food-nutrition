@@ -32,6 +32,8 @@ MYFCD_IMPUTED_BASELINE_PATHS = {
 
 # --- MissForest outputs (Milestones 6-7) ---
 TKPI_IMPUTED_MISSFOREST_PATH = ROOT / "data_processed" / "tkpi_imputed_missforest.csv"
+# MissForest with missingness-indicator features (TKPI only, per the Stage 3 design).
+TKPI_IMPUTED_MISSFOREST_IND_PATH = ROOT / "data_processed" / "tkpi_imputed_missforest_ind.csv"
 MYFCD_IMPUTED_MISSFOREST_PATH = ROOT / "data_processed" / "myfcd_imputed_missforest.csv"
 MYFCD_IMPUTED_CROSSDB_PATH = ROOT / "data_processed" / "myfcd_imputed_crossdb.csv"
 

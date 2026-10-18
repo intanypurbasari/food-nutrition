@@ -14,6 +14,7 @@ from config.imputation_settings import (
     MYFCD_IMPUTED_MISSFOREST_PATH,
     NUTRITION_REPOSITORY_IMPUTED_PATH,
     TKPI_IMPUTED_BASELINE_PATHS,
+    TKPI_IMPUTED_MISSFOREST_IND_PATH,
     TKPI_IMPUTED_MISSFOREST_PATH,
 )
 from src.imputation import io_utils
@@ -37,6 +38,7 @@ def load_all_sources() -> tuple[dict[str, pd.DataFrame], dict[str, pd.DataFrame]
     tkpi_sources: dict[str, pd.DataFrame] = {
         "enriched": io_utils.load_enriched("TKPI"),
         "missforest": _load_required_csv("tkpi_missforest", TKPI_IMPUTED_MISSFOREST_PATH),
+        "missforest_ind": _load_required_csv("tkpi_missforest_ind", TKPI_IMPUTED_MISSFOREST_IND_PATH),
     }
     for method, path in TKPI_IMPUTED_BASELINE_PATHS.items():
         tkpi_sources[f"baseline_{method}"] = _load_required_csv(f"tkpi_baseline_{method}", path)

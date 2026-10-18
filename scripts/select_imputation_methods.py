@@ -40,7 +40,8 @@ HOLDOUT_SUMMARY_PATH = ROOT / "reports" / "holdout_evaluation.csv"
 REPORT_PATH = ROOT / "reports" / "method_selection.md"
 
 TOLERANCE = 0.02
-PREFERENCE = ["missforest", "crossdb", "mice", "knn", "group_median", "median", "mean"]
+# Ties go to the simpler variant: indicators must earn their place.
+PREFERENCE = ["missforest", "missforest_ind", "crossdb", "mice", "knn", "group_median", "median", "mean"]
 DEFAULT_METHOD = "missforest"
 
 

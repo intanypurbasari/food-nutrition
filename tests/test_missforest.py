@@ -36,3 +36,17 @@ def test_cross_db_transfer_fills_myfcd_target_without_mutating_tkpi():
     assert result["carotene_total_mcg"].isna().sum() == 0
     assert len(result) == len(apply_df)
     pd.testing.assert_frame_equal(train_df, train_df_before)
+
+
+def test_missing_indicators_are_used_as_predictors():
+    from src.imputation.missforest_imputer import INDICATOR_PREFIX, fit_random_forest_imputer
+
+    df = _load(TKPI_FIXTURE)
+    imputer = fit_random_forest_imputer(df, random_state=42, missing_indicators=True)
+    indicators = [c for c in imputer.feature_names_in_stage3_ if c.startswith(INDICATOR_PREFIX)]
+    assert indicators, "columns with missing values should get an indicator feature"
+    assert all(df[c[len(INDICATOR_PREFIX):]].isna().any() for c in indicators)
+
+    result = missforest_impute(df, INTERNAL_COLUMNS, random_state=42, missing_indicators=True)
+    assert result[INTERNAL_COLUMNS].isna().sum().sum() == 0
+    assert not any(c.startswith(INDICATOR_PREFIX) for c in result.columns)
