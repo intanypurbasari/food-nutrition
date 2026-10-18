@@ -2,7 +2,7 @@
 
 Sumber: `reports/holdout_evaluation.csv` (nRMSE gabungan seluruh sel hold-out).
 
-1. Metode dengan nRMSE terendah dipilih. Metode yang selisihnya <= 0.02 dianggap setara; di antara yang setara diutamakan missforest > crossdb > mice > knn > group_median > median > mean.
+1. Metode dengan nRMSE terendah dipilih. Metode yang selisihnya <= 0.02 dianggap setara; di antara yang setara diutamakan missforest > missforest_ind > crossdb > mice > knn > group_median > median > mean.
 2. Nutrisi tanpa nilai terukur di MyFCD memakai cross-DB transfer dari TKPI.
 3. Nutrisi lain tanpa skor hold-out memakai MissForest (bawaan Tahap 3).
 
@@ -19,20 +19,20 @@ Sumber: `reports/holdout_evaluation.csv` (nRMSE gabungan seluruh sel hold-out).
 | ash_g | **missforest** | 1.015 | 1.015 | 1146 | selisih <= 0.02 dari group_median; diutamakan metode multivariat |
 | calcium_mg | **missforest** | 0.724 | 0.724 | 1106 | nRMSE terendah |
 | phosphorus_mg | **missforest** | 0.681 | 0.681 | 1106 | nRMSE terendah |
-| iron_mg | **missforest** | 0.917 | 0.917 | 1103 | nRMSE terendah |
+| iron_mg | **missforest** | 0.917 | 0.917 | 1103 | selisih <= 0.02 dari missforest_ind; diutamakan metode multivariat |
 | sodium_mg | **group_median** | 0.993 | 1.204 | 863 | nRMSE terendah |
 | potassium_mg | **missforest** | 0.851 | 0.851 | 822 | nRMSE terendah |
 | copper_mg | **missforest** | 0.960 | 0.960 | 793 | nRMSE terendah |
 | zinc_mg | **group_median** | 0.960 | 1.076 | 798 | nRMSE terendah |
 | retinol_mcg | **group_median** | 1.002 | 6.101 | 541 | nRMSE terendah |
 | beta_carotene_mcg | **group_median** | 1.007 | 1.159 | 679 | selisih <= 0.02 dari mean; diutamakan metode multivariat |
-| carotene_total_mcg | **knn** | 0.992 | 1.015 | 607 | nRMSE terendah |
+| carotene_total_mcg | **missforest_ind** | 1.010 | 1.015 | 607 | selisih <= 0.02 dari knn; diutamakan metode multivariat |
 | vitamin_b1_mg | **group_median** | 0.997 | 23.162 | 1058 | nRMSE terendah |
 | vitamin_b2_mg | **knn** | 1.021 | 1.080 | 796 | selisih <= 0.02 dari mean; diutamakan metode multivariat |
-| niacin_mg | **missforest** | 1.002 | 1.002 | 807 | selisih <= 0.02 dari mean; diutamakan metode multivariat |
-| vitamin_c_mg | **missforest** | 0.906 | 0.906 | 857 | nRMSE terendah |
+| niacin_mg | **missforest** | 1.002 | 1.002 | 807 | selisih <= 0.02 dari missforest_ind; diutamakan metode multivariat |
+| vitamin_c_mg | **missforest_ind** | 0.872 | 0.906 | 857 | nRMSE terendah |
 
-Jumlah nutrisi per metode: missforest 13, group_median 5, knn 2, mice 1
+Jumlah nutrisi per metode: missforest 12, group_median 5, missforest_ind 2, mice 1, knn 1
 
 ## MyFCD
 

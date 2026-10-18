@@ -1,6 +1,6 @@
 # Bootstrap Uncertainty
 
-- B = 50 resample baris (dengan pengembalian) per sumber, seed 42+b; waktu 18 menit.
+- B = 50 resample baris (dengan pengembalian) per sumber, seed 42+b; waktu 44 menit.
 - Tiap replikasi melatih ulang metode yang dipakai Tahap 3 untuk nutrisi itu (data_processed/method_selection.csv) pada resample, lalu mengimputasi data asli; tiap sel yang aslinya kosong mendapat B prediksi.
 - relative_sd = sd bootstrap / sebaran nilai terukur nutrisi itu di sumber yang sama. Sebaran diukur dengan IQR/1,349 (setara sd untuk data normal, tetapi tahan outlier); bila IQR = 0, dipakai sd.
 - Pasangan dengan kurang dari 5 sel imputasi tidak ditandai.
@@ -8,9 +8,9 @@
 
 | Sumber | Nutrisi | Metode | n sel imputasi | median sd | median lebar CI 95% | median relative_sd | p90 relative_sd | Tanda |
 |---|---|---|---|---|---|---|---|---|
-| TKPI | carotene_total_mcg | knn | 539 | 602 | 1.96e+03 | 0.868 | 2.278 | ⚠️ tinggi |
+| TKPI | carotene_total_mcg | missforest_ind | 539 | 1.35e+03 | 4.44e+03 | 1.945 | 6.573 | ⚠️ tinggi |
+| TKPI | vitamin_c_mg | missforest_ind | 289 | 7.53 | 21.1 | 0.924 | 2.964 | ⚠️ tinggi |
 | TKPI | copper_mg | missforest | 353 | 0.127 | 0.406 | 0.591 | 2.446 | ⚠️ tinggi |
-| TKPI | vitamin_c_mg | missforest | 289 | 4.71 | 15.3 | 0.578 | 2.266 | ⚠️ tinggi |
 | TKPI | vitamin_b2_mg | knn | 350 | 0.0645 | 0.23 | 0.511 | 1.382 | ⚠️ tinggi |
 | TKPI | niacin_mg | missforest | 339 | 0.687 | 2.47 | 0.488 | 1.891 |  |
 | TKPI | fiber_g | missforest | 221 | 0.97 | 3.29 | 0.397 | 1.300 |  |
