@@ -52,3 +52,14 @@ def test_tkpi_copper_unit_error_is_divided_by_1000_and_noted():
     assert df.loc[1, "copper_mg"] == 9.5 and df.loc[2, "copper_mg"] == 0.2
     assert len(summary["unit_corrections"]) == 1
     assert [item["food_name_original"] for item in summary["review_values"]] == ["Hati"]
+
+
+def test_impossible_source_cells_are_blanked_by_food_code():
+    raw = pd.DataFrame(
+        [{"kode_pangan": "CP006", "food_name_original": "Kacang kedelai, goreng", "source": "TKPI",
+          "calcium_mg": 296, "sodium_mg": 3492, "potassium_mg": 11890, "copper_mg": 26.3, "zinc_mg": 60.0}]
+    )
+    df, summary = clean_dataframe(raw, "TKPI", "tkpi")
+    assert df.loc[0, ["sodium_mg", "potassium_mg", "copper_mg", "zinc_mg"]].isna().all()
+    assert df.loc[0, "calcium_mg"] == 296
+    assert summary["unit_corrections"] == []  # blanked, not divided by 1000

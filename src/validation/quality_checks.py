@@ -14,6 +14,11 @@ REQUIRED_FIELDS = ["food_id", "food_name_original", "source", "unit_basis"]
 MINERAL_FIELDS_MG = ["calcium_mg", "phosphorus_mg", "iron_mg", "sodium_mg", "potassium_mg", "copper_mg", "zinc_mg"]
 # Per 100 g bahan, total mineral tidak mungkin melebihi 100 g.
 MAX_MINERAL_TOTAL_G = 100.0
+# Minerals are part of ash, so their sum cannot exceed it (FAO/INFOODS data
+# checking guidelines). TKPI ash values are often slightly inconsistent, so
+# only gross violations are flagged.
+ASH_EXCESS_RATIO = 2.0
+ASH_EXCESS_MIN_G = 1.0
 
 
 def _is_numeric_or_missing(value: Any) -> bool:
@@ -67,6 +72,26 @@ def validate_dataframe(df: pd.DataFrame, source_name: str) -> dict[str, Any]:
                     "food_name_original": row.get("food_name_original"),
                     "field": "mineral_total_g",
                     "value": round(mineral_total_g, 3),
+                }
+            )
+
+        ash = row.get("ash_g") if "ash_g" in df.columns else None
+        if (
+            mineral_total_g <= MAX_MINERAL_TOTAL_G
+            and _is_numeric_or_missing(ash)
+            and not is_missing(ash)
+            and mineral_total_g > ASH_EXCESS_RATIO * float(ash)
+            and mineral_total_g - float(ash) > ASH_EXCESS_MIN_G
+        ):
+            warnings.append(
+                {
+                    "row": int(index),
+                    "type": "outlier_minerals_exceed_ash",
+                    "food_id": row.get("food_id"),
+                    "food_name_original": row.get("food_name_original"),
+                    "field": "mineral_total_g",
+                    "value": round(mineral_total_g, 3),
+                    "ash_g": float(ash),
                 }
             )
 

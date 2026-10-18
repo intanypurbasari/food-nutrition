@@ -87,11 +87,18 @@ UNIT_ERROR_CORRECTIONS = {
             "threshold": 20.0,
             "factor": 1000.0,
             "review_range": (5.0, 20.0),
-            # Not a ug/mg error: /1000 gives 0.026 mg (fried soybean is ~1.6 mg)
-            # and the same row has zinc 60 mg, so the row looks shifted rather
-            # than mislabelled. Treated as not measured instead of corrected.
-            "blank_instead": {"Kacang kedelai, goreng"},
         }
+    },
+}
+# Single source cells that are chemically impossible and are treated as not
+# measured, keyed by the source's own food code. Verified on panganku.org.
+# - CP006 Kacang kedelai, goreng: Na 3492, K 11890, Cu 26.3, Zn 60 mg give
+#   16.5 g of minerals against 3.7 g ash (minerals cannot exceed ash).
+# - KR003 Lemak babi (lard): Cu 9 mg with 0 g ash and every other mineral 0.
+UNRELIABLE_SOURCE_CELLS = {
+    "TKPI": {
+        "CP006": ["sodium_mg", "potassium_mg", "copper_mg", "zinc_mg"],
+        "KR003": ["copper_mg"],
     },
 }
 UNIT_CORRECTION_NOTE = "{field} dikoreksi ug->mg: {original:g} -> {corrected:g}"
@@ -152,19 +159,15 @@ def clean_dataframe(df: pd.DataFrame, source: str, source_prefix: str) -> tuple[
         for nutrient in NUTRIENT_FIELDS:
             record[nutrient] = normalize_numeric(pick_value(row, COMMON_ALIASES.get(nutrient, [nutrient])))
 
+        source_code = str(row.get("kode_pangan") or row.get("myfcd_id") or "").strip()
         for field, rule in UNIT_ERROR_CORRECTIONS.get(source, {}).items():
             value = record.get(field)
             if value is None:
                 continue
             low, high = rule["review_range"]
-            if record["food_name_original"] in rule.get("blank_instead", set()):
-                record[field] = None
-                excluded_counts[field] = excluded_counts.get(field, 0) + 1
-                note = UNRELIABLE_NOTE.format(fields=field)
-                record["notes"] = f"{record['notes']} | {note}" if record["notes"] else note
-                review_values.append({"food_id": record["food_id"], "food_name_original": record["food_name_original"],
-                                      "field": field, "value": value})
-            elif value > rule["threshold"]:
+            if field in UNRELIABLE_SOURCE_CELLS.get(source, {}).get(source_code, []):
+                continue  # blanked below
+            if value > rule["threshold"]:
                 corrected = value / rule["factor"]
                 record[field] = corrected
                 note = UNIT_CORRECTION_NOTE.format(field=field, original=value, corrected=corrected)
@@ -175,7 +178,8 @@ def clean_dataframe(df: pd.DataFrame, source: str, source_prefix: str) -> tuple[
                 review_values.append({"food_id": record["food_id"], "food_name_original": record["food_name_original"],
                                       "field": field, "value": value})
 
-        blanked = [field for field in UNRELIABLE_SOURCE_FIELDS.get(source, []) if record.get(field) is not None]
+        unreliable = UNRELIABLE_SOURCE_FIELDS.get(source, []) + UNRELIABLE_SOURCE_CELLS.get(source, {}).get(source_code, [])
+        blanked = [field for field in unreliable if record.get(field) is not None]
         for field in blanked:
             record[field] = None
             excluded_counts[field] = excluded_counts.get(field, 0) + 1
@@ -228,7 +232,7 @@ def write_clean_outputs(df: pd.DataFrame, source_slug: str, report_title: str, s
         lines.append("")
         lines.append("## Nilai sumber yang dikosongkan")
         lines.append("")
-        lines.append("Kolom berikut dianggap tidak terukur karena nilai sumbernya tidak andal (lihat UNRELIABLE_SOURCE_FIELDS di scripts/clean_common.py).")
+        lines.append("Kolom berikut dianggap tidak terukur karena nilai sumbernya tidak andal (lihat UNRELIABLE_SOURCE_FIELDS dan UNRELIABLE_SOURCE_CELLS di scripts/clean_common.py).")
         lines.append("")
         for field, count in summary["excluded_counts"].items():
             lines.append(f"- {field}: {count} nilai dikosongkan")
