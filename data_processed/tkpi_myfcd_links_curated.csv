@@ -1,0 +1,53 @@
+tkpi_food_id,myfcd_food_id,tkpi_food_name,myfcd_food_name,similarity_score,confidence,match_level,note
+tkpi_0390,myfcd_0228,"Bayam, segar (Spinach, fresh)","SPINACH, (BAYAM MASAK AIR)",0.8102,HIGH,mirip,bayam segar vs bayam masak air (olahan berbeda)
+tkpi_1080,myfcd_0104,"Minyak ikan (Fish, oil)","FISH OIL, COD LIVER OIL (MINYAK IKAN KOD)",0.6422,MEDIUM,mirip,minyak ikan vs minyak hati ikan kod (jenis berbeda)
+tkpi_0933,myfcd_0221,"Kerang, segar","COCKLES, BOILED (KERANG REBUS)",0.6407,MEDIUM,mirip,kerang segar vs kerang rebus (olahan berbeda)
+tkpi_0259,myfcd_0030,"Kacang hitam, kering (Black turtle bean, raw)",BLACK EYE BEAN (KACANG MATA HITAM),0.5878,MEDIUM,mirip,black turtle bean vs black eye bean (jenis berbeda)
+tkpi_0945,myfcd_0075,"Belut, goreng (Asian swamp eel, fresh)","Eeel, swamp, raw (Belut)",0.5661,MEDIUM,mirip,belut goreng vs belut mentah (olahan berbeda)
+tkpi_0156,myfcd_0022,Sagu lempeng (Sago palm),"Flour, sago (Tepung sagu)",0.4666,MEDIUM,mirip,sagu lempeng vs tepung sagu (produk berbeda)
+tkpi_0985,myfcd_0219,"Ikan teri, kering, mentah (Anchovy)","ANCHOVY, DRIED, FRIED IN CHILLI (IKAN BILIS SAMBAL)",0.4037,MEDIUM,mirip,teri kering mentah vs ikan bilis sambal (olahan berbeda)
+tkpi_0426,myfcd_0225,"Daun kubis, segar (Cabbage, fresh)","CABBAGE, FRIED (KOBIS GORENG)",0.3806,LOW,mirip,kubis segar vs kubis goreng (olahan berbeda)
+tkpi_0562,myfcd_0229,"Kangkung, rebus","SWAMP CABBAGE, FRIED WITH BELACAN (KANGKUNG GORENG BELACAN)",0.3129,LOW,mirip,kangkung rebus vs kangkung goreng belacan (olahan berbeda)
+tkpi_1039,myfcd_0074,"Telur ayam ras, segar (Domestic chicken, egg, fresh)","HEN EGG, OMEGA 3 (TELUR AYAM OMEGA 3)",0.2495,LOW,mirip,telur ayam ras vs telur omega 3 (varietas berbeda)
+tkpi_0932,myfcd_0222,"Kepiting, segar (Crab, fresh)","CRAB, IN COCONUT MILK (KETAM MASAK LEMAK CILI API)",0.2405,LOW,mirip,kepiting segar vs ketam masak lemak (olahan berbeda)
+tkpi_0912,myfcd_0220,"Ikan patin, segar (Striped catfish, fresh)","CATFISH, FRIED IN CHILLI (IKAN KELI GORENG BERLADA)",0.2384,LOW,mirip,patin segar vs keli goreng berlada (jenis & olahan berbeda)
+tkpi_1083,myfcd_0110,Minyak kelapa (Coconut oil),"OIL, COCONUT (MINYAK KELAPA)",1.0,HIGH,identik,pangan sama (minyak kelapa)
+tkpi_0467,myfcd_0035,"Jagung muda / semi, segar (Baby corn, fresh)",BABY CORN (JAGUNG SAYUR),0.7385,HIGH,identik,pangan sama (jagung muda)
+tkpi_0833,myfcd_0215,"Rendang sapi, masakan",BEEF RENDANG (RENDANG DAGING LEMBU),0.7022,HIGH,identik,hidangan sama (rendang daging sapi)
+tkpi_1100,myfcd_0060,Madu (Honey),HONEY,0.6696,HIGH,identik,pangan sama (madu)
+tkpi_0621,myfcd_0040,"Buah Naga Merah, segar","DRAGON FRUIT, RED (BUAH NAGA, ISI MERAH)",0.6122,MEDIUM,identik,"pangan sama (buah naga merah, segar)"
+tkpi_0622,myfcd_0041,"Buah Naga Putih, segar","DRAGON FRUIT, WHITE (BUAH NAGA, ISI PUTIH)",0.6112,MEDIUM,identik,"pangan sama (buah naga putih, segar)"
+tkpi_0191,myfcd_0193,Bubur sagu,"DESSERT, SAGO PORRIDGE (BUBUR SAGU)",0.5733,MEDIUM,identik,hidangan sama (bubur sagu)
+tkpi_1088,myfcd_0114,Mentega (Margarine),SOFT MARGARINE (MARJERIN LEMBUT),0.2398,LOW,identik,pangan sama (margarin)
+tkpi_1062,myfcd_0089,Es krim,CREAM CHEESE (KRIM KEJU),0.5675,MEDIUM,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0742,myfcd_0072,"Ayam, daging, segar (Chicken, meat, fresh)","CHICKEN, SAUSAGE (SOSEJ DAGING AYAM)",0.5194,MEDIUM,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0227,myfcd_0166,Sagu manis,CARA MANIS,0.5143,MEDIUM,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0106,myfcd_0187,Mie ayam,Cakar Ayam,0.4845,MEDIUM,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0332,myfcd_0034,Keju kacang tanah (peanut butter),PEANUT BUTTER CHOCOLATE STRIPES,0.4631,MEDIUM,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0045,myfcd_0169,Roti putih,ROTI JALA,0.4614,MEDIUM,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0007,myfcd_0192,"Beras ketan hitam tumbuk, mentah (Glutinous rice, black, husk,raw)","DESSERT, BLACK GLUTINOUS RICE PORRIDGE (BUBUR PULUT HITAM)",0.458,MEDIUM,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0149,myfcd_0010,"Kentang hitam, segar (Madagascar potato, fresh)","Bun, potato (Ban kentang)",0.458,MEDIUM,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0090,myfcd_0008,Kue kelapa,"Bun, coconut (Ban kelapa)",0.3852,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0163,myfcd_0024,"Ubi jalar, kuning, segar (Sweet potato, yellowish, fresh)","Sweet potato, red, chips (Kerepek ubi keledek)",0.3714,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0382,myfcd_0031,Tepung kacang kedelai,CAROB FLOUR (TEPUNG KACANG KUDA),0.3656,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0004,myfcd_0208,"Beras hitam, mentah (Rice, raw)","RICE, BRIYANI (RICE ONLY) (BASMATHI RICE)",0.3619,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_1097,myfcd_0069,Gula putih (Sugar cane),"SUGAR, ICING (GULA ISING)",0.3535,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_1098,myfcd_0067,"Jam, selai (Jam)","JAM, ORANGE MARMALADE",0.3443,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0022,myfcd_0213,Nasi,NASI ARAB SET MANDY (AYAM),0.3442,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0262,myfcd_0032,"Kacang kedelai, segar (Soya bean, fresh)","SAUCE, SOYA, DARK",0.3361,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_1116,myfcd_0141,"Bawang putih, segar (Garlic)","CHOCOLATE, WHITE (COKLAT PUTIH)",0.316,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_1096,myfcd_0068,Gula kelapa,GRAPE FLAVOURED CANDY (GULA-GULA PERISA ANGGUR),0.3062,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0099,myfcd_0173,Lapis legit,"DESSERT, LAYER CAKE (KEK LAPIS SARAWAK)",0.3057,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0005,myfcd_0191,"Beras jagung kuning, kering, mentah (Corn, yellow","DESSERT, CORN IN SWEETENED COCONUT MILK (BUBUR JAGUNG)",0.301,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0026,myfcd_0011,Nasi beras merah,"Bun, red beans (Ban kacang merah)",0.268,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0395,myfcd_0036,"Buncis, segar (Green bean, fresh)","CAPSICUM, GREEN (LADA BENGALA, HIJAU)",0.2642,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0140,myfcd_0168,"Bengkuang, segar (Yam bean, fresh)","DESSERT, MOON CAKES RED BEAN",0.2638,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0154,myfcd_0182,"Sagu aren, segar (Sugar palm, fresh)","TRADITIONAL MALAYSIAN KUIH, GLUTINOUS RICE FLOUR AND COCONUT MILK BASED, BOILED PALM SUGAR TOFFEE-LIKE SWEET (DODOL)",0.2593,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_1127,myfcd_0136,Kemiri (Candle nut),"CHOCOLATE, CASHEW NUT (COKLAT KACANG GAJUS)",0.2416,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0504,myfcd_0038,"Labu kuning, segar (Pumpkin, fresh)","CAPSICUM, YELLOW (LADA BENGALA, KUNING)",0.2385,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_1109,myfcd_0134,"Asam arang coklat, segar",CHOCOLATE (COKLAT BERTIH),0.2322,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_1143,myfcd_0231,"Terasi (Fish, fermented, paste (terasi))",ROJAK PASTE,0.2302,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0062,myfcd_0171,Cake tape,"CAKE, CHOCOLATE (KEK COKLAT)",0.2294,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0761,myfcd_0216,"Sapi, daging, gemuk, segar (Beef, high fat, fresh)","BEEF, FLOSS (SERUNDING DAGING)",0.2169,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_0462,myfcd_0230,"Daun ubi putih, segar (Sweet potato, whitish, leaf, fresh)","TRADITIONAL MALAYSIAN KUIH, SWEET FERMENTED TAPIOCA (TAPAI UBI KAYU)",0.2157,LOW,berbeda,pangan berbeda; kemiripan nama saja
+tkpi_1005,myfcd_0224,"Gulai asam keueung, masakan","STINGRAY, COOKED IN TAMARIND (IKAN PARI MASAK ASAM PEDAS)",0.2147,LOW,berbeda,pangan berbeda; kemiripan nama saja

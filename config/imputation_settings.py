@@ -39,6 +39,10 @@ MYFCD_IMPUTED_CROSSDB_PATH = ROOT / "data_processed" / "myfcd_imputed_crossdb.cs
 
 # --- Integrated / evaluation outputs (Milestones 8-9) ---
 NUTRITION_REPOSITORY_IMPUTED_PATH = ROOT / "data_processed" / "nutrition_repository_imputed.csv"
+# Final integrated dataset (identical TKPI-MyFCD pairs merged) and per-cell provenance.
+TKPI_MYFCD_LINKS_CURATED_PATH = ROOT / "data_processed" / "tkpi_myfcd_links_curated.csv"
+NUTRITION_REPOSITORY_INTEGRATED_PATH = ROOT / "data_processed" / "nutrition_repository_integrated.csv"
+INTEGRATED_PROVENANCE_PATH = ROOT / "data_processed" / "nutrition_repository_integrated_provenance.csv"
 NUTRITION_REPOSITORY_IMPUTED_LONG_PATH = ROOT / "data_processed" / "nutrition_repository_imputed_long.csv"
 
 # --- Reports ---
