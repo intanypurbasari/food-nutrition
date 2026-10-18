@@ -42,7 +42,7 @@ def _missing_count(series: pd.Series) -> int:
 
 
 def _method_frame(sources: dict[str, pd.DataFrame], method: str) -> pd.DataFrame:
-    key = method if method in ("missforest", "crossdb") else f"baseline_{method}"
+    key = method if method in ("missforest", "missforest_ind", "crossdb") else f"baseline_{method}"
     if key not in sources:
         raise KeyError(f"No output loaded for method '{method}'")
     return sources[key]

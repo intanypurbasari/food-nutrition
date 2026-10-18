@@ -22,7 +22,7 @@ import pandas as pd
 
 from config.imputation_settings import RANDOM_SEED
 from src.cleaning.normalizers import is_missing
-from src.imputation.missforest_imputer import fit_random_forest_imputer
+from src.imputation.missforest_imputer import INDICATOR_PREFIX, fit_random_forest_imputer, numeric_block
 
 
 def _to_numeric_with_missing(series: pd.Series) -> pd.Series:
@@ -56,15 +56,14 @@ def apply_fitted_imputer(imputer, apply_df: pd.DataFrame, columns: list[str]) ->
     """
     predictor_columns = imputer.feature_names_in_stage3_
 
-    apply_numeric_block = pd.DataFrame(
-        {column: _to_numeric_with_missing(apply_df[column]) for column in predictor_columns if column in apply_df.columns}
-    )
     # Predictor columns fit on train_df but absent from apply_df's own
     # schema cannot occur in this pipeline (TKPI/MyFCD share the same
     # NUTRIENT_FIELDS schema), but guard defensively rather than assume.
-    missing_in_apply = [column for column in predictor_columns if column not in apply_df.columns]
+    bases = [c[len(INDICATOR_PREFIX):] if c.startswith(INDICATOR_PREFIX) else c for c in predictor_columns]
+    missing_in_apply = [column for column in bases if column not in apply_df.columns]
     if missing_in_apply:
         raise ValueError(f"apply_df is missing predictor columns fit on train_df: {missing_in_apply}")
+    apply_numeric_block = numeric_block(imputer, apply_df)
 
     imputed_values = imputer.transform(apply_numeric_block)
     imputed_df = pd.DataFrame(imputed_values, columns=predictor_columns, index=apply_df.index)

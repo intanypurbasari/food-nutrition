@@ -27,6 +27,11 @@ from src.cleaning.normalizers import is_missing
 
 MISSFOREST_MAX_ITER = 10
 MISSFOREST_N_ESTIMATORS = 50
+# Auxiliary missingness-indicator features (TKPI, Stage 3 design): one 0/1
+# column per nutrient that has missing values. They are always observed, so
+# unlike IterativeImputer(add_indicator=True) - which only appends indicators
+# to the output - the random forests can actually use them as predictors.
+INDICATOR_PREFIX = "__missing__"
 
 
 def _to_numeric_with_missing(series: pd.Series) -> pd.Series:
@@ -49,7 +54,20 @@ def _predictor_columns(df: pd.DataFrame) -> list[str]:
     return [column for column in candidate_columns if not df[column].apply(is_missing).all()]
 
 
-def fit_random_forest_imputer(train_frame: pd.DataFrame, random_state: int | None = None) -> IterativeImputer:
+def numeric_block(imputer: IterativeImputer, frame: pd.DataFrame) -> pd.DataFrame:
+    """The imputer's input matrix for `frame`: nutrient columns plus any indicator columns it was fit with."""
+    block = {}
+    for column in imputer.feature_names_in_stage3_:
+        if column.startswith(INDICATOR_PREFIX):
+            block[column] = frame[column[len(INDICATOR_PREFIX):]].apply(is_missing).astype(float)
+        else:
+            block[column] = _to_numeric_with_missing(frame[column])
+    return pd.DataFrame(block, index=frame.index)
+
+
+def fit_random_forest_imputer(
+    train_frame: pd.DataFrame, random_state: int | None = None, missing_indicators: bool = False
+) -> IterativeImputer:
     """Fit an IterativeImputer(RandomForestRegressor) on `train_frame`'s nutrient columns.
 
     Shared low-level fit step reused by both missforest_impute (within-
@@ -61,20 +79,23 @@ def fit_random_forest_imputer(train_frame: pd.DataFrame, random_state: int | Non
         random_state = RANDOM_SEED
 
     predictor_columns = _predictor_columns(train_frame)
-    numeric_block = pd.DataFrame(
-        {column: _to_numeric_with_missing(train_frame[column]) for column in predictor_columns}
-    )
+    if missing_indicators:
+        predictor_columns = predictor_columns + [
+            INDICATOR_PREFIX + column for column in predictor_columns if train_frame[column].apply(is_missing).any()
+        ]
     imputer = IterativeImputer(
         estimator=RandomForestRegressor(n_estimators=MISSFOREST_N_ESTIMATORS, random_state=random_state),
         max_iter=MISSFOREST_MAX_ITER,
         random_state=random_state,
     )
-    imputer.fit(numeric_block)
     imputer.feature_names_in_stage3_ = predictor_columns  # remember fit column order for transform()
+    imputer.fit(numeric_block(imputer, train_frame))
     return imputer
 
 
-def missforest_impute(df: pd.DataFrame, columns: list[str], random_state: int | None = None) -> pd.DataFrame:
+def missforest_impute(
+    df: pd.DataFrame, columns: list[str], random_state: int | None = None, missing_indicators: bool = False
+) -> pd.DataFrame:
     """Within-source MissForest-style imputation, restricted to `columns` in the output.
 
     Fits on df's own full nutrient feature space (for multivariate signal)
@@ -87,12 +108,9 @@ def missforest_impute(df: pd.DataFrame, columns: list[str], random_state: int | 
         random_state = RANDOM_SEED
 
     result = df.copy()
-    imputer = fit_random_forest_imputer(df, random_state=random_state)
+    imputer = fit_random_forest_imputer(df, random_state=random_state, missing_indicators=missing_indicators)
     predictor_columns = imputer.feature_names_in_stage3_
-    numeric_block = pd.DataFrame(
-        {column: _to_numeric_with_missing(df[column]) for column in predictor_columns}
-    )
-    imputed_values = imputer.transform(numeric_block)
+    imputed_values = imputer.transform(numeric_block(imputer, df))
     imputed_df = pd.DataFrame(imputed_values, columns=predictor_columns, index=df.index)
 
     target_columns = [column for column in columns if column in predictor_columns]

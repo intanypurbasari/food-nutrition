@@ -18,7 +18,7 @@ def test_bootstrap_covers_every_missing_cell_with_an_interval():
     tkpi = _load("sample_fixture_enriched_tkpi.csv")
     myfcd = _load("sample_fixture_enriched_myfcd.csv")
     plan = {
-        "TKPI": {**{n: "missforest" for n in INTERNAL}, "carotene_total_mcg": "mice"},
+        "TKPI": {**{n: "missforest" for n in INTERNAL[:3]}, **{n: "missforest_ind" for n in INTERNAL[3:]}, "carotene_total_mcg": "mice"},
         "MyFCD": {"water_g": "median", "iron_mg": "knn", "calcium_mg": "mean", "phosphorus_mg": "missforest",
                   "potassium_mg": "mice", "carotene_total_mcg": "crossdb"},
     }
@@ -27,7 +27,7 @@ def test_bootstrap_covers_every_missing_cell_with_an_interval():
         expected = int(frame[columns].isna().sum().sum())
         assert (cells["source"] == source).sum() == expected
     assert set(cells.loc[(cells["source"] == "MyFCD") & (cells["nutrient"] == "carotene_total_mcg"), "method"]) == {"crossdb"}
-    assert set(cells["method"]) == {"missforest", "mice", "median", "knn", "mean", "crossdb"}
+    assert set(cells["method"]) == {"missforest", "missforest_ind", "mice", "median", "knn", "mean", "crossdb"}
     filled = cells[cells["n_boot"] > 0]
     assert (filled["ci_low"] <= filled["ci_high"]).all()
 

@@ -8,6 +8,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from config.imputation_settings import (
     MYFCD_IMPUTED_CROSSDB_PATH,
     MYFCD_IMPUTED_MISSFOREST_PATH,
+    TKPI_IMPUTED_MISSFOREST_IND_PATH,
     TKPI_IMPUTED_MISSFOREST_PATH,
 )
 from src.imputation import io_utils
@@ -62,8 +63,21 @@ def run_cross_database_transfer() -> None:
     io_utils.write_output(imputed_myfcd, MYFCD_IMPUTED_CROSSDB_PATH)
 
 
+def run_tkpi_with_indicators() -> None:
+    """MissForest on TKPI with missingness-indicator features (Stage 3 design for TKPI, MAR)."""
+    df = io_utils.load_enriched("TKPI")
+    target_columns = io_utils.observed_columns(df)
+    imputed = missforest_impute(df, target_columns, missing_indicators=True)
+    print("[IMPUTE] TKPI: applied missforest_impute with missingness indicators")
+    report = io_utils.validate_imputed_output(imputed, "TKPI", target_columns)
+    remaining = sum(report["remaining_missing_in_targeted_columns"].values())
+    print(f"[IMPUTE] TKPI/missforest_ind: remaining missing in targeted columns = {remaining}")
+    io_utils.write_output(imputed, TKPI_IMPUTED_MISSFOREST_IND_PATH)
+
+
 def main() -> int:
     run_within_database()
+    run_tkpi_with_indicators()
     run_cross_database_transfer()
     return 0
 

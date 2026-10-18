@@ -1,8 +1,9 @@
 """Stage 4: hold-out evaluation (RMSE / nRMSE) of every Stage 3 imputation method.
 
 Hides 15% of the observed cells of each nutrient (per source), imputes them
-with mean, median, KNN, MICE and MissForest, and for MyFCD also with the
-cross-database transfer (MissForest fit on the full TKPI). Repeated with
+with mean, median, median per food group, KNN, MICE and MissForest; for TKPI
+also with MissForest plus missingness-indicator features, and for MyFCD also
+with the cross-database transfer (MissForest fit on the full TKPI). Repeated with
 independent masks; see src/evaluation/holdout.py for the metric definitions.
 
 Outputs:
@@ -43,7 +44,7 @@ BASE_METHODS = {
     "mice": mice_impute,
     "missforest": missforest_impute,
 }
-METHOD_ORDER = ["mean", "median", "group_median", "knn", "mice", "missforest", "crossdb"]
+METHOD_ORDER = ["mean", "median", "group_median", "knn", "mice", "missforest", "missforest_ind", "crossdb"]
 
 
 def _fmt(value: float) -> str:
@@ -141,10 +142,14 @@ def main() -> int:
     print("[HOLDOUT] fitting cross-DB transfer imputer on full TKPI")
     transfer_imputer = fit_random_forest_imputer(tkpi, random_state=args.seed)
     myfcd_methods = {**BASE_METHODS, "crossdb": lambda df, columns: apply_fitted_imputer(transfer_imputer, df, columns)}
+    tkpi_methods = {
+        **BASE_METHODS,
+        "missforest_ind": lambda df, columns: missforest_impute(df, columns, missing_indicators=True),
+    }
 
     results = pd.concat(
         [
-            evaluate_source("TKPI", tkpi, IMPUTATION_NUTRIENT_FIELDS, BASE_METHODS, configs["TKPI"]),
+            evaluate_source("TKPI", tkpi, IMPUTATION_NUTRIENT_FIELDS, tkpi_methods, configs["TKPI"]),
             evaluate_source("MyFCD", myfcd, IMPUTATION_NUTRIENT_FIELDS, myfcd_methods, configs["MyFCD"]),
         ],
         ignore_index=True,

@@ -99,12 +99,14 @@ def _one_replicate(
     replicate_seed = seed + b
     resampled = {source: _resample(frame, rng) for source, frame in frames.items()}
 
-    forest_fits: dict[str, object] = {}
+    forest_fits: dict[tuple[str, bool], object] = {}
 
-    def forest(source: str):
-        if source not in forest_fits:
-            forest_fits[source] = fit_random_forest_imputer(resampled[source], random_state=replicate_seed)
-        return forest_fits[source]
+    def forest(source: str, indicators: bool = False):
+        if (source, indicators) not in forest_fits:
+            forest_fits[(source, indicators)] = fit_random_forest_imputer(
+                resampled[source], random_state=replicate_seed, missing_indicators=indicators
+            )
+        return forest_fits[(source, indicators)]
 
     predictions = {}
     for source, nutrient_methods in plan.items():
@@ -113,6 +115,8 @@ def _one_replicate(
             targets = [n for n, m in nutrient_methods.items() if m == method]
             if method == "missforest":
                 predicted = apply_fitted_imputer(forest(source), frames[source], targets)
+            elif method == "missforest_ind":
+                predicted = apply_fitted_imputer(forest(source, indicators=True), frames[source], targets)
             elif method == "crossdb":
                 predicted = apply_fitted_imputer(forest("TKPI"), frames[source], targets)
             else:
