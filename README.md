@@ -31,7 +31,7 @@ Masalahnya: TKPI dan MyFCD tidak memakai kunci pengenal yang sama, taksonomi kat
 - [Rencana Lanjutan](#rencana-lanjutan)
 - [Sumber Data](#sumber-data)
 - [Etika Scraping](#etika-scraping)
-- [Catatan Lisensi Data](#catatan-lisensi-data)
+- [Lisensi](#lisensi)
 - [Sitasi](#sitasi)
 
 ## Sekilas Angka
@@ -297,9 +297,21 @@ Sub-riset harmonisasi dan integrasi data pada repositori ini dikerjakan oleh tim
 
 Semua scraper wajib memakai delay, limit kecil, user-agent wajar, cache lokal, dan tidak melakukan bypass captcha, login wall, rate limit, atau proteksi situs.
 
-## Catatan Lisensi Data
+## Lisensi
 
-Dataset `*_clean.csv` merupakan data turunan dari TKPI dan MyFCD. Sebelum meredistribusi nilai nutrisi mentah secara terbuka, pastikan hak penggunaan/lisensi data sumber memperbolehkannya. Untuk dataset final berukuran besar, disarankan menggunakan repositori berarsip permanen, misalnya Zenodo atau GigaDB, yang menyediakan DOI untuk sitasi.
+**Kode** (`src/`, `scripts/`, `tests/`, `config/`): MIT License, lihat berkas LICENSE.
+
+**Data**: lisensi kode TIDAK berlaku untuk berkas data di `data_raw/`,
+`data_clean/`, dan `data_processed/`.
+
+- Nilai dari USDA SR Legacy berada dalam domain publik.
+- Nilai dari TKPI (Kementerian Kesehatan RI) dan MyFCD (Ministry of Health
+  Malaysia) tetap tunduk pada ketentuan pengelola masing-masing. Status izin
+  redistribusi: [sedang diurus].
+- Lapisan hasil olahan tim ini — tabel penautan, penanda asal nilai, interval
+  ketidakpastian, dan nilai hasil imputasi — dirilis di bawah CC0 1.0.
+
+Pengguna wajib mensitasi ketiga basis data sumber.
 
 ## Sitasi
 
