@@ -1,0 +1,110 @@
+cff-version: 1.2.0
+title: >-
+  food-nutrition: a reproducible pipeline for harmonising, imputing and
+  integrating cross-national food composition databases
+message: >-
+  If you use this software or the dataset it produces, please cite it using the
+  metadata in this file, and cite the three source databases listed in the
+  README.
+type: software
+abstract: >-
+  Python pipeline that validates, links and integrates food composition
+  databases that share no common identifier. It performs FAO/INFOODS-based
+  source validation, TF-IDF cosine entity resolution within category blocks,
+  per-source missing-data mechanism diagnosis, hold-out evaluation with
+  per-nutrient method selection, imputation including cross-database transfer
+  (MissForest trained on a denser source and applied to a sparser one),
+  bootstrap uncertainty quantification, and a final integration step that
+  records the provenance of every cell. Applied to the Indonesian Food
+  Composition Table (TKPI), the Malaysian Food Composition Database (MyFCD) and
+  USDA SR Legacy.
+authors:
+  - given-names: Intan Yuniar
+    family-names: Purbasari
+    email: intanyuniar.if@upnjatim.ac.id
+    affiliation: >-
+      Department of Informatics, Faculty of Computer Science, Universitas
+      Pembangunan Nasional "Veteran" Jawa Timur, Surabaya, Indonesia
+    # orcid: 'https://orcid.org/0000-0000-0000-0000'   # TODO: add ORCID
+  - given-names: Fetty Tri
+    family-names: Anggraeny
+    affiliation: >-
+      Department of Informatics, Faculty of Computer Science, Universitas
+      Pembangunan Nasional "Veteran" Jawa Timur, Surabaya, Indonesia
+  - given-names: Riris Diana
+    family-names: Rachmayanti
+    affiliation: >-
+      Department of Epidemiology, Biostatistics, Population Study and Health
+      Promotion, Faculty of Public Health, Universitas Airlangga, Surabaya,
+      Indonesia
+  - given-names: Triska Susila
+    family-names: Nindya
+    affiliation: >-
+      Department of Nutrition, Faculty of Public Health, Universitas Airlangga,
+      Surabaya, Indonesia
+  - given-names: Retno Aulia
+    family-names: Vinarti
+    affiliation: >-
+      Department of Information Systems, Institut Teknologi Sepuluh Nopember,
+      Surabaya, Indonesia
+  - given-names: Ahmad
+    family-names: Muklason
+    affiliation: >-
+      Department of Information Systems, Institut Teknologi Sepuluh Nopember,
+      Surabaya, Indonesia
+  - given-names: Galih Aji
+    family-names: Pangestu
+    affiliation: >-
+      Department of Informatics, Faculty of Computer Science, Universitas
+      Pembangunan Nasional "Veteran" Jawa Timur, Surabaya, Indonesia
+  - given-names: Joyce Putri Debora
+    family-names: Tobing
+    affiliation: >-
+      Department of Informatics, Faculty of Computer Science, Universitas
+      Pembangunan Nasional "Veteran" Jawa Timur, Surabaya, Indonesia
+repository-code: 'https://github.com/intanypurbasari/food-nutrition'
+license: MIT
+version: 1.0.0
+date-released: '2026-10-22'   # TODO: set to the date of the tagged release
+# doi: '10.5281/zenodo.XXXXXXX'   # TODO: add after archiving the release on Zenodo
+keywords:
+  - food composition database
+  - data harmonisation
+  - entity resolution
+  - record linkage
+  - missing data imputation
+  - MissForest
+  - cross-database transfer
+  - uncertainty quantification
+  - FAIR data
+  - TKPI
+  - MyFCD
+  - USDA SR Legacy
+# TODO: uncomment and complete once the article is accepted, so that
+# "Cite this repository" points readers to the paper rather than the code.
+# preferred-citation:
+#   type: article
+#   title: >-
+#     Cross-Database Transfer Imputation for Southeast Asian Food Composition
+#     Harmonisation: Integrating TKPI, MyFCD, and USDA with Uncertainty
+#     Quantification
+#   authors:
+#     - given-names: Intan Yuniar
+#       family-names: Purbasari
+#     - given-names: Fetty Tri
+#       family-names: Anggraeny
+#     - given-names: Riris Diana
+#       family-names: Rachmayanti
+#     - given-names: Triska Susila
+#       family-names: Nindya
+#     - given-names: Retno Aulia
+#       family-names: Vinarti
+#     - given-names: Ahmad
+#       family-names: Muklason
+#     - given-names: Galih Aji
+#       family-names: Pangestu
+#     - given-names: Joyce Putri Debora
+#       family-names: Tobing
+#   journal: GigaByte
+#   year: 2026
+#   doi: '10.46471/gigabyte.XXX'
