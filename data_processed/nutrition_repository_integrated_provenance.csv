@@ -32284,7 +32284,7 @@ myfcd_0007,cholesterol_mg,USDA_model
 myfcd_0007,vitamin_b6_mg,USDA_model
 myfcd_0007,vitamin_b12_mcg,USDA_model
 myfcd_0008,water_g,measured_MyFCD
-myfcd_0008,energy_kcal,transfer_TKPI
+myfcd_0008,energy_kcal,calculated:atwater
 myfcd_0008,protein_g,measured_MyFCD
 myfcd_0008,fat_g,measured_MyFCD
 myfcd_0008,carbohydrate_g,measured_MyFCD
@@ -32312,7 +32312,7 @@ myfcd_0008,cholesterol_mg,USDA_model
 myfcd_0008,vitamin_b6_mg,USDA_model
 myfcd_0008,vitamin_b12_mcg,USDA_model
 myfcd_0009,water_g,measured_MyFCD
-myfcd_0009,energy_kcal,transfer_TKPI
+myfcd_0009,energy_kcal,calculated:atwater
 myfcd_0009,protein_g,measured_MyFCD
 myfcd_0009,fat_g,measured_MyFCD
 myfcd_0009,carbohydrate_g,measured_MyFCD
@@ -32340,7 +32340,7 @@ myfcd_0009,cholesterol_mg,USDA_model
 myfcd_0009,vitamin_b6_mg,USDA_model
 myfcd_0009,vitamin_b12_mcg,USDA_model
 myfcd_0010,water_g,measured_MyFCD
-myfcd_0010,energy_kcal,transfer_TKPI
+myfcd_0010,energy_kcal,calculated:atwater
 myfcd_0010,protein_g,measured_MyFCD
 myfcd_0010,fat_g,measured_MyFCD
 myfcd_0010,carbohydrate_g,measured_MyFCD
@@ -32368,7 +32368,7 @@ myfcd_0010,cholesterol_mg,USDA_direct_medium
 myfcd_0010,vitamin_b6_mg,USDA_direct_medium
 myfcd_0010,vitamin_b12_mcg,USDA_direct_medium
 myfcd_0011,water_g,measured_MyFCD
-myfcd_0011,energy_kcal,transfer_TKPI
+myfcd_0011,energy_kcal,calculated:atwater
 myfcd_0011,protein_g,measured_MyFCD
 myfcd_0011,fat_g,measured_MyFCD
 myfcd_0011,carbohydrate_g,measured_MyFCD
@@ -32452,7 +32452,7 @@ myfcd_0013,cholesterol_mg,USDA_model
 myfcd_0013,vitamin_b6_mg,USDA_model
 myfcd_0013,vitamin_b12_mcg,USDA_model
 myfcd_0014,water_g,imputed:missforest
-myfcd_0014,energy_kcal,transfer_TKPI
+myfcd_0014,energy_kcal,calculated:atwater
 myfcd_0014,protein_g,imputed:mice
 myfcd_0014,fat_g,imputed:missforest
 myfcd_0014,carbohydrate_g,transfer_TKPI
@@ -32592,7 +32592,7 @@ myfcd_0018,cholesterol_mg,USDA_model
 myfcd_0018,vitamin_b6_mg,USDA_model
 myfcd_0018,vitamin_b12_mcg,USDA_model
 myfcd_0019,water_g,imputed:missforest
-myfcd_0019,energy_kcal,transfer_TKPI
+myfcd_0019,energy_kcal,calculated:atwater
 myfcd_0019,protein_g,imputed:mice
 myfcd_0019,fat_g,imputed:missforest
 myfcd_0019,carbohydrate_g,transfer_TKPI
@@ -32648,7 +32648,7 @@ myfcd_0020,cholesterol_mg,USDA_model
 myfcd_0020,vitamin_b6_mg,USDA_model
 myfcd_0020,vitamin_b12_mcg,USDA_model
 myfcd_0021,water_g,measured_MyFCD
-myfcd_0021,energy_kcal,transfer_TKPI
+myfcd_0021,energy_kcal,calculated:atwater
 myfcd_0021,protein_g,measured_MyFCD
 myfcd_0021,fat_g,measured_MyFCD
 myfcd_0021,carbohydrate_g,transfer_TKPI
@@ -32676,7 +32676,7 @@ myfcd_0021,cholesterol_mg,USDA_model
 myfcd_0021,vitamin_b6_mg,USDA_model
 myfcd_0021,vitamin_b12_mcg,USDA_model
 myfcd_0022,water_g,measured_MyFCD
-myfcd_0022,energy_kcal,transfer_TKPI
+myfcd_0022,energy_kcal,calculated:atwater
 myfcd_0022,protein_g,measured_MyFCD
 myfcd_0022,fat_g,measured_MyFCD
 myfcd_0022,carbohydrate_g,transfer_TKPI
@@ -32704,7 +32704,7 @@ myfcd_0022,cholesterol_mg,USDA_model
 myfcd_0022,vitamin_b6_mg,USDA_model
 myfcd_0022,vitamin_b12_mcg,USDA_model
 myfcd_0023,water_g,measured_MyFCD
-myfcd_0023,energy_kcal,transfer_TKPI
+myfcd_0023,energy_kcal,calculated:atwater
 myfcd_0023,protein_g,measured_MyFCD
 myfcd_0023,fat_g,measured_MyFCD
 myfcd_0023,carbohydrate_g,transfer_TKPI
@@ -32732,7 +32732,7 @@ myfcd_0023,cholesterol_mg,USDA_model
 myfcd_0023,vitamin_b6_mg,USDA_model
 myfcd_0023,vitamin_b12_mcg,USDA_model
 myfcd_0024,water_g,measured_MyFCD
-myfcd_0024,energy_kcal,transfer_TKPI
+myfcd_0024,energy_kcal,calculated:atwater
 myfcd_0024,protein_g,measured_MyFCD
 myfcd_0024,fat_g,measured_MyFCD
 myfcd_0024,carbohydrate_g,transfer_TKPI
@@ -32760,7 +32760,7 @@ myfcd_0024,cholesterol_mg,USDA_model
 myfcd_0024,vitamin_b6_mg,USDA_model
 myfcd_0024,vitamin_b12_mcg,USDA_model
 myfcd_0025,water_g,measured_MyFCD
-myfcd_0025,energy_kcal,transfer_TKPI
+myfcd_0025,energy_kcal,calculated:atwater
 myfcd_0025,protein_g,measured_MyFCD
 myfcd_0025,fat_g,measured_MyFCD
 myfcd_0025,carbohydrate_g,transfer_TKPI
@@ -32788,7 +32788,7 @@ myfcd_0025,cholesterol_mg,USDA_model
 myfcd_0025,vitamin_b6_mg,USDA_model
 myfcd_0025,vitamin_b12_mcg,USDA_model
 myfcd_0026,water_g,measured_MyFCD
-myfcd_0026,energy_kcal,transfer_TKPI
+myfcd_0026,energy_kcal,calculated:atwater
 myfcd_0026,protein_g,measured_MyFCD
 myfcd_0026,fat_g,measured_MyFCD
 myfcd_0026,carbohydrate_g,transfer_TKPI
@@ -32816,7 +32816,7 @@ myfcd_0026,cholesterol_mg,USDA_model
 myfcd_0026,vitamin_b6_mg,USDA_model
 myfcd_0026,vitamin_b12_mcg,USDA_model
 myfcd_0027,water_g,measured_MyFCD
-myfcd_0027,energy_kcal,transfer_TKPI
+myfcd_0027,energy_kcal,calculated:atwater
 myfcd_0027,protein_g,measured_MyFCD
 myfcd_0027,fat_g,measured_MyFCD
 myfcd_0027,carbohydrate_g,transfer_TKPI
@@ -32844,7 +32844,7 @@ myfcd_0027,cholesterol_mg,USDA_model
 myfcd_0027,vitamin_b6_mg,USDA_model
 myfcd_0027,vitamin_b12_mcg,USDA_model
 myfcd_0028,water_g,measured_MyFCD
-myfcd_0028,energy_kcal,transfer_TKPI
+myfcd_0028,energy_kcal,calculated:atwater
 myfcd_0028,protein_g,measured_MyFCD
 myfcd_0028,fat_g,measured_MyFCD
 myfcd_0028,carbohydrate_g,transfer_TKPI
@@ -32872,7 +32872,7 @@ myfcd_0028,cholesterol_mg,USDA_model
 myfcd_0028,vitamin_b6_mg,USDA_model
 myfcd_0028,vitamin_b12_mcg,USDA_model
 myfcd_0029,water_g,measured_MyFCD
-myfcd_0029,energy_kcal,transfer_TKPI
+myfcd_0029,energy_kcal,calculated:atwater
 myfcd_0029,protein_g,measured_MyFCD
 myfcd_0029,fat_g,measured_MyFCD
 myfcd_0029,carbohydrate_g,transfer_TKPI
@@ -32900,7 +32900,7 @@ myfcd_0029,cholesterol_mg,USDA_model
 myfcd_0029,vitamin_b6_mg,USDA_model
 myfcd_0029,vitamin_b12_mcg,USDA_model
 myfcd_0030,water_g,measured_MyFCD
-myfcd_0030,energy_kcal,transfer_TKPI
+myfcd_0030,energy_kcal,calculated:atwater
 myfcd_0030,protein_g,measured_MyFCD
 myfcd_0030,fat_g,measured_MyFCD
 myfcd_0030,carbohydrate_g,transfer_TKPI
@@ -32928,7 +32928,7 @@ myfcd_0030,cholesterol_mg,USDA_model
 myfcd_0030,vitamin_b6_mg,USDA_model
 myfcd_0030,vitamin_b12_mcg,USDA_model
 myfcd_0031,water_g,measured_MyFCD
-myfcd_0031,energy_kcal,transfer_TKPI
+myfcd_0031,energy_kcal,calculated:atwater
 myfcd_0031,protein_g,measured_MyFCD
 myfcd_0031,fat_g,measured_MyFCD
 myfcd_0031,carbohydrate_g,transfer_TKPI
@@ -33124,7 +33124,7 @@ myfcd_0038,cholesterol_mg,USDA_model
 myfcd_0038,vitamin_b6_mg,USDA_model
 myfcd_0038,vitamin_b12_mcg,USDA_model
 myfcd_0039,water_g,imputed:missforest
-myfcd_0039,energy_kcal,transfer_TKPI
+myfcd_0039,energy_kcal,calculated:atwater
 myfcd_0039,protein_g,imputed:mice
 myfcd_0039,fat_g,imputed:missforest
 myfcd_0039,carbohydrate_g,transfer_TKPI
@@ -33236,7 +33236,7 @@ myfcd_0044,cholesterol_mg,USDA_direct_medium
 myfcd_0044,vitamin_b6_mg,USDA_direct_medium
 myfcd_0044,vitamin_b12_mcg,USDA_direct_medium
 myfcd_0045,water_g,imputed:missforest
-myfcd_0045,energy_kcal,transfer_TKPI
+myfcd_0045,energy_kcal,calculated:atwater
 myfcd_0045,protein_g,imputed:mice
 myfcd_0045,fat_g,imputed:missforest
 myfcd_0045,carbohydrate_g,transfer_TKPI
@@ -33264,7 +33264,7 @@ myfcd_0045,cholesterol_mg,USDA_model
 myfcd_0045,vitamin_b6_mg,USDA_model
 myfcd_0045,vitamin_b12_mcg,USDA_model
 myfcd_0046,water_g,imputed:missforest
-myfcd_0046,energy_kcal,transfer_TKPI
+myfcd_0046,energy_kcal,calculated:atwater
 myfcd_0046,protein_g,imputed:mice
 myfcd_0046,fat_g,imputed:missforest
 myfcd_0046,carbohydrate_g,transfer_TKPI
@@ -33292,7 +33292,7 @@ myfcd_0046,cholesterol_mg,USDA_model
 myfcd_0046,vitamin_b6_mg,USDA_model
 myfcd_0046,vitamin_b12_mcg,USDA_model
 myfcd_0047,water_g,imputed:missforest
-myfcd_0047,energy_kcal,transfer_TKPI
+myfcd_0047,energy_kcal,calculated:atwater
 myfcd_0047,protein_g,imputed:mice
 myfcd_0047,fat_g,imputed:missforest
 myfcd_0047,carbohydrate_g,transfer_TKPI
@@ -33320,7 +33320,7 @@ myfcd_0047,cholesterol_mg,USDA_model
 myfcd_0047,vitamin_b6_mg,USDA_model
 myfcd_0047,vitamin_b12_mcg,USDA_model
 myfcd_0048,water_g,measured_MyFCD
-myfcd_0048,energy_kcal,transfer_TKPI
+myfcd_0048,energy_kcal,calculated:atwater
 myfcd_0048,protein_g,measured_MyFCD
 myfcd_0048,fat_g,measured_MyFCD
 myfcd_0048,carbohydrate_g,transfer_TKPI
@@ -33348,7 +33348,7 @@ myfcd_0048,cholesterol_mg,USDA_model
 myfcd_0048,vitamin_b6_mg,USDA_model
 myfcd_0048,vitamin_b12_mcg,USDA_model
 myfcd_0049,water_g,measured_MyFCD
-myfcd_0049,energy_kcal,transfer_TKPI
+myfcd_0049,energy_kcal,calculated:atwater
 myfcd_0049,protein_g,measured_MyFCD
 myfcd_0049,fat_g,measured_MyFCD
 myfcd_0049,carbohydrate_g,transfer_TKPI
@@ -33376,7 +33376,7 @@ myfcd_0049,cholesterol_mg,USDA_model
 myfcd_0049,vitamin_b6_mg,USDA_model
 myfcd_0049,vitamin_b12_mcg,USDA_model
 myfcd_0050,water_g,measured_MyFCD
-myfcd_0050,energy_kcal,transfer_TKPI
+myfcd_0050,energy_kcal,calculated:atwater
 myfcd_0050,protein_g,measured_MyFCD
 myfcd_0050,fat_g,measured_MyFCD
 myfcd_0050,carbohydrate_g,transfer_TKPI
@@ -33404,7 +33404,7 @@ myfcd_0050,cholesterol_mg,USDA_model
 myfcd_0050,vitamin_b6_mg,USDA_model
 myfcd_0050,vitamin_b12_mcg,USDA_model
 myfcd_0051,water_g,measured_MyFCD
-myfcd_0051,energy_kcal,transfer_TKPI
+myfcd_0051,energy_kcal,calculated:atwater
 myfcd_0051,protein_g,measured_MyFCD
 myfcd_0051,fat_g,measured_MyFCD
 myfcd_0051,carbohydrate_g,transfer_TKPI
@@ -33432,7 +33432,7 @@ myfcd_0051,cholesterol_mg,USDA_model
 myfcd_0051,vitamin_b6_mg,USDA_model
 myfcd_0051,vitamin_b12_mcg,USDA_model
 myfcd_0052,water_g,measured_MyFCD
-myfcd_0052,energy_kcal,transfer_TKPI
+myfcd_0052,energy_kcal,calculated:atwater
 myfcd_0052,protein_g,measured_MyFCD
 myfcd_0052,fat_g,measured_MyFCD
 myfcd_0052,carbohydrate_g,transfer_TKPI
@@ -33460,7 +33460,7 @@ myfcd_0052,cholesterol_mg,USDA_model
 myfcd_0052,vitamin_b6_mg,USDA_model
 myfcd_0052,vitamin_b12_mcg,USDA_model
 myfcd_0053,water_g,measured_MyFCD
-myfcd_0053,energy_kcal,transfer_TKPI
+myfcd_0053,energy_kcal,calculated:atwater
 myfcd_0053,protein_g,measured_MyFCD
 myfcd_0053,fat_g,measured_MyFCD
 myfcd_0053,carbohydrate_g,transfer_TKPI
@@ -33488,7 +33488,7 @@ myfcd_0053,cholesterol_mg,USDA_model
 myfcd_0053,vitamin_b6_mg,USDA_model
 myfcd_0053,vitamin_b12_mcg,USDA_model
 myfcd_0054,water_g,measured_MyFCD
-myfcd_0054,energy_kcal,transfer_TKPI
+myfcd_0054,energy_kcal,calculated:atwater
 myfcd_0054,protein_g,measured_MyFCD
 myfcd_0054,fat_g,measured_MyFCD
 myfcd_0054,carbohydrate_g,transfer_TKPI
@@ -33516,7 +33516,7 @@ myfcd_0054,cholesterol_mg,USDA_model
 myfcd_0054,vitamin_b6_mg,USDA_model
 myfcd_0054,vitamin_b12_mcg,USDA_model
 myfcd_0055,water_g,measured_MyFCD
-myfcd_0055,energy_kcal,transfer_TKPI
+myfcd_0055,energy_kcal,calculated:atwater
 myfcd_0055,protein_g,measured_MyFCD
 myfcd_0055,fat_g,measured_MyFCD
 myfcd_0055,carbohydrate_g,transfer_TKPI
@@ -33544,7 +33544,7 @@ myfcd_0055,cholesterol_mg,USDA_model
 myfcd_0055,vitamin_b6_mg,USDA_model
 myfcd_0055,vitamin_b12_mcg,USDA_model
 myfcd_0056,water_g,measured_MyFCD
-myfcd_0056,energy_kcal,transfer_TKPI
+myfcd_0056,energy_kcal,calculated:atwater
 myfcd_0056,protein_g,measured_MyFCD
 myfcd_0056,fat_g,measured_MyFCD
 myfcd_0056,carbohydrate_g,transfer_TKPI
@@ -33572,7 +33572,7 @@ myfcd_0056,cholesterol_mg,USDA_model
 myfcd_0056,vitamin_b6_mg,USDA_model
 myfcd_0056,vitamin_b12_mcg,USDA_model
 myfcd_0057,water_g,measured_MyFCD
-myfcd_0057,energy_kcal,transfer_TKPI
+myfcd_0057,energy_kcal,calculated:atwater
 myfcd_0057,protein_g,measured_MyFCD
 myfcd_0057,fat_g,measured_MyFCD
 myfcd_0057,carbohydrate_g,transfer_TKPI
@@ -33600,7 +33600,7 @@ myfcd_0057,cholesterol_mg,USDA_model
 myfcd_0057,vitamin_b6_mg,USDA_model
 myfcd_0057,vitamin_b12_mcg,USDA_model
 myfcd_0058,water_g,measured_MyFCD
-myfcd_0058,energy_kcal,transfer_TKPI
+myfcd_0058,energy_kcal,calculated:atwater
 myfcd_0058,protein_g,measured_MyFCD
 myfcd_0058,fat_g,measured_MyFCD
 myfcd_0058,carbohydrate_g,transfer_TKPI
@@ -33628,7 +33628,7 @@ myfcd_0058,cholesterol_mg,USDA_model
 myfcd_0058,vitamin_b6_mg,USDA_model
 myfcd_0058,vitamin_b12_mcg,USDA_model
 myfcd_0059,water_g,imputed:missforest
-myfcd_0059,energy_kcal,transfer_TKPI
+myfcd_0059,energy_kcal,calculated:atwater
 myfcd_0059,protein_g,imputed:mice
 myfcd_0059,fat_g,imputed:missforest
 myfcd_0059,carbohydrate_g,transfer_TKPI
@@ -33768,7 +33768,7 @@ myfcd_0064,cholesterol_mg,USDA_model
 myfcd_0064,vitamin_b6_mg,USDA_model
 myfcd_0064,vitamin_b12_mcg,USDA_model
 myfcd_0065,water_g,imputed:missforest
-myfcd_0065,energy_kcal,transfer_TKPI
+myfcd_0065,energy_kcal,calculated:atwater
 myfcd_0065,protein_g,imputed:mice
 myfcd_0065,fat_g,imputed:missforest
 myfcd_0065,carbohydrate_g,transfer_TKPI
@@ -33824,7 +33824,7 @@ myfcd_0066,cholesterol_mg,USDA_model
 myfcd_0066,vitamin_b6_mg,USDA_model
 myfcd_0066,vitamin_b12_mcg,USDA_model
 myfcd_0067,water_g,imputed:missforest
-myfcd_0067,energy_kcal,transfer_TKPI
+myfcd_0067,energy_kcal,calculated:atwater
 myfcd_0067,protein_g,imputed:mice
 myfcd_0067,fat_g,imputed:missforest
 myfcd_0067,carbohydrate_g,transfer_TKPI
@@ -33852,7 +33852,7 @@ myfcd_0067,cholesterol_mg,USDA_direct_high
 myfcd_0067,vitamin_b6_mg,USDA_direct_high
 myfcd_0067,vitamin_b12_mcg,USDA_direct_high
 myfcd_0068,water_g,imputed:missforest
-myfcd_0068,energy_kcal,transfer_TKPI
+myfcd_0068,energy_kcal,calculated:atwater
 myfcd_0068,protein_g,imputed:mice
 myfcd_0068,fat_g,imputed:missforest
 myfcd_0068,carbohydrate_g,transfer_TKPI
@@ -33880,7 +33880,7 @@ myfcd_0068,cholesterol_mg,USDA_model
 myfcd_0068,vitamin_b6_mg,USDA_model
 myfcd_0068,vitamin_b12_mcg,USDA_model
 myfcd_0069,water_g,imputed:missforest
-myfcd_0069,energy_kcal,transfer_TKPI
+myfcd_0069,energy_kcal,calculated:atwater
 myfcd_0069,protein_g,imputed:mice
 myfcd_0069,fat_g,imputed:missforest
 myfcd_0069,carbohydrate_g,transfer_TKPI
@@ -33908,7 +33908,7 @@ myfcd_0069,cholesterol_mg,USDA_model
 myfcd_0069,vitamin_b6_mg,USDA_model
 myfcd_0069,vitamin_b12_mcg,USDA_model
 myfcd_0070,water_g,imputed:missforest
-myfcd_0070,energy_kcal,transfer_TKPI
+myfcd_0070,energy_kcal,calculated:atwater
 myfcd_0070,protein_g,imputed:mice
 myfcd_0070,fat_g,imputed:missforest
 myfcd_0070,carbohydrate_g,transfer_TKPI
@@ -34048,7 +34048,7 @@ myfcd_0074,cholesterol_mg,USDA_model
 myfcd_0074,vitamin_b6_mg,USDA_model
 myfcd_0074,vitamin_b12_mcg,USDA_model
 myfcd_0075,water_g,measured_MyFCD
-myfcd_0075,energy_kcal,transfer_TKPI
+myfcd_0075,energy_kcal,calculated:atwater
 myfcd_0075,protein_g,measured_MyFCD
 myfcd_0075,fat_g,measured_MyFCD
 myfcd_0075,carbohydrate_g,transfer_TKPI
@@ -34076,7 +34076,7 @@ myfcd_0075,cholesterol_mg,USDA_model
 myfcd_0075,vitamin_b6_mg,USDA_model
 myfcd_0075,vitamin_b12_mcg,USDA_model
 myfcd_0076,water_g,imputed:missforest
-myfcd_0076,energy_kcal,transfer_TKPI
+myfcd_0076,energy_kcal,calculated:atwater
 myfcd_0076,protein_g,imputed:mice
 myfcd_0076,fat_g,imputed:missforest
 myfcd_0076,carbohydrate_g,transfer_TKPI
@@ -34104,7 +34104,7 @@ myfcd_0076,cholesterol_mg,USDA_model
 myfcd_0076,vitamin_b6_mg,USDA_model
 myfcd_0076,vitamin_b12_mcg,USDA_model
 myfcd_0077,water_g,imputed:missforest
-myfcd_0077,energy_kcal,transfer_TKPI
+myfcd_0077,energy_kcal,calculated:atwater
 myfcd_0077,protein_g,imputed:mice
 myfcd_0077,fat_g,imputed:missforest
 myfcd_0077,carbohydrate_g,transfer_TKPI
@@ -34132,7 +34132,7 @@ myfcd_0077,cholesterol_mg,USDA_direct_medium
 myfcd_0077,vitamin_b6_mg,USDA_direct_medium
 myfcd_0077,vitamin_b12_mcg,USDA_direct_medium
 myfcd_0078,water_g,imputed:missforest
-myfcd_0078,energy_kcal,transfer_TKPI
+myfcd_0078,energy_kcal,calculated:atwater
 myfcd_0078,protein_g,imputed:mice
 myfcd_0078,fat_g,measured_MyFCD
 myfcd_0078,carbohydrate_g,transfer_TKPI
@@ -34188,7 +34188,7 @@ myfcd_0079,cholesterol_mg,USDA_direct_medium
 myfcd_0079,vitamin_b6_mg,USDA_direct_medium
 myfcd_0079,vitamin_b12_mcg,USDA_direct_medium
 myfcd_0080,water_g,imputed:missforest
-myfcd_0080,energy_kcal,transfer_TKPI
+myfcd_0080,energy_kcal,calculated:atwater
 myfcd_0080,protein_g,imputed:mice
 myfcd_0080,fat_g,imputed:missforest
 myfcd_0080,carbohydrate_g,transfer_TKPI
@@ -34216,7 +34216,7 @@ myfcd_0080,cholesterol_mg,USDA_direct_high
 myfcd_0080,vitamin_b6_mg,USDA_direct_high
 myfcd_0080,vitamin_b12_mcg,USDA_direct_high
 myfcd_0081,water_g,imputed:missforest
-myfcd_0081,energy_kcal,transfer_TKPI
+myfcd_0081,energy_kcal,calculated:atwater
 myfcd_0081,protein_g,imputed:mice
 myfcd_0081,fat_g,imputed:missforest
 myfcd_0081,carbohydrate_g,transfer_TKPI
@@ -34244,7 +34244,7 @@ myfcd_0081,cholesterol_mg,USDA_direct_high
 myfcd_0081,vitamin_b6_mg,USDA_direct_high
 myfcd_0081,vitamin_b12_mcg,USDA_direct_high
 myfcd_0082,water_g,imputed:missforest
-myfcd_0082,energy_kcal,transfer_TKPI
+myfcd_0082,energy_kcal,calculated:atwater
 myfcd_0082,protein_g,imputed:mice
 myfcd_0082,fat_g,imputed:missforest
 myfcd_0082,carbohydrate_g,transfer_TKPI
@@ -34272,7 +34272,7 @@ myfcd_0082,cholesterol_mg,USDA_direct_medium
 myfcd_0082,vitamin_b6_mg,USDA_direct_medium
 myfcd_0082,vitamin_b12_mcg,USDA_direct_medium
 myfcd_0083,water_g,imputed:missforest
-myfcd_0083,energy_kcal,transfer_TKPI
+myfcd_0083,energy_kcal,calculated:atwater
 myfcd_0083,protein_g,imputed:mice
 myfcd_0083,fat_g,imputed:missforest
 myfcd_0083,carbohydrate_g,transfer_TKPI
@@ -34300,7 +34300,7 @@ myfcd_0083,cholesterol_mg,USDA_model
 myfcd_0083,vitamin_b6_mg,USDA_model
 myfcd_0083,vitamin_b12_mcg,USDA_model
 myfcd_0084,water_g,imputed:missforest
-myfcd_0084,energy_kcal,transfer_TKPI
+myfcd_0084,energy_kcal,calculated:atwater
 myfcd_0084,protein_g,imputed:mice
 myfcd_0084,fat_g,imputed:missforest
 myfcd_0084,carbohydrate_g,transfer_TKPI
@@ -34328,7 +34328,7 @@ myfcd_0084,cholesterol_mg,USDA_direct_high
 myfcd_0084,vitamin_b6_mg,USDA_direct_high
 myfcd_0084,vitamin_b12_mcg,USDA_direct_high
 myfcd_0085,water_g,imputed:missforest
-myfcd_0085,energy_kcal,transfer_TKPI
+myfcd_0085,energy_kcal,calculated:atwater
 myfcd_0085,protein_g,imputed:mice
 myfcd_0085,fat_g,imputed:missforest
 myfcd_0085,carbohydrate_g,transfer_TKPI
@@ -34356,7 +34356,7 @@ myfcd_0085,cholesterol_mg,USDA_model
 myfcd_0085,vitamin_b6_mg,USDA_model
 myfcd_0085,vitamin_b12_mcg,USDA_model
 myfcd_0086,water_g,imputed:missforest
-myfcd_0086,energy_kcal,transfer_TKPI
+myfcd_0086,energy_kcal,calculated:atwater
 myfcd_0086,protein_g,imputed:mice
 myfcd_0086,fat_g,imputed:missforest
 myfcd_0086,carbohydrate_g,transfer_TKPI
@@ -34384,7 +34384,7 @@ myfcd_0086,cholesterol_mg,USDA_direct_medium
 myfcd_0086,vitamin_b6_mg,USDA_direct_medium
 myfcd_0086,vitamin_b12_mcg,USDA_direct_medium
 myfcd_0087,water_g,imputed:missforest
-myfcd_0087,energy_kcal,transfer_TKPI
+myfcd_0087,energy_kcal,calculated:atwater
 myfcd_0087,protein_g,imputed:mice
 myfcd_0087,fat_g,imputed:missforest
 myfcd_0087,carbohydrate_g,transfer_TKPI
@@ -34412,7 +34412,7 @@ myfcd_0087,cholesterol_mg,USDA_direct_high
 myfcd_0087,vitamin_b6_mg,USDA_direct_high
 myfcd_0087,vitamin_b12_mcg,USDA_direct_high
 myfcd_0088,water_g,imputed:missforest
-myfcd_0088,energy_kcal,transfer_TKPI
+myfcd_0088,energy_kcal,calculated:atwater
 myfcd_0088,protein_g,imputed:mice
 myfcd_0088,fat_g,imputed:missforest
 myfcd_0088,carbohydrate_g,transfer_TKPI
@@ -34440,7 +34440,7 @@ myfcd_0088,cholesterol_mg,USDA_model
 myfcd_0088,vitamin_b6_mg,USDA_model
 myfcd_0088,vitamin_b12_mcg,USDA_model
 myfcd_0089,water_g,imputed:missforest
-myfcd_0089,energy_kcal,transfer_TKPI
+myfcd_0089,energy_kcal,calculated:atwater
 myfcd_0089,protein_g,imputed:mice
 myfcd_0089,fat_g,imputed:missforest
 myfcd_0089,carbohydrate_g,transfer_TKPI
@@ -34496,7 +34496,7 @@ myfcd_0090,cholesterol_mg,USDA_model
 myfcd_0090,vitamin_b6_mg,USDA_model
 myfcd_0090,vitamin_b12_mcg,USDA_model
 myfcd_0091,water_g,imputed:missforest
-myfcd_0091,energy_kcal,transfer_TKPI
+myfcd_0091,energy_kcal,calculated:atwater
 myfcd_0091,protein_g,imputed:mice
 myfcd_0091,fat_g,imputed:missforest
 myfcd_0091,carbohydrate_g,transfer_TKPI
@@ -34580,7 +34580,7 @@ myfcd_0093,cholesterol_mg,USDA_model
 myfcd_0093,vitamin_b6_mg,USDA_model
 myfcd_0093,vitamin_b12_mcg,USDA_model
 myfcd_0094,water_g,imputed:missforest
-myfcd_0094,energy_kcal,transfer_TKPI
+myfcd_0094,energy_kcal,calculated:atwater
 myfcd_0094,protein_g,imputed:mice
 myfcd_0094,fat_g,imputed:missforest
 myfcd_0094,carbohydrate_g,transfer_TKPI
@@ -34720,7 +34720,7 @@ myfcd_0098,cholesterol_mg,USDA_model
 myfcd_0098,vitamin_b6_mg,USDA_model
 myfcd_0098,vitamin_b12_mcg,USDA_model
 myfcd_0099,water_g,imputed:missforest
-myfcd_0099,energy_kcal,transfer_TKPI
+myfcd_0099,energy_kcal,calculated:atwater
 myfcd_0099,protein_g,imputed:mice
 myfcd_0099,fat_g,imputed:missforest
 myfcd_0099,carbohydrate_g,transfer_TKPI
@@ -34776,7 +34776,7 @@ myfcd_0100,cholesterol_mg,USDA_direct_high
 myfcd_0100,vitamin_b6_mg,USDA_direct_high
 myfcd_0100,vitamin_b12_mcg,USDA_direct_high
 myfcd_0101,water_g,imputed:missforest
-myfcd_0101,energy_kcal,transfer_TKPI
+myfcd_0101,energy_kcal,calculated:atwater
 myfcd_0101,protein_g,imputed:mice
 myfcd_0101,fat_g,imputed:missforest
 myfcd_0101,carbohydrate_g,transfer_TKPI
@@ -34860,7 +34860,7 @@ myfcd_0103,cholesterol_mg,USDA_model
 myfcd_0103,vitamin_b6_mg,USDA_model
 myfcd_0103,vitamin_b12_mcg,USDA_model
 myfcd_0104,water_g,imputed:missforest
-myfcd_0104,energy_kcal,transfer_TKPI
+myfcd_0104,energy_kcal,calculated:atwater
 myfcd_0104,protein_g,imputed:mice
 myfcd_0104,fat_g,imputed:missforest
 myfcd_0104,carbohydrate_g,transfer_TKPI
@@ -34888,7 +34888,7 @@ myfcd_0104,cholesterol_mg,USDA_direct_high
 myfcd_0104,vitamin_b6_mg,USDA_direct_high
 myfcd_0104,vitamin_b12_mcg,USDA_direct_high
 myfcd_0105,water_g,imputed:missforest
-myfcd_0105,energy_kcal,transfer_TKPI
+myfcd_0105,energy_kcal,calculated:atwater
 myfcd_0105,protein_g,imputed:mice
 myfcd_0105,fat_g,imputed:missforest
 myfcd_0105,carbohydrate_g,transfer_TKPI
@@ -34916,7 +34916,7 @@ myfcd_0105,cholesterol_mg,USDA_model
 myfcd_0105,vitamin_b6_mg,USDA_model
 myfcd_0105,vitamin_b12_mcg,USDA_model
 myfcd_0106,water_g,imputed:missforest
-myfcd_0106,energy_kcal,transfer_TKPI
+myfcd_0106,energy_kcal,calculated:atwater
 myfcd_0106,protein_g,imputed:mice
 myfcd_0106,fat_g,imputed:missforest
 myfcd_0106,carbohydrate_g,transfer_TKPI
@@ -34972,7 +34972,7 @@ myfcd_0107,cholesterol_mg,USDA_model
 myfcd_0107,vitamin_b6_mg,USDA_model
 myfcd_0107,vitamin_b12_mcg,USDA_model
 myfcd_0108,water_g,measured_MyFCD
-myfcd_0108,energy_kcal,transfer_TKPI
+myfcd_0108,energy_kcal,calculated:atwater
 myfcd_0108,protein_g,measured_MyFCD
 myfcd_0108,fat_g,measured_MyFCD
 myfcd_0108,carbohydrate_g,transfer_TKPI
@@ -35000,7 +35000,7 @@ myfcd_0108,cholesterol_mg,USDA_model
 myfcd_0108,vitamin_b6_mg,USDA_model
 myfcd_0108,vitamin_b12_mcg,USDA_model
 myfcd_0109,water_g,measured_MyFCD
-myfcd_0109,energy_kcal,transfer_TKPI
+myfcd_0109,energy_kcal,calculated:atwater
 myfcd_0109,protein_g,measured_MyFCD
 myfcd_0109,fat_g,measured_MyFCD
 myfcd_0109,carbohydrate_g,transfer_TKPI
@@ -35028,7 +35028,7 @@ myfcd_0109,cholesterol_mg,USDA_direct_high
 myfcd_0109,vitamin_b6_mg,USDA_direct_high
 myfcd_0109,vitamin_b12_mcg,USDA_direct_high
 myfcd_0111,water_g,measured_MyFCD
-myfcd_0111,energy_kcal,transfer_TKPI
+myfcd_0111,energy_kcal,calculated:atwater
 myfcd_0111,protein_g,measured_MyFCD
 myfcd_0111,fat_g,measured_MyFCD
 myfcd_0111,carbohydrate_g,transfer_TKPI
@@ -35056,7 +35056,7 @@ myfcd_0111,cholesterol_mg,USDA_model
 myfcd_0111,vitamin_b6_mg,USDA_model
 myfcd_0111,vitamin_b12_mcg,USDA_model
 myfcd_0112,water_g,measured_MyFCD
-myfcd_0112,energy_kcal,transfer_TKPI
+myfcd_0112,energy_kcal,calculated:atwater
 myfcd_0112,protein_g,measured_MyFCD
 myfcd_0112,fat_g,measured_MyFCD
 myfcd_0112,carbohydrate_g,transfer_TKPI
@@ -35084,7 +35084,7 @@ myfcd_0112,cholesterol_mg,USDA_model
 myfcd_0112,vitamin_b6_mg,USDA_model
 myfcd_0112,vitamin_b12_mcg,USDA_model
 myfcd_0113,water_g,imputed:missforest
-myfcd_0113,energy_kcal,transfer_TKPI
+myfcd_0113,energy_kcal,calculated:atwater
 myfcd_0113,protein_g,imputed:mice
 myfcd_0113,fat_g,imputed:missforest
 myfcd_0113,carbohydrate_g,transfer_TKPI
@@ -35112,7 +35112,7 @@ myfcd_0113,cholesterol_mg,USDA_direct_medium
 myfcd_0113,vitamin_b6_mg,USDA_direct_medium
 myfcd_0113,vitamin_b12_mcg,USDA_direct_medium
 myfcd_0115,water_g,imputed:missforest
-myfcd_0115,energy_kcal,transfer_TKPI
+myfcd_0115,energy_kcal,calculated:atwater
 myfcd_0115,protein_g,imputed:mice
 myfcd_0115,fat_g,imputed:missforest
 myfcd_0115,carbohydrate_g,transfer_TKPI
@@ -35224,7 +35224,7 @@ myfcd_0118,cholesterol_mg,USDA_model
 myfcd_0118,vitamin_b6_mg,USDA_model
 myfcd_0118,vitamin_b12_mcg,USDA_model
 myfcd_0119,water_g,imputed:missforest
-myfcd_0119,energy_kcal,transfer_TKPI
+myfcd_0119,energy_kcal,calculated:atwater
 myfcd_0119,protein_g,imputed:mice
 myfcd_0119,fat_g,imputed:missforest
 myfcd_0119,carbohydrate_g,transfer_TKPI
@@ -35336,7 +35336,7 @@ myfcd_0122,cholesterol_mg,USDA_direct_medium
 myfcd_0122,vitamin_b6_mg,USDA_direct_medium
 myfcd_0122,vitamin_b12_mcg,USDA_direct_medium
 myfcd_0123,water_g,imputed:missforest
-myfcd_0123,energy_kcal,transfer_TKPI
+myfcd_0123,energy_kcal,calculated:atwater
 myfcd_0123,protein_g,imputed:mice
 myfcd_0123,fat_g,imputed:missforest
 myfcd_0123,carbohydrate_g,transfer_TKPI
@@ -35364,7 +35364,7 @@ myfcd_0123,cholesterol_mg,USDA_model
 myfcd_0123,vitamin_b6_mg,USDA_model
 myfcd_0123,vitamin_b12_mcg,USDA_model
 myfcd_0124,water_g,imputed:missforest
-myfcd_0124,energy_kcal,transfer_TKPI
+myfcd_0124,energy_kcal,calculated:atwater
 myfcd_0124,protein_g,imputed:mice
 myfcd_0124,fat_g,imputed:missforest
 myfcd_0124,carbohydrate_g,transfer_TKPI
@@ -35392,7 +35392,7 @@ myfcd_0124,cholesterol_mg,USDA_model
 myfcd_0124,vitamin_b6_mg,USDA_model
 myfcd_0124,vitamin_b12_mcg,USDA_model
 myfcd_0125,water_g,imputed:missforest
-myfcd_0125,energy_kcal,transfer_TKPI
+myfcd_0125,energy_kcal,calculated:atwater
 myfcd_0125,protein_g,imputed:mice
 myfcd_0125,fat_g,imputed:missforest
 myfcd_0125,carbohydrate_g,transfer_TKPI
@@ -35476,7 +35476,7 @@ myfcd_0127,cholesterol_mg,USDA_model
 myfcd_0127,vitamin_b6_mg,USDA_model
 myfcd_0127,vitamin_b12_mcg,USDA_model
 myfcd_0128,water_g,imputed:missforest
-myfcd_0128,energy_kcal,transfer_TKPI
+myfcd_0128,energy_kcal,calculated:atwater
 myfcd_0128,protein_g,imputed:mice
 myfcd_0128,fat_g,imputed:missforest
 myfcd_0128,carbohydrate_g,transfer_TKPI
@@ -35532,7 +35532,7 @@ myfcd_0129,cholesterol_mg,USDA_model
 myfcd_0129,vitamin_b6_mg,USDA_model
 myfcd_0129,vitamin_b12_mcg,USDA_model
 myfcd_0130,water_g,imputed:missforest
-myfcd_0130,energy_kcal,transfer_TKPI
+myfcd_0130,energy_kcal,calculated:atwater
 myfcd_0130,protein_g,imputed:mice
 myfcd_0130,fat_g,imputed:missforest
 myfcd_0130,carbohydrate_g,transfer_TKPI
@@ -35560,7 +35560,7 @@ myfcd_0130,cholesterol_mg,USDA_model
 myfcd_0130,vitamin_b6_mg,USDA_model
 myfcd_0130,vitamin_b12_mcg,USDA_model
 myfcd_0131,water_g,imputed:missforest
-myfcd_0131,energy_kcal,transfer_TKPI
+myfcd_0131,energy_kcal,calculated:atwater
 myfcd_0131,protein_g,imputed:mice
 myfcd_0131,fat_g,imputed:missforest
 myfcd_0131,carbohydrate_g,transfer_TKPI
@@ -35644,7 +35644,7 @@ myfcd_0133,cholesterol_mg,USDA_direct_high
 myfcd_0133,vitamin_b6_mg,USDA_direct_high
 myfcd_0133,vitamin_b12_mcg,USDA_direct_high
 myfcd_0134,water_g,imputed:missforest
-myfcd_0134,energy_kcal,transfer_TKPI
+myfcd_0134,energy_kcal,calculated:atwater
 myfcd_0134,protein_g,imputed:mice
 myfcd_0134,fat_g,imputed:missforest
 myfcd_0134,carbohydrate_g,transfer_TKPI
@@ -35672,7 +35672,7 @@ myfcd_0134,cholesterol_mg,USDA_model
 myfcd_0134,vitamin_b6_mg,USDA_model
 myfcd_0134,vitamin_b12_mcg,USDA_model
 myfcd_0135,water_g,imputed:missforest
-myfcd_0135,energy_kcal,transfer_TKPI
+myfcd_0135,energy_kcal,calculated:atwater
 myfcd_0135,protein_g,imputed:mice
 myfcd_0135,fat_g,imputed:missforest
 myfcd_0135,carbohydrate_g,transfer_TKPI
@@ -35700,7 +35700,7 @@ myfcd_0135,cholesterol_mg,USDA_model
 myfcd_0135,vitamin_b6_mg,USDA_model
 myfcd_0135,vitamin_b12_mcg,USDA_model
 myfcd_0136,water_g,imputed:missforest
-myfcd_0136,energy_kcal,transfer_TKPI
+myfcd_0136,energy_kcal,calculated:atwater
 myfcd_0136,protein_g,imputed:mice
 myfcd_0136,fat_g,imputed:missforest
 myfcd_0136,carbohydrate_g,transfer_TKPI
@@ -35728,7 +35728,7 @@ myfcd_0136,cholesterol_mg,USDA_model
 myfcd_0136,vitamin_b6_mg,USDA_model
 myfcd_0136,vitamin_b12_mcg,USDA_model
 myfcd_0137,water_g,measured_MyFCD
-myfcd_0137,energy_kcal,transfer_TKPI
+myfcd_0137,energy_kcal,calculated:atwater
 myfcd_0137,protein_g,measured_MyFCD
 myfcd_0137,fat_g,measured_MyFCD
 myfcd_0137,carbohydrate_g,transfer_TKPI
@@ -35756,7 +35756,7 @@ myfcd_0137,cholesterol_mg,USDA_model
 myfcd_0137,vitamin_b6_mg,USDA_model
 myfcd_0137,vitamin_b12_mcg,USDA_model
 myfcd_0138,water_g,imputed:missforest
-myfcd_0138,energy_kcal,transfer_TKPI
+myfcd_0138,energy_kcal,calculated:atwater
 myfcd_0138,protein_g,imputed:mice
 myfcd_0138,fat_g,imputed:missforest
 myfcd_0138,carbohydrate_g,transfer_TKPI
@@ -35812,7 +35812,7 @@ myfcd_0139,cholesterol_mg,USDA_model
 myfcd_0139,vitamin_b6_mg,USDA_model
 myfcd_0139,vitamin_b12_mcg,USDA_model
 myfcd_0140,water_g,imputed:missforest
-myfcd_0140,energy_kcal,transfer_TKPI
+myfcd_0140,energy_kcal,calculated:atwater
 myfcd_0140,protein_g,imputed:mice
 myfcd_0140,fat_g,imputed:missforest
 myfcd_0140,carbohydrate_g,transfer_TKPI
@@ -35840,7 +35840,7 @@ myfcd_0140,cholesterol_mg,USDA_model
 myfcd_0140,vitamin_b6_mg,USDA_model
 myfcd_0140,vitamin_b12_mcg,USDA_model
 myfcd_0141,water_g,imputed:missforest
-myfcd_0141,energy_kcal,transfer_TKPI
+myfcd_0141,energy_kcal,calculated:atwater
 myfcd_0141,protein_g,imputed:mice
 myfcd_0141,fat_g,imputed:missforest
 myfcd_0141,carbohydrate_g,transfer_TKPI
@@ -35868,7 +35868,7 @@ myfcd_0141,cholesterol_mg,USDA_model
 myfcd_0141,vitamin_b6_mg,USDA_model
 myfcd_0141,vitamin_b12_mcg,USDA_model
 myfcd_0142,water_g,imputed:missforest
-myfcd_0142,energy_kcal,transfer_TKPI
+myfcd_0142,energy_kcal,calculated:atwater
 myfcd_0142,protein_g,imputed:mice
 myfcd_0142,fat_g,imputed:missforest
 myfcd_0142,carbohydrate_g,transfer_TKPI
@@ -35896,7 +35896,7 @@ myfcd_0142,cholesterol_mg,USDA_model
 myfcd_0142,vitamin_b6_mg,USDA_model
 myfcd_0142,vitamin_b12_mcg,USDA_model
 myfcd_0143,water_g,imputed:missforest
-myfcd_0143,energy_kcal,transfer_TKPI
+myfcd_0143,energy_kcal,calculated:atwater
 myfcd_0143,protein_g,imputed:mice
 myfcd_0143,fat_g,imputed:missforest
 myfcd_0143,carbohydrate_g,transfer_TKPI
@@ -35924,7 +35924,7 @@ myfcd_0143,cholesterol_mg,USDA_direct_high
 myfcd_0143,vitamin_b6_mg,USDA_direct_high
 myfcd_0143,vitamin_b12_mcg,USDA_direct_high
 myfcd_0144,water_g,imputed:missforest
-myfcd_0144,energy_kcal,transfer_TKPI
+myfcd_0144,energy_kcal,calculated:atwater
 myfcd_0144,protein_g,imputed:mice
 myfcd_0144,fat_g,imputed:missforest
 myfcd_0144,carbohydrate_g,transfer_TKPI
@@ -35952,7 +35952,7 @@ myfcd_0144,cholesterol_mg,USDA_direct_medium
 myfcd_0144,vitamin_b6_mg,USDA_direct_medium
 myfcd_0144,vitamin_b12_mcg,USDA_direct_medium
 myfcd_0145,water_g,imputed:missforest
-myfcd_0145,energy_kcal,transfer_TKPI
+myfcd_0145,energy_kcal,calculated:atwater
 myfcd_0145,protein_g,imputed:mice
 myfcd_0145,fat_g,imputed:missforest
 myfcd_0145,carbohydrate_g,transfer_TKPI
@@ -35980,7 +35980,7 @@ myfcd_0145,cholesterol_mg,USDA_model
 myfcd_0145,vitamin_b6_mg,USDA_model
 myfcd_0145,vitamin_b12_mcg,USDA_model
 myfcd_0146,water_g,imputed:missforest
-myfcd_0146,energy_kcal,transfer_TKPI
+myfcd_0146,energy_kcal,calculated:atwater
 myfcd_0146,protein_g,imputed:mice
 myfcd_0146,fat_g,imputed:missforest
 myfcd_0146,carbohydrate_g,transfer_TKPI
@@ -36008,7 +36008,7 @@ myfcd_0146,cholesterol_mg,USDA_model
 myfcd_0146,vitamin_b6_mg,USDA_model
 myfcd_0146,vitamin_b12_mcg,USDA_model
 myfcd_0147,water_g,imputed:missforest
-myfcd_0147,energy_kcal,transfer_TKPI
+myfcd_0147,energy_kcal,calculated:atwater
 myfcd_0147,protein_g,imputed:mice
 myfcd_0147,fat_g,imputed:missforest
 myfcd_0147,carbohydrate_g,transfer_TKPI
@@ -36120,7 +36120,7 @@ myfcd_0150,cholesterol_mg,USDA_model
 myfcd_0150,vitamin_b6_mg,USDA_model
 myfcd_0150,vitamin_b12_mcg,USDA_model
 myfcd_0151,water_g,imputed:missforest
-myfcd_0151,energy_kcal,transfer_TKPI
+myfcd_0151,energy_kcal,calculated:atwater
 myfcd_0151,protein_g,imputed:mice
 myfcd_0151,fat_g,imputed:missforest
 myfcd_0151,carbohydrate_g,transfer_TKPI
@@ -36148,7 +36148,7 @@ myfcd_0151,cholesterol_mg,USDA_model
 myfcd_0151,vitamin_b6_mg,USDA_model
 myfcd_0151,vitamin_b12_mcg,USDA_model
 myfcd_0152,water_g,imputed:missforest
-myfcd_0152,energy_kcal,transfer_TKPI
+myfcd_0152,energy_kcal,calculated:atwater
 myfcd_0152,protein_g,imputed:mice
 myfcd_0152,fat_g,imputed:missforest
 myfcd_0152,carbohydrate_g,transfer_TKPI
@@ -36176,7 +36176,7 @@ myfcd_0152,cholesterol_mg,USDA_model
 myfcd_0152,vitamin_b6_mg,USDA_model
 myfcd_0152,vitamin_b12_mcg,USDA_model
 myfcd_0153,water_g,imputed:missforest
-myfcd_0153,energy_kcal,transfer_TKPI
+myfcd_0153,energy_kcal,calculated:atwater
 myfcd_0153,protein_g,imputed:mice
 myfcd_0153,fat_g,imputed:missforest
 myfcd_0153,carbohydrate_g,transfer_TKPI
@@ -36204,7 +36204,7 @@ myfcd_0153,cholesterol_mg,USDA_model
 myfcd_0153,vitamin_b6_mg,USDA_model
 myfcd_0153,vitamin_b12_mcg,USDA_model
 myfcd_0154,water_g,imputed:missforest
-myfcd_0154,energy_kcal,transfer_TKPI
+myfcd_0154,energy_kcal,calculated:atwater
 myfcd_0154,protein_g,imputed:mice
 myfcd_0154,fat_g,imputed:missforest
 myfcd_0154,carbohydrate_g,transfer_TKPI
@@ -36232,7 +36232,7 @@ myfcd_0154,cholesterol_mg,USDA_model
 myfcd_0154,vitamin_b6_mg,USDA_model
 myfcd_0154,vitamin_b12_mcg,USDA_model
 myfcd_0155,water_g,measured_MyFCD
-myfcd_0155,energy_kcal,transfer_TKPI
+myfcd_0155,energy_kcal,calculated:atwater
 myfcd_0155,protein_g,measured_MyFCD
 myfcd_0155,fat_g,measured_MyFCD
 myfcd_0155,carbohydrate_g,transfer_TKPI
@@ -36260,7 +36260,7 @@ myfcd_0155,cholesterol_mg,USDA_model
 myfcd_0155,vitamin_b6_mg,USDA_model
 myfcd_0155,vitamin_b12_mcg,USDA_model
 myfcd_0156,water_g,measured_MyFCD
-myfcd_0156,energy_kcal,transfer_TKPI
+myfcd_0156,energy_kcal,calculated:atwater
 myfcd_0156,protein_g,measured_MyFCD
 myfcd_0156,fat_g,measured_MyFCD
 myfcd_0156,carbohydrate_g,transfer_TKPI
@@ -36288,7 +36288,7 @@ myfcd_0156,cholesterol_mg,USDA_model
 myfcd_0156,vitamin_b6_mg,USDA_model
 myfcd_0156,vitamin_b12_mcg,USDA_model
 myfcd_0157,water_g,imputed:missforest
-myfcd_0157,energy_kcal,transfer_TKPI
+myfcd_0157,energy_kcal,calculated:atwater
 myfcd_0157,protein_g,imputed:mice
 myfcd_0157,fat_g,imputed:missforest
 myfcd_0157,carbohydrate_g,transfer_TKPI
@@ -36344,7 +36344,7 @@ myfcd_0158,cholesterol_mg,USDA_direct_medium
 myfcd_0158,vitamin_b6_mg,USDA_direct_medium
 myfcd_0158,vitamin_b12_mcg,USDA_direct_medium
 myfcd_0159,water_g,imputed:missforest
-myfcd_0159,energy_kcal,transfer_TKPI
+myfcd_0159,energy_kcal,calculated:atwater
 myfcd_0159,protein_g,imputed:mice
 myfcd_0159,fat_g,imputed:missforest
 myfcd_0159,carbohydrate_g,transfer_TKPI
@@ -36400,7 +36400,7 @@ myfcd_0160,cholesterol_mg,USDA_model
 myfcd_0160,vitamin_b6_mg,USDA_model
 myfcd_0160,vitamin_b12_mcg,USDA_model
 myfcd_0161,water_g,measured_MyFCD
-myfcd_0161,energy_kcal,transfer_TKPI
+myfcd_0161,energy_kcal,calculated:atwater
 myfcd_0161,protein_g,measured_MyFCD
 myfcd_0161,fat_g,measured_MyFCD
 myfcd_0161,carbohydrate_g,transfer_TKPI
@@ -36428,7 +36428,7 @@ myfcd_0161,cholesterol_mg,USDA_model
 myfcd_0161,vitamin_b6_mg,USDA_model
 myfcd_0161,vitamin_b12_mcg,USDA_model
 myfcd_0162,water_g,imputed:missforest
-myfcd_0162,energy_kcal,transfer_TKPI
+myfcd_0162,energy_kcal,calculated:atwater
 myfcd_0162,protein_g,imputed:mice
 myfcd_0162,fat_g,imputed:missforest
 myfcd_0162,carbohydrate_g,transfer_TKPI
@@ -36456,7 +36456,7 @@ myfcd_0162,cholesterol_mg,USDA_model
 myfcd_0162,vitamin_b6_mg,USDA_model
 myfcd_0162,vitamin_b12_mcg,USDA_model
 myfcd_0163,water_g,measured_MyFCD
-myfcd_0163,energy_kcal,transfer_TKPI
+myfcd_0163,energy_kcal,calculated:atwater
 myfcd_0163,protein_g,measured_MyFCD
 myfcd_0163,fat_g,measured_MyFCD
 myfcd_0163,carbohydrate_g,transfer_TKPI
@@ -36484,7 +36484,7 @@ myfcd_0163,cholesterol_mg,USDA_model
 myfcd_0163,vitamin_b6_mg,USDA_model
 myfcd_0163,vitamin_b12_mcg,USDA_model
 myfcd_0164,water_g,imputed:missforest
-myfcd_0164,energy_kcal,transfer_TKPI
+myfcd_0164,energy_kcal,calculated:atwater
 myfcd_0164,protein_g,imputed:mice
 myfcd_0164,fat_g,imputed:missforest
 myfcd_0164,carbohydrate_g,transfer_TKPI
@@ -36512,7 +36512,7 @@ myfcd_0164,cholesterol_mg,USDA_model
 myfcd_0164,vitamin_b6_mg,USDA_model
 myfcd_0164,vitamin_b12_mcg,USDA_model
 myfcd_0165,water_g,measured_MyFCD
-myfcd_0165,energy_kcal,transfer_TKPI
+myfcd_0165,energy_kcal,calculated:atwater
 myfcd_0165,protein_g,measured_MyFCD
 myfcd_0165,fat_g,measured_MyFCD
 myfcd_0165,carbohydrate_g,transfer_TKPI
@@ -36540,7 +36540,7 @@ myfcd_0165,cholesterol_mg,USDA_model
 myfcd_0165,vitamin_b6_mg,USDA_model
 myfcd_0165,vitamin_b12_mcg,USDA_model
 myfcd_0166,water_g,measured_MyFCD
-myfcd_0166,energy_kcal,transfer_TKPI
+myfcd_0166,energy_kcal,calculated:atwater
 myfcd_0166,protein_g,measured_MyFCD
 myfcd_0166,fat_g,measured_MyFCD
 myfcd_0166,carbohydrate_g,transfer_TKPI
@@ -36568,7 +36568,7 @@ myfcd_0166,cholesterol_mg,USDA_model
 myfcd_0166,vitamin_b6_mg,USDA_model
 myfcd_0166,vitamin_b12_mcg,USDA_model
 myfcd_0167,water_g,measured_MyFCD
-myfcd_0167,energy_kcal,transfer_TKPI
+myfcd_0167,energy_kcal,calculated:atwater
 myfcd_0167,protein_g,measured_MyFCD
 myfcd_0167,fat_g,measured_MyFCD
 myfcd_0167,carbohydrate_g,transfer_TKPI
@@ -36596,7 +36596,7 @@ myfcd_0167,cholesterol_mg,USDA_model
 myfcd_0167,vitamin_b6_mg,USDA_model
 myfcd_0167,vitamin_b12_mcg,USDA_model
 myfcd_0168,water_g,imputed:missforest
-myfcd_0168,energy_kcal,transfer_TKPI
+myfcd_0168,energy_kcal,calculated:atwater
 myfcd_0168,protein_g,imputed:mice
 myfcd_0168,fat_g,imputed:missforest
 myfcd_0168,carbohydrate_g,transfer_TKPI
@@ -36624,7 +36624,7 @@ myfcd_0168,cholesterol_mg,USDA_model
 myfcd_0168,vitamin_b6_mg,USDA_model
 myfcd_0168,vitamin_b12_mcg,USDA_model
 myfcd_0169,water_g,measured_MyFCD
-myfcd_0169,energy_kcal,transfer_TKPI
+myfcd_0169,energy_kcal,calculated:atwater
 myfcd_0169,protein_g,measured_MyFCD
 myfcd_0169,fat_g,measured_MyFCD
 myfcd_0169,carbohydrate_g,transfer_TKPI
@@ -36652,7 +36652,7 @@ myfcd_0169,cholesterol_mg,USDA_model
 myfcd_0169,vitamin_b6_mg,USDA_model
 myfcd_0169,vitamin_b12_mcg,USDA_model
 myfcd_0170,water_g,imputed:missforest
-myfcd_0170,energy_kcal,transfer_TKPI
+myfcd_0170,energy_kcal,calculated:atwater
 myfcd_0170,protein_g,imputed:mice
 myfcd_0170,fat_g,imputed:missforest
 myfcd_0170,carbohydrate_g,transfer_TKPI
@@ -36680,7 +36680,7 @@ myfcd_0170,cholesterol_mg,USDA_direct_medium
 myfcd_0170,vitamin_b6_mg,USDA_direct_medium
 myfcd_0170,vitamin_b12_mcg,USDA_direct_medium
 myfcd_0171,water_g,imputed:missforest
-myfcd_0171,energy_kcal,transfer_TKPI
+myfcd_0171,energy_kcal,calculated:atwater
 myfcd_0171,protein_g,imputed:mice
 myfcd_0171,fat_g,imputed:missforest
 myfcd_0171,carbohydrate_g,transfer_TKPI
@@ -36708,7 +36708,7 @@ myfcd_0171,cholesterol_mg,USDA_model
 myfcd_0171,vitamin_b6_mg,USDA_model
 myfcd_0171,vitamin_b12_mcg,USDA_model
 myfcd_0172,water_g,imputed:missforest
-myfcd_0172,energy_kcal,transfer_TKPI
+myfcd_0172,energy_kcal,calculated:atwater
 myfcd_0172,protein_g,imputed:mice
 myfcd_0172,fat_g,imputed:missforest
 myfcd_0172,carbohydrate_g,transfer_TKPI
@@ -36764,7 +36764,7 @@ myfcd_0173,cholesterol_mg,USDA_model
 myfcd_0173,vitamin_b6_mg,USDA_model
 myfcd_0173,vitamin_b12_mcg,USDA_model
 myfcd_0174,water_g,imputed:missforest
-myfcd_0174,energy_kcal,transfer_TKPI
+myfcd_0174,energy_kcal,calculated:atwater
 myfcd_0174,protein_g,imputed:mice
 myfcd_0174,fat_g,imputed:missforest
 myfcd_0174,carbohydrate_g,transfer_TKPI
@@ -36820,7 +36820,7 @@ myfcd_0175,cholesterol_mg,USDA_direct_medium
 myfcd_0175,vitamin_b6_mg,USDA_direct_medium
 myfcd_0175,vitamin_b12_mcg,USDA_direct_medium
 myfcd_0176,water_g,imputed:missforest
-myfcd_0176,energy_kcal,transfer_TKPI
+myfcd_0176,energy_kcal,calculated:atwater
 myfcd_0176,protein_g,imputed:mice
 myfcd_0176,fat_g,imputed:missforest
 myfcd_0176,carbohydrate_g,transfer_TKPI
@@ -36876,7 +36876,7 @@ myfcd_0177,cholesterol_mg,USDA_model
 myfcd_0177,vitamin_b6_mg,USDA_model
 myfcd_0177,vitamin_b12_mcg,USDA_model
 myfcd_0178,water_g,imputed:missforest
-myfcd_0178,energy_kcal,transfer_TKPI
+myfcd_0178,energy_kcal,calculated:atwater
 myfcd_0178,protein_g,imputed:mice
 myfcd_0178,fat_g,imputed:missforest
 myfcd_0178,carbohydrate_g,transfer_TKPI
@@ -36904,7 +36904,7 @@ myfcd_0178,cholesterol_mg,USDA_model
 myfcd_0178,vitamin_b6_mg,USDA_model
 myfcd_0178,vitamin_b12_mcg,USDA_model
 myfcd_0179,water_g,measured_MyFCD
-myfcd_0179,energy_kcal,transfer_TKPI
+myfcd_0179,energy_kcal,calculated:atwater
 myfcd_0179,protein_g,measured_MyFCD
 myfcd_0179,fat_g,measured_MyFCD
 myfcd_0179,carbohydrate_g,transfer_TKPI
@@ -36932,7 +36932,7 @@ myfcd_0179,cholesterol_mg,USDA_model
 myfcd_0179,vitamin_b6_mg,USDA_model
 myfcd_0179,vitamin_b12_mcg,USDA_model
 myfcd_0180,water_g,imputed:missforest
-myfcd_0180,energy_kcal,transfer_TKPI
+myfcd_0180,energy_kcal,calculated:atwater
 myfcd_0180,protein_g,imputed:mice
 myfcd_0180,fat_g,imputed:missforest
 myfcd_0180,carbohydrate_g,transfer_TKPI
@@ -36960,7 +36960,7 @@ myfcd_0180,cholesterol_mg,USDA_model
 myfcd_0180,vitamin_b6_mg,USDA_model
 myfcd_0180,vitamin_b12_mcg,USDA_model
 myfcd_0181,water_g,imputed:missforest
-myfcd_0181,energy_kcal,transfer_TKPI
+myfcd_0181,energy_kcal,calculated:atwater
 myfcd_0181,protein_g,imputed:mice
 myfcd_0181,fat_g,imputed:missforest
 myfcd_0181,carbohydrate_g,transfer_TKPI
@@ -36988,7 +36988,7 @@ myfcd_0181,cholesterol_mg,USDA_model
 myfcd_0181,vitamin_b6_mg,USDA_model
 myfcd_0181,vitamin_b12_mcg,USDA_model
 myfcd_0182,water_g,imputed:missforest
-myfcd_0182,energy_kcal,transfer_TKPI
+myfcd_0182,energy_kcal,calculated:atwater
 myfcd_0182,protein_g,imputed:mice
 myfcd_0182,fat_g,imputed:missforest
 myfcd_0182,carbohydrate_g,transfer_TKPI
@@ -37044,7 +37044,7 @@ myfcd_0183,cholesterol_mg,USDA_model
 myfcd_0183,vitamin_b6_mg,USDA_model
 myfcd_0183,vitamin_b12_mcg,USDA_model
 myfcd_0184,water_g,imputed:missforest
-myfcd_0184,energy_kcal,transfer_TKPI
+myfcd_0184,energy_kcal,calculated:atwater
 myfcd_0184,protein_g,imputed:mice
 myfcd_0184,fat_g,imputed:missforest
 myfcd_0184,carbohydrate_g,transfer_TKPI
@@ -37072,7 +37072,7 @@ myfcd_0184,cholesterol_mg,USDA_model
 myfcd_0184,vitamin_b6_mg,USDA_model
 myfcd_0184,vitamin_b12_mcg,USDA_model
 myfcd_0185,water_g,imputed:missforest
-myfcd_0185,energy_kcal,transfer_TKPI
+myfcd_0185,energy_kcal,calculated:atwater
 myfcd_0185,protein_g,imputed:mice
 myfcd_0185,fat_g,imputed:missforest
 myfcd_0185,carbohydrate_g,transfer_TKPI
@@ -37100,7 +37100,7 @@ myfcd_0185,cholesterol_mg,USDA_model
 myfcd_0185,vitamin_b6_mg,USDA_model
 myfcd_0185,vitamin_b12_mcg,USDA_model
 myfcd_0186,water_g,imputed:missforest
-myfcd_0186,energy_kcal,transfer_TKPI
+myfcd_0186,energy_kcal,calculated:atwater
 myfcd_0186,protein_g,imputed:mice
 myfcd_0186,fat_g,imputed:missforest
 myfcd_0186,carbohydrate_g,transfer_TKPI
@@ -37128,7 +37128,7 @@ myfcd_0186,cholesterol_mg,USDA_model
 myfcd_0186,vitamin_b6_mg,USDA_model
 myfcd_0186,vitamin_b12_mcg,USDA_model
 myfcd_0187,water_g,measured_MyFCD
-myfcd_0187,energy_kcal,transfer_TKPI
+myfcd_0187,energy_kcal,calculated:atwater
 myfcd_0187,protein_g,measured_MyFCD
 myfcd_0187,fat_g,measured_MyFCD
 myfcd_0187,carbohydrate_g,transfer_TKPI
@@ -37156,7 +37156,7 @@ myfcd_0187,cholesterol_mg,USDA_model
 myfcd_0187,vitamin_b6_mg,USDA_model
 myfcd_0187,vitamin_b12_mcg,USDA_model
 myfcd_0188,water_g,measured_MyFCD
-myfcd_0188,energy_kcal,transfer_TKPI
+myfcd_0188,energy_kcal,calculated:atwater
 myfcd_0188,protein_g,measured_MyFCD
 myfcd_0188,fat_g,measured_MyFCD
 myfcd_0188,carbohydrate_g,transfer_TKPI
@@ -37184,7 +37184,7 @@ myfcd_0188,cholesterol_mg,USDA_model
 myfcd_0188,vitamin_b6_mg,USDA_model
 myfcd_0188,vitamin_b12_mcg,USDA_model
 myfcd_0189,water_g,measured_MyFCD
-myfcd_0189,energy_kcal,transfer_TKPI
+myfcd_0189,energy_kcal,calculated:atwater
 myfcd_0189,protein_g,measured_MyFCD
 myfcd_0189,fat_g,measured_MyFCD
 myfcd_0189,carbohydrate_g,transfer_TKPI
@@ -37296,7 +37296,7 @@ myfcd_0192,cholesterol_mg,USDA_model
 myfcd_0192,vitamin_b6_mg,USDA_model
 myfcd_0192,vitamin_b12_mcg,USDA_model
 myfcd_0194,water_g,imputed:missforest
-myfcd_0194,energy_kcal,transfer_TKPI
+myfcd_0194,energy_kcal,calculated:atwater
 myfcd_0194,protein_g,imputed:mice
 myfcd_0194,fat_g,imputed:missforest
 myfcd_0194,carbohydrate_g,transfer_TKPI
@@ -37324,7 +37324,7 @@ myfcd_0194,cholesterol_mg,USDA_model
 myfcd_0194,vitamin_b6_mg,USDA_model
 myfcd_0194,vitamin_b12_mcg,USDA_model
 myfcd_0195,water_g,imputed:missforest
-myfcd_0195,energy_kcal,transfer_TKPI
+myfcd_0195,energy_kcal,calculated:atwater
 myfcd_0195,protein_g,imputed:mice
 myfcd_0195,fat_g,imputed:missforest
 myfcd_0195,carbohydrate_g,transfer_TKPI
@@ -37436,7 +37436,7 @@ myfcd_0198,cholesterol_mg,USDA_model
 myfcd_0198,vitamin_b6_mg,USDA_model
 myfcd_0198,vitamin_b12_mcg,USDA_model
 myfcd_0199,water_g,imputed:missforest
-myfcd_0199,energy_kcal,transfer_TKPI
+myfcd_0199,energy_kcal,calculated:atwater
 myfcd_0199,protein_g,imputed:mice
 myfcd_0199,fat_g,imputed:missforest
 myfcd_0199,carbohydrate_g,transfer_TKPI
@@ -37492,7 +37492,7 @@ myfcd_0200,cholesterol_mg,USDA_model
 myfcd_0200,vitamin_b6_mg,USDA_model
 myfcd_0200,vitamin_b12_mcg,USDA_model
 myfcd_0201,water_g,imputed:missforest
-myfcd_0201,energy_kcal,transfer_TKPI
+myfcd_0201,energy_kcal,calculated:atwater
 myfcd_0201,protein_g,imputed:mice
 myfcd_0201,fat_g,imputed:missforest
 myfcd_0201,carbohydrate_g,transfer_TKPI
@@ -37520,7 +37520,7 @@ myfcd_0201,cholesterol_mg,USDA_model
 myfcd_0201,vitamin_b6_mg,USDA_model
 myfcd_0201,vitamin_b12_mcg,USDA_model
 myfcd_0202,water_g,imputed:missforest
-myfcd_0202,energy_kcal,transfer_TKPI
+myfcd_0202,energy_kcal,calculated:atwater
 myfcd_0202,protein_g,imputed:mice
 myfcd_0202,fat_g,imputed:missforest
 myfcd_0202,carbohydrate_g,transfer_TKPI
@@ -37548,7 +37548,7 @@ myfcd_0202,cholesterol_mg,USDA_model
 myfcd_0202,vitamin_b6_mg,USDA_model
 myfcd_0202,vitamin_b12_mcg,USDA_model
 myfcd_0203,water_g,imputed:missforest
-myfcd_0203,energy_kcal,transfer_TKPI
+myfcd_0203,energy_kcal,calculated:atwater
 myfcd_0203,protein_g,imputed:mice
 myfcd_0203,fat_g,imputed:missforest
 myfcd_0203,carbohydrate_g,transfer_TKPI
@@ -37576,7 +37576,7 @@ myfcd_0203,cholesterol_mg,USDA_model
 myfcd_0203,vitamin_b6_mg,USDA_model
 myfcd_0203,vitamin_b12_mcg,USDA_model
 myfcd_0204,water_g,imputed:missforest
-myfcd_0204,energy_kcal,transfer_TKPI
+myfcd_0204,energy_kcal,calculated:atwater
 myfcd_0204,protein_g,imputed:mice
 myfcd_0204,fat_g,imputed:missforest
 myfcd_0204,carbohydrate_g,transfer_TKPI
@@ -38304,7 +38304,7 @@ myfcd_0230,cholesterol_mg,USDA_model
 myfcd_0230,vitamin_b6_mg,USDA_model
 myfcd_0230,vitamin_b12_mcg,USDA_model
 myfcd_0231,water_g,imputed:missforest
-myfcd_0231,energy_kcal,transfer_TKPI
+myfcd_0231,energy_kcal,calculated:atwater
 myfcd_0231,protein_g,imputed:mice
 myfcd_0231,fat_g,imputed:missforest
 myfcd_0231,carbohydrate_g,transfer_TKPI
@@ -38360,7 +38360,7 @@ myfcd_0232,cholesterol_mg,USDA_model
 myfcd_0232,vitamin_b6_mg,USDA_model
 myfcd_0232,vitamin_b12_mcg,USDA_model
 myfcd_0233,water_g,imputed:missforest
-myfcd_0233,energy_kcal,transfer_TKPI
+myfcd_0233,energy_kcal,calculated:atwater
 myfcd_0233,protein_g,imputed:mice
 myfcd_0233,fat_g,imputed:missforest
 myfcd_0233,carbohydrate_g,transfer_TKPI

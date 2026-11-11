@@ -16,6 +16,10 @@ Rule
 3. A nutrient with no observed value in a source cannot be evaluated or imputed
    internally; it takes the cross-DB transfer (MyFCD) as its only option.
 4. Anything else without a score keeps MissForest (the Stage 3 default).
+5. energy_kcal is never imputed: the TKPI guideline (Kemenkes RI 2017, p. 9)
+   requires energy to be calculated from carbohydrate, fat and protein, so it
+   always takes the Atwater calculation (src/imputation/derived.py). Its
+   hold-out score is still reported for comparison.
 
 Outputs:
 - data_processed/method_selection.csv
@@ -34,6 +38,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from config.imputation_settings import IMPUTATION_NUTRIENT_FIELDS, METHOD_SELECTION_PATH
 from src.imputation import io_utils
+from src.imputation.derived import ATWATER_METHOD, ENERGY_COLUMN
 
 ROOT = Path(__file__).resolve().parents[1]
 HOLDOUT_SUMMARY_PATH = ROOT / "reports" / "holdout_evaluation.csv"
@@ -41,6 +46,7 @@ REPORT_PATH = ROOT / "reports" / "method_selection.md"
 
 TOLERANCE = 0.02
 # Ties go to the simpler variant: indicators must earn their place.
+ATWATER_REASON = "Pedoman TKPI (Kemenkes RI 2017, hlm. 9): energi dihitung dari protein, lemak dan karbohidrat (Atwater 4/9/4), tidak diimputasi"
 PREFERENCE = ["missforest", "missforest_ind", "crossdb", "mice", "knn", "group_median", "median", "mean"]
 DEFAULT_METHOD = "missforest"
 
@@ -66,6 +72,22 @@ def select(summary: pd.DataFrame, enriched: dict[str, pd.DataFrame], tolerance: 
         for nutrient in IMPUTATION_NUTRIENT_FIELDS:
             block = summary[(summary["source"] == source) & (summary["nutrient"] == nutrient)].dropna(subset=["nrmse"])
             n_observed = int(frame[nutrient].notna().sum()) if nutrient in frame else 0
+            if nutrient == ENERGY_COLUMN:
+                scored = block.set_index("method")
+                rows.append(
+                    {
+                        "source": source,
+                        "nutrient": nutrient,
+                        "method": ATWATER_METHOD,
+                        "reason": ATWATER_REASON,
+                        "n_observed": n_observed,
+                        "n_holdout_cells": int(scored["n_holdout_cells"].get(ATWATER_METHOD, 0)) or None,
+                        "nrmse": round(float(scored["nrmse"][ATWATER_METHOD]), 4) if ATWATER_METHOD in scored.index else None,
+                        "nrmse_missforest": round(float(scored["nrmse"]["missforest"]), 4) if "missforest" in scored.index else None,
+                    }
+                )
+                continue
+            block = block[block["method"] != ATWATER_METHOD]
             if not block.empty:
                 method, reason = choose(block, tolerance)
                 chosen = block.set_index("method").loc[method]
@@ -105,6 +127,8 @@ def write_report(selection: pd.DataFrame, tolerance: float) -> None:
         "di antara yang setara diutamakan " + " > ".join(PREFERENCE) + ".",
         "2. Nutrisi tanpa nilai terukur di MyFCD memakai cross-DB transfer dari TKPI.",
         "3. Nutrisi lain tanpa skor hold-out memakai MissForest (bawaan Tahap 3).",
+        "4. energy_kcal selalu dihitung dengan Atwater dari protein, lemak dan karbohidrat (Pedoman TKPI, Kemenkes RI 2017); "
+        "nRMSE-nya dari hold-out dicantumkan sebagai pembanding.",
         "",
     ]
     for source in ["TKPI", "MyFCD"]:

@@ -9,7 +9,9 @@ of that imputed value.
 Each nutrient is resampled with the method Stage 3 actually used for it
 (data_processed/method_selection.csv). The cross-DB transfer uses the TKPI
 MissForest fit of the same b, applied to MyFCD, so its uncertainty reflects
-resampling of its training source.
+resampling of its training source. Energy calculated with Atwater (TKPI
+guideline) is recomputed from the replicate's macronutrients, so its spread
+is the propagated uncertainty of imputed protein, fat and carbohydrate.
 """
 
 from __future__ import annotations
@@ -27,6 +29,7 @@ from src.imputation.baselines import GROUP_COLUMN, MICE_MAX_ITER, group_medians
 
 from src.cleaning.normalizers import is_missing
 from src.imputation.cross_transfer import apply_fitted_imputer
+from src.imputation.derived import ATWATER_FACTORS, ATWATER_METHOD, ENERGY_COLUMN, atwater_energy
 from src.imputation.missforest_imputer import fit_random_forest_imputer
 
 
@@ -111,7 +114,7 @@ def _one_replicate(
     predictions = {}
     for source, nutrient_methods in plan.items():
         out = frames[source][["food_id"]].copy()
-        for method in sorted(set(nutrient_methods.values())):
+        for method in sorted(set(nutrient_methods.values()) - {ATWATER_METHOD}):
             targets = [n for n, m in nutrient_methods.items() if m == method]
             if method == "missforest":
                 predicted = apply_fitted_imputer(forest(source), frames[source], targets)
@@ -123,6 +126,12 @@ def _one_replicate(
                 predicted = _fit_apply(method, resampled[source], frames[source], feature_columns[source], replicate_seed)
             for target in targets:
                 out[target] = predicted[target] if target in predicted.columns else np.nan
+        if nutrient_methods.get(ENERGY_COLUMN) == ATWATER_METHOD:
+            macros = pd.DataFrame(index=out.index)
+            for column in ATWATER_FACTORS:
+                observed = numeric(frames[source][column])
+                macros[column] = observed.fillna(numeric(out[column])) if column in out.columns else observed
+            out[ENERGY_COLUMN] = atwater_energy(macros)
         predictions[source] = out
     return predictions
 

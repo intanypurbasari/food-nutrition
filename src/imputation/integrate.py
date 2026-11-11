@@ -32,6 +32,7 @@ import pandas as pd
 from config.imputation_settings import IMPUTATION_NUTRIENT_FIELDS, USDA_BORROWED_COLUMNS
 from src.cleaning.normalizers import compute_completeness_score, compute_missing_nutrient_count, is_missing
 from src.imputation import io_utils
+from src.imputation.derived import ATWATER_METHOD, ENERGY_COLUMN, fill_energy
 from src.schema.nutrition_schema import schema_columns
 
 NOT_ROUTED_LABEL = "Tidak dirutekan Stage 2 (di luar cakupan availability_matrix)"
@@ -71,7 +72,8 @@ def _assemble_source_nutrients(
 
         if selection is not None and (source_name, nutrient) in selection.index:
             method = selection.loc[(source_name, nutrient), "method"]
-            base[nutrient] = _method_frame(sources, method)[nutrient]
+            if method != ATWATER_METHOD:  # calculated after the loop, from the final macronutrients
+                base[nutrient] = _method_frame(sources, method)[nutrient]
             entry["strategy"] = entry["strategy"] or "Dipilih per nutrisi (method_selection.csv)"
             entry["methods"][source_name] = method
             entry["resolved_crossdb" if method == "crossdb" else "resolved_internal"] += len(base)
@@ -106,6 +108,10 @@ def _assemble_source_nutrients(
         else:
             raise ValueError(f"Unknown strategi_imputasi value for '{nutrient}': {strategy}")
 
+    energy_key = (source_name, ENERGY_COLUMN)
+    if selection is not None and energy_key in selection.index and selection.loc[energy_key, "method"] == ATWATER_METHOD:
+        missing = sources["enriched"][ENERGY_COLUMN].apply(is_missing)
+        base = fill_energy(base, missing)
     return base
 
 

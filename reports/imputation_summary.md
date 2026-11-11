@@ -7,7 +7,7 @@
 | Nutrient | Strategy | Method TKPI | Method MyFCD | Resolved (internal) | Resolved (cross-DB) | Resolved (USDA-borrow) | Unresolved |
 |---|---|---|---|---|---|---|---|
 | water_g | Dipilih per nutrisi (method_selection.csv) | missforest | missforest | 1380 | 0 | 0 | 0 |
-| energy_kcal | Dipilih per nutrisi (method_selection.csv) | missforest | crossdb | 1146 | 234 | 0 | 0 |
+| energy_kcal | Dipilih per nutrisi (method_selection.csv) | atwater | atwater | 1380 | 0 | 0 | 0 |
 | protein_g | Dipilih per nutrisi (method_selection.csv) | mice | mice | 1380 | 0 | 0 | 0 |
 | fat_g | Dipilih per nutrisi (method_selection.csv) | missforest | missforest | 1380 | 0 | 0 | 0 |
 | carbohydrate_g | Dipilih per nutrisi (method_selection.csv) | missforest | crossdb | 1146 | 234 | 0 | 0 |
