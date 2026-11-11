@@ -1,6 +1,6 @@
 source,nutrient,method,reason,n_observed,n_holdout_cells,nrmse,nrmse_missforest
 TKPI,water_g,missforest,nRMSE terendah,1144,516.0,0.2312,0.2312
-TKPI,energy_kcal,missforest,nRMSE terendah,1146,516.0,0.2353,0.2353
+TKPI,energy_kcal,atwater,"Pedoman TKPI (Kemenkes RI 2017, hlm. 9): energi dihitung dari protein, lemak dan karbohidrat (Atwater 4/9/4), tidak diimputasi",1146,516.0,0.228,0.2353
 TKPI,protein_g,mice,nRMSE terendah,1145,516.0,0.5248,0.5874
 TKPI,fat_g,missforest,nRMSE terendah,1145,516.0,0.2652,0.2652
 TKPI,carbohydrate_g,missforest,nRMSE terendah,1146,516.0,0.3269,0.3269
@@ -21,7 +21,7 @@ TKPI,vitamin_b2_mg,knn,selisih <= 0.02 dari mean; diutamakan metode multivariat,
 TKPI,niacin_mg,missforest,selisih <= 0.02 dari missforest_ind; diutamakan metode multivariat,807,363.0,1.0021,1.0021
 TKPI,vitamin_c_mg,missforest_ind,nRMSE terendah,857,387.0,0.8717,0.9065
 MyFCD,water_g,missforest,nRMSE terendah,150,220.0,0.5303,0.5303
-MyFCD,energy_kcal,crossdb,nRMSE terendah,105,160.0,0.2992,0.4362
+MyFCD,energy_kcal,atwater,"Pedoman TKPI (Kemenkes RI 2017, hlm. 9): energi dihitung dari protein, lemak dan karbohidrat (Atwater 4/9/4), tidak diimputasi",105,160.0,0.3483,0.4362
 MyFCD,protein_g,mice,nRMSE terendah,150,220.0,0.7634,0.9806
 MyFCD,fat_g,missforest,nRMSE terendah,151,230.0,0.5787,0.5787
 MyFCD,carbohydrate_g,crossdb,nRMSE terendah,109,160.0,0.4931,0.6341

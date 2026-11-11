@@ -5,13 +5,14 @@ Sumber: `reports/holdout_evaluation.csv` (nRMSE gabungan seluruh sel hold-out).
 1. Metode dengan nRMSE terendah dipilih. Metode yang selisihnya <= 0.02 dianggap setara; di antara yang setara diutamakan missforest > missforest_ind > crossdb > mice > knn > group_median > median > mean.
 2. Nutrisi tanpa nilai terukur di MyFCD memakai cross-DB transfer dari TKPI.
 3. Nutrisi lain tanpa skor hold-out memakai MissForest (bawaan Tahap 3).
+4. energy_kcal selalu dihitung dengan Atwater dari protein, lemak dan karbohidrat (Pedoman TKPI, Kemenkes RI 2017); nRMSE-nya dari hold-out dicantumkan sebagai pembanding.
 
 ## TKPI
 
 | Nutrisi | Metode | nRMSE | nRMSE MissForest | n terukur | Alasan |
 |---|---|---|---|---|---|
 | water_g | **missforest** | 0.231 | 0.231 | 1144 | nRMSE terendah |
-| energy_kcal | **missforest** | 0.235 | 0.235 | 1146 | nRMSE terendah |
+| energy_kcal | **atwater** | 0.228 | 0.235 | 1146 | Pedoman TKPI (Kemenkes RI 2017, hlm. 9): energi dihitung dari protein, lemak dan karbohidrat (Atwater 4/9/4), tidak diimputasi |
 | protein_g | **mice** | 0.525 | 0.587 | 1145 | nRMSE terendah |
 | fat_g | **missforest** | 0.265 | 0.265 | 1145 | nRMSE terendah |
 | carbohydrate_g | **missforest** | 0.327 | 0.327 | 1146 | nRMSE terendah |
@@ -32,14 +33,14 @@ Sumber: `reports/holdout_evaluation.csv` (nRMSE gabungan seluruh sel hold-out).
 | niacin_mg | **missforest** | 1.002 | 1.002 | 807 | selisih <= 0.02 dari missforest_ind; diutamakan metode multivariat |
 | vitamin_c_mg | **missforest_ind** | 0.872 | 0.906 | 857 | nRMSE terendah |
 
-Jumlah nutrisi per metode: missforest 12, group_median 5, missforest_ind 2, mice 1, knn 1
+Jumlah nutrisi per metode: missforest 11, group_median 5, missforest_ind 2, atwater 1, mice 1, knn 1
 
 ## MyFCD
 
 | Nutrisi | Metode | nRMSE | nRMSE MissForest | n terukur | Alasan |
 |---|---|---|---|---|---|
 | water_g | **missforest** | 0.530 | 0.530 | 150 | nRMSE terendah |
-| energy_kcal | **crossdb** | 0.299 | 0.436 | 105 | nRMSE terendah |
+| energy_kcal | **atwater** | 0.348 | 0.436 | 105 | Pedoman TKPI (Kemenkes RI 2017, hlm. 9): energi dihitung dari protein, lemak dan karbohidrat (Atwater 4/9/4), tidak diimputasi |
 | protein_g | **mice** | 0.763 | 0.981 | 150 | nRMSE terendah |
 | fat_g | **missforest** | 0.579 | 0.579 | 151 | nRMSE terendah |
 | carbohydrate_g | **crossdb** | 0.493 | 0.634 | 109 | nRMSE terendah |
@@ -60,4 +61,4 @@ Jumlah nutrisi per metode: missforest 12, group_median 5, missforest_ind 2, mice
 | niacin_mg | **crossdb** | 1.009 | 1.303 | 10 | nRMSE terendah |
 | vitamin_c_mg | **group_median** | 0.967 | 1.106 | 27 | nRMSE terendah |
 
-Jumlah nutrisi per metode: crossdb 10, mice 4, missforest 3, group_median 3, mean 1
+Jumlah nutrisi per metode: crossdb 9, mice 4, missforest 3, group_median 3, atwater 1, mean 1

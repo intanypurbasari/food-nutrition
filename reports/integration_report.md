@@ -29,8 +29,8 @@ Nilai TKPI yang tadinya hasil imputasi dan kini diganti nilai terukur MyFCD: 1 s
 | measured_TKPI | 19733 | 51.4 |
 | USDA_model | 7201 | 18.7 |
 | imputed:group_median | 2302 | 6.0 |
-| transfer_TKPI | 1836 | 4.8 |
 | imputed:missforest | 1743 | 4.5 |
+| transfer_TKPI | 1709 | 4.4 |
 | measured_MyFCD | 1340 | 3.5 |
 | USDA_direct_medium | 845 | 2.2 |
 | imputed:missforest_ind | 828 | 2.2 |
@@ -40,6 +40,7 @@ Nilai TKPI yang tadinya hasil imputasi dan kini diganti nilai terukur MyFCD: 1 s
 | imputed:knn | 350 | 0.9 |
 | vitamin_a:derived_measured | 289 | 0.8 |
 | USDA_direct_high | 186 | 0.5 |
+| calculated:atwater | 127 | 0.3 |
 | imputed:mean | 93 | 0.2 |
 | vitamin_a:USDA_direct_medium | 35 | 0.1 |
 | vitamin_a:USDA_direct_high | 17 | 0.0 |
