@@ -17,6 +17,10 @@ Urutan sumber nilai (yang pertama tersedia dipakai)
 3. USDA_direct_high        Tidak ada komponen terukur; pinjam "Vitamin A, RAE"
                            (nutrient_id 1106) dari pangan USDA tertaut, skor >= 0,65.
 4. USDA_direct_medium      Sama, skor >= 0,40 (tinjau manual).
+                           Nilai pinjaman (3 dan 4) disetarakan kadar airnya
+                           sesuai Pedoman TKPI (Kemenkes RI 2017, bagian 2.3):
+                           bila selisih kadar air relatif > 10%, dihitung atas
+                           dasar berat kering (src/imputation/borrowing.py).
 5. derived_imputed         Rumus RAE dari retinol dan beta-karoten hasil imputasi.
 
 Data terukur pangan lokal didahulukan karena tautan USDA menunjuk ke pangan
@@ -52,6 +56,7 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from src.cleaning.normalizers import compute_completeness_score, compute_missing_nutrient_count
+from src.imputation.borrowing import moisture_adjustment
 
 ROOT = Path(__file__).resolve().parents[1]
 USDA_DIR = ROOT / "usda-csv"
@@ -61,6 +66,7 @@ PROVENANCE_PATH = PROCESSED / "vitamin_a_provenance.csv"
 REVIEW_PATH = ROOT / "reports" / "vitamin_a_review.md"
 
 VITAMIN_A_RAE_NUTRIENT_ID = 1106  # "Vitamin A, RAE", satuan UG (mikrogram)
+WATER_NUTRIENT_ID = 1051
 TARGET_COLUMN = "vitamin_a_mcg"
 SOURCE_COLUMN = f"{TARGET_COLUMN}_source"
 # Beda nilai turunan vs USDA HIGH yang dianggap perlu ditinjau.
@@ -73,26 +79,28 @@ SOURCES = {
 }
 
 
-def load_usda_vitamin_a() -> pd.Series:
-    """Vitamin A, RAE per fdc_id."""
+def load_usda_vitamin_a() -> pd.DataFrame:
+    """Vitamin A, RAE and water per fdc_id (columns usda_rae, usda_water)."""
     food_nutrient = pd.read_csv(
         USDA_DIR / "food_nutrient.csv",
         usecols=["fdc_id", "nutrient_id", "amount"],
         low_memory=False,
     )
-    rows = food_nutrient[food_nutrient["nutrient_id"] == VITAMIN_A_RAE_NUTRIENT_ID]
-    return rows.groupby("fdc_id")["amount"].first()
+    rows = food_nutrient[food_nutrient["nutrient_id"].isin([VITAMIN_A_RAE_NUTRIENT_ID, WATER_NUTRIENT_ID])]
+    wide = rows.pivot_table(index="fdc_id", columns="nutrient_id", values="amount", aggfunc="first")
+    return wide.rename(columns={VITAMIN_A_RAE_NUTRIENT_ID: "usda_rae", WATER_NUTRIENT_ID: "usda_water"})
 
 
 def rae(retinol: float, beta_carotene: float) -> float:
     return round(retinol + beta_carotene / 12.0, 4)
 
 
-def resolve_source(config: dict, usda_rae: pd.Series, imputed: pd.DataFrame) -> pd.DataFrame:
+def resolve_source(config: dict, usda: pd.DataFrame, imputed: pd.DataFrame) -> pd.DataFrame:
     measured = pd.read_csv(config["enriched"], usecols=["food_id", "retinol_mcg", "beta_carotene_mcg"])
     links = pd.read_csv(config["links"])
     links = links[links["confidence"].isin(["HIGH", "MEDIUM"])].copy()
-    links["usda_rae"] = links["usda_fdc_id"].map(usda_rae)
+    links["usda_rae"] = links["usda_fdc_id"].map(usda["usda_rae"])
+    links["usda_water"] = links["usda_fdc_id"].map(usda["usda_water"])
     links = (
         links[links["usda_rae"].notna()]
         .sort_values("similarity_score", ascending=False)
@@ -112,6 +120,9 @@ def resolve_source(config: dict, usda_rae: pd.Series, imputed: pd.DataFrame) -> 
             "similarity_score": None if link is None else float(link["similarity_score"]),
             "confidence": None if link is None else link["confidence"],
             "usda_rae": None if link is None else float(link["usda_rae"]),
+            "water_diff_pct": None,
+            "moisture_factor": None,
+            "moisture_rule": None,
         }
 
         imputed_retinol = imputed.at[food_id, "retinol_mcg"] if food_id in imputed.index else float("nan")
@@ -123,7 +134,10 @@ def resolve_source(config: dict, usda_rae: pd.Series, imputed: pd.DataFrame) -> 
             value = rae(retinol if pd.notna(retinol) else imputed_retinol, beta if pd.notna(beta) else imputed_beta)
             source = "derived_partly_imputed"
         elif link is not None:
-            value, source = float(link["usda_rae"]), f"USDA_direct_{link['confidence'].lower()}"
+            water = imputed.at[food_id, "water_g"] if food_id in imputed.index else float("nan")
+            factor, diff, rule = moisture_adjustment(float(water), float(link["usda_water"]))
+            value, source = round(float(link["usda_rae"]) * factor, 4), f"USDA_direct_{link['confidence'].lower()}"
+            record.update({"water_diff_pct": None if pd.isna(diff) else round(diff, 2), "moisture_factor": round(factor, 4), "moisture_rule": rule})
         elif pd.notna(imputed_retinol) and pd.notna(imputed_beta):
             value, source = rae(imputed_retinol, imputed_beta), "derived_imputed"
         else:
@@ -176,13 +190,13 @@ def main() -> int:
     parser.add_argument("--dry-run", action="store_true", help="tampilkan ringkasan tanpa menulis berkas")
     args = parser.parse_args()
 
-    usda_rae = load_usda_vitamin_a()
+    usda = load_usda_vitamin_a()
     repository = pd.read_csv(REPOSITORY_PATH)
-    imputed = repository.set_index("food_id")[["retinol_mcg", "beta_carotene_mcg"]]
+    imputed = repository.set_index("food_id")[["retinol_mcg", "beta_carotene_mcg", "water_g"]]
 
     frames = []
     for source_name, config in SOURCES.items():
-        frame = resolve_source(config, usda_rae, imputed)
+        frame = resolve_source(config, usda, imputed)
         frame.insert(1, "source", source_name)
         frames.append(frame)
         print(f"[VITAMIN_A] {source_name}: {frame[SOURCE_COLUMN].value_counts().to_dict()}")
