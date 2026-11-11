@@ -12,7 +12,8 @@ value; output is one row per distinct food:
   stay separate rows.
 - Every other food from either database is kept as its own row.
 - Each cell gets a provenance label (measured_TKPI, measured_MyFCD,
-  imputed:<method>, transfer_TKPI, or the vitamin A / USDA source).
+  imputed:<method>, transfer_TKPI, calculated:atwater (energy), or the
+  vitamin A / USDA source).
 """
 
 from __future__ import annotations
@@ -20,6 +21,7 @@ from __future__ import annotations
 import pandas as pd
 
 from src.cleaning.normalizers import compute_completeness_score, compute_missing_nutrient_count, is_missing
+from src.imputation.derived import ATWATER_METHOD
 from src.schema.nutrition_schema import NUTRIENT_FIELDS, USDA_NUTRIENT_FIELDS
 
 MERGE_LEVEL = "identik"
@@ -52,7 +54,12 @@ def cell_provenance(
                 label = f"measured_{row.source}"
             elif (row.source, nutrient) in selection.index:
                 method = selection.loc[(row.source, nutrient), "method"]
-                label = "transfer_TKPI" if method == "crossdb" else f"imputed:{method}"
+                if method == "crossdb":
+                    label = "transfer_TKPI"
+                elif method == ATWATER_METHOD:
+                    label = "calculated:atwater"
+                else:
+                    label = f"imputed:{method}"
             else:
                 label = "unresolved"
             rows.append({"food_id": row.food_id, "nutrient": nutrient, "value_source": label})
