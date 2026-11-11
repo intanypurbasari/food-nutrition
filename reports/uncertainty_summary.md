@@ -1,6 +1,6 @@
 # Bootstrap Uncertainty
 
-- B = 50 resample baris (dengan pengembalian) per sumber, seed 42+b; waktu 44 menit.
+- B = 50 resample baris (dengan pengembalian) per sumber, seed 42+b; waktu 36 menit.
 - Tiap replikasi melatih ulang metode yang dipakai Tahap 3 untuk nutrisi itu (data_processed/method_selection.csv) pada resample, lalu mengimputasi data asli; tiap sel yang aslinya kosong mendapat B prediksi.
 - relative_sd = sd bootstrap / sebaran nilai terukur nutrisi itu di sumber yang sama. Sebaran diukur dengan IQR/1,349 (setara sd untuk data normal, tetapi tahan outlier); bila IQR = 0, dipakai sd.
 - Pasangan dengan kurang dari 5 sel imputasi tidak ditandai.
@@ -40,12 +40,12 @@
 | MyFCD | fat_g | missforest | 83 | 6.66 | 22.3 | 0.490 | 0.727 |  |
 | MyFCD | phosphorus_mg | crossdb | 127 | 37.6 | 142 | 0.447 | 0.479 |  |
 | MyFCD | water_g | missforest | 84 | 16.8 | 55.8 | 0.421 | 0.457 |  |
+| MyFCD | energy_kcal | atwater | 129 | 74.9 | 265 | 0.371 | 0.504 |  |
 | MyFCD | niacin_mg | crossdb | 224 | 0.537 | 1.79 | 0.371 | 2.844 |  |
 | MyFCD | carbohydrate_g | crossdb | 125 | 10.2 | 36.9 | 0.325 | 0.349 |  |
 | MyFCD | ash_g | group_median | 95 | 0.217 | 0.793 | 0.193 | 0.543 |  |
 | MyFCD | protein_g | mice | 84 | 0.959 | 3.24 | 0.184 | 1.161 |  |
 | MyFCD | vitamin_c_mg | group_median | 207 | 0.518 | 2.49 | 0.155 | 0.349 |  |
-| MyFCD | energy_kcal | crossdb | 129 | 30.1 | 113 | 0.149 | 0.288 |  |
 | MyFCD | fiber_g | mean | 95 | 0.456 | 1.82 | 0.127 | 0.127 |  |
 
 Nutrisi berketidakpastian tinggi: 15 dari 39 pasangan sumber x nutrisi.
