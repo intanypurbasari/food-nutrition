@@ -135,7 +135,7 @@ vitamin_a_mcg,mean,0,,
 vitamin_a_mcg,median,0,,
 vitamin_a_mcg,mice,0,,
 vitamin_a_mcg,missforest,0,,
-vitamin_a_mcg,original,1380,183.62389434782608,1322.4113023343236
+vitamin_a_mcg,original,1380,170.55171144927536,1096.6942207383806
 vitamin_b1_mg,crossdb,234,0.2900606837606837,0.34928748073567145
 vitamin_b1_mg,group_median,1380,0.32943833333333333,5.389778958661004
 vitamin_b1_mg,knn,1380,0.37641062318840574,5.4950187852309815

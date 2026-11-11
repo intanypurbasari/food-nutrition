@@ -9,6 +9,10 @@ Urutan sumber nilai (yang pertama tersedia dipakai)
 ---------------------------------------------------
 1. USDA_direct_high     nilai pangan USDA tertaut, skor kemiripan >= 0,65.
 2. USDA_direct_medium   sama, skor >= 0,40 (tinjau manual).
+                        Nilai pinjaman disetarakan kadar airnya sesuai Pedoman
+                        TKPI (Kemenkes RI 2017, bagian 2.3): bila selisih kadar
+                        air relatif > 10%, nilai dihitung atas dasar berat
+                        kering (src/imputation/borrowing.py).
 3. USDA_model           prediksi RandomForest yang dilatih pada seluruh pangan
                         USDA SR Legacy yang memiliki nutrisi itu, dengan 20
                         nutrisi bersama (proksimat, mineral, vitamin) sebagai
@@ -23,7 +27,11 @@ dilaporkan di reports/usda_nutrients_review.md.
 Keluaran
 --------
 - nutrition_repository_imputed.csv: keenam kolom diisi.
-- usda_nutrients_provenance.csv: asal nilai per pangan x nutrisi.
+- usda_nutrients_provenance.csv: asal nilai per pangan x nutrisi, termasuk
+  faktor penyetaraan kadar air.
+- borrowed_values_documentation.csv: satu baris per pangan yang meminjam nilai
+  USDA: nama kedua pangan, kadar air/lemak/protein keduanya, selisih kadar air,
+  faktor dan sumber rujukan (dokumentasi Bab III Pedoman TKPI).
 - reports/usda_nutrients_review.md: jumlah per sumber dan akurasi model.
 
 Cara pakai
@@ -46,6 +54,7 @@ from sklearn.model_selection import KFold, cross_val_predict
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from config.imputation_settings import RANDOM_SEED
+from src.imputation.borrowing import MOISTURE_THRESHOLD_PCT, moisture_adjustment
 from src.schema.nutrition_schema import USDA_NUTRIENT_FIELDS
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -53,6 +62,10 @@ USDA_DIR = ROOT / "usda-csv"
 PROCESSED = ROOT / "data_processed"
 REPOSITORY_PATH = PROCESSED / "nutrition_repository_imputed.csv"
 PROVENANCE_PATH = PROCESSED / "usda_nutrients_provenance.csv"
+DOCUMENTATION_PATH = PROCESSED / "borrowed_values_documentation.csv"
+REFERENCE = "USDA FoodData Central, SR Legacy (2019)"
+# Faktor berat kering di luar [1/EXTREME_FACTOR, EXTREME_FACTOR] ditandai untuk tinjau manual.
+EXTREME_FACTOR = 2.0
 REVIEW_PATH = ROOT / "reports" / "usda_nutrients_review.md"
 
 # USDA nutrient_id -> kolom skema. Satuan USDA sudah sama dengan skema
@@ -141,14 +154,18 @@ def resolve(repository: pd.DataFrame, usda: pd.DataFrame, models: dict[str, Rand
     records = []
     for i, row in enumerate(repository.itertuples(index=False)):
         link = links.loc[row.food_id] if row.food_id in links.index else None
+        linked = link is not None and link["usda_fdc_id"] in usda.index
+        factor, diff, rule = (
+            moisture_adjustment(float(row.water_g), float(usda.at[link["usda_fdc_id"], "water_g"])) if linked else (None, None, None)
+        )
         for target in USDA_NUTRIENT_FIELDS:
-            usda_value = np.nan
-            if link is not None and link["usda_fdc_id"] in usda.index:
-                usda_value = usda.at[link["usda_fdc_id"], target]
+            usda_value = usda.at[link["usda_fdc_id"], target] if linked else np.nan
             if pd.notna(usda_value):
-                value, source = float(usda_value), f"USDA_direct_{link['confidence'].lower()}"
+                value, source = float(usda_value) * factor, f"USDA_direct_{link['confidence'].lower()}"
+                moisture = {"usda_value": round(float(usda_value), 4), "water_diff_pct": diff, "moisture_factor": factor, "moisture_rule": rule}
             else:
                 value, source = float(predictions[target][i]), "USDA_model"
+                moisture = {"usda_value": None, "water_diff_pct": None, "moisture_factor": None, "moisture_rule": None}
             records.append(
                 {
                     "food_id": row.food_id,
@@ -159,9 +176,43 @@ def resolve(repository: pd.DataFrame, usda: pd.DataFrame, models: dict[str, Rand
                     "usda_fdc_id": None if link is None else int(link["usda_fdc_id"]),
                     "usda_food_name": None if link is None else link["usda_food_name"],
                     "similarity_score": None if link is None else float(link["similarity_score"]),
+                    **moisture,
                 }
             )
     return pd.DataFrame(records)
+
+
+DOCUMENTED = ["water_g", "fat_g", "protein_g"]
+
+
+def documentation(repository: pd.DataFrame, usda: pd.DataFrame, usda_names: pd.Series) -> pd.DataFrame:
+    """One row per food with a HIGH/MEDIUM USDA link (Pedoman TKPI, Bab III)."""
+    links = pd.concat([best_links(path) for path in SOURCES.values()])
+    rows = []
+    for row in repository.itertuples(index=False):
+        if row.food_id not in links.index or links.at[row.food_id, "usda_fdc_id"] not in usda.index:
+            continue
+        link = links.loc[row.food_id]
+        fdc = link["usda_fdc_id"]
+        factor, diff, rule = moisture_adjustment(float(row.water_g), float(usda.at[fdc, "water_g"]))
+        record = {
+            "source": row.source,
+            "food_id": row.food_id,
+            "food_name": row.food_name_original,
+            "category": row.category_original,
+            "usda_fdc_id": int(fdc),
+            "usda_food_name": usda_names.get(fdc, link["usda_food_name"]),
+            "usda_category": link.get("usda_category"),
+            "similarity_score": float(link["similarity_score"]),
+            "confidence": link["confidence"],
+        }
+        for column in DOCUMENTED:
+            record[f"{column}_food"] = getattr(row, column)
+            record[f"{column}_usda"] = usda.at[fdc, column]
+        record.update({"water_diff_pct": None if pd.isna(diff) else round(diff, 2),
+                       "moisture_factor": round(factor, 4), "moisture_rule": rule, "reference": REFERENCE})
+        rows.append(record)
+    return pd.DataFrame(rows)
 
 
 def write_review(provenance: pd.DataFrame, metrics: pd.DataFrame) -> None:
@@ -190,6 +241,35 @@ def write_review(provenance: pd.DataFrame, metrics: pd.DataFrame) -> None:
     ]
     for row in metrics.itertuples(index=False):
         lines.append(f"| {row.nutrient} | {row.n_train} | {row.cv_r2:.3f} | {row.cv_nrmse:.3f} | {row.cv_spearman:.3f} |")
+    direct = provenance[provenance["value_source"].str.startswith("USDA_direct")].drop_duplicates("food_id")
+    lines += [
+        "",
+        "## Penyetaraan kadar air nilai pinjaman (Pedoman TKPI, Kemenkes RI 2017)",
+        "",
+        f"Bila |air pangan - air USDA| / air USDA > {MOISTURE_THRESHOLD_PCT:g}%, nilai USDA dikali "
+        "(100 - air pangan) / (100 - air USDA) (dasar berat kering); bila tidak, dipinjam langsung.",
+        "",
+        "| Sumber | Pangan tertaut | Langsung | Berat kering | Tanpa data air | Median faktor (berat kering) | Rentang faktor |",
+        "|---|---|---|---|---|---|---|",
+    ]
+    for source, part in direct.groupby("source"):
+        dry = part[part["moisture_rule"] == "dry_matter"]["moisture_factor"]
+        counts = part["moisture_rule"].value_counts()
+        span = f"{dry.min():.2f}–{dry.max():.2f}" if len(dry) else ""
+        median = f"{dry.median():.2f}" if len(dry) else ""
+        lines.append(f"| {source} | {len(part)} | {counts.get('direct', 0)} | {counts.get('dry_matter', 0)} | "
+                     f"{counts.get('no_water_data', 0)} | {median} | {span} |")
+    extreme = direct[(direct["moisture_factor"] < 1 / EXTREME_FACTOR) | (direct["moisture_factor"] > EXTREME_FACTOR)]
+    lines += [
+        "",
+        f"### Faktor ekstrem (< {1 / EXTREME_FACTOR:g} atau > {EXTREME_FACTOR:g}): tinjau tautannya",
+        "",
+        "Faktor sebesar ini biasanya berarti bentuk pangan berbeda (segar vs kering, mentah vs matang) atau tautan yang keliru. "
+        "Penyetaraan berat kering mengoreksi perbedaan bentuk, tetapi tidak memperbaiki tautan yang salah pangan.",
+        "",
+    ]
+    lines += [f"- {r.food_id} -> {r.usda_food_name} (USDA {int(r.usda_fdc_id)}): faktor {r.moisture_factor:.2f}, selisih air {r.water_diff_pct:.0f}%"
+              for r in extreme.sort_values("moisture_factor").itertuples(index=False)] or ["- Tidak ada."]
     REVIEW_PATH.parent.mkdir(parents=True, exist_ok=True)
     REVIEW_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
@@ -214,10 +294,12 @@ def main() -> int:
     if args.dry_run:
         return 0
 
+    usda_names = pd.read_csv(USDA_DIR / "food.csv", usecols=["fdc_id", "description"]).set_index("fdc_id")["description"]
     repository.to_csv(REPOSITORY_PATH, index=False, encoding="utf-8")
     provenance.to_csv(PROVENANCE_PATH, index=False, encoding="utf-8")
+    documentation(repository, usda, usda_names).to_csv(DOCUMENTATION_PATH, index=False, encoding="utf-8")
     write_review(provenance, metrics)
-    print(f"[USDA_NUTRIENTS] wrote {REPOSITORY_PATH.name}, {PROVENANCE_PATH.name}, {REVIEW_PATH.name}")
+    print(f"[USDA_NUTRIENTS] wrote {REPOSITORY_PATH.name}, {PROVENANCE_PATH.name}, {DOCUMENTATION_PATH.name}, {REVIEW_PATH.name}")
     return 0
 
 
