@@ -2,7 +2,7 @@
 
 Sumber: `reports/holdout_evaluation.csv` (nRMSE gabungan seluruh sel hold-out).
 
-1. Metode dengan nRMSE terendah dipilih. Metode yang selisihnya <= 0.02 dianggap setara; di antara yang setara diutamakan missforest > missforest_ind > crossdb > mice > knn > group_median > median > mean.
+1. Metode dengan nRMSE terendah dipilih. Metode yang selisihnya <= 0.02 dianggap setara; di antara yang setara diutamakan missforest > missforest_ind > crossdb > mice > softimpute > knn > group_median > median > mean.
 2. Nutrisi tanpa nilai terukur di MyFCD memakai cross-DB transfer dari TKPI.
 3. Nutrisi lain tanpa skor hold-out memakai MissForest (bawaan Tahap 3).
 4. energy_kcal selalu dihitung dengan Atwater dari protein, lemak dan karbohidrat (Pedoman TKPI, Kemenkes RI 2017); nRMSE-nya dari hold-out dicantumkan sebagai pembanding.
@@ -17,23 +17,23 @@ Sumber: `reports/holdout_evaluation.csv` (nRMSE gabungan seluruh sel hold-out).
 | fat_g | **missforest** | 0.265 | 0.265 | 1145 | nRMSE terendah |
 | carbohydrate_g | **missforest** | 0.327 | 0.327 | 1146 | nRMSE terendah |
 | fiber_g | **missforest** | 0.866 | 0.866 | 925 | nRMSE terendah |
-| ash_g | **missforest** | 1.015 | 1.015 | 1146 | selisih <= 0.02 dari group_median; diutamakan metode multivariat |
+| ash_g | **softimpute** | 0.984 | 1.015 | 1146 | nRMSE terendah |
 | calcium_mg | **missforest** | 0.724 | 0.724 | 1106 | nRMSE terendah |
 | phosphorus_mg | **missforest** | 0.681 | 0.681 | 1106 | nRMSE terendah |
 | iron_mg | **missforest** | 0.917 | 0.917 | 1103 | selisih <= 0.02 dari missforest_ind; diutamakan metode multivariat |
-| sodium_mg | **group_median** | 0.993 | 1.204 | 863 | nRMSE terendah |
+| sodium_mg | **softimpute** | 0.960 | 1.204 | 863 | nRMSE terendah |
 | potassium_mg | **missforest** | 0.851 | 0.851 | 822 | nRMSE terendah |
-| copper_mg | **missforest** | 0.960 | 0.960 | 793 | nRMSE terendah |
-| zinc_mg | **group_median** | 0.960 | 1.076 | 798 | nRMSE terendah |
+| copper_mg | **missforest** | 0.960 | 0.960 | 793 | selisih <= 0.02 dari softimpute; diutamakan metode multivariat |
+| zinc_mg | **softimpute** | 0.919 | 1.076 | 798 | nRMSE terendah |
 | retinol_mcg | **group_median** | 1.002 | 6.101 | 541 | nRMSE terendah |
-| beta_carotene_mcg | **group_median** | 1.007 | 1.159 | 679 | selisih <= 0.02 dari mean; diutamakan metode multivariat |
+| beta_carotene_mcg | **softimpute** | 0.980 | 1.159 | 679 | nRMSE terendah |
 | carotene_total_mcg | **missforest_ind** | 1.010 | 1.015 | 607 | selisih <= 0.02 dari knn; diutamakan metode multivariat |
 | vitamin_b1_mg | **group_median** | 0.997 | 23.162 | 1058 | nRMSE terendah |
-| vitamin_b2_mg | **knn** | 1.021 | 1.080 | 796 | selisih <= 0.02 dari mean; diutamakan metode multivariat |
+| vitamin_b2_mg | **softimpute** | 0.996 | 1.080 | 796 | nRMSE terendah |
 | niacin_mg | **missforest** | 1.002 | 1.002 | 807 | selisih <= 0.02 dari missforest_ind; diutamakan metode multivariat |
 | vitamin_c_mg | **missforest_ind** | 0.872 | 0.906 | 857 | nRMSE terendah |
 
-Jumlah nutrisi per metode: missforest 11, group_median 5, missforest_ind 2, atwater 1, mice 1, knn 1
+Jumlah nutrisi per metode: missforest 10, softimpute 5, group_median 2, missforest_ind 2, atwater 1, mice 1
 
 ## MyFCD
 
@@ -57,8 +57,8 @@ Jumlah nutrisi per metode: missforest 11, group_median 5, missforest_ind 2, atwa
 | beta_carotene_mcg | **crossdb** |  |  | 0 | tidak ada nilai terukur di MyFCD; hanya transfer dari TKPI yang mungkin |
 | carotene_total_mcg | **crossdb** |  |  | 0 | tidak ada nilai terukur di MyFCD; hanya transfer dari TKPI yang mungkin |
 | vitamin_b1_mg | **group_median** | 1.036 | 1.298 | 10 | nRMSE terendah |
-| vitamin_b2_mg | **missforest** | 1.076 | 1.076 | 10 | nRMSE terendah |
+| vitamin_b2_mg | **missforest** | 1.076 | 1.076 | 10 | selisih <= 0.02 dari softimpute; diutamakan metode multivariat |
 | niacin_mg | **crossdb** | 1.009 | 1.303 | 10 | nRMSE terendah |
-| vitamin_c_mg | **group_median** | 0.967 | 1.106 | 27 | nRMSE terendah |
+| vitamin_c_mg | **softimpute** | 0.927 | 1.106 | 27 | nRMSE terendah |
 
-Jumlah nutrisi per metode: crossdb 9, mice 4, missforest 3, group_median 3, atwater 1, mean 1
+Jumlah nutrisi per metode: crossdb 9, mice 4, missforest 3, group_median 2, atwater 1, mean 1, softimpute 1

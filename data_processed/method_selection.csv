@@ -5,19 +5,19 @@ TKPI,protein_g,mice,nRMSE terendah,1145,516.0,0.5248,0.5874
 TKPI,fat_g,missforest,nRMSE terendah,1145,516.0,0.2652,0.2652
 TKPI,carbohydrate_g,missforest,nRMSE terendah,1146,516.0,0.3269,0.3269
 TKPI,fiber_g,missforest,nRMSE terendah,925,417.0,0.8661,0.8661
-TKPI,ash_g,missforest,selisih <= 0.02 dari group_median; diutamakan metode multivariat,1146,516.0,1.0154,1.0154
+TKPI,ash_g,softimpute,nRMSE terendah,1146,516.0,0.9838,1.0154
 TKPI,calcium_mg,missforest,nRMSE terendah,1106,498.0,0.7242,0.7242
 TKPI,phosphorus_mg,missforest,nRMSE terendah,1106,498.0,0.681,0.681
 TKPI,iron_mg,missforest,selisih <= 0.02 dari missforest_ind; diutamakan metode multivariat,1103,495.0,0.917,0.917
-TKPI,sodium_mg,group_median,nRMSE terendah,863,387.0,0.9931,1.2035
+TKPI,sodium_mg,softimpute,nRMSE terendah,863,387.0,0.9598,1.2035
 TKPI,potassium_mg,missforest,nRMSE terendah,822,369.0,0.8505,0.8505
-TKPI,copper_mg,missforest,nRMSE terendah,793,357.0,0.9602,0.9602
-TKPI,zinc_mg,group_median,nRMSE terendah,798,360.0,0.9604,1.0758
+TKPI,copper_mg,missforest,selisih <= 0.02 dari softimpute; diutamakan metode multivariat,793,357.0,0.9602,0.9602
+TKPI,zinc_mg,softimpute,nRMSE terendah,798,360.0,0.9189,1.0758
 TKPI,retinol_mcg,group_median,nRMSE terendah,541,243.0,1.0015,6.1005
-TKPI,beta_carotene_mcg,group_median,selisih <= 0.02 dari mean; diutamakan metode multivariat,679,306.0,1.0067,1.1592
+TKPI,beta_carotene_mcg,softimpute,nRMSE terendah,679,306.0,0.9797,1.1592
 TKPI,carotene_total_mcg,missforest_ind,selisih <= 0.02 dari knn; diutamakan metode multivariat,607,273.0,1.0097,1.0147
 TKPI,vitamin_b1_mg,group_median,nRMSE terendah,1058,477.0,0.9973,23.1618
-TKPI,vitamin_b2_mg,knn,selisih <= 0.02 dari mean; diutamakan metode multivariat,796,357.0,1.0209,1.0803
+TKPI,vitamin_b2_mg,softimpute,nRMSE terendah,796,357.0,0.9962,1.0803
 TKPI,niacin_mg,missforest,selisih <= 0.02 dari missforest_ind; diutamakan metode multivariat,807,363.0,1.0021,1.0021
 TKPI,vitamin_c_mg,missforest_ind,nRMSE terendah,857,387.0,0.8717,0.9065
 MyFCD,water_g,missforest,nRMSE terendah,150,220.0,0.5303,0.5303
@@ -38,6 +38,6 @@ MyFCD,retinol_mcg,crossdb,tidak ada nilai terukur di MyFCD; hanya transfer dari 
 MyFCD,beta_carotene_mcg,crossdb,tidak ada nilai terukur di MyFCD; hanya transfer dari TKPI yang mungkin,0,,,
 MyFCD,carotene_total_mcg,crossdb,tidak ada nilai terukur di MyFCD; hanya transfer dari TKPI yang mungkin,0,,,
 MyFCD,vitamin_b1_mg,group_median,nRMSE terendah,10,20.0,1.0355,1.2979
-MyFCD,vitamin_b2_mg,missforest,nRMSE terendah,10,20.0,1.0758,1.0758
+MyFCD,vitamin_b2_mg,missforest,selisih <= 0.02 dari softimpute; diutamakan metode multivariat,10,20.0,1.0758,1.0758
 MyFCD,niacin_mg,crossdb,nRMSE terendah,10,20.0,1.0093,1.3032
-MyFCD,vitamin_c_mg,group_median,nRMSE terendah,27,40.0,0.9667,1.1058
+MyFCD,vitamin_c_mg,softimpute,nRMSE terendah,27,40.0,0.927,1.1058
