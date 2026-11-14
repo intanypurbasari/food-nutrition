@@ -3,6 +3,10 @@
 - masking_sweep.png        nRMSE against the share of hidden cells, all methods, TKPI and MyFCD
 - transfer_vs_internal.png MyFCD: cross-DB transfer against within-MyFCD MissForest and SoftImpute,
                            with the fractions where the Holm-corrected Wilcoxon test is significant marked
+                           (colour of the mark = the method that is better)
+- transfer_by_nutrient.png MyFCD: log2(nRMSE transfer / nRMSE MissForest) per nutrient and fraction;
+                           the median across nutrients hides that transfer wins on some nutrients and
+                           loses on others
 """
 
 from __future__ import annotations
@@ -13,6 +17,7 @@ import matplotlib
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 
 REPORTS = Path(__file__).resolve().parents[1] / "reports"
@@ -63,22 +68,49 @@ def main() -> int:
     plt.close(fig)
 
     myfcd = summary[summary["source"] == "MyFCD"]
-    fig, ax = plt.subplots(figsize=(5.4, 3.9))
+    fig, ax = plt.subplots(figsize=(5.6, 4.3))
     lines(ax, myfcd, ["softimpute", "missforest", "crossdb"])
     sig = tests[(tests["source"] == "MyFCD") & (tests["method_a"] == "missforest") & (tests["method_b"] == "crossdb")]
     top = ax.get_ylim()[1]
     for r in sig.itertuples(index=False):
         if r.p_holm < 0.05:
-            ax.text(r.fraction * 100, top, "*", ha="center", va="top", fontsize=13, color=COLOR["crossdb"])
+            # hl_shift = MissForest - transfer; negative means MissForest has the lower error
+            better = "missforest" if r.hl_shift < 0 else "crossdb"
+            ax.text(r.fraction * 100, top, "*", ha="center", va="top", fontsize=14, color=COLOR[better])
     ax.set_title("MyFCD: transfer from TKPI vs within-MyFCD imputation")
     ax.set_ylabel("Median nRMSE across nutrients")
-    ax.legend(frameon=False, loc="upper left")
-    ax.text(0.99, 0.02, "* transfer vs MissForest, Wilcoxon, Holm p < 0.05", transform=ax.transAxes,
-            ha="right", va="bottom", fontsize=7, color="#555555")
+    ax.legend(frameon=False, loc="upper center", bbox_to_anchor=(0.5, -0.16), ncol=3)
+    ax.text(0.99, 0.98, "* Wilcoxon transfer vs MissForest, Holm p < 0.05\n(colour = method with lower error)",
+            transform=ax.transAxes, ha="right", va="top", fontsize=7, color="#555555")
     fig.tight_layout()
     fig.savefig(OUT / "transfer_vs_internal.png", dpi=300, bbox_inches="tight")
     plt.close(fig)
-    print("[PLOT] wrote reports/figures/masking_sweep.png, transfer_vs_internal.png")
+
+    raw = pd.read_csv(REPORTS / "masking_sweep_raw.csv")
+    per = raw[raw["source"] == "MyFCD"].groupby(["nutrient", "method", "fraction"])["nrmse"].mean().unstack("method")
+    ratio = np.log2(per["crossdb"] / per["missforest"]).unstack("fraction")
+    ratio = ratio.loc[ratio.mean(axis=1).sort_values().index]
+    fig, ax = plt.subplots(figsize=(6.4, 5.4))
+    image = ax.imshow(ratio.to_numpy(), cmap="PiYG", vmin=-3, vmax=3, aspect="auto")
+    for i in range(ratio.shape[0]):
+        for j in range(ratio.shape[1]):
+            v = ratio.iat[i, j]
+            if np.isnan(v):
+                ax.text(j, i, "–", ha="center", va="center", fontsize=7, color="#999999")
+            else:
+                ax.text(j, i, f"{v:.1f}", ha="center", va="center", fontsize=6.5,
+                        color="white" if abs(v) > 2 else "#222222")
+    ax.set_xticks(range(ratio.shape[1]), [f"{f:.0%}" for f in ratio.columns])
+    ax.set_yticks(range(ratio.shape[0]), [n.rsplit("_", 1)[0].replace("_", " ") for n in ratio.index])
+    ax.set_xlabel("Observed cells hidden")
+    ax.set_title("MyFCD: log2(nRMSE transfer / nRMSE MissForest)")
+    ax.spines[:].set_visible(False)
+    bar = fig.colorbar(image, ax=ax, shrink=0.8)
+    bar.set_label("< 0: transfer better    > 0: MissForest better")
+    fig.tight_layout()
+    fig.savefig(OUT / "transfer_by_nutrient.png", dpi=300, bbox_inches="tight")
+    plt.close(fig)
+    print("[PLOT] wrote reports/figures/masking_sweep.png, transfer_vs_internal.png, transfer_by_nutrient.png")
     return 0
 
 
