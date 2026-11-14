@@ -68,3 +68,19 @@ def test_group_median_uses_the_food_group_and_falls_back_to_overall_median():
     assert result.loc[3, "retinol_mcg"] == 120.0  # meat median
     assert result.loc[7, "retinol_mcg"] == 0.0  # vegetable median
     assert result.loc[9, "retinol_mcg"] == df["retinol_mcg"].median()  # bumbu has < 3 observed
+
+
+def test_softimpute_fills_only_missing_cells_and_keeps_observed():
+    import numpy as np
+
+    from src.imputation.baselines import softimpute_impute
+
+    rng = np.random.default_rng(0)
+    factors = rng.random((40, 2)) @ rng.random((2, 5))  # rank-2, non-negative
+    df = pd.DataFrame(factors, columns=list("abcde"))
+    df.loc[[1, 5, 9], "c"] = np.nan
+    out = softimpute_impute(df, list("abcde"))
+    assert out[list("abcde")].notna().all().all()
+    observed = df["c"].notna()
+    assert np.allclose(out.loc[observed, "c"], df.loc[observed, "c"])
+    assert np.abs(out.loc[[1, 5, 9], "c"] - factors[[1, 5, 9], 2]).max() < 0.2

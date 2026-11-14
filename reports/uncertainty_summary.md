@@ -1,6 +1,6 @@
 # Bootstrap Uncertainty
 
-- B = 50 resample baris (dengan pengembalian) per sumber, seed 42+b; waktu 78 menit.
+- B = 50 resample baris (dengan pengembalian) per sumber, seed 42+b; waktu 40 menit.
 - Tiap replikasi melatih ulang metode yang dipakai Tahap 3 untuk nutrisi itu (data_processed/method_selection.csv) pada resample, lalu mengimputasi data asli; tiap sel yang aslinya kosong mendapat B prediksi.
 - relative_sd = sd bootstrap / sebaran nilai terukur nutrisi itu di sumber yang sama. Sebaran diukur dengan IQR/1,349 (setara sd untuk data normal, tetapi tahan outlier); bila IQR = 0, dipakai sd.
 - Pasangan dengan kurang dari 5 sel imputasi tidak ditandai.
@@ -10,19 +10,19 @@
 |---|---|---|---|---|---|---|---|---|
 | TKPI | carotene_total_mcg | missforest_ind | 539 | 1.35e+03 | 4.44e+03 | 1.945 | 6.573 | ⚠️ tinggi |
 | TKPI | vitamin_c_mg | missforest_ind | 289 | 7.53 | 21.1 | 0.924 | 2.964 | ⚠️ tinggi |
+| TKPI | beta_carotene_mcg | softimpute | 467 | 74.1 | 268 | 0.594 | 1.783 | ⚠️ tinggi |
 | TKPI | copper_mg | missforest | 353 | 0.127 | 0.406 | 0.591 | 2.446 | ⚠️ tinggi |
-| TKPI | vitamin_b2_mg | knn | 350 | 0.0645 | 0.23 | 0.511 | 1.382 | ⚠️ tinggi |
 | TKPI | niacin_mg | missforest | 339 | 0.687 | 2.47 | 0.488 | 1.891 |  |
 | TKPI | fiber_g | missforest | 221 | 0.97 | 3.29 | 0.397 | 1.300 |  |
 | TKPI | calcium_mg | missforest | 40 | 30.5 | 114 | 0.309 | 0.773 |  |
 | TKPI | iron_mg | missforest | 43 | 0.67 | 2.48 | 0.301 | 0.805 |  |
 | TKPI | potassium_mg | missforest | 324 | 68 | 244 | 0.293 | 0.747 |  |
+| TKPI | vitamin_b2_mg | softimpute | 350 | 0.0221 | 0.0875 | 0.175 | 0.847 |  |
+| TKPI | sodium_mg | softimpute | 283 | 19.7 | 72.5 | 0.171 | 0.503 |  |
 | TKPI | phosphorus_mg | missforest | 40 | 16.7 | 58.3 | 0.141 | 0.304 |  |
-| TKPI | zinc_mg | group_median | 348 | 0.0818 | 0.366 | 0.092 | 0.308 |  |
-| TKPI | sodium_mg | group_median | 283 | 10.5 | 28 | 0.091 | 0.473 |  |
+| TKPI | zinc_mg | softimpute | 348 | 0.107 | 0.386 | 0.120 | 0.231 |  |
 | TKPI | protein_g | mice | 1 | 0.777 | 2.55 | 0.082 | 0.082 |  |
 | TKPI | vitamin_b1_mg | group_median | 88 | 0.0132 | 0.0477 | 0.081 | 0.219 |  |
-| TKPI | beta_carotene_mcg | group_median | 467 | 6.13 | 19.5 | 0.049 | 0.976 |  |
 | TKPI | fat_g | missforest | 1 | 0.239 | 0.933 | 0.043 | 0.043 |  |
 | TKPI | water_g | missforest | 2 | 0.542 | 2.02 | 0.013 | 0.016 |  |
 | TKPI | retinol_mcg | group_median | 605 | 0 | 0 | 0.000 | 0.234 |  |
@@ -45,7 +45,7 @@
 | MyFCD | carbohydrate_g | crossdb | 125 | 10.2 | 36.9 | 0.325 | 0.349 |  |
 | MyFCD | ash_g | group_median | 95 | 0.217 | 0.793 | 0.193 | 0.543 |  |
 | MyFCD | protein_g | mice | 84 | 0.959 | 3.24 | 0.184 | 1.161 |  |
-| MyFCD | vitamin_c_mg | group_median | 207 | 0.518 | 2.49 | 0.155 | 0.349 |  |
 | MyFCD | fiber_g | mean | 95 | 0.456 | 1.82 | 0.127 | 0.127 |  |
+| MyFCD | vitamin_c_mg | softimpute | 207 | 0.25 | 0.931 | 0.074 | 0.240 |  |
 
 Nutrisi berketidakpastian tinggi: 15 dari 39 pasangan sumber x nutrisi.

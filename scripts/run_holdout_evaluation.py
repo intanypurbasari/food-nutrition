@@ -1,7 +1,7 @@
 """Stage 4: hold-out evaluation (RMSE / nRMSE) of every Stage 3 imputation method.
 
 Hides 15% of the observed cells of each nutrient (per source), imputes them
-with mean, median, median per food group, KNN, MICE and MissForest (energy
+with mean, median, median per food group, KNN, MICE, SoftImpute and MissForest (energy
 also with the Atwater calculation the TKPI guideline prescribes); for TKPI
 also with MissForest plus missingness-indicator features, and for MyFCD also
 with the cross-database transfer (MissForest fit on the full TKPI). Repeated with
@@ -29,7 +29,14 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from config.imputation_settings import IMPUTATION_NUTRIENT_FIELDS, RANDOM_SEED
 from src.evaluation.holdout import HoldoutConfig, evaluate_source, summarise
 from src.imputation import io_utils
-from src.imputation.baselines import group_median_impute, knn_impute, mean_impute, median_impute, mice_impute
+from src.imputation.baselines import (
+    group_median_impute,
+    knn_impute,
+    mean_impute,
+    median_impute,
+    mice_impute,
+    softimpute_impute,
+)
 from src.imputation.cross_transfer import apply_fitted_imputer
 from src.imputation.derived import ATWATER_METHOD, ENERGY_COLUMN, fill_energy
 from src.imputation.missforest_imputer import fit_random_forest_imputer, missforest_impute
@@ -44,9 +51,12 @@ BASE_METHODS = {
     "group_median": group_median_impute,
     "knn": knn_impute,
     "mice": mice_impute,
+    "softimpute": softimpute_impute,
     "missforest": missforest_impute,
 }
-METHOD_ORDER = ["mean", "median", "group_median", "knn", "mice", "missforest", "missforest_ind", "crossdb", ATWATER_METHOD]
+METHOD_ORDER = [
+    "mean", "median", "group_median", "knn", "mice", "softimpute", "missforest", "missforest_ind", "crossdb", ATWATER_METHOD,
+]
 
 
 def atwater_method():

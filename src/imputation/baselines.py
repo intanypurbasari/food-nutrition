@@ -1,4 +1,4 @@
-"""Baseline (mean / median / KNN / MICE) imputation methods.
+"""Baseline (mean / median / KNN / MICE / SoftImpute) imputation methods.
 
 Each function operates only on the given `columns`, fit-and-transform on a
 single source's own data (no cross-source leakage between TKPI and MyFCD),
@@ -7,6 +7,7 @@ and leaves every other column in the DataFrame unchanged.
 
 from __future__ import annotations
 
+import numpy as np
 import pandas as pd
 from sklearn.experimental import enable_iterative_imputer  # noqa: F401  (required by IterativeImputer)
 from sklearn.impute import IterativeImputer, KNNImputer
@@ -142,4 +143,51 @@ def mice_impute(df: pd.DataFrame, columns: list[str], random_state: int | None =
     imputer = IterativeImputer(max_iter=MICE_MAX_ITER, random_state=random_state)
     imputed_values = imputer.fit_transform(numeric_block)
     result[present_columns] = imputed_values
+    return result
+
+
+SOFTIMPUTE_MAX_RANK = 5
+SOFTIMPUTE_SHRINKAGE_DIVISOR = 50.0
+SOFTIMPUTE_TOLERANCE = 1e-3
+SOFTIMPUTE_MAX_ITER = 100
+
+
+def softimpute_impute(df: pd.DataFrame, columns: list[str]) -> pd.DataFrame:
+    """Fill missing values in `columns` by nuclear-norm matrix completion (SoftImpute).
+
+    Mazumder, Hastie and Tibshirani (2010), in the configuration Indriani et al.
+    (2026, Array 32:101428) characterised on TKPI: columns MinMax-scaled on their
+    observed values, missing cells initialised at 0, then iterative
+    soft-thresholded SVD with shrinkage = largest singular value / 50, rank
+    capped at 5, until the relative change of the filled cells is below 1e-3.
+    Values are returned to the original scale and clipped at 0. Columns with
+    no observed value are left untouched. Deterministic (full SVD, no random
+    state). Same contract as the other baseline functions.
+    """
+    result = df.copy()
+    present = [c for c in columns if c in result.columns]
+    block = pd.DataFrame({c: _to_numeric_with_missing(result[c]) for c in present})
+    usable = [c for c in present if block[c].notna().any()]
+    if not usable:
+        return result
+    x = block[usable].to_numpy(dtype=float)
+    lo, hi = np.nanmin(x, axis=0), np.nanmax(x, axis=0)
+    span = np.where(hi > lo, hi - lo, 1.0)
+    scaled = (x - lo) / span
+    missing = np.isnan(scaled)
+    filled = np.where(missing, 0.0, scaled)
+    shrinkage = np.linalg.svd(filled, compute_uv=False)[0] / SOFTIMPUTE_SHRINKAGE_DIVISOR
+    for _ in range(SOFTIMPUTE_MAX_ITER):
+        u, s, vt = np.linalg.svd(filled, full_matrices=False)
+        s = np.maximum(s[:SOFTIMPUTE_MAX_RANK] - shrinkage, 0.0)
+        rank = int((s > 0).sum())
+        reconstruction = (u[:, :rank] * s[:rank]) @ vt[:rank]
+        old = filled[missing]
+        new = reconstruction[missing]
+        filled[missing] = new
+        norm = np.sqrt(np.sum(old ** 2))
+        if norm > 0 and np.sqrt(np.sum((old - new) ** 2)) / norm < SOFTIMPUTE_TOLERANCE:
+            break
+    values = np.clip(filled * span + lo, 0.0, None)
+    result[usable] = np.where(missing, values, x)
     return result
