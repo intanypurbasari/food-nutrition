@@ -101,7 +101,7 @@ def main() -> int:
                 ax.text(j, i, f"{v:.1f}", ha="center", va="center", fontsize=6.5,
                         color="white" if abs(v) > 2 else "#222222")
     ax.set_xticks(range(ratio.shape[1]), [f"{f:.0%}" for f in ratio.columns])
-    ax.set_yticks(range(ratio.shape[0]), [n.rsplit("_", 1)[0].replace("_", " ") for n in ratio.index])
+    ax.set_yticks(range(ratio.shape[0]), [n.rsplit("_", 1)[0].replace("_", " ").replace("vitamin b", "vitamin B").replace("vitamin c", "vitamin C") for n in ratio.index])
     ax.set_xlabel("Observed cells hidden")
     ax.set_title("MyFCD: log2(nRMSE transfer / nRMSE MissForest)")
     ax.spines[:].set_visible(False)
