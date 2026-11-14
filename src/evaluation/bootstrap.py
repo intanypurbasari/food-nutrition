@@ -25,7 +25,7 @@ from sklearn.experimental import enable_iterative_imputer  # noqa: F401  (requir
 from sklearn.impute import IterativeImputer, KNNImputer
 
 from config.imputation_settings import IMPUTATION_NUTRIENT_FIELDS
-from src.imputation.baselines import GROUP_COLUMN, MICE_MAX_ITER, group_medians
+from src.imputation.baselines import GROUP_COLUMN, MICE_MAX_ITER, group_medians, softimpute_impute
 
 from src.cleaning.normalizers import is_missing
 from src.imputation.cross_transfer import apply_fitted_imputer
@@ -79,6 +79,13 @@ def _fit_apply(method: str, train: pd.DataFrame, apply: pd.DataFrame, columns: l
             values = numeric(train[column])
             fill = values.mean() if method == "mean" else values.median()
             result[column] = numeric(apply[column]).fillna(fill)
+        return result
+    if method == "softimpute":
+        # Matrix completion has no separate fit step: complete the resample
+        # together with the original rows and keep the original rows.
+        stacked = pd.concat([train[usable], apply[usable]], ignore_index=True)
+        completed = softimpute_impute(stacked, usable)
+        result[usable] = completed[usable].iloc[len(train):].to_numpy()
         return result
     if method in ("knn", "mice"):
         imputer = KNNImputer(n_neighbors=5) if method == "knn" else IterativeImputer(max_iter=MICE_MAX_ITER, random_state=seed)

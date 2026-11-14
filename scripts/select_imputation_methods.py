@@ -8,7 +8,7 @@ Rule
 ----
 1. Candidates are the methods scored for that source x nutrient (mean, median,
    median per food group,
-   KNN, MICE, MissForest; for MyFCD also the cross-DB transfer from TKPI).
+   KNN, MICE, SoftImpute, MissForest; for MyFCD also the cross-DB transfer from TKPI).
 2. Every method whose pooled nRMSE is within TOLERANCE of the lowest counts as
    tied. Among tied methods the first in PREFERENCE wins: multivariate methods
    keep between-food variation, whereas mean/median fill one constant per
@@ -47,7 +47,7 @@ REPORT_PATH = ROOT / "reports" / "method_selection.md"
 TOLERANCE = 0.02
 # Ties go to the simpler variant: indicators must earn their place.
 ATWATER_REASON = "Pedoman TKPI (Kemenkes RI 2017, hlm. 9): energi dihitung dari protein, lemak dan karbohidrat (Atwater 4/9/4), tidak diimputasi"
-PREFERENCE = ["missforest", "missforest_ind", "crossdb", "mice", "knn", "group_median", "median", "mean"]
+PREFERENCE = ["missforest", "missforest_ind", "crossdb", "mice", "softimpute", "knn", "group_median", "median", "mean"]
 DEFAULT_METHOD = "missforest"
 
 
