@@ -31,6 +31,13 @@ MARKER = {"mean": "o", "group_median": "s", "knn": "^", "mice": "v", "softimpute
 plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 9, "axes.spines.top": False, "axes.spines.right": False})
 
 
+def label_nutrient(column: str) -> str:
+    """Row label for the heatmap; energy is calculated (Atwater), so its row is a comparison only."""
+    if column == "energy_kcal":
+        return "energy (comparison only)*"
+    return column.rsplit("_", 1)[0].replace("_", " ").replace("vitamin b", "vitamin B").replace("vitamin c", "vitamin C")
+
+
 def lines(ax, part: pd.DataFrame, methods: list[str], ylim=None) -> None:
     for method in methods:
         m = part[part["method"] == method].sort_values("fraction")
@@ -101,7 +108,7 @@ def main() -> int:
                 ax.text(j, i, f"{v:.1f}", ha="center", va="center", fontsize=6.5,
                         color="white" if abs(v) > 2 else "#222222")
     ax.set_xticks(range(ratio.shape[1]), [f"{f:.0%}" for f in ratio.columns])
-    ax.set_yticks(range(ratio.shape[0]), [n.rsplit("_", 1)[0].replace("_", " ").replace("vitamin b", "vitamin B").replace("vitamin c", "vitamin C") for n in ratio.index])
+    ax.set_yticks(range(ratio.shape[0]), [label_nutrient(n) for n in ratio.index])
     ax.set_xlabel("Observed cells hidden")
     ax.set_title("MyFCD: log2(nRMSE transfer / nRMSE MissForest)")
     ax.spines[:].set_visible(False)
