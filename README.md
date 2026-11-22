@@ -247,6 +247,8 @@ Output (`data_processed/`, `reports/`):
 
 Dokumentasi metodologi lengkap ada di [`docs/stage3_imputation.md`](docs/stage3_imputation.md). Laporan kemajuan bergaya akademik, siap tempel ke laporan resmi Jatim Melaju, ada di [`docs/laporan_kemajuan_tahap3.md`](docs/laporan_kemajuan_tahap3.md).
 
+Diagram alir pemilihan metode per nutrisi (semua baris vs tanpa outlier): `python scripts/plot_selection_flow.py` menulis `reports/figures/selection_flow_<sumber>_<id|en>.png`. Versi tanpa outlier memakai aturan pemilihan yang sama pada `reports/holdout_evaluation_no_outliers.csv` dan hanya berupa analisis sensitivitas; dataset akhir memakai pemilihan dari semua baris.
+
 ## Tahap 4: Kuantifikasi Ketidakpastian dan Evaluasi (belum dimulai)
 
 Sesuai rencana pada metodologi riset: interval kepercayaan bootstrap (B=50) per sel imputasi, serta evaluasi hold-out (15% data TKPI disembunyikan, dihitung RMSE/nRMSE per nutrisi, dibandingkan antar metode dari Tahap 3). `nutrition_repository_imputed_long.csv` dan `imputation_method_comparison.csv` dari Tahap 3 sudah disiapkan sebagai input langsung untuk tahap ini, tetapi perhitungan akurasi dan ketidakpastiannya sendiri belum diimplementasikan.
