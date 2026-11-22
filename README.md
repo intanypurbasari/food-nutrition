@@ -214,7 +214,7 @@ Kode: `scripts/entity_resolution_threeway.ipynb`, sebuah TF-IDF cosine matcher m
 Output (`data_processed/`, `reports/`):
 
 - **`availability_matrix.csv`**: tabel perutean strategi imputasi per nutrisi (kolom `strategi_imputasi`), bernilai `"Imputasi internal per basis"`, `"Cross-DB transfer / USDA"`, atau `"Pinjam USDA (kosong di kedua basis)"`. **Ini rujukan tunggal yang dipakai Tahap 3; strategi tidak pernah diturunkan ulang oleh kode Tahap 3.**
-- `missing_corr_TKPI.csv`, `missing_corr_MyFCD.csv`: matriks korelasi antar indikator kehilangan (koefisien phi).
+- `missing_corr_TKPI.csv`, `missing_corr_MyFCD.csv`: matriks korelasi antar indikator kehilangan (koefisien phi). Dihitung ulang dari `data_clean/*_clean.csv` oleh `scripts/plot_dsj_figures.py`, yang juga membuat Gambar 2–4 manuskrip (`reports/figures/dsj_fig2_*.png` sampai `dsj_fig4_*.png`).
 - `ringkasan_r_perbandingan.csv`: ringkasan nilai korelasi per kelompok nutrisi (makronutrien, mineral, vitamin).
 - `tkpi_missing_value_report.md`, `myfcd_missing_value_report.md`: persentase missing per nutrisi (TKPI 1.146 baris, MyFCD 234 baris).
 
